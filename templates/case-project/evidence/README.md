@@ -5,6 +5,10 @@ records, screenshots. **Nothing in this folder is ever modified,
 renamed, or "cleaned up"** — extraction happens *from* here into
 `research/`. Files change only when the user adds new source material.
 
+(If you're the human reading this: you don't have to file things here
+yourself. Drop new material into `inbox/` — or anywhere — and it will
+be identified, filed here with a proper handler, and recorded.)
+
 ## Organization
 
 One subfolder per source or source type, each with its own `README.md`

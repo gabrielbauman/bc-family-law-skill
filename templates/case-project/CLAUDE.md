@@ -14,6 +14,7 @@ style preference — it is the case.
 root/
 ├── CASE.md         # Case dashboard — read first, update after changes
 ├── case-law.md     # Authorities: case → principle → application (verified)
+├── inbox/          # User drop zone — empty it at session start
 ├── evidence/       # Primary sources. DO NOT MODIFY. README handler per source.
 ├── filings/        # Filed court documents. DO NOT MODIFY.
 ├── authorities/    # Full text of every authority cited anywhere
@@ -22,6 +23,26 @@ root/
 ├── scripts/        # Reproducible analysis scripts (read evidence, print results)
 └── strategy/       # Private strategic notes and counsel's guidance. NEVER evidence.
 ```
+
+## Session start: sweep for user changes
+
+This project commits everything as it works, so `git status` should be
+clean at session start. Anything it reports is user activity or an
+interrupted session — handle it before substantive work, per the sweep
+in the skill's `references/case-project-guide.md`:
+
+- New files (in `inbox/` or anywhere): identify and file them —
+  court documents to `filings/` (**read for deadlines immediately**),
+  source material to `evidence/` with a handler, case law to
+  `authorities/`, counsel guidance to `strategy/`. Check for
+  duplicates; preserve original filenames in the commit message.
+- Modified `evidence/` or `filings/` files: immutable — ask whether
+  it's a replacement or an accident; never silently revert.
+- Modified case files: treat the diff as user input and reconcile it
+  properly. Deletions or files that don't seem case-related: ask.
+- Batch questions; handle the obvious silently; record new filings and
+  deadlines in CASE.md; commit as `intake: ...` and report what went
+  where.
 
 ## Evidence and accuracy standards
 

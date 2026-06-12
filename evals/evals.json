@@ -42,6 +42,22 @@
         "research/index.md is updated with the new research file",
         "Messages are reproduced verbatim, including informal spelling"
       ]
+    },
+    {
+      "id": 4,
+      "prompt": "I picked up some paperwork this week and just dumped it all in the inbox of my case project. Can you deal with it? Also — what should I be doing next on this case?",
+      "expected_output": "Session-start sweep: the model reads CASE.md, initializes git if the project has no repository, identifies the dropped court order and pay statement, files them into filings/ and evidence/ with conventional names (preserving original filenames in the record), reads the order for deadlines and surfaces them (Form 4 financial statement by April 9, 2026; family management conference June 30, 2026), updates CASE.md's procedural history and next steps, empties the inbox, makes an intake commit, and answers the 'what next' question grounded in the new deadlines.",
+      "files": ["files/sweep/CASE.md", "files/sweep/inbox/scan0001.txt", "files/sweep/inbox/IMG_2041.txt"],
+      "assertions": [
+        "The court order (scan0001.txt) is identified and moved to filings/ under a descriptive, dated name",
+        "The pay statement (IMG_2041.txt) is identified and moved into an appropriate evidence/ subfolder",
+        "The inbox is empty when the run finishes",
+        "Both the April 9, 2026 financial-statement deadline and the June 30, 2026 family management conference are surfaced to the user and recorded in CASE.md",
+        "CASE.md's procedural history records the March 10, 2026 order",
+        "A git repository is initialized or used, with an intake-style commit that preserves the original filenames in the message or notes",
+        "Existing files in evidence/ and filings/ are not modified — only new files are added",
+        "The answer to 'what should I be doing next' is grounded in the new deadlines, prioritizing the Form 4 financial statement and income documents"
+      ]
     }
   ]
 }

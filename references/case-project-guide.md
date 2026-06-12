@@ -24,6 +24,7 @@ my-case/
 ├── .claude/CLAUDE.md   # Working rules for the project (from template)
 ├── CASE.md             # THE DASHBOARD — read first, every session
 ├── case-law.md         # Authorities table (once case law accumulates)
+├── inbox/              # User drop zone for anything new — swept at session start
 ├── evidence/           # Primary sources. IMMUTABLE. README handler per source.
 ├── filings/            # Filed court documents. IMMUTABLE.
 ├── authorities/        # Full text of every authority cited (see case-law.md guide)
@@ -88,6 +89,77 @@ deleted or archived, CASE.md is updated. Keep output documents clean —
 no AI disclaimers, no TODO notes, no metadata inside the document
 itself; track open questions in CASE.md or the commit history instead.
 
+### The division of labour: the model maintains the structure
+
+The folder layout, handlers, indexes, and citation discipline are
+infrastructure the model maintains — the user should never have to
+think about them, and most won't read any of these rules. Their side of
+the contract is small, and it should be said out loud when the project
+is created:
+
+- *"You never need to file anything yourself. Drop new material —
+  court documents, statements, exports, photos of paper — into
+  `inbox/`, or honestly anywhere; I'll find it, file it, and tell you
+  where it went."*
+- *"Don't edit what's already in `evidence/` or `filings/`. If
+  something there is wrong, tell me and we'll replace it together."*
+- *"Everything is committed to git, so nothing you add or I move can
+  be lost."*
+
+Then assume the user will do the wrong thing anyway — rename folders,
+drop a filing at the root, edit a research file, paste a scan over an
+original — and treat cleaning that up as routine work, not a fault to
+correct them over. The sweep below is how.
+
+## Session-start sweep
+
+The model commits after every session, so at session start the working
+tree should be clean. **Anything `git status` reports is information:**
+material the user dropped, a change they made by hand, or leftovers
+from an interrupted session. Run the sweep after reading CASE.md
+(its context is what makes new files identifiable) and before the
+user's actual request — and run it again mid-session whenever the user
+says they've added something.
+
+1. If the project isn't a git repository yet, initialize one and make
+   a baseline commit before anything else.
+2. Run `git status --porcelain` and classify what it shows:
+   - **Untracked files** (in `inbox/` or anywhere): identify each —
+     read enough to classify. Court-issued or court-stamped documents →
+     `filings/`, and **read them for dates and deadlines immediately**
+     (a dropped order or served application often starts a clock the
+     user hasn't noticed). Source material → the right `evidence/`
+     subfolder, creating the handler README if it's a new source type.
+     Case law full text → `authorities/`. Counsel guidance → `strategy/`.
+     Drafts → `output/`.
+   - **Modified files in `evidence/` or `filings/`**: stop — these are
+     immutable. The likely stories are a deliberate replacement (better
+     scan) or an accident; ask which before committing or reverting.
+     Never silently revert a user's change — it may be the correction.
+   - **Modified case files** (CASE.md, research, strategy): read the
+     diff as user input — they may have corrected a fact or added
+     knowledge. Reconcile it into the file properly (citations,
+     labelling) rather than overwriting it.
+   - **Deletions**: ask.
+3. Before filing, check for duplicates of material already in
+   `evidence/` (re-exports are common). When renaming a dropped file to
+   the naming conventions, preserve the original filename in the
+   handler or commit message — filenames are sometimes provenance.
+4. A file that doesn't seem to belong to the case at all may have
+   landed there by mistake — ask rather than filing it.
+5. Batch the questions (provenance, unclear placement) into one round
+   rather than interrogating file-by-file; handle the obvious silently
+   and report what went where.
+6. Record consequences: new filings go into CASE.md's procedural
+   history; new deadlines into Next Steps; new evidence into the
+   relevant handler and `research/index.md` if extracted.
+7. Commit the intake (`intake: File pay statements and FMC order from
+   inbox`), then proceed to the user's request.
+
+Leftovers that look like a *previous session's* unfinished work (a
+half-edited draft in `output/`) get reviewed against CASE.md's next
+steps and committed with an honest note — not discarded.
+
 ## Git workflow
 
 The project is a git repository. The history is the case's audit trail —
@@ -136,10 +208,14 @@ allegations. Defaults:
 
 ## Session pattern
 
-1. Read CASE.md. Check Next Steps and any deadlines against today's
-   date — surface anything urgent before the user's actual question.
-2. Do the requested work, loading the references the phase requires
+1. Read CASE.md.
+2. Run the session-start sweep (above) — file what the user dropped,
+   reconcile what they changed.
+3. Check deadlines — CASE.md's Next Steps plus anything new filings
+   just introduced — against today's date, and surface anything urgent
+   before the user's actual question.
+4. Do the requested work, loading the references the phase requires
    (see SKILL.md's phase table), extracting per `document-handling.md`,
    drafting into `output/`.
-3. Update CASE.md and any touched research files; run the pre-commit
+5. Update CASE.md and any touched research files; run the pre-commit
    review; commit and push.

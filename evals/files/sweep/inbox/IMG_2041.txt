@@ -1,0 +1,20 @@
+ACME WIDGETS LTD
+742 Example Street, Victoria BC
+
+PAY STATEMENT
+
+Employee: Sam Doe
+Employee ID: 0117
+Pay period: 2026-02-16 to 2026-02-28
+Pay date: 2026-03-05
+
+Earnings
+  Regular (80.0 hrs @ $38.50)         3,080.00
+  YTD gross                          12,320.00
+
+Deductions
+  Income tax                            462.11
+  CPP                                   182.03
+  EI                                     50.51
+
+Net pay                              2,385.35

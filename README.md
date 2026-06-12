@@ -19,7 +19,10 @@ and the procedural traps that catch self-represented parties.
   files the model loads on demand instead of answering from memory.
 - **Runs a case project**: a git-tracked folder that carries your matter
   across sessions — evidence, filings, research with verifiable citations,
-  case law with full texts, drafts, and a single CASE.md dashboard.
+  case law with full texts, drafts, and a single CASE.md dashboard. You
+  drop new documents into an inbox (or anywhere); the structure is
+  maintained for you, and every session starts by finding, filing, and
+  recording whatever you added.
 - **Prepares you for court**: practice guides for evidence selection,
   affidavits, cross-examination, and trial; LaTeX templates for a
   two-part trial book and a book of authorities.

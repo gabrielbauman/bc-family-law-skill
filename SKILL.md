@@ -84,8 +84,13 @@ orders are available, and how urgent things are. Screen for it during intake
 Check the working directory for `CASE.md`:
 
 - **Found** → existing case project. Read `CASE.md` first — it is the
-  dashboard. Then handle the user's request, loading only the references the
-  request needs.
+  dashboard. Then run the **session-start sweep**: `git status` should be
+  clean, because the model commits as it works — so anything it reports is
+  material the user dropped in (`inbox/` or anywhere), a change they made by
+  hand, or an interrupted session's leftovers. Identify, file, and reconcile
+  it per the sweep in `references/case-project-guide.md` before substantive
+  work; new court documents get read for deadlines immediately. Then handle
+  the user's request, loading only the references it needs.
 - **Not found** → either answer the standalone question, or for any ongoing
   matter offer to set up a case project (see below). A quick procedural
   question does not need a project.
