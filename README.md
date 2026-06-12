@@ -93,6 +93,13 @@ templates/
   trial-book/             # two-part LaTeX trial book
   book-of-authorities/    # LaTeX book of authorities
 scripts/
+  regen_fla.py ...        # one regeneration script per legal source —
+  regen_pcfr.py           #   fetches the current consolidation from the
+  regen_scfr.py           #   BC Laws / Justice Laws XML APIs, checks for
+  regen_da.py             #   amendments (the git diff IS the amendment
+  regen_csg.py            #   report), and rebuilds the references
+  bclaws_regen.py         # shared machinery (BC CiviX XML)
+  justicelaws_regen.py    # shared machinery (federal LIMS XML)
   build_forms_index.py    # regenerates forms-guide.md from the rule texts
 evals/                    # test prompts for skill development
 ```

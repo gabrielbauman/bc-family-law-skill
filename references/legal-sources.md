@@ -16,9 +16,11 @@ matters to their question.
 | `csg_` | Federal Child Support Guidelines | SOR/97-175 | https://laws-lois.justice.gc.ca/eng/regulations/sor-97-175/ |
 | `ssag_` | Spousal Support Advisory Guidelines: The Revised User's Guide (April 2016), Rogerson & Thompson | Advisory publication, not legislation | https://www.justice.gc.ca/eng/fl-df/spousal-epoux/ssag-ldfpae.html |
 
-**Snapshot date:** The BC texts were captured from BC Laws as current to
-**January 13, 2026**. The federal texts were captured around the same time.
-Amendments made after that date are not reflected here.
+**Snapshot currency:** each index file carries its own currency line —
+the BC indexes state the "current to" date from BC Laws (most recently
+**June 9, 2026**), and the federal indexes state the consolidation and
+last-amended dates declared by the Justice Laws XML. Amendments made
+after those dates are not reflected here.
 
 ## How each text is organized
 
@@ -55,7 +57,23 @@ are refreshed.
    with the official calculator at
    https://www.justice.gc.ca/eng/fl-df/child-enfant/cst-orpe/look-rech.aspx.
 
-5. **Refreshing the snapshot.** To update these texts, re-export from
-   the official sources above, regenerate the per-section files in the
-   same naming scheme, update the snapshot date in this file, and rerun
-   `scripts/build_forms_index.py`.
+5. **Refreshing the snapshot.** Each source has a regeneration script
+   that fetches the current consolidation from the official XML API and
+   rebuilds the per-section files in this folder's exact format:
+
+   ```bash
+   python3 scripts/regen_fla.py     # Family Law Act        (BC Laws)
+   python3 scripts/regen_pcfr.py    # PC Family Rules       (BC Laws)
+   python3 scripts/regen_scfr.py    # SC Family Rules       (BC Laws)
+   python3 scripts/regen_da.py      # Divorce Act           (Justice Laws)
+   python3 scripts/regen_csg.py     # Child Support G/L     (Justice Laws)
+   ```
+
+   Default is **check mode**: fetch, compare with this folder, report
+   what changed, exit non-zero on drift — run them periodically as an
+   amendment monitor. `--write` applies the refresh; after writing,
+   review `git diff` (the diff is the amendment report), rerun
+   `scripts/build_forms_index.py`, and update the snapshot line above.
+   The SSAG User's Guide has no script — it is a static 2016
+   publication; if a revised edition ever appears, rebuild manually
+   from the official source above.
