@@ -1,0 +1,21 @@
+{
+  "name": "Chat with Jordan",
+  "type": "personal_chat",
+  "messages": [
+    { "id": 5001, "date": "2021-03-02T18:14:09", "from": "Sam", "text": "did you see the hydro bill came in" },
+    { "id": 5002, "date": "2021-03-02T18:15:43", "from": "Jordan", "text": "ya saw it. ouch" },
+    { "id": 5003, "date": "2021-03-02T18:16:10", "from": "Sam", "text": "we should probably figure out the rent split too before the lease renews" },
+    { "id": 5004, "date": "2021-03-02T18:18:55", "from": "Jordan", "text": "i thought we said thirds since your office takes the big room?" },
+    { "id": 5005, "date": "2021-03-02T18:20:02", "from": "Sam", "text": "no we said half and half, the office is for both of us" },
+    { "id": 5006, "date": "2021-03-02T18:21:30", "from": "Jordan", "text": "fine, half works. starting april?" },
+    { "id": 5007, "date": "2021-03-02T18:22:01", "from": "Sam", "text": "starting april. $1100 each" },
+    { "id": 5008, "date": "2021-03-05T09:02:17", "from": "Jordan", "text": "morning! grabbing groceries after work, need anything" },
+    { "id": 5009, "date": "2021-03-05T09:03:40", "from": "Sam", "text": "coffee and that bread emmy likes" },
+    { "id": 5010, "date": "2021-04-01T20:45:12", "from": "Sam", "text": "rent went out today, did your half go through?" },
+    { "id": 5011, "date": "2021-04-01T21:10:33", "from": "Jordan", "text": "sending it friday when i get paid" },
+    { "id": 5012, "date": "2021-04-03T08:30:00", "from": "Sam", "text": "ok. don't forget pls, landlord already cashed mine" },
+    { "id": 5013, "date": "2021-04-09T17:55:21", "from": "Jordan", "text": "sent the etransfer just now, sorry for the wait" },
+    { "id": 5014, "date": "2021-04-09T18:01:02", "from": "Sam", "text": "got it thanks" },
+    { "id": 5015, "date": "2021-05-14T12:19:44", "from": "Jordan", "text": "thinking we do tacos tonight?" }
+  ]
+}

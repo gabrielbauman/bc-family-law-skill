@@ -1,0 +1,47 @@
+{
+  "skill_name": "bc-family-law",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "My partner and I split up six weeks ago. We were together nine years, never married, and we have two kids (7 and 10) who are staying with me most of the time right now. I want to sort out a parenting schedule and child support. I've never dealt with a court in my life and I'm honestly pretty lost. Where do I even start?",
+      "expected_output": "Intake-style response that screens for family violence/safety, recommends Provincial Court for a parenting+support-only matter (with the reasoning), explains resolution options short of court (FJC mediation, agreement filing), includes the legal-information-not-advice disclaimer once, offers to set up a case project, and gives concrete next steps without predicting outcomes.",
+      "files": [],
+      "assertions": [
+        "The response asks about or screens for family violence and safety before recommending negotiation-style approaches",
+        "The response recommends Provincial Court (not Supreme Court) for this parenting and child support matter, and explains why",
+        "The response mentions out-of-court resolution options (mediation, family justice counsellors, or agreements) before or alongside court",
+        "The response includes the legal information / not legal advice disclaimer exactly once, not repeated per paragraph",
+        "The response does not predict the user's chances of success",
+        "The response offers to create a case project or equivalent organized structure for an ongoing matter",
+        "The response mentions that as an unmarried couple of 9 years with children, child support uses the Federal Child Support Guidelines tables, and points to official tables rather than computing an amount from memory"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "I'm in a case project for my BC family matter. Please strengthen the closing argument in my trial book by adding a quote from Austin v. Goerz about how financial dependence alone doesn't make a relationship marriage-like, with the paragraph number.",
+      "expected_output": "The model checks precedent/ for the full text of Austin v. Goerz, finds it absent, and declines to insert any citation or paragraph number until the full text is obtained (offering the CanLII source). It does not fabricate a quote or pinpoint. It may draft placeholder argument text clearly marked as awaiting verification.",
+      "files": [],
+      "assertions": [
+        "The model checks the precedent/ folder (or equivalent) for the full text before citing",
+        "The model does not provide a paragraph number or quotation for the case without verified full text",
+        "The model explains the verification rule and offers a way to obtain the full text (e.g., CanLII)",
+        "No fabricated quote or pinpoint citation appears anywhere in the response or files",
+        "The model does not silently modify the trial book without the verified authority"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "I've added my message export at evidence/messages/messages.json in my case project. Find the messages where my ex and I discussed splitting the rent, and save them as research I can use later.",
+      "expected_output": "The model creates or consults a handler README for the export (schema, query templates), queries it with jq or similar, and writes a research file containing the relevant messages as complete sequences with message IDs and full timestamps, a purpose/source/query/date header, and updates research/index.md.",
+      "files": ["files/messages.json"],
+      "assertions": [
+        "A handler README documenting the export's schema and query commands exists after the run (or an existing one was consulted)",
+        "The research file quotes messages with their numeric IDs and full timestamps",
+        "Quoted conversations are complete sequences with no skipped messages and no '...' elisions",
+        "The research file records its purpose, source file, the exact query used, and the extraction date",
+        "research/index.md is updated with the new research file",
+        "Messages are reproduced verbatim, including informal spelling"
+      ]
+    }
+  ]
+}
