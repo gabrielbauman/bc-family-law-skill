@@ -1,0 +1,136 @@
+% ============================================
+% TRIAL BOOK PREAMBLE
+% Set the case parameters below; the rest rarely needs touching.
+% ============================================
+
+% ---- CASE PARAMETERS (edit these) ----
+\newcommand{\CaseFileNo}{[FILE NUMBER]}          % e.g. ABC-P-F-12345
+\newcommand{\CaseStyle}{[Applicant] v. [Respondent]}
+\newcommand{\CaseCourt}{Provincial Court of British Columbia}
+\newcommand{\CaseRegistry}{[Registry]}
+\newcommand{\CaseTrialDates}{[Trial dates]}
+\newcommand{\PartyName}{[User's full name]}
+% --------------------------------------
+
+\documentclass[12pt,letterpaper]{article}
+
+% Fonts and encoding
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+
+% Page layout
+\usepackage[letterpaper, top=1in, bottom=1in, left=1.25in, right=1in,
+            headheight=14pt]{geometry}
+
+% Headers and footers
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small \CaseFileNo}
+\fancyhead[R]{\small \CaseStyle}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\fancypagestyle{plain}{%
+    \fancyhf{}
+    \fancyfoot[C]{\thepage}
+    \renewcommand{\headrulewidth}{0pt}
+}
+
+% Section formatting
+\usepackage{titlesec}
+\titleformat{\part}[display]
+    {\normalfont\LARGE\bfseries\centering}{\partname\ \thepart}{0pt}{\Huge}
+\titleformat{\section}
+    {\normalfont\Large\bfseries}{\thesection.}{0.5em}{}
+\titleformat{\subsection}
+    {\normalfont\large\bfseries}{\thesubsection}{0.5em}{}
+
+% Lists, tables, quotes
+\usepackage{enumitem}
+\setlist[enumerate]{topsep=0.5em, itemsep=0.25em}
+\setlist[itemize]{topsep=0.5em, itemsep=0.25em}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{csquotes}
+
+% Colors and links
+\usepackage{xcolor}
+\definecolor{tabcolor}{RGB}{0,51,102}
+\usepackage{pdfpages}   % for including PDF exhibits
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=tabcolor,
+    urlcolor=tabcolor,
+    pdftitle={Trial Book --- \CaseStyle},
+    pdfauthor={\PartyName}
+}
+
+% ============================================
+% NUMBERED PARAGRAPHS (court-style)
+% Use \para at the start of each paragraph of testimony or argument so
+% it can be referenced ("paragraph 14") in court. \resetpara restarts
+% numbering at each major section.
+% ============================================
+\newcounter{para}
+\newcommand{\para}{\refstepcounter{para}\textbf{\thepara.}\quad}
+\newcommand{\resetpara}{\setcounter{para}{0}}
+
+% ============================================
+% EVIDENCE QUOTES
+% Block-quote environment for quoted evidence; keeps quotes visually
+% distinct from narrative.
+% ============================================
+\newenvironment{evidencequote}{\begin{quote}\itshape}{\end{quote}}
+
+% ============================================
+% TAB MACHINERY (evidence binder)
+% \tabref{A-1}            -> clickable "Tab A-1" reference in the text
+% \tabsection{A}{Title}{} -> cover page for a tab group, with TOC entry
+% \exhibitheader{A-1}{Title}{Source}{Date}
+%                         -> standard exhibit header page. Source and
+%                            date ONLY — no summaries or commentary:
+%                            descriptions of what an exhibit shows are
+%                            argument, and argument does not belong in
+%                            the evidence binder.
+% ============================================
+\newcommand{\tabref}[1]{\hyperref[tab:#1]{\textbf{Tab~#1}}}
+
+\newcommand{\tabsection}[3]{%
+    \newpage
+    \phantomsection
+    \addcontentsline{toc}{section}{Tab #1: #2}
+    \begin{center}
+        {\Huge\bfseries Tab #1}
+
+        \vspace{1em}
+        {\LARGE #2}
+    \end{center}
+    \vspace{2em}
+    #3
+}
+
+\newcommand{\exhibitheader}[4]{%
+    \newpage
+    \phantomsection
+    \label{tab:#1}
+    \addcontentsline{toc}{subsection}{Tab #1: #2}
+    \begin{center}
+        {\LARGE\bfseries Tab #1}
+
+        \vspace{1em}
+        {\Large #2}
+
+        \vspace{1em}
+        \begin{tabular}{ll}
+            \textbf{Source:} & #3 \\
+            \textbf{Date:} & #4 \\
+        \end{tabular}
+    \end{center}
+    \vspace{1em}
+}

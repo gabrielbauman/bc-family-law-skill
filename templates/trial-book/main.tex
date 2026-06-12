@@ -1,0 +1,48 @@
+% ============================================
+% TRIAL BOOK
+% Build: latexmk -pdf main.tex   (or run pdflatex twice for links)
+% ============================================
+\input{preamble}
+
+\begin{document}
+
+% ---- Title page ----
+\begin{titlepage}
+    \centering
+    \vspace*{2cm}
+    {\large \CaseCourt\par}
+    {\large \CaseRegistry\ Registry\par}
+    \vspace{0.5cm}
+    {\large File No. \CaseFileNo\par}
+    \vspace{2cm}
+    {\Huge\bfseries Trial Book\par}
+    \vspace{1cm}
+    {\LARGE \CaseStyle\par}
+    \vspace{2cm}
+    {\large Trial: \CaseTrialDates\par}
+    \vspace{1cm}
+    {\large Prepared by \PartyName\par}
+    \vfill
+\end{titlepage}
+
+\tableofcontents
+\newpage
+
+% ============================================
+% PART 1 — TRIAL PRESENTATION (for the user)
+% ============================================
+\part{Trial Presentation}
+\input{part1-opening}
+\input{part1-timeline}
+\input{part1-direct-evidence}
+\input{part1-cross-examination}
+\input{part1-closing}
+
+% ============================================
+% PART 2 — EVIDENCE BINDER (for the court)
+% Copies: judge, other party, witness stand, yourself.
+% ============================================
+\part{Evidence Binder}
+\input{part2-exhibits/exhibits}
+
+\end{document}

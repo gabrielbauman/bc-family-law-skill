@@ -1,0 +1,95 @@
+% ============================================
+% BOOK OF AUTHORITIES
+% Full text of every case cited in argument, tabbed and indexed.
+% Every case here must be in the project's precedent/ folder with
+% citations verified (references/case-law.md). Copies for the judge
+% and the other party.
+% Build: latexmk -pdf main.tex
+% ============================================
+
+% ---- CASE PARAMETERS (edit these) ----
+\newcommand{\CaseFileNo}{[FILE NUMBER]}
+\newcommand{\CaseStyle}{[Applicant] v. [Respondent]}
+\newcommand{\CaseCourt}{Provincial Court of British Columbia}
+\newcommand{\CaseRegistry}{[Registry]}
+\newcommand{\PartyName}{[User's full name]}
+% --------------------------------------
+
+\documentclass[12pt,letterpaper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage[letterpaper, top=1in, bottom=1in, left=1.25in, right=1in,
+            headheight=14pt]{geometry}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small \CaseFileNo}
+\fancyhead[R]{\small Book of Authorities}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+
+\usepackage{longtable}
+\usepackage{booktabs}
+\usepackage{pdfpages}
+\usepackage{xcolor}
+\definecolor{tabcolor}{RGB}{0,51,102}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true, linkcolor=tabcolor,
+            pdftitle={Book of Authorities --- \CaseStyle}}
+
+% Tab divider + full-text inclusion for one authority:
+% \authority{1}{Style of Cause, citation}{pdfs/case1.pdf}
+\newcommand{\authority}[3]{%
+    \newpage
+    \phantomsection
+    \label{auth:#1}
+    \addcontentsline{toc}{section}{Tab #1: #2}
+    \begin{center}
+        \vspace*{3cm}
+        {\Huge\bfseries Tab #1}
+
+        \vspace{2em}
+        {\Large\itshape #2}
+    \end{center}
+    \includepdf[pages=-]{#3}
+}
+
+\begin{document}
+
+\begin{titlepage}
+    \centering
+    \vspace*{2cm}
+    {\large \CaseCourt\par}
+    {\large \CaseRegistry\ Registry\par}
+    \vspace{0.5cm}
+    {\large File No. \CaseFileNo\par}
+    \vspace{2cm}
+    {\Huge\bfseries Book of Authorities\par}
+    \vspace{1cm}
+    {\LARGE \CaseStyle\par}
+    \vspace{2cm}
+    {\large Submitted by \PartyName\par}
+    \vfill
+\end{titlepage}
+
+\section*{Index of Authorities}
+
+\begin{longtable}{p{1.2cm}p{11cm}}
+\toprule
+\textbf{Tab} & \textbf{Authority} \\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+\hyperref[auth:1]{1} & [\textit{Style of Cause}, citation] \\
+% \hyperref[auth:2]{2} & ... \\
+\end{longtable}
+
+% Download full texts from CanLII as PDF into pdfs/, one per authority,
+% then one \authority line per case, in citation order:
+% \authority{1}{\textit{Style of Cause}, 2007 BCCA 586}{pdfs/case1.pdf}
+
+\end{document}
