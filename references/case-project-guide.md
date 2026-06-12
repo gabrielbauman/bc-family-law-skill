@@ -160,6 +160,64 @@ Leftovers that look like a *previous session's* unfinished work (a
 half-edited draft in `output/`) get reviewed against CASE.md's next
 steps and committed with an honest note — not discarded.
 
+## Deadlines leave the file
+
+CASE.md's Next Steps is the project's tickler system, but it only works
+when the user opens the project — and missed deadlines are how
+self-represented parties lose cases they could have won. Deadlines must
+also live where the user lives:
+
+- Every Next Steps item carries the action, the hard date, and the
+  source of that date (the order, rule, or notice that set it).
+- When a new hard date lands, offer a calendar file: write a minimal
+  `.ics` into `output/` for the user to import — one VEVENT per
+  deadline, with an alarm far enough ahead to act on (court deadlines
+  need lead time for drafting and service; a week's warning beats a
+  same-day one). The model writes this by hand; no tooling needed:
+
+  ```text
+  BEGIN:VCALENDAR
+  VERSION:2.0
+  PRODID:-//case-project//EN
+  BEGIN:VEVENT
+  UID:form4-deadline-20260409@case-project
+  DTSTART;VALUE=DATE:20260409
+  SUMMARY:COURT DEADLINE: file and serve Form 4 financial statement
+  DESCRIPTION:Set by order of 2026-03-10. Needs drafting and service time.
+  BEGIN:VALARM
+  TRIGGER:-P7D
+  ACTION:DISPLAY
+  DESCRIPTION:Form 4 due in one week
+  END:VALARM
+  END:VEVENT
+  END:VCALENDAR
+  ```
+
+- If a calendar integration is connected, offer to write the dates
+  directly instead (with the user's consent). CASE.md remains the
+  source of truth either way.
+
+## If integrations are available
+
+Check what tools the session actually has — never assume any. When they
+exist, they shorten the project's intake and deadline paths; nothing in
+this guide depends on them.
+
+- **Email access**: at the user's explicit direction, the session-start
+  sweep can extend to mail — registry notices, served documents,
+  scheduling letters — filing attachments like any inbox drop. Scope it
+  narrowly: a family-dispute mailbox contains the other party's
+  correspondence and possibly privileged lawyer mail. Scan only what
+  the user asks you to scan, and treat reading their mail as the
+  privilege it is.
+- **Calendar access**: write court dates and deadlines directly, with
+  consent, in addition to CASE.md.
+- **CanLII access** (API token or MCP server): see `case-law.md` —
+  existence verification and treatment checks for authorities.
+- Standing reminders ("review my case every Monday") belong in the
+  user's assistant scheduling facility, not in the project — suggest it
+  once for a user juggling deadlines.
+
 ## Git workflow
 
 The project is a git repository. The history is the case's audit trail —

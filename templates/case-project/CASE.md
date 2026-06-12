@@ -116,8 +116,13 @@ case-law.md, full texts in authorities/. -->
 
 ## Next steps
 
-<!-- Numbered, each with a deadline where one exists. Completed items
-get struck through with the completion date, not deleted. -->
+<!-- Numbered. Each item carries: the action, the hard date if one
+exists, and the source of that date (the order, rule, or notice that
+set it). Include the procedural forecast — what the court or the rules
+will do next — not just the user's todos; a lost user needs to know
+what's coming, not just what's owed. Completed items get struck
+through with the completion date, not deleted. When a new hard date
+lands here, offer the user a calendar (.ics) file for it. -->
 
 1. [ ]
 
