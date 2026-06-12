@@ -145,7 +145,7 @@ factor, including the unhelpful ones: for each, what the evidence shows,
 which tab proves it, what the other side will say, and the response.
 A factor ignored is a factor conceded.
 
-(Verify any authority against full text in `precedent/` before citing —
+(Verify any authority against full text in `authorities/` before citing —
 `case-law.md`.)
 
 ## Cross-examination
@@ -217,7 +217,7 @@ actually heard to the elements of the legal test, with authorities.
 A bound volume of the full text of every case cited in closing, tabbed,
 with a front index (template: `templates/book-of-authorities/`). Copies
 for the judge and the other party. Every case in it must be in
-`precedent/` and every pinpoint verified. Bring it even if the other
+`authorities/` and every pinpoint verified. Bring it even if the other
 side brings nothing — handing the judge the authority opened to the
 paragraph is self-represented advocacy at its most credible.
 

@@ -104,7 +104,7 @@ side (with citations), and what remains unknown. -->
 ## Key case law
 
 <!-- Maintained once authorities accumulate; full analysis in
-case-law.md, full texts in precedent/. -->
+case-law.md, full texts in authorities/. -->
 
 | Case | Principle | Application here |
 |------|-----------|------------------|

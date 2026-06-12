@@ -16,7 +16,7 @@ root/
 ├── case-law.md     # Authorities: case → principle → application (verified)
 ├── evidence/       # Primary sources. DO NOT MODIFY. README handler per source.
 ├── filings/        # Filed court documents. DO NOT MODIFY.
-├── precedent/      # Full text of every authority cited anywhere
+├── authorities/    # Full text of every authority cited anywhere
 ├── research/       # Extractions and analysis — hints, not sources. See index.md.
 ├── output/         # Work-in-progress documents. NOT the record.
 ├── scripts/        # Reproducible analysis scripts (read evidence, print results)
@@ -41,7 +41,7 @@ non-negotiable core:
 5. **Unknown stays unknown** — never fill a gap with something plausible.
 
 **Case law:** never cite an authority unless its full text is in
-`precedent/` and the pinpoint paragraph and any quote have been verified
+`authorities/` and the pinpoint paragraph and any quote have been verified
 against that text (skill: `references/case-law.md`). If asked to cite
 something unverifiable, say so and stop.
 

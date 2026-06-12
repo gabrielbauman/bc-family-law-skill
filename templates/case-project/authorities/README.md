@@ -1,9 +1,10 @@
-# Precedent
+# Authorities
 
 Full text of every authority cited anywhere in this case — by us, by
 the other party, or by the court. No case may be cited in any document
 unless its full text is here and the citation has been verified against
-it (see the skill's `references/case-law.md`).
+it (see the skill's `references/case-law.md`). At trial, this folder is
+the source for the book of authorities.
 
 ## Naming
 

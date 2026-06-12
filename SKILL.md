@@ -185,7 +185,7 @@ The core discipline:
 
 **Case law is its own hazard.** Models invent convincing citations. Never
 cite a case you have not verified against full text in the project's
-`precedent/` folder — read `references/case-law.md` before citing or
+`authorities/` folder — read `references/case-law.md` before citing or
 discussing any authority. If the full text is not available, say so and stop.
 
 **Numbers come from official sources.** Child support table amounts come

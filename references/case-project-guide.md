@@ -26,7 +26,7 @@ my-case/
 ├── case-law.md         # Authorities table (once case law accumulates)
 ├── evidence/           # Primary sources. IMMUTABLE. README handler per source.
 ├── filings/            # Filed court documents. IMMUTABLE.
-├── precedent/          # Full text of every authority cited (see case-law.md guide)
+├── authorities/        # Full text of every authority cited (see case-law.md guide)
 ├── research/           # Extractions and analysis, with index.md registry
 ├── output/             # Drafts in progress — NOT the record, may be abandoned
 ├── scripts/            # Reproducible analysis scripts

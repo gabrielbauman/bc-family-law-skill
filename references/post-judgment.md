@@ -90,7 +90,7 @@ When the appeal window has passed and obligations are stable:
 
 - Record the final outcome and entered order in CASE.md (status:
   concluded), with the appeal window noted as expired.
-- Keep `evidence/`, `filings/`, and `precedent/` intact — support and
+- Keep `evidence/`, `filings/`, and `authorities/` intact — support and
   parenting orders can return to court years later, and the organized
   record is the user's head start.
 - Strip or archive `output/` drafts that were never filed, so a future

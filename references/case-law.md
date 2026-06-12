@@ -9,20 +9,21 @@ that doesn't say what they claim, loses the only thing keeping the judge
 listening.
 
 The defence is mechanical, not aspirational: **no authority is cited
-anywhere unless its full text sits in the project's `precedent/` folder
+anywhere unless its full text sits in the project's `authorities/` folder
 and the citation has been checked against that text.**
 
-## The precedent folder
+## The authorities folder
 
-Every case project has a `precedent/` folder holding the complete text of
-every authority the case relies on. Sources:
+Every case project has an `authorities/` folder holding the complete text
+of every authority the case relies on (older projects may name this
+folder `precedent/` — treat it the same). Sources:
 
 - **CanLII** (https://www.canlii.org) — free, comprehensive, authoritative
   for Canadian case law. Save as text or PDF named
   `style-of-cause-citation.txt` (e.g. `austin-v-goerz-2007-bcca-586.txt`).
 - Authorities received from a lawyer or the other party — file them too.
 
-If a case you need is not in `precedent/`, give the user the CanLII URL
+If a case you need is not in `authorities/`, give the user the CanLII URL
 and ask them to fetch it (or fetch it yourself if you have web access and
 the user agrees). Until the text is in the folder, the case may be
 *discussed as a lead* ("there is a line of cases on X worth obtaining")
@@ -32,19 +33,19 @@ but never cited, quoted, or relied on.
 
 Before a citation appears in any document:
 
-1. **The case exists** — full text present in `precedent/`.
+1. **The case exists** — full text present in `authorities/`.
 2. **The citation is exact** — style of cause spelling, year, court, and
    neutral citation match the text. (*Austin v. Goerz*, 2007 BCCA 586 —
    not 2008, not BCSC.)
 3. **The paragraph number is right** — open the file and confirm the
    pinpoint. Paragraph numbering can differ between sources; verify
-   against the copy in `precedent/`, which is the copy the user will hand
+   against the copy in `authorities/`, which is the copy the user will hand
    the court.
 4. **Quotes are verbatim** — character for character. No paraphrase inside
    quotation marks, no trimming that shifts meaning.
 5. **Nested citations check out** — if quoting a passage where Case A
    quotes Case B, verify the passage in A, and ideally obtain B as well;
-   if B is not in `precedent/`, attribute the quote through A explicitly
+   if B is not in `authorities/`, attribute the quote through A explicitly
    ("as quoted in...").
 6. **The case actually supports the point.** Read enough context to
    confirm the passage isn't qualified, distinguished, or from a dissent.
@@ -70,7 +71,7 @@ BC courts use the neutral citation system:
 
 Maintain `case-law.md` (or similar) in the case project root once
 authorities accumulate: a table of case → principle → how it applies to
-this case's facts, each entry backed by a verified file in `precedent/`.
+this case's facts, each entry backed by a verified file in `authorities/`.
 This becomes the skeleton of written argument and the source list for a
 book of authorities (`templates/book-of-authorities/`).
 

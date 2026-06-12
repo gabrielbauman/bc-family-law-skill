@@ -98,7 +98,7 @@ arrives, and summaries inherit their author's framing. So:
   be trusted by a future session.
 
 Authoritativeness, in order: `filings/` (the court record) →
-`evidence/` (primary sources) → `precedent/` (case law full text) →
+`evidence/` (primary sources) → `authorities/` (case law full text) →
 CASE.md (the maintained synthesis) → `research/` (hints) → `output/`
 (drafts; may be abandoned) → `strategy/` (private notes, never evidence).
 
