@@ -63,8 +63,9 @@ non-negotiable core:
 
 **Case law:** never cite an authority unless its full text is in
 `authorities/` and the pinpoint paragraph and any quote have been verified
-against that text (skill: `references/case-law.md`). If asked to cite
-something unverifiable, say so and stop.
+against that text (skill: `references/case-law.md`). If the text is not
+there, ask the user to obtain it — name the case, give the CanLII link —
+and stop. Never cite from memory, however confident.
 
 ## Folder rules
 

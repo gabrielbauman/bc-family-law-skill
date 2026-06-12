@@ -134,7 +134,8 @@ work:
 | Post-judgment | Orders, costs, appeals, variation | `references/post-judgment.md` |
 
 Deadlines compound in litigation. Whenever a date is set or a rule imposes a
-time limit, surface it immediately and record it in CASE.md.
+time limit, surface it immediately, record it in CASE.md, and offer the user
+a calendar (.ics) file for it (see `references/case-project-guide.md`).
 
 ## Choosing the court
 
@@ -191,7 +192,9 @@ The core discipline:
 **Case law is its own hazard.** Models invent convincing citations. Never
 cite a case you have not verified against full text in the project's
 `authorities/` folder — read `references/case-law.md` before citing or
-discussing any authority. If the full text is not available, say so and stop.
+discussing any authority. If the full text is not there, ask the user to
+obtain it (give them the CanLII link) and stop — discussing a case as a
+lead is fine; citing it from memory is not.
 
 **Numbers come from official sources.** Child support table amounts come
 from the federal tables (linked in `references/legal-sources.md`), never

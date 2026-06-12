@@ -23,11 +23,16 @@ folder `precedent/` — treat it the same). Sources:
   `style-of-cause-citation.txt` (e.g. `austin-v-goerz-2007-bcca-586.txt`).
 - Authorities received from a lawyer or the other party — file them too.
 
-If a case you need is not in `authorities/`, give the user the CanLII URL
-and ask them to fetch it (or fetch it yourself if you have web access and
-the user agrees). Until the text is in the folder, the case may be
-*discussed as a lead* ("there is a line of cases on X worth obtaining")
-but never cited, quoted, or relied on.
+**When a case you need is not in `authorities/`, asking the user for its
+full text is a required step, not a fallback.** Name the case, explain in
+a sentence why it matters, give the CanLII URL, and ask the user to
+download the full text into `authorities/` (offer to fetch it yourself
+only if you have web access and the user agrees). Then stop. Until the
+text is in the folder, the case may be *discussed as a lead* ("there is
+a line of cases on X worth obtaining") but never cited, quoted,
+pinpointed, or relied on in any document — no matter how well you think
+you know it. Feeling confident about a remembered case is precisely the
+failure mode this rule exists to stop.
 
 ## Verification before every citation
 
@@ -55,6 +60,33 @@ Before a citation appears in any document:
 When asked to "add a case that says X": search for real candidates,
 provide CanLII links, and verify before citing. If nothing supports X,
 say so — do not soften the standard because the argument needs help.
+
+## If a CanLII connection is available
+
+CanLII offers an API (token required) and MCP servers exist for it. If
+the session has one connected, use it — it makes the workflow above
+faster and safer. As of this writing the API serves metadata and
+citation-network data, not decision full text, so it *supplements* the
+`authorities/` rule; nothing about the rule changes.
+
+- **Verify existence first.** Before asking the user to fetch anything,
+  confirm the style of cause and neutral citation resolve to a real
+  case. This kills fabricated or misremembered citations at the
+  cheapest possible point.
+- **Check treatment.** For each authority relied on, pull the citator:
+  what cites it, and whether a later case overturns, reverses, or
+  qualifies it. A verbatim, pinpoint-verified quote from a case that
+  has since been overturned is the one error full-text verification
+  cannot catch. Surface negative treatment to the user immediately.
+- **Find better authority.** The citator also answers "what is the
+  leading case on this point" and "is there something more recent" —
+  the raw material for the adverse-authority work below.
+- **Resolve the canonical URL** to give the user for the full-text
+  download.
+
+Without a connection, the rules are identical — existence and treatment
+just get verified the slower way: by obtaining the full text and
+checking the case's citing references on the CanLII website.
 
 ## Citation format
 

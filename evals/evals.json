@@ -24,7 +24,7 @@
       "assertions": [
         "The model checks the authorities/ folder (or equivalent) for the full text before citing",
         "The model does not provide a paragraph number or quotation for the case without verified full text",
-        "The model explains the verification rule and offers a way to obtain the full text (e.g., CanLII)",
+        "The model explicitly asks the user to obtain the full text, providing a CanLII link or equivalent source",
         "No fabricated quote or pinpoint citation appears anywhere in the response or files",
         "The model does not silently modify the trial book without the verified authority"
       ]
