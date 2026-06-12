@@ -7,7 +7,7 @@
 
 **(1)** In this rule:
 
-- **"applicable income documents"** means, in respect of a person,
+**"applicable income documents"** means, in respect of a person,
 
 - **(a)** a copy of every personal income tax return filed by the person for each of the 3 most recent taxation years,
 
@@ -21,29 +21,41 @@
 
 - **(f)** if the person is an employee,
 
+- **(i)** the most recent statement of earnings indicating the total earnings paid to the person in the year to date, including overtime, or
+
+- **(ii)** if that statement is not provided by the employer, a letter from the person's employer setting out the information referred to in sub-paragraph (i) and including the person's rate of annual salary or remuneration,
+
 - **(g)** if the person is self employed, the following information for the 3 most recent taxation years:
+
+- **(i)** the financial statements of the person's business or professional practice, other than a partnership;
+
+- **(ii)** a statement showing a breakdown of all salaries, wages, management fees or other payments or benefits paid to, or on behalf of, persons or corporations with whom the person does not deal at arm's length,
 
 - **(h)** if the person is a partner in a partnership, confirmation of the person's income and draw from, and capital in, the partnership for each of its 3 most recent taxation years,
 
 - **(i)** if the person controls a corporation, the following information for the corporation's 3 most recent taxation years:
 
+- **(i)** the financial statements of the corporation and its subsidiaries;
+
+- **(ii)** a statement showing a breakdown of all salaries, wages, management fees or other payments or benefits paid to, or on behalf of, persons or corporations with whom the corporation and every related corporation does not deal at arm's length,
+
 - **(j)** if the person is a beneficiary under a trust, a copy of the trust settlement agreement and copies of the trust's 3 most recent financial statements, and
 
 - **(k)** if the person owns or has an interest in real property, a copy of the most recent assessment notice issued from an assessment authority for each property;
 
-- **"child support guidelines"** means,
+**"child support guidelines"** means,
 
 - **(a)** in reference to a claim under the Family Law Act, the child support guidelines established under the Family Law Act, or
 
 - **(b)** in reference to a claim under the Divorce Act, the child support guidelines established under the Divorce Act;
 
-- **"income assistance"** includes
+**"income assistance"** includes
 
 - **(a)** income assistance within the meaning of the Employment and Assistance Act, and
 
 - **(b)** disability assistance within the meaning of the Employment and Assistance for Persons with Disabilities Act;
 
-- **"party"** means a person named as a party to a family law case who is claiming, or against whom is claimed,
+**"party"** means a person named as a party to a family law case who is claiming, or against whom is claimed,
 
 - **(a)** an order for child support or an order changing, suspending or terminating an order for child support,
 
@@ -55,7 +67,7 @@
 
 - **(e)** a FHRMIRA order;
 
-- **"stepparent"** means, in relation to a child,
+**"stepparent"** means, in relation to a child,
 
 - **(a)** a stepparent of the child within the meaning of section 146 of the Family Law Act, or
 
@@ -104,6 +116,12 @@
 **(5)** In addition to any other documents a party is obliged to file and serve under this rule, the party must file Parts 2 and 3 of a Form F8 financial statement and must serve those documents under subrule (11), if one of the following is true:
 
 - **(a)** the child support guidelines require the court to consider any or all of the following:
+
+- **(i)** the financial ability of the parties;
+
+- **(ii)** the means of the parties;
+
+- **(iii)** the condition, means, needs and other circumstances of the parties or the child;
 
 - **(b)** the party who is to pay the child support is a stepparent of the child.
 
@@ -227,6 +245,10 @@
 
 - **(b)** the other party may, with leave of the court, require that the particulars or statement be
 
+- **(i)** verified by an affidavit of the party providing the particulars or serving the statement, or
+
+- **(ii)** the subject of further cross-examination.
+
 
 ### Updated statements
 
@@ -332,6 +354,8 @@
 - **(g)** attribute income to that party in an amount the court considers appropriate;
 
 - **(h)** make an order as to costs.
+
+[Rule 21-5 sets out what the court may do if parties fail to comply with these rules.]
 
 
 ### Confidentiality

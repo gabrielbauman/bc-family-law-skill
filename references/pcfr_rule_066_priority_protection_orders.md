@@ -5,6 +5,6 @@ If a party is applying for both an order about a protection order under Part 9 [
 
 **(a)** the early resolution requirements under [rule 10 [early resolution requirements must be met before application filed]](pcfr_rule_010_early_resolution_requirements_must_be_met_before_application_filed.md) of these rules;
 
-**(b)** the family justice registry requirements under [rule 89 [requirements in family justice registries]](pcfr_rule_089_requirements_in_family_justice_registries.md) of these rules;
+**(b)** Repealed. [B.C. Reg. 17/2026, s. 6.]
 
 **(c)** the parenting education program registry requirements under [rule 100 [requirements in parenting education program registries]](pcfr_rule_100_requirements_in_parenting_education_program_registries.md) of these rules.

@@ -21,6 +21,10 @@
 
 - **(b)** in the case of an application that is in relation to the establishment or variation of a support provision or enforcement of a family provision, as those terms are defined in that Act,
 
+- **(i)** whether or not to authorize, without further order of the court, the disclosure under section 13 (3) of that Act of any information received by the court as a result of the order to the parties or any other person, service or body or official of the court that it considers appropriate, and
+
+- **(ii)** if disclosure of information is authorized, whether or not to make an order under section 13 (3) of that Act to protect the confidentiality of the information.
+
 
 ### Court may order that service or order not required
 

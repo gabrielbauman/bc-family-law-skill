@@ -89,7 +89,17 @@
 
 - **(a)** in the case of an order, the order sought to be enforced
 
+- **(i)** has been served on the person against whom the order is sought to be enforced, and
+
+- **(ii)** has not been complied with, or
+
 - **(b)** in the case of a document, issued under an enactment, that on being filed in the court may be enforced as if it were an order of the court, the document
+
+- **(i)** has been filed in the court,
+
+- **(ii)** has, before or after being filed in the court, been served in accordance with the enactment or these Supreme Court Family Rules on the person against whom the order is sought to be enforced, and
+
+- **(iii)** has not been complied with.
 
 
 ### Issue of writ of execution if order to pay money within a period
@@ -198,6 +208,10 @@
 - **(a)** order that execution issue for the delivery of the property without giving the other party the option of retaining the property on paying the assessed value, and
 
 - **(b)** if the property cannot be found, and unless the court otherwise orders, order that the sheriff take possession of all the other party's lands, goods and chattels
+
+- **(i)** until the other party delivers the property, or
+
+- **(ii)** at the option of the judgment holder, until the sheriff realizes from the other party's goods and chattels the assessed value of the property.
 
 
 ### Acknowledgment of payment

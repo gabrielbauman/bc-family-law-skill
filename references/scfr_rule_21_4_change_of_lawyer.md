@@ -13,6 +13,8 @@
 
 - **(c)** having been represented by a lawyer, may discharge the lawyer and act on the party's own behalf,
 
+but until copies of notice of the change in Form F87 or F88 have been filed and served on the other parties, the other parties are entitled to proceed on the basis that there has been no change of representation or address for service.
+
 
 ### Order that lawyer has ceased to act
 
@@ -22,6 +24,8 @@
 - **(a)** a lawyer for a party has died, cannot be found or for any reason is unable to practise, and
 
 - **(b)** the party has not given notice of change of lawyer or of intention to act in person in accordance with subrule (1),
+
+the court, on the application of any other party, may order that the lawyer has ceased to be the lawyer of the first mentioned party.
 
 
 ### Order on application of lawyer

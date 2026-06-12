@@ -11,6 +11,10 @@
 
 - **(b)** after a notice of trial is served, only with
 
+- **(i)** leave of the court, or
+
+- **(ii)** written consent of the parties.
+
 
 ### How amendments made
 
@@ -38,6 +42,10 @@
 - **(a)** within 7 days after filing the amended pleading, serve, by ordinary service, a copy of the filed amended pleading on each party;
 
 - **(b)** if the amended pleading is a notice of family claim or a counterclaim, promptly after filing the amended pleading and before taking any further step in the family law case, serve, by personal service, a copy of the filed amended pleading on any person who
+
+- **(i)** was served with a copy of the filed original version of the pleading, and
+
+- **(ii)** has not filed a response to family claim or response to counterclaim, as the case may be, to the original version of the pleading.
 
 
 ### Response of a party to amended pleading

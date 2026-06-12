@@ -23,7 +23,7 @@
 **"human reproductive material"** means a sperm, an ovum or another human cell or human gene, and includes a part of any of them;
 
 
-**"intended parent"** or means a person who intends, or 2 persons who are married or in a marriage-like relationship who intend, to be a parent of a child and, for that purpose, the person makes or the 2 persons make an agreement with another person before the child is conceived that
+**"intended parent"** or **"intended parents"** means a person who intends, or 2 persons who are married or in a marriage-like relationship who intend, to be a parent of a child and, for that purpose, the person makes or the 2 persons make an agreement with another person before the child is conceived that
 
 **(a)** the other person will be the birth mother of a child conceived through assisted reproduction, and
 

@@ -15,6 +15,8 @@
 
 - **(d)** it is otherwise an abuse of the process of the court,
 
+and the court may pronounce judgment or order the family law case to be stayed or dismissed and may order the costs of the application to be paid as special costs.
+
 
 ### Admissibility of evidence
 
@@ -28,6 +30,10 @@
 **(3)** If, on the filing of a document, a registrar considers that the whole or any part of the document could be the subject of an order under subrule (1),
 
 - **(a)** the registrar may, despite any other provision of these Supreme Court Family Rules,
+
+- **(i)** retain the document and all filed copies of it, and
+
+- **(ii)** refer the document to the court, and
 
 - **(b)** the court may, after a summary hearing, make an order under subrule (1).
 

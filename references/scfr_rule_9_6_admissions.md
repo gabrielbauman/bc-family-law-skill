@@ -43,6 +43,8 @@
 
 - **(c)** an admission made in a pleading, petition or response to petition
 
+except by consent or with leave of the court.
+
 
 ### Application for order on admissions
 
@@ -51,4 +53,12 @@
 
 - **(a)** admissions of the truth of a fact or the authenticity of a document made
 
+- **(i)** in an affidavit or pleading filed by a party,
+
+- **(ii)** in an examination for discovery of a party or a person examined for discovery on behalf of a party, or
+
+- **(iii)** in response to a notice to admit, or
+
 - **(b)** admissions of the truth of a fact or the authenticity of a document deemed to be made under subrule (2)
+
+and the court, without waiting for the determination of any other question between the parties, may make any order it considers will further the object of these Supreme Court Family Rules.

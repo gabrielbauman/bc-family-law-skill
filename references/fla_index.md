@@ -3,7 +3,7 @@
 **[SBC 2011] CHAPTER 25**
 
 
-This Act is current to January 13, 2026.
+This Act is current to June 9, 2026.
 
 
 ---
@@ -454,9 +454,5 @@ This Act is current to January 13, 2026.
 - [Section 253 — Transition — pension benefits](fla_section_253_transition_pension_benefits.md)
 - [Section 254 — Transition — changing, suspending or terminating orders](fla_section_254_transition_changing_suspending_or_terminating_orders.md)
 - [Section 255 — Transition — restraining orders](fla_section_255_transition_restraining_orders.md)
-- [Section 256 — Transition — regulations](fla_section_256_transition_regulations.md)
-
-### Part 14 — Repeals, Related Amendment and Consequential Amendments
-
 - [Section 256 — Transition — regulations](fla_section_256_transition_regulations.md)
 - [Section 482 — Commencement](fla_section_482_commencement.md)

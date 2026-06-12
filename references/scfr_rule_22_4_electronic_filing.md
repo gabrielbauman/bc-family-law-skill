@@ -7,11 +7,11 @@
 
 **(1)** In this rule:
 
-- **"electronic document"** means a document that has been transmitted for filing electronically;
+**"electronic document"** means a document that has been transmitted for filing electronically;
 
-- **"electronic services agreement"** means an agreement referred to in subrule (3);
+**"electronic services agreement"** means an agreement referred to in subrule (3);
 
-- **"registered user"** means a person who has entered into an electronic services agreement.
+**"registered user"** means a person who has entered into an electronic services agreement.
 
 
 ### This rule prevails in event of conflict
@@ -49,6 +49,20 @@
 
 - **(b)** any of the following documents:
 
+- **(i)** a certified copy of any document being filed for enforcement purposes;
+
+- **(ii)** an application record, a petition record or a hearing record;
+
+- **(iii)** a trial record;
+
+- **(iv)** a proof of marriage from a foreign jurisdiction, unless such proof is issued electronically;
+
+- **(v)** a certificate of judgment;
+
+- **(vi)** a certificate of pending litigation;
+
+- **(vii)** an affidavit, filed under Rule 14-7 (59), that constitutes the evidence in chief of a witness.
+
 
 ### Affidavits and other signed documents
 
@@ -66,6 +80,12 @@
 **(7)** A person who, under subrule (6), submits a document for filing in a family law case must
 
 - **(a)** keep the original paper version of the document until the earliest of
+
+- **(i)** the date on which the family law case, including any appeals, is finally disposed of,
+
+- **(ii)** the date on which the appeal period for that family law case has expired if no notice of appeal respecting the family law case has been filed within that period, and
+
+- **(iii)** the date on which a registrar requests that the original paper version be filed, and
 
 - **(b)** if a request is made under paragraph (a) (iii), file the original paper version promptly after that request is made.
 

@@ -33,6 +33,10 @@
 
 - **(b)** authorize
 
+- **(i)** samples to be taken or observations to be made of the property, or
+
+- **(ii)** experiments to be conducted on or with the property.
+
 
 ### Entry on land or building
 

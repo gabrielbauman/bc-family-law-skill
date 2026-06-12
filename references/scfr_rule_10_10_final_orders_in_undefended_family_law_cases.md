@@ -37,9 +37,19 @@
 
 - **(h)** if any of the following orders under the Divorce Act are being sought, a statement of information for corollary relief proceedings in Form F102:
 
-- **(a)** the family law case includes a claim for divorce and the notice of family claim, response to family claim, counterclaim or response to counterclaim identifies a child of the marriage within the meaning of the Divorce Act, or
+- **(i)** a child support order;
 
-- **(b)** the family law case includes a claim for child support.]
+- **(ii)** a spousal support order;
+
+- **(iii)** a parenting order.
+
+[For the purposes of paragraph (f), it is "appropriate" to file a child support affidavit if
+
+- (a) the family law case includes a claim for divorce and the notice of family claim, response to family claim, counterclaim or response to counterclaim identifies a child of the marriage within the meaning of the Divorce Act, or
+
+(b) the family law case includes a claim for child support.]
+
+[If an order is sought to appoint a person as the guardian of one or more children, the Form F101 affidavit referred to in Rule 15-2.1 must be provided to the court with the other application materials.]
 
 
 ### When proof of service is not required

@@ -11,6 +11,14 @@
 
 - **(b)** unless the court otherwise orders,
 
+- **(i)** more than 15 days have been reserved for the trial,
+
+- **(ii)** any party is not represented by a lawyer, or may not be represented by a lawyer at the trial,
+
+- **(iii)** a party requests a trial management conference by filing a requisition not less than 42 days before the scheduled trial date, or
+
+- **(iv)** in the case of a Divorce Act proceeding, a party intends to file documents, give evidence or make submissions in the French language or both official languages.
+
 
 ### Date and place of trial management conference
 
@@ -61,6 +69,10 @@
 
 - **(b)** an individual who
 
+- **(i)** has full authority to make decisions for that party concerning the family law case, or
+
+- **(ii)** has ready access to a person who has, or to a group of persons who collectively have, full authority to make decisions for that party concerning the family law case.
+
 
 ### Application must be made by requisition
 
@@ -95,6 +107,10 @@
 
 - **(e)** admission of documents at trial, including
 
+- **(i)** agreements as to the purposes for which documents may be admitted, and
+
+- **(ii)** the preparation of common books of documents and document agreements;
+
 - **(f)** imposing time limits for the direct examination or cross-examination of witnesses, opening statements and final submissions;
 
 - **(g)** directing that a party provide a summary of the evidence that the party expects one or more of the party's witnesses will give at trial;
@@ -106,6 +122,10 @@
 - **(j)** directing that the parties present opening statements and final submissions in writing;
 
 - **(j.1)** without limiting any other orders that may be made under this subrule, in the case of a Divorce Act proceeding, make orders respecting the use of either official language in the proceeding, including orders respecting
+
+- **(i)** the translation of evidence, affidavits, submissions and documents, and
+
+- **(ii)** the payment by one or more parties of the costs of preparing a translation referred to in subparagraph (i);
 
 - **(k)** adjournment of the trial;
 

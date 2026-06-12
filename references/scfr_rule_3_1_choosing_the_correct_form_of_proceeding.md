@@ -5,7 +5,7 @@
 ### Commencing family law cases by notice of family claim
 
 
-**(1)** Except for those special situations referred to in subrules (2.1) to (2.4), (4.1), (4.4) and (4.5) of this rule, every family law case must be started by filing a notice of family claim under Rule 4-1.
+**(1)** Except for those special situations referred to in subrules (2.1) to (2.4), (4.1), (4.4), (4.5) and (4.7) of this rule, every family law case must be started by filing a notice of family claim under Rule 4-1.
 
 
 ### Repealed
@@ -30,6 +30,10 @@
 - **(b)** an order for return of a child under the Convention on the Civil Aspects of International Child Abduction signed at The Hague on October 25, 1980;
 
 - **(c)** an order granting a person, other than a spouse,
+
+- **(i)** leave under section 16.1 (3) of the Divorce Act to make an application for a parenting order or interim parenting order in respect of a child, or
+
+- **(ii)** leave under section 16.5 (3) of the Divorce Act to make an application for a contact order or interim contact order that provides for contact between the person and a child;
 
 - **(d)** an order granting a person, other than a former spouse, to whom a parenting order does not relate leave under section 17 (2) of the Divorce Act to make an application for an order varying, rescinding or suspending the parenting order.
 
@@ -63,7 +67,9 @@
 
 - **(g)** an order under section 28 of the Child, Family and Community Service Act;
 
-- **(h)** an order under section 10 of the Family Orders and Agreements Enforcement Assistance Act (Canada) authorizing an official of the court to make an application under section 12 of that Act for the release of information.
+- **(h)** an order under section 10 of the Family Orders and Agreements Enforcement Assistance Act (Canada) authorizing an official of the court to make an application under section 12 of that Act for the release of information;
+
+- **(i)** an order under section 233 (4) of the Family Law Act to extend the time limit for starting an appeal.
 
 
 ### Petitions
@@ -116,6 +122,12 @@
 
 
 **(4.6)** If the filing of a requisition starts a family law case under subrule (4.5) of this rule, the style of proceeding in the family law case must name the person filing the requisition as "Claimant" and the other parties to the arbitration as "Respondents".
+
+
+### Filing notice of appeal
+
+
+**(4.7)** If a person files under Rule 18-3 (2) a notice of appeal and there is no existing family law case within which it is appropriate to file the notice of appeal, the filing of the notice of appeal under that rule starts a family law case.
 
 
 ### Joining claims and parties

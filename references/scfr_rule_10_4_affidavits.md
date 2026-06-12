@@ -21,6 +21,8 @@
 
 - **(d)** subject to Rule 15-2.1, may be in Form F30.
 
+[If an order is sought to appoint a person as the guardian of one or more children, the affidavit referred to in Rule 15-2.1 must be provided to the court.]
+
 
 ### Identifying affidavits
 
@@ -43,6 +45,10 @@
 
 - **(b)** the person swearing or affirming the affidavit
 
+- **(i)** signs the affidavit, or
+
+- **(ii)** if the person swearing or affirming the affidavit is unable to sign the affidavit, places the person's mark on it, and
+
 - **(c)** the person before whom the affidavit is sworn or affirmed completes and signs a statement in accordance with subrule (5) and identifies each exhibit, if any, to the affidavit in accordance with subrule (8).
 
 
@@ -50,6 +56,20 @@
 
 
 **(5)** The person before whom an affidavit is sworn or affirmed must confirm that the affidavit was sworn or affirmed in the person's presence by completing and signing a statement on the affidavit in the following form:
+
+SWORN (OR AFFIRMED) BEFORE ME
+
+at ......[commissioner's city/town]......,
+
+British Columbia on ..........[date]...........
+
+............................................................................
+
+A commissioner for taking
+
+affidavits for British Columbia
+
+....[print name or affix stamp of commissioner].... .
 
 
 ### Statement if person swearing or affirming the affidavit unable to read
@@ -79,7 +99,7 @@
 
 **(8)** The person before whom an affidavit is sworn or affirmed must identify each exhibit referred to in the affidavit by signing a certificate placed on the exhibit in the following form:
 
-This is Exhibit .......... referred to in the affidavit of .............................. sworn (or affirmed) before me on ........[dd/mmm/yyyy].........
+- This is Exhibit .......... referred to in the affidavit of .............................. sworn (or affirmed) before me on ........[dd/mmm/yyyy].........
 
 
 ### Exhibits referred to in affidavits
@@ -124,6 +144,10 @@ This is Exhibit .......... referred to in the affidavit of .....................
 - **(a)** the source of the information and belief is given, and
 
 - **(b)** the affidavit is made
+
+- **(i)** in respect of an application that does not seek a final order or a change in, or a suspension or termination of, a final order, or
+
+- **(ii)** by leave of the court under Rule 10-3 (4) (e) or 14-7 (71) (a).
 
 
 ### Use of defective affidavit

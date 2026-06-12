@@ -21,6 +21,10 @@
 
 - **(a)** the filed document
 
+- **(i)** sets out the reasons why the certificate is not being filed with the document and states that the certificate will be filed before the family law case is set down for trial or before an application is made for an order of divorce or nullity, or
+
+- **(ii)** sets out the reasons why it is impossible to file a certificate, and
+
 - **(b)** the registrar is satisfied with the reasons given for the failure or inability to file such a certificate.
 
 

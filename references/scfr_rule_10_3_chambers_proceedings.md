@@ -11,6 +11,10 @@
 
 - **(b)** an application, including, without limitation, the following:
 
+- **(i)** an application to change or set aside a judgment;
+
+- **(ii)** a matter that is ordered to be disposed of other than at trial;
+
 - **(c)** an appeal from, or an application to confirm, change or set aside, an order, a report, a certificate or a recommendation of an associate judge, registrar, special referee or other officer of the court;
 
 - **(d)** a family law case that has, or issues in a family law case that have, been ordered to be proceeded with by affidavit or on documents before the court;
@@ -44,6 +48,10 @@
 - **(d)** order an inquiry, assessment or accounting under Rule 18-1, and
 
 - **(e)** receive other forms of evidence.
+
+[Subrule (4) (a) applies to all affidavits, including Form F8 financial statements.]
+
+[If an order is sought to appoint a person as the guardian of one or more children, the affidavit referred to in Rule 15-2.1 must be provided to the court with the other application materials.]
 
 
 ### Hearing of application in public

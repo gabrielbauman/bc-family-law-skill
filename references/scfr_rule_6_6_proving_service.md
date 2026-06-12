@@ -9,13 +9,29 @@
 
 - **(a)** service of a notice of family claim on a person is proved
 
+- **(i)** by filing an affidavit of personal service in Form F15, or
+
+- **(ii)** by the person filing a response to family claim;
+
 - **(b)** service of a counterclaim on a person who has not filed a pleading is proved
 
+- **(i)** by filing an affidavit of personal service in Form F15, or
+
+- **(ii)** by the person filing a response to counterclaim;
+
 - **(c)** service of a petition on a person is proved
+
+- **(i)** by filing an affidavit of personal service in Form F15, or
+
+- **(ii)** by the person filing a response to petition;
 
 - **(d)** service of any other document served by personal service is proved by filing an affidavit of personal service in Form F15;
 
 - **(e)** service of any document that is served by ordinary service is proved
+
+- **(i)** by filing an affidavit of ordinary service in Form F16, or
+
+- **(ii)** by filing a requisition in Form F17 to which is attached a written acknowledgment of receipt signed by the party or lawyer on whom the document was served.
 
 
 ### Proof of service by sheriff

@@ -15,7 +15,19 @@
 
 - **(a)** on a person, other than the FMEA Director, in any of the following ways:
 
+- **(i)** by leaving the document at the person's address for service;
+
+- **(ii)** by mailing the document by ordinary mail to the person's address for service;
+
+- **(iii)** subject to subrule (5) of this rule, if a fax number is provided as one of the person's addresses for service, by faxing the document to that fax number together with a fax cover sheet;
+
+- **(iv)** if an e-mail address is provided as one of the person's addresses for service, by e-mailing the document to that e-mail address, or
+
 - **(b)** on the FMEA Director by
+
+- **(i)** mailing it to the post office box number provided by the FMEA Director, or
+
+- **(ii)** faxing it to the fax number provided by the FMEA Director.
 
 
 ### When service by delivery is deemed to be completed
@@ -43,6 +55,10 @@
 
 - **(b)** if the document, including the fax cover sheet, is 30 pages or more, the document may be served by fax if it is transmitted
 
+- **(i)** between 5 p.m. and the following 8 a.m., or
+
+- **(ii)** at another time if the person receiving the document agreed to that time before service.
+
 
 ### When service by fax or e-mail is deemed to be completed
 
@@ -60,6 +76,10 @@
 **(7)** If, despite these Supreme Court Family Rules, a party on whom a document is to be served has no address for service, and if these Supreme Court Family Rules do not specify that the document must be served by personal service on the party,
 
 - **(a)** the document may be served by mailing a copy of the document by ordinary mail to
+
+- **(i)** the lawyer acting for the party in the family law case, or
+
+- **(ii)** if the party has no lawyer in the family law case, to the party's last known address, and
 
 - **(b)** subrule (4) applies.
 

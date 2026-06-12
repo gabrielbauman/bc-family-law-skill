@@ -11,7 +11,7 @@
 
 **(a)** a proceeding started under these rules, or
 
-**(b)** a pre-existing proceeding within the meaning of [rule 195 [definitions for Part 13]](pcfr_rule_195_definitions_for_part_13.md);
+**(b)** a pre-existing proceeding within the meaning of [rule 195 [definitions]](pcfr_rule_195_definitions.md);
 
 
 **"certificate of service"** means a certificate in Form 7 [Certificate of Service], prepared in accordance with [rule 183 [proving service]](pcfr_rule_183_proving_service.md), that certifies service;
@@ -43,9 +43,6 @@
 **(a)** in a class of decision makers prescribed under the Family Law Act, and
 
 **(b)** appointed as a decision maker under the Provincial Court Act;
-
-
-**"family justice registry"** means a registry specified in rule 6 (b) to which Part 6 [Family Justice Registries] applies;
 
 
 **"Family Law Act Regulation"** means the Family Law Act Regulation, B.C. Reg. 347/2012;
@@ -119,7 +116,7 @@ and includes a child who is living with, or whose parent or guardian is, a perso
 **(b)** attending by telephone, video conference or other means of electronic communication;
 
 
-**"needs assessor"** means a family justice counsellor who conducts a needs assessment under [rule 16 [participating in needs assessment]](pcfr_rule_016_participating_in_needs_assessment.md) or 93 [participating in needs assessment in family justice registries];
+**"needs assessor"** means a family justice counsellor who conducts a needs assessment under [rule 16 [participating in needs assessment]](pcfr_rule_016_participating_in_needs_assessment.md);
 
 
 **"parenting education program"** means an educational program that is designed to support informed and child-focused decisions and that is approved by the Family Justice Services Division of the Ministry of Attorney General;

@@ -15,9 +15,19 @@
 
 - **(d)** requiring amendment of a pleading to provide details of one or more of the following matters set out in that pleading:
 
+- **(i)** the facts,
+
+- **(ii)** the relief sought, or
+
+- **(iii)** the legal basis on which relief is sought or opposed;
+
 - **(e)** respecting the length and content of pleadings;
 
 - **(f)** respecting discovery, listing, production, preservation, exchange or examination of documents or exhibits, including, without limitation, orders
+
+- **(i)** respecting electronically stored information, and
+
+- **(ii)** that discovery, listing, production, exchange or examination be limited or otherwise conducted as ordered;
 
 - **(g)** respecting discovery of parties or the examination or inspection of persons or property, including, without limitation, that discovery, examination or inspection be limited, expanded or otherwise conducted in the manner ordered;
 
@@ -28,6 +38,16 @@
 - **(j)** respecting witness lists;
 
 - **(k)** respecting experts, including, without limitation, orders
+
+- **(i)** that the expert evidence on any one or more issues be given by one jointly-instructed expert,
+
+- **(ii)** respecting the number of experts a party may call,
+
+- **(iii)** that the parties' experts must confer before the service of their respective reports,
+
+- **(iv)** setting a date by which an expert's report must be served on the other parties, and
+
+- **(v)** respecting the issues on which an expert may be called;
 
 - **(l)** respecting admissions;
 
@@ -97,6 +117,10 @@
 
 - **(b)** despite any other provision of these Supreme Court Family Rules to the contrary and without limiting Rule 16-1 (13),
 
+- **(i)** award costs of the application on a lump sum basis, and
+
+- **(ii)** set the period within which those costs must be paid.
+
 
 ### Application may be made at case planning conference
 
@@ -107,4 +131,8 @@
 ### Amendments to case plan orders
 
 
-**(8)** Without limiting the ability of a case planning conference judge or associate judge to amend a case plan order at a case planning conference under Rule 7.1-3 (1) (b), the parties may apply to amend a case plan order by requesting a subsequent case planning conference under Rule 7.1-1.
+**(8)** Without limiting the ability of a case planning conference judge or associate judge to amend a case plan order at a case planning conference under Rule 7.1-3 (1) (b), the parties may apply to amend a case plan order as follows:
+
+- **(a)** if the application is to be by consent, the parties must apply in accordance with Rule 10-7;
+
+- **(b)** if the application is not to be by consent, a party must request a subsequent case planning conference under Rule 7.1-1.

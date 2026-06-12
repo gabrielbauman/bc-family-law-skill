@@ -31,6 +31,10 @@
 
 - **(b)** the agreement must be signed by the expert to signify that the expert
 
+- **(i)** has been made aware of the content of this Part, and
+
+- **(ii)** consents to the appointment reflected in the agreement, and
+
 - **(c)** a copy of the agreement must be served, promptly after signing, on every party to the family law case who is not a party to the agreement.
 
 

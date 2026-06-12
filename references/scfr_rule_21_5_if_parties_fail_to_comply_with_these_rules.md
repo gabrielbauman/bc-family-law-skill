@@ -9,6 +9,10 @@
 
 - **(a)** if the party who has not complied is a claimant or a respondent who has brought a counterclaim,
 
+- **(i)** strike out the notice of family claim, counterclaim or petition, and
+
+- **(ii)** grant judgment dismissing the claims made in the notice of family claim, counterclaim or petition;
+
 - **(b)** if the party who has not complied is a respondent or a respondent to counterclaim, strike out the response to family claim, response to counterclaim or response to petition;
 
 - **(c)** set aside a step taken;

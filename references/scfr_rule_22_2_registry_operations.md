@@ -35,6 +35,8 @@
 
 - **(b)** other document requiring a seal
 
+issued from or filed in that registry.
+
 
 ### Name of registry
 
@@ -78,6 +80,14 @@
 - **(a)** order that the family law case be restored to the proper registry for retrial or rehearing,
 
 - **(b)** if, on the original trial or hearing, evidence was given orally, direct that the retrial or rehearing be on
+
+- **(i)** an official transcript of that evidence,
+
+- **(ii)** transcript, evidence given orally and evidence given by affidavit,
+
+- **(iii)** new evidence, or
+
+- **(iv)** any other basis,
 
 as in the judge's opinion the circumstances of the family law case require, and
 

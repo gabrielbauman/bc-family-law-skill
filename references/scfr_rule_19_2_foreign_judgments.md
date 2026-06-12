@@ -7,9 +7,9 @@
 
 **(1)** In this rule:
 
-- **"convention"** means the Convention for the Reciprocal Recognition and Enforcement of Judgments in Civil and Commercial Matters, the English language version of which is set out in Schedule 4 of the Court Order Enforcement Act;
+**"convention"** means the Convention for the Reciprocal Recognition and Enforcement of Judgments in Civil and Commercial Matters, the English language version of which is set out in Schedule 4 of the Court Order Enforcement Act;
 
-- **"reciprocally enforceable judgment"** means a judgment that may be registered under Part 2 or 4 of the Court Order Enforcement Act.
+**"reciprocally enforceable judgment"** means a judgment that may be registered under Part 2 or 4 of the Court Order Enforcement Act.
 
 
 ### Application under Court Order Enforcement Act
@@ -25,13 +25,29 @@
 
 - **(a)** exhibiting
 
+- **(i)** a certified copy of the judgment under the seal of the original court,
+
+- **(ii)** if section 29 (2) of the Court Order Enforcement Act applies to the application, the certificate referred to in section 29 (3) of that Act, and
+
+- **(iii)** a certified translation of the judgment or certificate if made in a language other than English, and
+
 - **(b)** stating, to the best of the information and belief of the person swearing or affirming the affidavit,
 
-  - **(A)** was personally served with the process of the original court,
+- **(i)** that the judgment creditor is entitled to enforce the judgment,
 
-  - **(B)** was served with the process of the original court other than by personal service, or
+- **(ii)** the amount presently owing on the judgment,
 
-  - **(C)** participated in the proceeding or otherwise submitted to the jurisdiction of the original court, and
+- **(iii)** the full name, occupation and usual or last known residence or place of business of the judgment creditor and judgment debtor respectively,
+
+- **(iv)** whether the judgment debtor
+
+- **(A)** was personally served with the process of the original court,
+
+- **(B)** was served with the process of the original court other than by personal service, or
+
+- **(C)** participated in the proceeding or otherwise submitted to the jurisdiction of the original court, and
+
+- **(v)** that the judgment is not one that is disqualified from registration either under section 29 (6) of the Court Order Enforcement Act or under Article II, paragraph 2, or Article IV, paragraph 1, of the convention, whichever is applicable.
 
 
 ### Applications for reciprocal enforcement of judgment

@@ -155,6 +155,7 @@ These rules govern family law proceedings in the Supreme Court of British Columb
 - [Rule 15-2.3 — Orders Under Part 1 of the Family Orders and Agreements Enforcement Assistance Act (Canada)](scfr_rule_15_2_3_orders_under_part_1_of_the_family_orders_and_agree.md)
 - [Rule 15-3 — Extra-Provincial Orders](scfr_rule_15_3_extra-provincial_orders.md)
 - [Rule 15-4 — Enforcement of Orders](scfr_rule_15_4_enforcement_of_orders.md)
+- [Rule 15-4.1 — Order for Imprisonment Under Section 231 (2) of the Family Law Act](scfr_rule_15_4_1_order_for_imprisonment_under_section_231_2_of_the_.md)
 - [Rule 15-5 — Compelling a Debtor under the Family Maintenance Enforcement Act to Appear in Court](scfr_rule_15_5_compelling_a_debtor_under_the_family_maintenance_e.md)
 - [Rule 15-6 — Subpoena to Debtor](scfr_rule_15_6_subpoena_to_debtor.md)
 - [Rule 15-7 — Examinations in Aid of Execution](scfr_rule_15_7_examinations_in_aid_of_execution.md)

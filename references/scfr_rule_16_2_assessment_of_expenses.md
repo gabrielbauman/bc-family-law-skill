@@ -43,6 +43,10 @@
 
 - **(c)** at least 5 days before the date of the appointment, serve a copy of the filed Form F55 appointment, to which is attached the list of expenses, and any affidavit in support on
 
+- **(i)** the person against whom expenses are to be assessed, and
+
+- **(ii)** every other person whose interest, whether in a fund or estate or otherwise, may be affected.
+
 
 ### Place for assessment
 

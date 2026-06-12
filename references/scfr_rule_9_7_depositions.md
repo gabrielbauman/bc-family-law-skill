@@ -8,6 +8,9 @@
 **(1)** By consent of the parties or by order of the court, a person may be examined on oath before or during trial in order that the record of the examination may be available to be introduced as evidence at the trial.
 
 
+### Examination of person
+
+
 **(2)** An examination under subrule (1) may be conducted before an official reporter or any other person as the court may direct.
 
 
@@ -88,6 +91,10 @@
 
 - **(c)** a copy of the letter of request and any interrogatories
 
+- **(i)** translated into the appropriate official language of the jurisdiction where the examination is to take place, and
+
+- **(ii)** bearing the certificate of the translator that it is a true translation and giving the translator's full name and address.
+
 
 ### Filing of undertaking
 
@@ -137,3 +144,5 @@
 - **(a)** circumstances exist that entitle the person to receive an estate or interest in property on the happening of a future event, and
 
 - **(b)** the right or claim to that estate or interest cannot be brought to trial or hearing by the person before the happening of the event,
+
+the person may apply by petition or by requisition in Form F29 for an order to preserve, by examination under this rule, any testimony that may be material for establishing the right or claim.

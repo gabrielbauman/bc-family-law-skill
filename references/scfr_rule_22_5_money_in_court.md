@@ -7,9 +7,9 @@
 
 **(1)** In this rule, unless the context otherwise requires:
 
-- **"financial institution"** means a bank, credit union or trust company designated by the minister;
+**"financial institution"** means a bank, credit union or trust company designated by the minister;
 
-- **"funds"** means any money that has been paid into or deposited in court, except money paid
+**"funds"** means any money that has been paid into or deposited in court, except money paid
 
 - **(a)** under the Court Order Enforcement Act,
 
@@ -19,9 +19,9 @@
 
 - **(d)** for bail;
 
-- **"minister"** means the Minister of Finance;
+**"minister"** means the Minister of Finance;
 
-- **"securities"** means any bonds, stocks, shares, debentures or other securities.
+**"securities"** means any bonds, stocks, shares, debentures or other securities.
 
 
 ### Deposit of funds
@@ -52,6 +52,8 @@
 - **(a)** by registered mail, insured to the extent of the securities' par value, or
 
 - **(b)** through a financial institution,
+
+together with a certified copy of the order or the statement.
 
 
 ### Payment out of court

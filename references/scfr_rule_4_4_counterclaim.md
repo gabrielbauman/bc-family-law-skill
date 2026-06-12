@@ -19,9 +19,15 @@
 
 - **(e)** a claim,
 
+- **(i)** based on unjust enrichment or other trust claims, for an interest in property, or
+
+- **(ii)** based on unjust enrichment, for compensation
+
 if the claim for the interest or compensation arises out of a marriage-like relationship;
 
 - **(f)** a claim that, on its own, would not be the subject matter of a family law case if the claim is related to or connected with any of the relief sought in the family law case.
+
+[Orders that may be sought under subrule (1) include orders concerning guardianship, parenting arrangements or contact with a child, orders for support for a child or spouse, protection orders, orders dealing with property and divorce orders.]
 
 
 ### Form of counterclaim

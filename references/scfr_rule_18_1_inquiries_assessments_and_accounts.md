@@ -103,6 +103,8 @@
 
 - **(e)** a direction that persons whose interest can be classified constitute a class and are to be represented by the same lawyer,
 
+and the court may fix a time for the further attendance of the parties.
+
 
 ### Court may appoint lawyer
 

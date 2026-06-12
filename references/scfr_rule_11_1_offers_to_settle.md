@@ -13,6 +13,12 @@
 
 - **(c)** an offer to settle made after July 1, 2008 under Rule 37B of the former Supreme Court Rules, as that rule read on the date of the offer to settle, or made under this rule, that
 
+- **(i)** is made in writing by a party to a family law case,
+
+- **(ii)** has been served on all parties, and
+
+- **(iii)** contains the following sentence: "The ..............[party(ies)].............., ..............[name(s) of party(ies)].............., reserve(s) the right to bring this offer to the attention of the court for consideration in relation to costs after the court has pronounced judgment on all other issues in this proceeding."
+
 
 ### Offer not to be disclosed
 

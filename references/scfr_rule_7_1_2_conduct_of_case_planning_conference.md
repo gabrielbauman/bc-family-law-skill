@@ -17,6 +17,10 @@
 
 - **(b)** a party if
 
+- **(i)** the party is not represented by a lawyer in the family law case, or
+
+- **(ii)** the party is ordered to attend by the court.
+
 
 ### Method of attendance
 

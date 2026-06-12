@@ -17,6 +17,8 @@
 
 - **(d)** any consent or comments of the Public Guardian and Trustee required under section 40 of the Infants Act.
 
+[If an order is sought to appoint a person as the guardian of one or more children, the Form F101 affidavit referred to in Rule 15-2.1 must be provided to the court with the other application materials.]
+
 
 ### Consent applications under this Part
 
@@ -31,7 +33,9 @@
 
 - **(d)** to change or set aside a determination of a parenting coordinator filed under Rule 2-1.1;
 
-- **(e)** to change, suspend or terminate an arbitration award filed under Rule 2-1.2 (1).
+- **(e)** to change, suspend or terminate an arbitration award filed under Rule 2-1.2 (1);
+
+- **(f)** to amend a case plan order under Rule 7.1-3 (8) (a).
 
 
 ### Consent order
@@ -42,6 +46,10 @@
 - **(a)** refer the application to a judge or, if the order sought is within the jurisdiction of an associate judge, to a judge or associate judge, or
 
 - **(b)** if the registrar is satisfied that
+
+- **(i)** none of the parties applying for or consenting to the order is under a legal disability, or
+
+- **(ii)** if a party is under a legal disability, section 40 (7) of the Infants Act applies,
 
 enter the order or proceed under paragraph (a) of this subrule.
 

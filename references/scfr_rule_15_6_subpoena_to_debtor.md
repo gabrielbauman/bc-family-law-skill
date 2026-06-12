@@ -77,15 +77,21 @@
 
 - **(d)** does not give answers that are to the satisfaction of the examiner,
 
+then
+
 - **(e)** if the examiner is an associate judge or registrar,
 
-  - **(A)** committal, or
+- **(i)** in the case of default under paragraph (a), the examiner must make a report in Form F67 and fix a time and place at which the creditor may attend before the court, and at that time and place the court may, at the request of the creditor and without notice to the person subpoenaed, order
 
-  - **(B)** apprehension under Rule 21-7 (5), and
+- **(A)** committal, or
 
-  - **(A)** committal, or
+- **(B)** apprehension under Rule 21-7 (5), and
 
-  - **(B)** apprehension under Rule 21-7 (5), or
+- **(ii)** in the case of default under paragraph (b), (c) or (d) of this subrule, the examiner must make a report in Form F67 and fix a time and place for the person subpoenaed to attend before the court, and at that time and place the court may, at the request of the creditor and without further notice to the person subpoenaed, order
+
+- **(A)** committal, or
+
+- **(B)** apprehension under Rule 21-7 (5), or
 
 - **(f)** if the examiner is the court, the examiner may order committal.
 
@@ -107,6 +113,8 @@
 
 - **(c)** the debtor is a corporation and the person subpoenaed has done, authorized, permitted or acquiesced in an act or omission described in paragraph (a) or (b),
 
+then
+
 - **(d)** if the examiner is an associate judge or registrar, the examiner may make a report of the examiner's findings and fix a time and place for the person subpoenaed to attend before the court, and at that time and place the creditor may apply without notice for committal, or
 
 - **(e)** if the examiner is the court, the examiner may order committal.
@@ -126,6 +134,8 @@
 - **(d)** for payment to be made to a registrar, to the creditor or to the creditor's lawyer;
 
 - **(e)** fixing the costs payable by the debtor without assessment,
+
+and if the examiner is an associate judge or registrar, the order has the effect of an order made by the court and must be entered accordingly.
 
 
 ### Notice of application for committal
@@ -230,6 +240,8 @@
 - **(a)** if the person committed is in the sheriff's custody, release the person committed, or
 
 - **(b)** if the person committed is in the warden's custody, notify the warden, who must release the person committed,
+
+and each must endorse the order accordingly and return it to the registry.
 
 
 ### Liability imposed by order

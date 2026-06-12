@@ -21,6 +21,8 @@
 
 - **(d)** a person against whom a family law case has been started dies before judgment is pronounced in that family law case,
 
+and the cause of action, in relation to which the family law case may be or has been started, survives.
+
 
 ### Starting, conducting or defending a family law case on behalf of deceased's estate
 
@@ -61,6 +63,10 @@
 
 - **(b)** a family law case referred to in subrule (2) has been started in relation to the deceased,
 
+the personal representative must, on application under Rule 8-2,
+
 - **(c)** be substituted for the deceased as a party in the family law case, or
 
 - **(d)** if a litigation representative is conducting or defending the family law case, be substituted for the litigation representative as a party in the family law case,
+
+unless an order is made in respect of the proceeding under section 151 of the Wills, Estates and Succession Act.

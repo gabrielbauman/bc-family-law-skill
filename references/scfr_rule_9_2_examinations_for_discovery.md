@@ -11,6 +11,8 @@
 
 - **(b)** if any of subrules (5) to (9) apply, make a person referred to in that subrule available,
 
+for examinations for discovery by the parties to the family law case who are adverse in interest to the party subject to examination.
+
 
 ### Limitations
 
@@ -28,6 +30,12 @@
 **(3)** In an application under subrule (2) to extend the examination for discovery period, the court must consider the following:
 
 - **(a)** the conduct of a person who has been or is to be examined, including
+
+- **(i)** the person's unresponsiveness in any examination for discovery held in the family law case,
+
+- **(ii)** the person's failure to provide complete answers to questions, or
+
+- **(iii)** the person's provision of answers that are evasive, irrelevant, unresponsive or unduly lengthy;
 
 - **(b)** any denial or refusal to admit, by a person who has been or is to be examined, anything that should have been admitted;
 
@@ -54,6 +62,10 @@
 - **(b)** the party to be examined must nominate as its representative an individual, who is knowledgeable concerning the matters in question in the family law case, to be examined on behalf of that party, and
 
 - **(c)** the examining party may examine
+
+- **(i)** the representative nominated under paragraph (b), or
+
+- **(ii)** any other person the examining party considers appropriate and who is or has been a director, officer, employee, agent or external auditor of the party to be examined.
 
 
 ### Examination of person for whose benefit family law case brought
@@ -99,7 +111,15 @@
 
 - **(a)** if the person to be examined is a party to, and has a lawyer in, the family law case, ensure that, at least 7 days before the examination for discovery,
 
+- **(i)** an appointment in Form F21 is served on that lawyer, and
+
+- **(ii)** witness fees in the amount required under Schedule 3 of Appendix C are tendered to that lawyer;
+
 - **(b)** in any other case, ensure that, at least 7 days before the examination for discovery,
+
+- **(i)** an appointment in Form F21 is served on the person to be examined, and
+
+- **(ii)** witness fees in the amount required under Schedule 3 of Appendix C are tendered to the person to be examined;
 
 - **(c)** at least 7 days before the examination for discovery, serve a copy of the appointment on all parties.
 
@@ -196,3 +216,5 @@
 - **(a)** the order and the notice of appointment may be served on, and
 
 - **(b)** the witness fees referred to in subrule (12) may be paid to
+
+the lawyer for the person.

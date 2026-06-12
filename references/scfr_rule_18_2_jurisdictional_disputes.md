@@ -51,4 +51,14 @@
 
 - **(a)** the party does not submit to the jurisdiction of the court in relation to the family law case merely by filing or serving any or all of the following:
 
+- **(i)** the jurisdictional response;
+
+- **(ii)** a pleading or response to petition under subrule (1) (c);
+
+- **(iii)** a notice of application and supporting affidavits under subrule (1) (a) or (b), and
+
 - **(b)** until the court has decided the application or the issue raised by the pleading, petition or response to petition, the party may, without submitting to the jurisdiction of the court,
+
+- **(i)** apply for, enforce or obey an order of the court, and
+
+- **(ii)** defend the family law case on its merits.

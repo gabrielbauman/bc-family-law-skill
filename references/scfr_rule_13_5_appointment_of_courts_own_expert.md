@@ -15,6 +15,10 @@
 
 - **(a)** ask each party to name one or more persons who
 
+- **(i)** are qualified to give expert opinion evidence on the issue, and
+
+- **(ii)** have been made aware of the content of this Part and consent to being appointed,
+
 - **(b)** require each party to state any connection between an expert named under paragraph (a) and a party to the family law case, and
 
 - **(c)** receive other material and make other inquiries to help decide which expert to appoint.
@@ -90,6 +94,10 @@
 - **(a)** must be fixed by the court and consented to by the expert, and
 
 - **(b)** may include
+
+- **(i)** a fee for the report, and any supplementary reports, required under Rule 13-6, and
+
+- **(ii)** an appropriate sum for each day that the expert's attendance in court is required.
 
 
 ### Security for remuneration

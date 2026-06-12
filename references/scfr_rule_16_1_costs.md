@@ -11,6 +11,10 @@
 
 - **(b)** the court orders that
 
+- **(i)** the costs of the family law case be assessed as special costs, or
+
+- **(ii)** the costs of an application, a step or any other matter in the family law case be assessed as special costs in which event costs in relation to all other applications, steps and matters in the family law case must be determined and assessed under this rule in accordance with this subrule;
+
 - **(c)** the court awards lump sum costs for the family law case and fixes those costs under subrule (14) in an amount the court considers appropriate;
 
 - **(d)** the court awards lump sum costs in relation to an application, a step or any other matter in the family law case and fixes those costs under subrule (14), in which event costs in relation to all other applications, steps and matters in the family law case must be determined and assessed under this rule in accordance with this subrule.
@@ -24,6 +28,22 @@
 - **(a)** allow those fees that were proper or reasonably necessary to conduct the family law case, and
 
 - **(b)** consider all of the circumstances, including the following:
+
+- **(i)** the complexity of the family law case and the difficulty or the novelty of the issues involved;
+
+- **(ii)** the skill, specialized knowledge and responsibility required of the lawyer;
+
+- **(iii)** the amount involved in the family law case;
+
+- **(iv)** the time reasonably spent in conducting the family law case;
+
+- **(v)** the conduct of any party that tended to shorten, or to unnecessarily lengthen, the duration of the family law case;
+
+- **(vi)** the importance of the family law case to the party whose bill is being assessed, and the result obtained;
+
+- **(vii)** the benefit to the party whose bill is being assessed of the services rendered by the lawyer;
+
+- **(viii)** Rule 1-3.
 
 
 ### Assessment officer
@@ -124,6 +144,8 @@
 - **(b)** that relate to some particular application, step or matter in or related to the family law case, or
 
 - **(c)** except so far as they relate to some particular application, step or matter in or related to the family law case
+
+and in awarding those costs the court may fix the amount of costs, including the amount of disbursements.
 
 
 ### Costs payable from estate or property

@@ -17,6 +17,12 @@
 
 - **(b)** subject to Rule 15-2.1, the original of every affidavit, and of every other document, that
 
+- **(i)** is to be referred to by the applicant at the hearing, and
+
+- **(ii)** has not already been filed in the family law case.
+
+[If an order is sought to appoint a person as the guardian of one or more children, the affidavit referred to in Rule 15-2.1 must be provided to the court with the other application materials.]
+
 
 ### Contents of notice of application
 
@@ -38,6 +44,8 @@
 - **(g)** set out the place for the hearing of the application in accordance with Rule 10-2, and
 
 - **(h)** provide the data collection information required in the appendix to the form,
+
+and the notice of application, other than any draft order attached to it under paragraph (a), must not exceed 10 pages in length.
 
 
 ### Date and time of hearing
@@ -67,6 +75,10 @@
 
 - **(e)** in addition to the documents referred to in paragraphs (a) to (d), if the application is in relation to a determination of a parenting coordinator filed under Rule 2-1.1 (1),
 
+- **(i)** a copy of the filed determination, and
+
+- **(ii)** if the parenting coordinator was engaged under an agreement filed under Rule 2-1 (2), a copy of the filed agreement;
+
 - **(f)** in addition to the documents referred to in paragraphs (a), (b) and (d), if the application is in relation to an arbitration award filed in, or to start, a family law case, a copy of the filed arbitration award.
 
 
@@ -81,6 +93,10 @@
 
 - **(c)** in the case of an application to change, suspend or terminate a final order or to set aside or replace the whole or any part of an agreement filed under Rule 2-1 (2),
 
+- **(i)** the documents must be served by personal service in accordance with Rule 6-3 (2), and
+
+- **(ii)** service under subparagraph (i) of this paragraph must occur at least 21 business days before the date set for the hearing of the application;
+
 - **(d)** in the case of an application to change or set aside a determination of a parenting coordinator filed under Rule 2-1.1 (1) or to change, suspend or terminate an arbitration award filed under Rule 2-1.2 (1), the documents must be served by personal service in accordance with Rule 6-3 (2) and paragraph (a) of this subrule.
 
 
@@ -93,7 +109,17 @@
 
 - **(b)** file the original of every affidavit, and of every other document, that
 
+- **(i)** is to be referred to by the responding person at the hearing, and
+
+- **(ii)** has not already been filed in the family law case;
+
 - **(c)** serve on the applicant 2 copies of the following, and on every other party one copy of the following:
+
+- **(i)** a copy of the filed application response;
+
+- **(ii)** a copy of each of the filed affidavits and documents, referred to in the application response under subrule (9) (b) (ii), that has not already been served on that person;
+
+- **(iii)** if the application is brought under Rule 11-3, any notice that the application respondent is required to give under Rule 11-3 (9).
 
 
 ### Time for filing and service
@@ -116,6 +142,12 @@
 - **(a)** indicate, for each order sought on the application, whether the application respondent consents to, opposes or takes no position on the order, and
 
 - **(b)** if the application respondent wishes to oppose any of the relief sought in the application,
+
+- **(i)** briefly summarize the factual and legal bases on which the orders sought should not be granted,
+
+- **(ii)** list the affidavits and other documents to which the application respondent intends to refer at the hearing of the application, and
+
+- **(iii)** set out the application respondent's estimate of the time the application will take for hearing.
 
 
 ### Address for service
@@ -151,11 +183,45 @@
 
 - **(b)** the application record must contain, in consecutively numbered pages, or separated by tabs, the following documents in the following order:
 
+- **(i)** a cover page in Form F32.2;
+
+- **(ii)** an index;
+
+- **(iii)** a copy of the filed notice of application;
+
+- **(iv)** a copy of each filed application response;
+
+- **(v)** a copy of every filed affidavit and pleading, and of every other document other than a written argument, that is to be relied on at the hearing;
+
+- **(vi)** if the application is brought under Rule 11-3, a copy of each filed pleading;
+
+- **(vii)** a copy of each filed order that the applicant seeks to vary or rescind or that is otherwise relevant to the relief sought;
+
+- **(viii)** the most current Form F102 statement of information for corollary relief proceedings, if any, filed by each party in accordance with Rule 15-2.2;
+
 - **(c)** the application record may contain
+
+- **(i)** a draft of the proposed order,
+
+- **(ii)** a written argument,
+
+- **(iii)** a list of authorities and
+
+- **(iv)** a draft bill of costs;
 
 - **(d)** the application record must not contain
 
+- **(i)** affidavits of service,
+
+- **(ii)** copies of authorities, including case law, legislation, legal articles or excerpts from textbooks, or
+
+- **(iii)** any other documents unless they are included with the consent of all the parties;
+
 - **(e)** the application record must be provided to the registry
+
+- **(i)** no earlier than 9 a.m. on the business day that is three full business days before the date set for the hearing and no later than 4 p.m. on the business day that is one full business day before the date set for the hearing, or
+
+- **(ii)** if an earlier date is fixed by a registrar, on or before that date.
 
 
 ### Additional copy of filed notice of application
@@ -238,6 +304,18 @@
 **(19.1)** To reset an application that has been adjourned without a date being set for it to be heard ("adjourned generally") or that has been removed from the hearing list under subrule (14.2), the applicant must
 
 - **(a)** file a requisition in Form F17 setting out the following:
+
+- **(i)** the date and time of the hearing of the application;
+
+- **(i.1)** the place of hearing;
+
+- **(ii)** the date the notice of application was filed;
+
+- **(iii)** a brief description of the orders sought;
+
+- **(iv)** the applicant's estimate of the time the application will take for hearing;
+
+- **(v)** whether the orders sought are within the jurisdiction of an associate judge, and
 
 - **(b)** serve a copy of the filed requisition on the application respondents at least 2 business days before the date set for the hearing.
 

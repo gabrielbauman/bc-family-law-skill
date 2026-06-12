@@ -13,7 +13,7 @@ In this Act:
 **"companion animal"** means, subject to [section 3.1 [companion animals]](fla_section_003_1_companion_animals.md), an animal that is kept primarily for the purpose of companionship;
 
 
-**"contact with a child"** or means contact between a child and a person, other than the child's guardian, the terms of which are set out in an agreement or order;
+**"contact with a child"** or **"contact with the child"** means contact between a child and a person, other than the child's guardian, the terms of which are set out in an agreement or order;
 
 
 **"court"** means

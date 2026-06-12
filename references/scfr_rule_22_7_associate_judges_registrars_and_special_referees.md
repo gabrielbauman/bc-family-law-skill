@@ -29,9 +29,35 @@
 
 - **(b)** the hearing record must contain, in consecutively numbered pages, or separated by tabs, the following documents in the following order:
 
+- **(i)** a cover page in Form F32.2;
+
+- **(ii)** an index;
+
+- **(iii)** a copy of the filed appointment and of every document that, under these rules, is required to be filed with that appointment;
+
+- **(iv)** a copy of the affidavit of service of the appointment, which copy must not include the exhibits to the affidavit;
+
+- **(v)** if the appointment is to settle an order under Rule 15-1, a copy of the reasons for judgment on which the order is based, a transcript of the order made or a copy of the clerk's notes from the hearing;
+
+- **(vi)** if the appointment is to assess costs under Rule 16-1, a copy of the entered order for costs;
+
+- **(vii)** if the appointment has been filed under Rule 18-1, a copy of the entered order referring the matter to the registrar;
+
+- **(viii)** a copy of every filed affidavit and pleading, and of every other document, that is to be relied on at the hearing;
+
 - **(c)** the hearing record may contain
 
+- **(i)** a draft of the proposed report or certificate, and
+
+- **(ii)** a list of authorities;
+
 - **(d)** the hearing record must not contain
+
+- **(i)** written argument,
+
+- **(ii)** copies of authorities, including case law, legislation, legal articles or excerpts from text books, or
+
+- **(iii)** any other documents unless they are included with the consent of the applicant and the respondents.
 
 
 ### Dealings with hearing record
@@ -139,6 +165,26 @@
 
 - **(b)** the appeal record must contain
 
+- **(i)** a cover page in Form F32.2,
+
+- **(ii)** an index,
+
+- **(iii)** a copy of the notice of appeal,
+
+- **(iv)** a copy of the order of the associate judge or decision of the registrar or special referee that is the subject of the appeal,
+
+- **(v)** a copy of the written reasons for judgment of the associate judge, or reasons for decision of the registrar or special referee, or, if the reasons were given orally, a transcript of the reasons,
+
+- **(vi)** a copy of the notice of application and application response, and for registrars' appeals, a copy of the appointment,
+
+- **(vii)** copies of any affidavits that were before the associate judge, registrar or special referee that will be relied on for the appeal,
+
+- **(viii)** a transcript of any oral evidence heard by the associate judge, registrar or special referee to be relied on for the appeal,
+
+- **(ix)** the appellant's statement of argument, not to exceed 10 pages, and
+
+- **(x)** the respondent's statement of argument, not to exceed 10 pages.
+
 
 ### Appeal record to be returned
 
@@ -155,7 +201,7 @@
 ### Repealed
 
 
-**(9)** -(10) Repealed. [B.C. Reg. 105/2019, s. 2.]
+**(9)-(10)** Repealed. [B.C. Reg. 105/2019, s. 2.]
 
 
 ### Appeal not to act as stay

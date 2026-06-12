@@ -19,7 +19,9 @@
 
 - **(d)** any order relating to the conduct of the trial,
 
-- **(d.1)** the trial brief filed by each party, and
+- **(d.1)** the trial brief filed by each party,
+
+- **(d.2)** any amended witness list prepared by or served on the party under Rule 14-2.1 (6), and
 
 - **(e)** any document required by a registrar under subrule (2).
 
@@ -55,6 +57,10 @@
 
 - **(b)** at least one day before the trial,
 
+- **(i)** file the amended trial record, and
+
+- **(ii)** serve a copy on all parties.
+
 
 ### When certificate required
 
@@ -66,6 +72,8 @@
 - **(b)** a notice of application under Rule 11-3, or
 
 - **(c)** a requisition in an application for judgment under Rule 10-10 (1) (a)
+
+unless a party has filed a certificate in Form F36, signed by the registrar, certifying that the pleadings and proceedings in the family law case are in order.
 
 
 ### Direction as to trial record

@@ -22,6 +22,24 @@
 - **(b)** serve a copy of the filed trial brief on each of the other parties.
 
 
+### Exception if trial management conference scheduled
+
+
+**(2.1)** Despite subrules (1) and (2) and unless the court otherwise orders, if a trial management conference is scheduled to take place,
+
+- **(a)** the claimant must, at least 28 days before the date set for the trial management conference,
+
+- **(i)** file a trial brief in Form F45, and
+
+- **(ii)** serve a copy of the filed trial brief on each of the other parties, and
+
+- **(b)** each party, other than the claimant, must, at least 21 days before the date set for the trial management conference,
+
+- **(i)** file a trial brief in Form F45, and
+
+- **(ii)** serve a copy of the filed trial brief on each of the other parties.
+
+
 ### Claimant may file amended trial brief
 
 
@@ -35,13 +53,13 @@
 ### Failure to file or serve trial brief
 
 
-**(4)** If a party has failed to comply with subrule (1) (a) or (b) or (2) (a) or (b), the judge or associate judge at a trial management conference may order costs against that party.
+**(4)** If a party has failed to comply with subrule (1) (a) or (b), (2) (a) or (b) or (2.1) (a) (i) or (ii) or (b) (i) or (ii), the judge or associate judge at a trial management conference may order costs against that party.
 
 
 ### Trial removed from trial list
 
 
-**(5)** Unless the court otherwise orders, a trial must be removed from the trial list if neither the claimant nor any other party has filed a trial brief as required by subrule (1) or (2).
+**(5)** Unless the court otherwise orders, a trial must be removed from the trial list if neither the claimant nor any other party has filed a trial brief as required by subrule (1), (2) or (2.1).
 
 
 ### Witness list must be amended
@@ -49,9 +67,9 @@
 
 **(6)** If a party who has provided a witness list in a trial brief later learns that the witness list is inaccurate or incomplete, the party must promptly
 
-- **(a)** file an amended witness list, and
+- **(a)** prepare an amended witness list, and
 
-- **(b)** serve a copy of the filed amended witness list on each of the other parties.
+- **(b)** serve a copy of the amended witness list on each of the other parties.
 
 
 ### Person named in witness list need not testify

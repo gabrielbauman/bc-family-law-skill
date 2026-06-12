@@ -49,7 +49,15 @@
 
 - **(a)** the party who is requesting the case planning conference must, within 14 days after serving the notice of case planning conference,
 
+- **(i)** file the party's case plan proposal, and
+
+- **(ii)** serve a copy of the filed case plan proposal on all other parties;
+
 - **(b)** each other party must, within 14 days after receipt of the case plan proposal referred to in paragraph (a),
+
+- **(i)** file the party's case plan proposal, and
+
+- **(ii)** serve a copy of the filed case plan proposal on all other parties.
 
 
 ### Contents of case plan proposal

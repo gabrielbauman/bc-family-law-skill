@@ -9,6 +9,14 @@
 
 - **(a)** if the order is a final order,
 
+- **(i)** in Form F33 if the order changes, suspends or terminates a final order and is made by consent,
+
+- **(ii)** in Form F51 if the order changes, suspends or terminates a final order and is not made by consent,
+
+- **(iii)** in Form F34 if the order is made under Rule 10-8 without notice and without a hearing, or
+
+- **(iv)** in Form F52 in any other case;
+
 - **(b)** if the order is not a final order and is made without a hearing and by consent, in Form F33;
 
 - **(c)** if the order is not a final order and is made under Rule 10-8 without notice and without a hearing, in Form F34;
@@ -42,6 +50,12 @@
 - **(a)** provide a copy to the protection order registry,
 
 - **(b)** arrange service on, or provide a copy to, the party against whom the protection order is made, as follows:
+
+- **(i)** if that party is present when the order is made, provide the party with the protection order;
+
+- **(ii)** if that party is not present when the order is made, arrange for the personal service of the protection order on that party within British Columbia;
+
+- **(iii)** if the registry is unable to arrange service under subparagraph (ii) or that party is evading service, notify the person who applied for the order of that fact and that the person is now responsible for service, and
 
 - **(c)** provide a copy to the person who applied for the order.
 
@@ -166,6 +180,10 @@
 - **(a)** if the party is represented by a lawyer, by the signature of the lawyer;
 
 - **(b)** if the party is not represented by a lawyer,
+
+- **(i)** by the oral consent of the party who attends before the court or a registrar, or
+
+- **(ii)** by the written consent of the party.
 
 
 ### Settlement of orders

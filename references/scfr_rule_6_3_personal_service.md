@@ -17,6 +17,14 @@
 
 - **(e)** a notice of application to
 
+- **(i)** change, suspend or terminate an existing final order,
+
+- **(ii)** set aside or replace the whole or any part of an agreement filed under Rule 2-1 (2),
+
+- **(iii)** change or set aside the determination of a parenting coordinator filed under Rule 2-1.1 (1), or
+
+- **(iv)** change, suspend or terminate an arbitration award filed under Rule 2-1.2 (1),
+
 and the accompanying documents referred to in Rule 10-6 (6);
 
 - **(f)** a summons to appear at a default hearing or show cause hearing under Rule 15-5 (1);
@@ -24,6 +32,8 @@ and the accompanying documents referred to in Rule 10-6 (6);
 - **(g)** a summons to appear at a committal hearing under Rule 15-5 (2);
 
 - **(h)** a notice of application under Rule 21-7 for an order for contempt;
+
+- **(h.1)** a notice of application under section 231 (2) of the Family Law Act for an order that a person be imprisoned;
 
 - **(i)** a subpoena to a witness who is not a party;
 
@@ -43,7 +53,21 @@ and the accompanying documents referred to in Rule 10-6 (6);
 
 - **(b)** if the document is to be served on the FMEA Director, by
 
+- **(i)** mailing it to the post office box number provided by the FMEA Director, or
+
+- **(ii)** faxing it to the fax number provided by the FMEA Director,
+
 - **(c)** if the document is to be served on a corporation,
+
+- **(i)** by leaving a copy of the document with the president, chair, mayor or other chief officer of the corporation,
+
+- **(ii)** by leaving a copy of the document with the city clerk or municipal clerk,
+
+- **(iii)** by leaving a copy of the document with the manager, cashier, superintendent, treasurer, secretary, clerk or agent of the corporation or of any branch or agency of the corporation in British Columbia, or
+
+- **(iv)** in the manner provided by the Business Corporations Act or any enactment relating to the service of court documents,
+
+and, for the purpose of this paragraph, if the chief place of business of the corporation is outside British Columbia, every person who, within British Columbia, transacts or carries on any of the business of, or any business for, that corporation is deemed to be an agent of the corporation,
 
 - **(d)** if the document is to be served on an unincorporated association, other than a trade union, by leaving a copy of the document with any officer of the association,
 
@@ -52,6 +76,10 @@ and the accompanying documents referred to in Rule 10-6 (6);
 - **(f)** if the document is to be served on an infant, in the manner provided by the Infants Act,
 
 - **(g)** if the document is to be served on a mentally incompetent person, by leaving a copy of the document
+
+- **(i)** with the person's committee or, if there is no committee, with the person with whom the mentally incompetent person resides or in whose care the mentally incompetent person is or with the person appointed by the court to be served in the mentally incompetent person's place, and
+
+- **(ii)** with the Public Guardian and Trustee,
 
 and in no case is it necessary to show the original document,
 

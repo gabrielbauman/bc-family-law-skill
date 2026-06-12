@@ -29,6 +29,10 @@
 
 - **(c)** that the proposed witness
 
+- **(i)** has refused or neglected on request by the applicant to give a responsive statement, either orally or in writing, relating to the witness' knowledge of the matters in question, or
+
+- **(ii)** has given conflicting statements.
+
 
 ### Application procedure
 

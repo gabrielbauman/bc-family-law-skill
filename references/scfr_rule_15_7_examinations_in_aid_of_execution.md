@@ -7,9 +7,9 @@
 
 **(1)** In this rule:
 
-- **"judgment creditor"** means a person entitled to enforce an order of the court, whether for payment of money or otherwise;
+**"judgment creditor"** means a person entitled to enforce an order of the court, whether for payment of money or otherwise;
 
-- **"judgment debtor"** means a person against whom the order may be enforced.
+**"judgment debtor"** means a person against whom the order may be enforced.
 
 
 ### Examination of judgment debtor

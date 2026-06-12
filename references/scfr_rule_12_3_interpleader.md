@@ -9,11 +9,19 @@
 
 - **(a)** a person (in this rule called the "applicant")
 
-  - **(A)** the property, or
+- **(i)** is sued or expects to be sued in respect of property in the person's possession or under the person's control or in respect of the proceeds from a disposition of the property, or
 
-  - **(B)** the proceeds
+- **(ii)** receives a claim in respect of
+
+- **(A)** the property, or
+
+- **(B)** the proceeds
+
+by or from 2 or more persons (in this rule called the "property claimants") making adverse claims, and
 
 - **(b)** the applicant claims no beneficial interest in the property,
+
+the applicant may apply to the court for interpleader relief.
 
 
 ### Claim to real or personal property taken by sheriff
@@ -36,6 +44,8 @@
 - **(a)** a sheriff must release any property the claim to which is admitted, and
 
 - **(b)** the court may restrain the bringing of a proceeding against the sheriff for or in respect of having taken possession of the property, and
+
+unless the court otherwise orders, the person who admitted the claim is only liable to the sheriff for any costs, fees and expenses incurred by the sheriff before receipt of the notice admitting the claim.
 
 
 ### Sheriff may apply for interpleader relief

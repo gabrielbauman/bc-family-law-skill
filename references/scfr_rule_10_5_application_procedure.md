@@ -7,9 +7,11 @@
 
 **(1)** To apply for an order referred to in subrule (2), a party must do the following, and to apply for an order to enforce an agreement filed under Rule 2-1 (2), to enforce an order, to enforce compliance with a determination of a parenting coordinator filed under Rule 2-1.1 (1) or to enforce an arbitration award filed under Rule 2-1.2 (1), a party may do the following:
 
-- **(a)** in the case of an application not referred to in paragraph (b), (c), (d) or (e) of this subrule, apply in accordance with Rule 10-6;
+- **(a)** in the case of an application not referred to in paragraph (b), (b.1), (c), (d) or (e) of this subrule, apply in accordance with Rule 10-6;
 
-- **(b)** in the case of an application for an order by consent, apply in accordance with Rule 10-6 or 10-7;
+- **(b)** subject to paragraph (b.1), in the case of an application for an order by consent, apply in accordance with Rule 10-6 or 10-7;
+
+- **(b.1)** in the case of an application for an order to amend a case plan order under Rule 7.1-3 (8) (a), apply in accordance with Rule 10-7;
 
 - **(c)** in the case of an application of which notice need not be given, apply in accordance with Rule 10-6 or 10-8;
 
@@ -31,4 +33,8 @@
 
 - **(d)** to change or set aside a determination of a parenting coordinator filed under Rule 2-1.1;
 
-- **(e)** to change, suspend or terminate an arbitration award.
+- **(d.1)** a court order within the meaning of Rule 2-2.1;
+
+- **(e)** to change, suspend or terminate an arbitration award;
+
+- **(f)** to amend a case plan order under Rule 7.1-3 (8) (a).

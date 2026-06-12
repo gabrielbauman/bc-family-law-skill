@@ -9,7 +9,23 @@
 
 - **(a)** no person, other than the following, may search a registry file in respect of a family law case:
 
+- **(i)** a lawyer, whether or not a lawyer of a party;
+
+- **(ii)** a party;
+
+- **(iii)** a person authorized in writing by a party;
+
+- **(iv)** a person authorized in writing by a party's lawyer, and
+
 - **(b)** no person, other than the following, may search a registry file in respect of a proceeding under the Child, Family and Community Service Act:
+
+- **(i)** a party's lawyer;
+
+- **(ii)** a party;
+
+- **(iii)** a person authorized in writing by a party;
+
+- **(iv)** a person authorized in writing by a party's lawyer.
 
 
 ### Electronic court docket information available

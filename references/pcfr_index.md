@@ -100,7 +100,7 @@ These rules govern family law proceedings in the Provincial Court of British Col
 
 - [Rule 37 — Scheduling family management conference if reply filed](pcfr_rule_037_scheduling_family_management_conference_if_reply_filed.md)
 - [Rule 38 — Scheduling family management conference if no reply filed](pcfr_rule_038_scheduling_family_management_conference_if_no_reply_filed.md)
-- [Rule 39 — Requirements to be met before scheduling family management conference in family justice registry](pcfr_rule_039_requirements_to_be_met_before_scheduling_family_management_conference_in_family_justice_registry.md)
+- [Rule 39 — Repealed](pcfr_rule_039_repealed.md)
 - [Rule 40 — Requirements to be met before scheduling family management conference in parenting education registry](pcfr_rule_040_requirements_to_be_met_before_scheduling_family_management_conference_in_parenting_education_registry.md)
 - [Rule 41 — Attendance for preparing for subsequent hearing](pcfr_rule_041_attendance_for_preparing_for_subsequent_hearing.md)
 - [Rule 42 — Intention to proceed — family management conferences](pcfr_rule_042_intention_to_proceed_family_management_conferences.md)
@@ -184,18 +184,9 @@ These rules govern family law proceedings in the Provincial Court of British Col
 
 - [Rule 86 — Replying to applications](pcfr_rule_086_replying_to_applications.md)
 
-### Part 6 — Family Justice Registries
+### Part 6
 
-- [Rule 87 — Application of Part](pcfr_rule_087_application_of_part.md)
-- [Rule 88 — Definition](pcfr_rule_088_definition.md)
-- [Rule 89 — Requirements in family justice registries](pcfr_rule_089_requirements_in_family_justice_registries.md)
-- [Rule 90 — Exceptions to family justice registry requirements](pcfr_rule_090_exceptions_to_family_justice_registry_requirements.md)
-- [Rule 91 — Certain parties exempt from requirements](pcfr_rule_091_certain_parties_exempt_from_requirements.md)
-- [Rule 92 — First referral by clerk](pcfr_rule_092_first_referral_by_clerk.md)
-- [Rule 93 — Participating in needs assessment in family justice registries](pcfr_rule_093_participating_in_needs_assessment_in_family_justice_registries.md)
-- [Rule 94 — Completing parenting education program in family justice registries](pcfr_rule_094_completing_parenting_education_program_in_family_justice_registries.md)
-- [Rule 95 — Referral to judge after demonstrating completion of or exemption from parenting education program](pcfr_rule_095_referral_to_judge_after_demonstrating_completion_of_or_exemption_from_parenting_education_program.md)
-- [Rule 96 — Scheduling family management conferences](pcfr_rule_096_scheduling_family_management_conferences.md)
+- [Rule 87-96 — Repealed](pcfr_rule_087_96_repealed.md)
 
 ### Part 7 — Parenting Education Program Registries
 
@@ -362,7 +353,15 @@ These rules govern family law proceedings in the Provincial Court of British Col
 
 ### Part 13 — Transition
 
-- [Rule 195 — Definitions for Part 13](pcfr_rule_195_definitions_for_part_13.md)
+
+**Division 1 — Former Rules**
+
+- [Rule 195 — Definitions](pcfr_rule_195_definitions.md)
 - [Rule 196 — These rules apply to pre-existing proceedings](pcfr_rule_196_these_rules_apply_to_pre-existing_proceedings.md)
 - [Rule 197 — Judge may make case management order to resolve difficulty or doubt](pcfr_rule_197_judge_may_make_case_management_order_to_resolve_difficulty_or_doubt.md)
 - [Rule 198 — Registry may temporarily accept certain forms under former rules](pcfr_rule_198_registry_may_temporarily_accept_certain_forms_under_former_rules.md)
+
+**Division 2 — Former Family Justice Registries**
+
+- [Rule 199 — Definitions](pcfr_rule_199_definitions.md)
+- [Rule 200 — Continued application of rules respecting family justice registries](pcfr_rule_200_continued_application_of_rules_respecting_family_justice_registries.md)

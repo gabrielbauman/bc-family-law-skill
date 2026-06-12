@@ -29,6 +29,12 @@
 
 - **(b)** it becomes necessary or desirable that
 
+- **(i)** a person not already a party should be named as a party, or
+
+- **(ii)** a person already a party should be named as a party in another capacity,
+
+the court may order that the family law case be continued between the continuing parties and the new party.
+
 
 ### Prosecution of family law case if claimant or petitioner dies
 
@@ -51,7 +57,15 @@
 
 - **(b)** order that a person be named as an additional party or be named as a party in substitution for another named party if
 
+- **(i)** that person ought to have been named as a party, or
+
+- **(ii)** that person's participation in the family law case is necessary to ensure that all matters in the family law case may be adjudicated on, and
+
 - **(c)** order that a person be named as an additional party if there may exist, between the person and any other person who is named as a party to the family law case, a question or issue relating to or connected with
+
+- **(i)** any relief claimed in the family law case, or
+
+- **(ii)** the subject matter of the family law case
 
 that, in the opinion of the court, it would be just and convenient to determine as between the person and the other person who is named as a party.
 
@@ -64,6 +78,12 @@ that, in the opinion of the court, it would be just and convenient to determine 
 - **(a)** the notice of family claim must be amended in accordance with Rule 8-1 (2) and (3), a reference to the order must be endorsed on that amended notice of family claim and Rule 8-1 (4) to (7) applies, and
 
 - **(b)** if a person is named as an additional party or is named as a party in substitution for another named party,
+
+- **(i)** a copy of the entered order must be served on the person along with a copy of the filed amended document served under Rule 8-1 (4),
+
+- **(ii)** the person may apply to the court to change or set aside the order within 21 days after the date on which the order is served on the person under subparagraph (i) of this paragraph, and
+
+- **(iii)** unless the court orders, in an application under subparagraph (ii) or otherwise, that the person not be named as a party, these Supreme Court Family Rules apply in relation to that newly named party as if the amended notice of family claim were a new notice of family claim.
 
 
 ### Consent required

@@ -23,6 +23,10 @@
 
 - **(b)** the document is
 
+- **(i)** sent under cover of a fax cover sheet in Form F95, and
+
+- **(ii)** accompanied by payment of the applicable filing fees, and
+
 - **(c)** the document is not one referred to in subrule (4).
 
 
@@ -33,9 +37,37 @@
 
 - **(a)** any document pertaining to the following:
 
+- **(i)** adoption;
+
+- **(ii)** reciprocal enforcement of orders under the Court Order Enforcement Act;
+
 - **(b)** any of the following documents:
 
+- **(i)** a certified copy of any document being filed for enforcement purposes;
+
+- **(ii)** an application record or a petition record;
+
+- **(iii)** a trial record;
+
+- **(iv)** a proof of marriage from a foreign jurisdiction;
+
+- **(v)** a certificate of judgment;
+
+- **(vi)** a certificate of pending litigation;
+
+- **(vii)** an affidavit of service submitted for filing in support of a default order;
+
 - **(c)** any of the following documents, unless their submission by fax is authorized by the Manager, Supreme Court Scheduling of the receiving registry:
+
+- **(i)** a trial certificate;
+
+- **(ii)** a notice of trial;
+
+- **(iii)** and (iv) Repealed. [B.C. Reg. 119/2010, Sch. B, s. 26 (b).]
+
+- **(v)** a requisition to reset a hearing or trial;
+
+- **(vi)** a requisition requesting a judicial case conference;
 
 - **(d)** a document that, with the fax cover sheet, exceeds 30 pages in length, unless its submission by fax is authorized by a registrar.
 
@@ -57,7 +89,18 @@
 
 - **(a)** if the document was transmitted for filing in accordance with subrule (3) and was approved for filing by the registrar, provide to the person identified as the submitting party on the fax cover sheet
 
+- **(i)** confirmation of the fees paid, and
+
+- **(ii)** the first page of the filed document, bearing the registry stamp and file number;
+
 - **(b)** if the document was not transmitted for filing in accordance with subrule (3), or was not approved for filing by the registrar, provide to the person identified as the submitting party on the fax cover sheet
+
+- **(i)** a notice that the document has not been filed and the reasons for non-acceptance, and
+
+- **(ii)** the first page of the document.
+
+
+### Confirmation of filing
 
 
 **(7)** For the purposes of subrule (6), a registrar may provide the documents referred to in that subrule to the person identified as the submitting party on the fax cover sheet

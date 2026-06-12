@@ -19,11 +19,19 @@
 
 - **(a)** have, as the party's addresses for service, both
 
+- **(i)** an e-mail address, if available, and
+
+- **(ii)** an accessible address within 30 kilometres of the registry, or
+
 - **(b)** if the party does not have an accessible address within 30 kilometres of the registry, have, as the party's addresses for service, both
 
-  - **(A)** a postal address in British Columbia, or
+- **(i)** an e-mail address, if available, and
 
-  - **(B)** a fax number.
+- **(ii)** either
+
+- **(A)** a postal address in British Columbia, or
+
+- **(B)** a fax number.
 
 
 ### Additional addresses for service

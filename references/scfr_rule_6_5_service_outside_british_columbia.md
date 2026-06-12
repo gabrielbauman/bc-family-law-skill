@@ -23,6 +23,10 @@
 
 - **(b)** must be supported by an affidavit or other evidence showing
 
+- **(i)** in what place or country that person is or probably may be found, and
+
+- **(ii)** the grounds on which the application is made.
+
 
 ### Service of order and related documents
 
@@ -50,6 +54,16 @@
 - **(a)** that the court will have jurisdiction to hear a family law case in respect of the contract, and
 
 - **(b)** that a document in the family law case may be served
+
+- **(i)** at any place, within or outside British Columbia,
+
+- **(ii)** on any party,
+
+- **(iii)** on any person on behalf of any party, or
+
+- **(iv)** in any manner
+
+specified in the contract.
 
 
 ### Contract does not invalidate effective service

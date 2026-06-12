@@ -19,6 +19,12 @@
 
 - **(f)** the expert's reasons for the expert's opinion, including
 
+- **(i)** a description of the factual assumptions on which the opinion is based,
+
+- **(ii)** a description of any research conducted by the expert that led the expert to form the opinion, and
+
+- **(iii)** a list of every document, if any, relied on by the expert in forming the opinion.
+
 
 ### Proof of qualifications
 
@@ -87,7 +93,19 @@
 
 - **(a)** promptly after being asked to do so by a party, serve on the requesting party whichever one or more of the following has been requested:
 
+- **(i)** any written statement or statements of facts on which the expert's opinion is based;
+
+- **(ii)** a record of any independent observations made by the expert in relation to the report;
+
+- **(iii)** any data compiled by the expert in relation to the report;
+
+- **(iv)** the results of any test conducted by or for the expert, or of any inspection conducted by the expert, if the expert has relied on that test or inspection in forming the expert's opinion, and
+
 - **(b)** if asked to do so by a party, make available to the requesting party for review and copying the contents of the expert's file relating to the preparation of the opinion set out in the expert's report,
+
+- **(i)** if the request is made within 14 days before the scheduled trial date, promptly after receipt of that request, or
+
+- **(ii)** in any other case, at least 14 days before the scheduled trial date.
 
 
 ### Notice of trial date to expert

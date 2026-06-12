@@ -11,6 +11,8 @@
 
 - **(b)** is evading service of the documents,
 
+the court may, on application without notice, make an order for substituted service granting permission to use an alternative method of service.
+
 
 ### If an alternative service method is permitted
 

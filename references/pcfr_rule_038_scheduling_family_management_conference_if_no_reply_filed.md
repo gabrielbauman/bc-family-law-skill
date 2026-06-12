@@ -1,7 +1,7 @@
 # Rule 38 — Scheduling family management conference if no reply filed
 
 
-Subject to rules 39 [requirements to be met before scheduling family management conference in family justice registry] and 40 [requirements to be met before scheduling family management conference in parenting education registry], if a party has filed an application about a family law matter and
+Subject to [rule 40 [requirements to be met before scheduling family management conference in parenting education registry]](pcfr_rule_040_requirements_to_be_met_before_scheduling_family_management_conference_in_parenting_education_registry.md), if a party has filed an application about a family law matter and
 
 **(a)** a reply has not been filed,
 

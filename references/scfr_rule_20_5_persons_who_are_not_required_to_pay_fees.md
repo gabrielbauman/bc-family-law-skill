@@ -11,6 +11,8 @@
 
 - **(b)** cannot, without undue hardship, afford to pay the fees under Schedule 1 of Appendix C in relation to the family law case,
 
+the court may order that no fees are payable by the person to the government under Schedule 1 of Appendix C in relation to the family law case unless the court considers that the claim or defence
+
 - **(c)** discloses no reasonable claim or defence, as the case may be,
 
 - **(d)** is scandalous, frivolous or vexatious, or
@@ -62,3 +64,5 @@
 - **(c)** the period of time, or
 
 - **(d)** the steps
+
+to which the order applies.

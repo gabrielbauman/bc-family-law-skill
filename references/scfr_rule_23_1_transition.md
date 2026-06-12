@@ -7,9 +7,9 @@
 
 **(1)** In this rule:
 
-- **"appearance"** , "counterclaim", "requisition", "statement of claim", "statement of defence", "statement of defence to counterclaim", "statement of defence to third party notice", "third party notice" and "writ of summons" have the same meanings as they had in the former Supreme Court Rules;
+**"appearance"** , **"counterclaim"** , **"requisition"** , **"statement of claim"** , **"statement of defence"** , **"statement of defence to counterclaim"** , **"statement of defence to third party notice"** , **"third party notice"** and **"writ of summons"** have the same meanings as they had in the former Supreme Court Rules;
 
-- **"transitional family law case"** means a family law case that was started before July 1, 2010.
+**"transitional family law case"** means a family law case that was started before July 1, 2010.
 
 
 ### These rules apply to transitional family law cases

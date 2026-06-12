@@ -9,6 +9,10 @@
 
 - **(a)** help parties resolve the legal issues in a family law case fairly and in a way that will
 
+- **(i)** take into account the impact that the conduct of the family law case may have on a child, and
+
+- **(ii)** minimize conflict and promote cooperation between the parties, and
+
 - **(b)** secure the just, speedy and inexpensive determination of every family law case on its merits.
 
 

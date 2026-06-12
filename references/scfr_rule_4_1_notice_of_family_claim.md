@@ -7,6 +7,10 @@
 
 **(1)** To start a family law case other than a family law case referred to in Rule 3-1 (2.1), (2.2), (2.3) (b), (2.4) or (4.1), a person must file a notice of family claim in Form F3.
 
+[A joint family law case is to be brought under Rule 2-2.]
+
+[An application to change, suspend or terminate an existing order is to be brought under Part 10.]
+
 
 ### Service
 

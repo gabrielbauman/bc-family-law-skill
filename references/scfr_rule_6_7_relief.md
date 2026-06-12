@@ -12,3 +12,5 @@
 - **(b)** came to the person's notice later than when it was served, or
 
 - **(c)** was incomplete or illegible,
+
+the court may set aside an order, extend time, order an adjournment or make such other order as it considers will further the object of these Supreme Court Family Rules.

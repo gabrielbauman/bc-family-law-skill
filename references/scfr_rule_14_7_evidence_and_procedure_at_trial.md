@@ -63,6 +63,10 @@
 
 - **(b)** if the exhibit is divided by tabs,
 
+- **(i)** each page of the exhibit that is not behind a tab must be numbered sequentially, beginning with the first of those pages and ending with the last of those pages, and
+
+- **(ii)** each page of the exhibit that is behind a tab must be numbered sequentially, beginning with the first page behind the tab and ending with the last page behind the tab.
+
 
 ### Opportunity to inspect exhibit
 
@@ -243,6 +247,14 @@
 
 - **(a)** to examine a witness, either generally or with respect to one or more issues,
 
+- **(i)** by the use of leading questions,
+
+- **(ii)** by referring the witness to a prior statement made by the witness, whether or not made under oath,
+
+- **(iii)** respecting the interest of the witness, if any, in the outcome of the family law case, or
+
+- **(iv)** respecting any relationship or connection between the witness and a party, or
+
 - **(b)** to cross-examine a witness, either generally or with respect to one or more issues.
 
 
@@ -308,6 +320,8 @@
 - **(b)** that proper witness fees have been paid or tendered to that witness, and
 
 - **(c)** that the presence of that witness is material to the ends of justice,
+
+the court, by its warrant in Form F50 directed to a sheriff or other officer of the court or to a peace officer, may cause that witness to be apprehended and promptly brought before the court and to be detained in custody or released on terms the court may order, and the court may order that witness to pay the costs arising from that witness's failure to attend or to remain in attendance.
 
 
 ### Order setting aside subpoena
@@ -404,6 +418,14 @@
 - **(a)** to contradict or impeach the testimony of the person at trial, or
 
 - **(b)** if it is necessary in the interests of justice and
+
+- **(i)** the person is dead,
+
+- **(ii)** the person is unable to attend and testify because of age, infirmity, sickness or imprisonment,
+
+- **(iii)** the person is out of the jurisdiction, or
+
+- **(iv)** the person's attendance cannot be secured by subpoena.
 
 
 ### Court may consider whole pre-trial examination

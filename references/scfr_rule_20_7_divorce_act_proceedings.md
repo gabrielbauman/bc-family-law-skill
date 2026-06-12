@@ -53,6 +53,8 @@
 
 - **(b)** on filing of the requisition, the applicable period referred to in these
 
+Supreme Court Family Rules, within which the document must be filed and served, is extended by an additional period of 10 days or, if the applicable period refers to business days, 10 business days.
+
 
 ### Transcripts
 

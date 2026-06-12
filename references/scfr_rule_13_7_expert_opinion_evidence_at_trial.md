@@ -21,6 +21,10 @@
 
 - **(b)** if no such demand is made under subrule (3) within the demand period referred to in paragraph (a) of this subrule,
 
+- **(i)** the expert whose report has been served under this Part need not attend at trial to give oral testimony, and
+
+- **(ii)** the report, if admissible, may be introduced and accepted as evidence at the trial.
+
 
 ### Cross-examination of expert
 
@@ -45,6 +49,10 @@
 
 - **(a)** the party must not call the expert to give oral evidence at trial unless
 
+- **(i)** the expert's attendance has been demanded under subrule (3) of this rule, or
+
+- **(ii)** the expert's report has been served in accordance with Rule 13-6, the party believes direct examination of the expert is necessary to clarify terminology in the report or to otherwise make the report more understandable and any direct examination of that expert is limited to those matters, and
+
 - **(b)** the party must not cross-examine the expert at trial.
 
 
@@ -56,5 +64,9 @@
 - **(a)** facts have come to the knowledge of one or more of the parties and those facts could not, with due diligence, have been learned in time to be included in a report or supplementary report and served within the time required by this Part,
 
 - **(b)** the non-compliance is unlikely to cause prejudice
+
+- **(i)** by reason of an inability to prepare for cross-examination, or
+
+- **(ii)** by depriving the party against whom the evidence is introduced of a reasonable opportunity to introduce evidence in response, or
 
 - **(c)** the interests of justice require it.

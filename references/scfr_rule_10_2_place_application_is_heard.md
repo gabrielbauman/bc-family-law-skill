@@ -41,6 +41,8 @@
 
 - **(b)** name as the place of hearing a place in that other judicial district.
 
+[If an order is sought under section 10 of the Family Orders and Agreements Enforcement Assistance Act (Canada), the affidavit referred to in Rule 15-2.3 (1) must be provided to the court with the other application materials.]
+
 
 ### Notice of application must be endorsed to reflect grant of leave
 
@@ -63,4 +65,4 @@
 ### Repealed
 
 
-**(7)** -(8) Repealed. [B.C. Reg. 119/2010, Sch. B, s. 7.]
+**(7)-(8)** Repealed. [B.C. Reg. 119/2010, Sch. B, s. 7.]

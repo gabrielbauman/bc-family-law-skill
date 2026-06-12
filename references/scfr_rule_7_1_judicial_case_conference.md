@@ -167,6 +167,12 @@
 
 - **(j.1)** without limiting any other orders that may be made under this subrule, in the case of a Divorce Act proceeding, make orders respecting the use of either official language in the proceeding, including orders respecting
 
+- **(i)** the translation of evidence, affidavits, pleadings, submissions and documents, including documents relating to an application,
+
+- **(ii)** the payment by one or more parties of the costs of preparing a translation referred to in subparagraph (i), and
+
+- **(iii)** the time limits for the filing and service of documents, including orders waiving or modifying a period referred to in Rule 20-7 (8) (b);
+
 - **(k)** direct that any or all applications must be made within a specified time;
 
 - **(l)** reserve a trial date for the family law case or reserve a date for a trial that is restricted to issues defined by the parties;

@@ -31,6 +31,12 @@
 
 - **(c)** unless the court otherwise orders, serve on the petitioner 2 copies, and on every other party one copy, of each document filed under paragraph (a) or (b) as follows:
 
+- **(i)** if the petition respondent was served with the petition anywhere in Canada, within 21 days after that service;
+
+- **(ii)** if the petition respondent was served with the petition anywhere in the United States of America, within 35 days after that service;
+
+- **(iii)** if the petition respondent was served with the petition anywhere else, within 49 days after that service.
+
 
 ### Contents of response to petition
 
@@ -40,6 +46,12 @@
 - **(a)** indicate, for each order sought, whether the petition respondent consents to, opposes or takes no position on the order, and
 
 - **(b)** if the petition respondent wishes to oppose any of the relief sought in the petition,
+
+- **(i)** briefly summarize the factual and legal bases on which the orders sought should not be granted,
+
+- **(ii)** list the affidavits and other documents on which the petition respondent intends to rely at the hearing of the petition, and
+
+- **(iii)** set out the petition respondent's estimate of the time the petition will take for hearing.
 
 
 ### Petitioner may respond
@@ -113,11 +125,41 @@
 
 - **(b)** the petition record must contain, in consecutively numbered pages, or separated by tabs, the following documents in the following order:
 
+- **(i)** a cover page in Form F32.2;
+
+- **(ii)** an index;
+
+- **(iii)** a copy of the filed petition;
+
+- **(iv)** a copy of each filed response to petition;
+
+- **(v)** a copy of each filed affidavit that is to be referred to at the hearing;
+
+- **(vi)** the most current Form F102 statement of information for corollary relief proceedings, if any, filed by each party in accordance with Rule 15-2.2;
+
 - **(c)** the petition record may contain
+
+- **(i)** a draft of the proposed order,
+
+- **(ii)** a written argument,
+
+- **(iii)** a list of authorities, and
+
+- **(iv)** a draft bill of costs;
 
 - **(d)** the petition record must not contain
 
+- **(i)** affidavits of service,
+
+- **(ii)** copies of authorities, including case law, legislation, legal articles or excerpts from text books, or
+
+- **(iii)** any other documents unless they are included with the consent of all the parties;
+
 - **(e)** the petition record must be provided to the registry
+
+- **(i)** no earlier than 9 a.m. on the business day that is three full business days before the date set for the hearing and no later than 4 p.m. on the business day that is one full business day before the date set for the hearing, or
+
+- **(ii)** if an earlier date is fixed by a registrar, on or before that date.
 
 
 ### Additional copy of filed petition
@@ -151,17 +193,21 @@
 ### Petition record to be returned
 
 
-**(14)** Unless the court otherwise orders, the applicant must retrieve the petition record
+**(14)** Unless the court otherwise orders, the petitioner must retrieve the petition record
 
 - **(a)** at the conclusion of the hearing, or
 
-- **(b)** if the hearing of the petition is adjourned to a date later than the following court day, after the hearing is adjourned.
+- **(b)** if the hearing of the petition is adjourned to a date later than the following business day, after the hearing is adjourned.
 
 
 ### Petition record to be returned to registry
 
 
-**(15)** If the petition record has been retrieved by the petitioner under subrule (14) (b), the petitioner must return the petition record to the registry between 9:00 a.m. on the second court day before, and 4 p.m. on the business day that is one full business day before, the new date set for the hearing of the petition.
+**(15)** If the petition record has been retrieved by the petitioner under subrule (14) (b), the petitioner must return the petition record to the registry
+
+- **(a)** no earlier than 9 a.m. on the business day that is three full business days before the new date set for the hearing and no later than 4 p.m. on the business day that is one full business day before the new date set for the hearing, or
+
+- **(b)** if an earlier date is fixed by a registrar, on or before that date.
 
 
 ### Provision of amended petition record
@@ -177,6 +223,18 @@
 
 - **(a)** file a requisition in Form F17 setting out the following:
 
+- **(i)** the date and time of the hearing of the petition;
+
+- **(i.1)** the place of hearing;
+
+- **(ii)** the date the petition was filed;
+
+- **(iii)** a brief description of the orders sought;
+
+- **(iv)** the petitioner's estimate of the time the petition will take for hearing;
+
+- **(v)** whether the orders sought are within the jurisdiction of an associate judge, and
+
 - **(b)** serve a copy of the filed requisition on the petition respondents at least 2 days before the date set for the hearing.
 
 
@@ -188,6 +246,8 @@
 - **(a)** set the petition for hearing within a reasonable time after being requested to do so by a petition respondent, or
 
 - **(b)** after the hearing of the petition has been adjourned generally, reset the petition for hearing within a reasonable time after being requested to do so by a petition respondent,
+
+a petition respondent may apply, by requisition in Form F17 on 2 days' notice, for directions.
 
 
 ### Powers of court
@@ -204,6 +264,12 @@
 - **(a)** at any time with leave of the court, and
 
 - **(b)** subject to Rules 8-2 (7) and (9) and 9-6 (5),
+
+- **(i)** once without leave of the court, at any time before service of the notice of hearing, and
+
+- **(ii)** at any time with the written consent of all the parties,
+
+and for that purpose Rule 8-1 (2) to (7) applies.
 
 
 ### Renewal of original petition

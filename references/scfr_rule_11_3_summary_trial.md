@@ -49,6 +49,12 @@
 
 - **(e)** a report setting out the opinion of an expert, if
 
+- **(i)** the report conforms with Rule 13-6 (1), or
+
+- **(ii)** the court orders that the report is admissible even though it does not conform with Rule 13-6 (1).
+
+[If an order is sought on a summary trial application to appoint a person as the guardian of one or more children, the affidavit referred to in Rule 15-2.1 must be provided to the court with the other application materials.]
+
 
 ### Application of Rule 14-7
 
@@ -71,6 +77,12 @@
 
 - **(b)** must not serve any further affidavits, expert reports or notices except
 
+- **(i)** to introduce evidence that would, at a trial, be admitted as rebuttal evidence,
+
+- **(ii)** to respond to a notice of application filed and served by another party, or
+
+- **(iii)** with leave of the court.
+
 
 ### Notice of evidence to be used on application
 
@@ -82,6 +94,8 @@
 - **(b)** answers to interrogatories, or
 
 - **(c)** admissions,
+
+the party must give notice of that fact in accordance with subrule (10).
 
 
 ### Giving notice
@@ -103,6 +117,10 @@
 
 - **(b)** dismiss the summary trial application on the ground that
 
+- **(i)** the issues raised by the summary trial application are not suitable for disposition under this rule, or
+
+- **(ii)** the summary trial application will not assist the efficient resolution of the family law case.
+
 
 ### Preliminary orders
 
@@ -110,6 +128,10 @@
 **(12)** On or before the hearing of a summary trial application, the court may order that
 
 - **(a)** a party file and serve, within a fixed time, any of the following on which the party intends to rely in support of the application:
+
+- **(i)** an affidavit;
+
+- **(ii)** a notice referred to in subrule (9),
 
 - **(b)** the person who swore or affirmed an affidavit, or an expert whose report is relied on, attend for cross-examination, either before the court or before another person as the court directs,
 
@@ -138,6 +160,10 @@
 **(15)** On the hearing of a summary trial application, the court may
 
 - **(a)** grant judgment in favour of any party, either on an issue or generally, unless
+
+- **(i)** the court is unable, on the whole of the evidence before the court on the application, to find the facts necessary to decide the issues of fact or law, or
+
+- **(ii)** the court is of the opinion that it would be unjust to decide the issues on the application,
 
 - **(b)** impose terms respecting enforcement of the judgment, including a stay of execution, and
 

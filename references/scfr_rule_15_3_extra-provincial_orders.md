@@ -5,13 +5,15 @@
 ### Repealed
 
 
-**(1)** -(3) Repealed. [B.C. Reg. 208/2020, s. 5.]
+**(1)-(3)** Repealed. [B.C. Reg. 208/2020, s. 5.]
 
 
 ### Registration of orders
 
 
 **(4)** If an order that has legal effect throughout Canada under section 20 (2) of the Divorce Act is made by a court other than the Supreme Court, the order may be registered without fee by filing a certified copy of the order in the Victoria Registry of the Supreme Court.
+
+[Section 20 of the Divorce Act refers to any order for support or custody made under that Act.]
 
 
 ### Exchange of orders between provinces
