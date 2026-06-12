@@ -10,8 +10,11 @@ processing evidence.
 ## The two kinds of source material
 
 **Single documents** — a court order, a letter, an email, a PDF
-statement. Extracted once; the extraction is essentially the full
-content.
+statement. If the file is directly readable, it usually needs no
+research copy at all: read it and cite it where you need it. Extract
+one only when the source can't be read directly (a scanned PDF needing
+transcription) — and then the research file is a verbatim
+transcription, nothing more.
 
 **Record collections** — a chat export, browser history, transaction
 logs, a folder of emails. Queried repeatedly with different filters;
@@ -64,6 +67,24 @@ jq '.messages[] | select((.text | type == "string") and (.text | test("rent"; "i
 # A specific ID range (for verifying excerpt completeness)
 jq '.messages[] | select(.id >= 5001 and .id <= 5014)' messages.json
 ```
+
+## What earns a research file
+
+A research file is a derivative copy, and derivative copies can drift
+out of sync with the truth. Create one only when it adds something a
+direct read of the source cannot:
+
+1. **Query extracts from collections** — a filtered, complete-sequence
+   view into a corpus too large to re-read (the messages about rent, in
+   order, with IDs).
+2. **Derived analysis** — tabulations, statistics, timelines assembled
+   across many sources, with the script or method recorded.
+3. **Transcriptions** — verbatim text of sources that can't be read
+   directly.
+
+A research file that merely mirrors a readable document is indirection
+with no payoff — it can only go stale. Don't create it; cite the
+document.
 
 ## Extraction workflow
 
