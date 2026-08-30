@@ -204,7 +204,7 @@ Consolidated to 2024-02-06; last amended 2024-02-01.
 **Limits on Divorce Proceedings**
 
 - [Section 29.5 — Support decision obtained in State Party](da_section_029_5_support_decision_obtained_in_state_party.md)
-- [Section 30 and 31 — ](da_section_30 and 31.md)
+- [Section 30 and 31 — ](da_section_30_and_31.md)
 
 ### Transitional Provisions
 
@@ -230,4 +230,4 @@ Consolidated to 2024-02-06; last amended 2024-02-01.
 
 ### Commencement
 
-- [Section *36 — Commencement](da_section_*36_commencement.md)
+- [Section 36 — Commencement](da_section_036_commencement.md)

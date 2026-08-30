@@ -18,7 +18,7 @@ matters to their question.
 
 **Snapshot currency:** each index file carries its own currency line —
 the BC indexes state the "current to" date from BC Laws (most recently
-**June 9, 2026**), and the federal indexes state the consolidation and
+**August 25, 2026**), and the federal indexes state the consolidation and
 last-amended dates declared by the Justice Laws XML. Amendments made
 after those dates are not reflected here.
 
