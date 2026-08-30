@@ -94,3 +94,6 @@
 
 
 **(11)** Where a court makes a variation order in respect of a support order, parenting order or contact order made by another court, it shall send a copy of the variation order, certified by a judge or officer of the court, to that other court.
+
+
+_Amendments: R.S., 1985, c. 3 (2nd Supp.), s. 17; 1997, c. 1, s. 5; 2007, c. 14, s. 1; 2019, c. 16, s. 13_

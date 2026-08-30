@@ -192,3 +192,6 @@ the party must give notice of that fact in accordance with subrule (10).
 
 
 **(18)** A court may, before or at trial, vary or set aside an order made under subrule (12) or (17) of this rule.
+
+
+_Amendments: [am. B.C. Reg. 176/2023, Sch. 2, s. 12.]_

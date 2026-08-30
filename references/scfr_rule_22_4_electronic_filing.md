@@ -180,3 +180,6 @@
 - **(b)** did come to the person's notice later than when it was served or effectively served, or
 
 - **(c)** was incomplete or illegible.
+
+
+_Amendments: [am. B.C. Regs. 27/2013, Sch. 2, s. 15; 99/2018, Sch. 2, s. 18.]_

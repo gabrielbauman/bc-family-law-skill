@@ -10,3 +10,6 @@ Subject to [rule 40 [requirements to be met before scheduling family management 
 **(c)** if applicable, the party has met the early resolution requirements under [rule 10 [early resolution requirements must be met before application filed]](pcfr_rule_010_early_resolution_requirements_must_be_met_before_application_filed.md),
 
 the registry must provide that party with information about the procedure for scheduling a family management conference.
+
+
+_Amendments: [am. B.C. Regs. 236/2020, Sch. 2, s. 5; 17/2026, s. 5.]_

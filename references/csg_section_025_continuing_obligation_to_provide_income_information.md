@@ -33,3 +33,6 @@
 
 
 **(8)** A provision in a judgment, order or agreement purporting to limit a spouse’s obligation to provide documents under this section is unenforceable.
+
+
+_Amendments: SOR/97-563, s. 3(E)_

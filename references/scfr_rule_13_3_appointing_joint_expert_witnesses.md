@@ -32,3 +32,6 @@
 - **(a)** the parties may present that evidence by means of a jointly appointed expert under Rule 13-4, or
 
 - **(b)** any one or more of the parties may appoint the party's own expert.
+
+
+_Amendments: [am. B.C. Regs. 133/2012, s. 5; 249/2014, s. 5.]_

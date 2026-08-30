@@ -72,3 +72,6 @@
 
 
 **(9)** Unless the court otherwise orders, the party conducting an examination under this rule is entitled to recover the costs of the examination from the judgment debtor.
+
+
+_Amendments: [am. B.C. Reg. 119/2010, Sch. B, s. 22.]_

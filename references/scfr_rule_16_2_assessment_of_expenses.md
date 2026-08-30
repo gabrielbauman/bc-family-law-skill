@@ -86,3 +86,6 @@
 
 
 **(10)** If expenses are ordered in relation to a step or matter in the family law case, costs are not to be assessed in relation to that same step or matter.
+
+
+_Amendments: [en. B.C. Reg. 133/2012, s. 23.]_

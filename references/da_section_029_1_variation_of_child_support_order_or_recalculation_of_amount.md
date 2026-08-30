@@ -24,3 +24,6 @@
 
 
 **(7)** Subsections (1) to (6) apply despite section 5.
+
+
+_Amendments: 2019, c. 16, s. 30_

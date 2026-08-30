@@ -222,3 +222,6 @@ and may exercise any of the powers of the court exercisable in a petition procee
 
 
 **(19)** Unless the court otherwise orders, no new evidence may be tendered on a specified appeal from Provincial Court.
+
+
+_Amendments: [en. B.C. Reg. 152/2025, Sch. 4, s. 11 (a).]_

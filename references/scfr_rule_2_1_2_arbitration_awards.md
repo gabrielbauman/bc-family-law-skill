@@ -12,3 +12,6 @@
 
 
 **(2)** To file an arbitration award under subrule (1), a certified copy of the arbitration award must be attached to a requisition in Form F17.3 and the requisition must be filed.
+
+
+_Amendments: [en. B.C. Reg. 121/2014, s. 2.]_

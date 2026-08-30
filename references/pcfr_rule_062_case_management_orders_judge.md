@@ -44,3 +44,6 @@ A judge may make orders to manage a case, including orders about the following:
 **(q)** settling or correcting the terms of an order made under these rules;
 
 **(r)** cancelling a subpoena.
+
+
+_Amendments: [am. B.C. Regs. 302/2021, Sch. 1, s. 3; 219/2023, Sch. 2, s. 1.]_

@@ -82,3 +82,6 @@
 
 
 **(10)** Rule 9-2 (11), (15), (17), (18) and (21) to (24) applies to an examination under this rule.
+
+
+_Amendments: [am. B.C. Reg. 28/2024, Sch. B, s. 9.]_

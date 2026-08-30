@@ -48,3 +48,6 @@
 
 
 **(5)** For greater certainty, the provisions of these Guidelines that confer a discretionary power on a court do not apply to calculations or recalculations by a provincial child support service under subsection 25.01(1) or 25.1(1) of the Act.
+
+
+_Amendments: SOR/2007-59, s. 1; SOR/2020-247, s. 1_

@@ -78,3 +78,6 @@
 - **(f)** witness lists;
 
 - **(g)** trial type, estimated trial length and preferred periods for the trial date.
+
+
+_Amendments: [en. B.C. Reg. 176/2023, Sch. 2, s. 7.]_

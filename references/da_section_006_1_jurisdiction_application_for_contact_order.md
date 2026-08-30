@@ -8,3 +8,6 @@
 
 
 **(3)** For greater certainty, if no parenting order has been made in respect of a child, no application for a contact order may be brought under this Act in respect of the child.
+
+
+_Amendments: 2019, c. 16, s. 6_

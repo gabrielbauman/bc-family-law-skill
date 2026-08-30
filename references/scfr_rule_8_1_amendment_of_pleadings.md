@@ -74,3 +74,6 @@
 
 
 **(8)** Unless the court otherwise orders, if an amendment is granted during a trial or hearing, an order need not be taken out and the amended pleading need not be filed or served.
+
+
+_Amendments: [am. B.C. Regs. 119/2010, Sch. B, s. 4; 321/2021, Sch. 2, s. 3.]_

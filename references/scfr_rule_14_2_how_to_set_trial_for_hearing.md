@@ -70,3 +70,6 @@
 - **(a)** if the family law case settles, and
 
 - **(b)** of any circumstances affecting the estimated length of the trial.
+
+
+_Amendments: [en. B.C. Reg. 119/2010, Sch. B, s. 16.]_

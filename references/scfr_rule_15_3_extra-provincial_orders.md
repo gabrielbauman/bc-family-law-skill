@@ -32,3 +32,6 @@
 
 
 **(6)** A support order made by the court or registered under subrule (4) may be filed in and enforced by the Provincial Court as if it were contained in an order of that court made under the Family Law Act.
+
+
+_Amendments: [am. B.C. Reg. 208/2020, s. 6.]_

@@ -44,3 +44,6 @@
 
 
 **(5)** An application under subrule (4) or (4.1) for a direction that an application or a hearing before a registrar be heard in person or by way of telephone, video conference or other communication medium must be made by requisition in Form F19.1.
+
+
+_Amendments: [am. B.C. Reg. 277/2023, Sch. 3, s. 1.]_

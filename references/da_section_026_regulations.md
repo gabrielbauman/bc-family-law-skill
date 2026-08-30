@@ -13,3 +13,6 @@
 
 
 **(2)** Regulations made under paragraph (1)(b) prevail over rules made under section 25.
+
+
+_Amendments: R.S., 1985, c. 3 (2nd Supp.), s. 26; 2019, c. 16, s. 27_

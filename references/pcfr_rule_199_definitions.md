@@ -17,3 +17,6 @@ In this Division:
 **(b)** effective May 1, 2026, the Kelowna registry, and
 
 **(c)** effective May 1, 2026, the Nanaimo registry.
+
+
+_Amendments: [en. B.C. Reg. 17/2026, s. 11.]_

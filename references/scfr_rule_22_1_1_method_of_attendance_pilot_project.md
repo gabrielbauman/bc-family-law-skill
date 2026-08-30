@@ -30,3 +30,6 @@
 
 
 **(5)** A direction made under subrule (1) applies despite any provision of these Supreme Court Family Rules that requires in-person attendance.
+
+
+_Amendments: [en. B.C. Reg. 236/2022, Sch. 2, s. 1.]_

@@ -19,3 +19,6 @@
 
 
 **(2)** A party requesting that a court appearance be scheduled must serve the form under subrule (1) on each other party at least 7 days before the date referred to in the application for the court appearance.
+
+
+_Amendments: [am. B.C. Reg. 126/2021, Sch. 1, s. 12.]_

@@ -30,6 +30,15 @@ internal cross-references converted to relative links. Start from the
 index file (`fla_index.md`, `pcfr_index.md`, etc.) and follow links to
 the sections you need — load only what the question requires.
 
+Where the official source carries per-section amendment history, each
+file ends with an `_Amendments:_` footer listing the instruments that
+amended it (e.g. `[am. B.C. Reg. 214/2023, s. 2.]` for the BC
+regulations; the federal statutes' amendment history). The footer is
+provenance, not operative text — treat it as metadata for flagging
+currency, never as part of the enactment. BC *acts* (the FLA) carry no
+per-section history in the BC Laws XML, so their files have no footer;
+the index's "current to" line is the only freshness signal for those.
+
 `forms-guide.md` is generated from the rule texts by
 `scripts/build_forms_index.py`; regenerate it whenever the rule files
 are refreshed.

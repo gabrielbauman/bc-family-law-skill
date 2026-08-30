@@ -19,3 +19,6 @@
 
 
 **(4)** Despite rule 65 (3), in the case of an application for a case management order described in rule 62 (g.1) that is made by an individual without notice, the court may order that the requirement under rule 65 (3) to serve the materials referred to in that provision does not apply.
+
+
+_Amendments: [en. B.C. Reg. 219/2023, Sch. 2, s. 2.]_

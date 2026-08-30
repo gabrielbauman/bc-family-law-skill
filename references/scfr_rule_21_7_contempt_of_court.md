@@ -108,3 +108,6 @@
 
 
 **(17)** If the court orders a person committed without specifying in days, weeks or months the period of the committal, the sheriff must bring that person before the court at intervals of not more than 7 days, in order that the court may review the committal and determine whether relief as set out in subrule (15) or (16) should be granted.
+
+
+_Amendments: [am. B.C. Reg. 112/2012, Sch. B, s. 3.]_

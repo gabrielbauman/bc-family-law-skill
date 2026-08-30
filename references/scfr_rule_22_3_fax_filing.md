@@ -114,3 +114,6 @@
 
 
 **(8)** The court may require that the original of a document that has been filed under this rule be produced.
+
+
+_Amendments: [am. B.C. Reg. 321/2021, Sch. 2, s. 7.]_

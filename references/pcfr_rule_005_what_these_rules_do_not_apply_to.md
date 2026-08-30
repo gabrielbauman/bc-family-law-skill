@@ -40,3 +40,6 @@ These rules do not apply to the following matters:
 **(ii)** the Provincial Court (Adult Guardianship) Rules;
 
 **(f)** interjurisdictional support orders, which are addressed under the Interjurisdictional Support Orders Act, except as provided in rules 134 (a) [filing orders] and 136 [applying to set aside interjurisdictional order].
+
+
+_Amendments: [am. B.C. Reg. 214/2023, s. 3.]_

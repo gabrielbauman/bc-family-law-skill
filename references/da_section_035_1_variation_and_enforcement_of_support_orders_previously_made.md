@@ -8,3 +8,6 @@
 
 
 **(3)** Any support order made under this Act before the coming into force of this section may be assigned to any minister, member or agency designated pursuant to section 20.1.
+
+
+_Amendments: 1997, c. 1, s. 15_

@@ -30,7 +30,9 @@ FED_BASE = "https://laws-lois.justice.gc.ca/eng/XML"
 
 # Block containers whose Label becomes a **(x)** marker
 FED_NUMBERED = {"Subsection", "Paragraph", "Subparagraph", "Clause", "Subclause"}
-# Elements skipped entirely: editorial history and footnote apparatus
+# Elements skipped from BODY rendering. HistoricalNote (amendment history)
+# is skipped here but captured separately in parse_federal and emitted as
+# a labelled footer; the rest are footnote/reader apparatus we drop.
 FED_SKIP = {"HistoricalNote", "MarginalNote", "Label", "Footnote", "FootnoteRef",
             "AmendedText", "ReaderNote"}
 
@@ -132,6 +134,16 @@ def parse_federal(xml_bytes: bytes, source: Source) -> tuple[list[Unit], str | N
     part: tuple[str, str] | None = None
     division: tuple[str, str] | None = None
 
+    def historical_note(el: ET.Element) -> str:
+        # HistoricalNote's sub-items are separate amendment events; joining
+        # them with "; " matches how the annotation reads in the statute.
+        # itertext() alone runs them together ("s. 762019, c. 16").
+        hn = el.find("HistoricalNote")
+        if hn is None:
+            return ""
+        parts = [fed_text(sub) for sub in hn if local(sub) == "HistoricalNoteSubItem"]
+        return "; ".join(p for p in parts if p)
+
     def walk(el):
         nonlocal part, division
         for child in el:
@@ -155,7 +167,8 @@ def parse_federal(xml_bytes: bytes, source: Source) -> tuple[list[Unit], str | N
                     if local(sub) in FED_SKIP:
                         continue
                     blocks.extend(render_fed_node(sub, 0))
-                units.append(Unit(label, marginal, blocks, part, division))
+                amendments = historical_note(child)
+                units.append(Unit(label, marginal, blocks, part, division, amendments=amendments))
             elif name == "Schedule":
                 continue  # schedules (incl. support tables) are out of scope
             else:

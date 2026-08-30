@@ -32,3 +32,6 @@
 **(c)** an order made under subsection 18.1(15) or 19(13) in respect of a child support order; or
 
 **(d)** an order made under subsection 28.5(5) or 29.1(5).
+
+
+_Amendments: 1997, c. 1, s. 11; 2019, c. 16, s. 28_

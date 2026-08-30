@@ -32,3 +32,6 @@ In order to carry out the duty, the court may make inquiries of the parties or r
 **(e)** occupying a family home or a residence; or
 
 **(f)** engaging in family violence.
+
+
+_Amendments: 2019, c. 16, s. 8_

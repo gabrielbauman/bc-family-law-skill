@@ -203,9 +203,11 @@ Block = tuple[str, int, str]  # (kind: text|def|num|item|table, level, markdown)
 NUMBERED = {qn(t) for t in (
     "bcl:subsection", "bcl:paragraph", "bcl:subparagraph", "bcl:clause", "bcl:subclause",
 )}
-# amend = amendment-history notes ("[en. B.C. Reg. ...]") — the corpus
-# omits them, keeping the text clean of editorial history.
-SKIP = {qn("bcl:num"), qn("bcl:marginalnote"), qn("bcl:amend")}
+# hnote = amendment-history notes ("[am. B.C. Reg. ...]"). They are not
+# operative text, so they are not rendered inline — but they carry the
+# provenance that flags currency risk, so they are captured (in parse_units)
+# and appended as a labelled "Amendments:" footer to each unit.
+SKIP = {qn("bcl:num"), qn("bcl:marginalnote"), qn("bcl:hnote")}
 
 
 def render_children(el: ET.Element, link_map: dict, unit: str, level: int, in_def: bool = False, bullet: bool = False) -> list[Block]:
@@ -285,6 +287,7 @@ class Unit:
     blocks: list[Block]
     part: tuple[str, str] | None       # (num, title)
     division: tuple[str, str] | None   # (num, title)
+    amendments: str = ""               # amendment-history annotation, verbatim
 
 
 def parse_units(xml_bytes: bytes, link_map: dict[str, str] | None, source: Source) -> list[Unit]:
@@ -339,7 +342,8 @@ def parse_units(xml_bytes: bytes, link_map: dict[str, str] | None, source: Sourc
                     blocks = render_children(child, link_map or {}, unit, 0, in_def=False)
                 if not num:
                     continue
-                units.append(Unit(num, marginal, blocks, part, division))
+                amendments = text_of(next(child.iter(qn("bcl:hnote")), None))
+                units.append(Unit(num, marginal, blocks, part, division, amendments=amendments))
             elif source.style == "rules" and child.tag == qn("bcl:section"):
                 continue  # appendix schedules — not part of the rules corpus
             else:
@@ -378,13 +382,17 @@ def unit_markdown(source: Source, u: Unit) -> str:
             lines.extend([""] * blanks)
             lines.append(text)
             prev = kind
-        return "\n".join(lines) + "\n"
-    for i, (kind, level, text) in enumerate(u.blocks):
-        wide = kind in ("def", "num") or (kind in ("text", "table") and i == 0)
-        lines.append("")
-        if wide:
+    else:
+        for i, (kind, level, text) in enumerate(u.blocks):
+            wide = kind in ("def", "num") or (kind in ("text", "table") and i == 0)
             lines.append("")
-        lines.append(text)
+            if wide:
+                lines.append("")
+            lines.append(text)
+    if u.amendments:
+        lines.append("")
+        lines.append("")
+        lines.append(f"_Amendments: {u.amendments}_")
     return "\n".join(lines) + "\n"
 
 

@@ -18,3 +18,6 @@
 
 
 **(3)** Rule 10-6 (14) (a) and (d), (17) and (18) does not apply to an application record that is transmitted electronically.
+
+
+_Amendments: [en. B.C. Reg. 236/2022, Sch. 2, s. 1.]_

@@ -21,6 +21,7 @@ from bclaws_regen import (  # noqa: E402
     Source,
     filename,
     num_to_file_num,
+    parse_units,
     slugify,
     unit_markdown,
 )
@@ -108,6 +109,10 @@ class ParseFederalTest(unittest.TestCase):
         "<Section>"
         "<Label>1</Label><MarginalNote>Short title</MarginalNote>"
         "<Text>This Act is the <DefinedTermEn>Test Act</DefinedTermEn>.</Text>"
+        "<HistoricalNote>"
+        "<HistoricalNoteSubItem>R.S., 1985, c. 3 (2nd Supp.), s. 2</HistoricalNoteSubItem>"
+        "<HistoricalNoteSubItem>2019, c. 16, s. 1</HistoricalNoteSubItem>"
+        "</HistoricalNote>"
         "</Section>"
         "<Section>"
         "<Label>*36</Label><MarginalNote>Commencement</MarginalNote>"
@@ -149,6 +154,63 @@ class ParseFederalTest(unittest.TestCase):
         md = unit_markdown(da_source(), commencement)
         self.assertIn("# Section 36 — Commencement", md)
         self.assertNotIn("*", md)
+
+    def test_historical_note_captured(self):
+        sec1 = next(u for u in self.units if u.num == "1")
+        self.assertEqual(
+            sec1.amendments,
+            "R.S., 1985, c. 3 (2nd Supp.), s. 2; 2019, c. 16, s. 1",
+        )
+
+    def test_historical_note_rendered_as_footer(self):
+        sec1 = next(u for u in self.units if u.num == "1")
+        md = unit_markdown(da_source(), sec1)
+        self.assertIn(
+            "_Amendments: R.S., 1985, c. 3 (2nd Supp.), s. 2; 2019, c. 16, s. 1_",
+            md,
+        )
+
+    def test_no_footer_without_history(self):
+        sec30 = next(u for u in self.units if u.num == "30 and 31")
+        md = unit_markdown(da_source(), sec30)
+        self.assertNotIn("_Amendments:", md)
+
+
+class BcHnoteTest(unittest.TestCase):
+    """BC regulations carry amendment history in bcl:hnote; capture it."""
+
+    XML = (
+        '<reg:regulation xmlns:reg="http://www.gov.bc.ca/2013/legislation/regulation"'
+        ' xmlns:bcl="http://www.gov.bc.ca/2013/bclegislation">'
+        "<reg:content>"
+        "<bcl:section>"
+        "<bcl:marginalnote>Purpose</bcl:marginalnote>"
+        "<bcl:num>1</bcl:num>"
+        "<bcl:text>The purpose.</bcl:text>"
+        "<bcl:hnote>[am. B.C. Reg. 214/2023, s. 2.]</bcl:hnote>"
+        "</bcl:section>"
+        "</reg:content>"
+        "</reg:regulation>"
+    )
+
+    def setUp(self):
+        self.source = Source(
+            key="pcfr", doc_id="120_2020", multi=False,
+            unit="Rule", title="PCFR", citation="**test**",
+        )
+        self.units = parse_units(self.XML.encode("utf-8"), None, self.source)
+
+    def test_hnote_captured(self):
+        self.assertEqual(self.units[0].amendments, "[am. B.C. Reg. 214/2023, s. 2.]")
+
+    def test_hnote_rendered_as_footer(self):
+        md = unit_markdown(self.source, self.units[0])
+        self.assertIn("_Amendments: [am. B.C. Reg. 214/2023, s. 2.]_", md)
+
+    def test_hnote_not_inline_in_body(self):
+        md = unit_markdown(self.source, self.units[0])
+        body = md.split("_Amendments:")[0]
+        self.assertNotIn("am. B.C. Reg", body)
 
 
 if __name__ == "__main__":

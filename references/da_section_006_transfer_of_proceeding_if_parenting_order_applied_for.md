@@ -11,3 +11,6 @@
 
 
 **(4)** Notwithstanding sections 3 to 5, a court in a province to which a proceeding is transferred under this section has exclusive jurisdiction to hear and determine the proceeding.
+
+
+_Amendments: R.S., 1985, c. 3 (2nd Supp.), s. 6; 2019, c. 16, s. 5_

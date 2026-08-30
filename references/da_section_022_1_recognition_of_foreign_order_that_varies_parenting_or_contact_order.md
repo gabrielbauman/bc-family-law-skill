@@ -18,3 +18,6 @@
 
 
 **(3)** The court’s decision refusing to recognize the competent authority’s decision has legal effect throughout Canada.
+
+
+_Amendments: 2019, c. 16, s. 19_

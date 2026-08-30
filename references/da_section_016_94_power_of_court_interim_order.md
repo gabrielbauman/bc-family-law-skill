@@ -2,3 +2,6 @@
 
 
 A court may decide not to apply subsections 16.93(1) and (2) if the order referred to in those subsections is an interim order.
+
+
+_Amendments: 2019, c. 16, s. 12_

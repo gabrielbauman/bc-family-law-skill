@@ -20,3 +20,6 @@
 
 
 **(7)** After a spouse subject to a provincial child support service decision becomes liable to pay an amount of child support under subsection (4), either or both spouses may have the amount of child support recalculated under section 25.1 or apply to a court of competent jurisdiction for an order under section 15.1.
+
+
+_Amendments: 2019, c. 16, s. 24_

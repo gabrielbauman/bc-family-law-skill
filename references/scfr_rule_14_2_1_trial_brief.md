@@ -86,3 +86,6 @@
 - **(a)** the new scheduled trial date is less than 6 months from the date on which the previous trial brief was filed, or
 
 - **(b)** the court otherwise orders.
+
+
+_Amendments: [en. B.C. Reg. 176/2023, Sch. 2, s. 13.]_

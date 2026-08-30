@@ -138,3 +138,6 @@
 
 
 **(18)** If, before a family law case is started, an agreement is reached for the settlement or compromise of a claim of a person under disability, whether alone or with others, and it is desired to obtain the court's approval, application may be made by petition and the court may make any order it considers will further the object of these Supreme Court Family Rules.
+
+
+_Amendments: [am. B.C. Reg. 28/2024, Sch. B, s. 24 (a).]_

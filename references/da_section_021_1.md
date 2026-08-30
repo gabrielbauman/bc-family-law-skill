@@ -49,3 +49,6 @@ the court may, subject to any terms that the court considers appropriate,
 
 
 **(6)** This section does not apply where the power to remove the barrier to religious remarriage lies with a religious body or official.
+
+
+_Amendments: 1990, c. 18, s. 2; 2019, c. 16, s. 17_

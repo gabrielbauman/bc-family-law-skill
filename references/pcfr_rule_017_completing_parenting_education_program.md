@@ -20,3 +20,6 @@ Each party must complete a parenting education program unless a needs assessor e
 **(f)** the party cannot complete an online version due to literacy challenges, or
 
 **(g)** the party cannot complete the parenting education program due to a serious medical condition.
+
+
+_Amendments: [am. B.C. Reg. 214/2023, s. 4.]_

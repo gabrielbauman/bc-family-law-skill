@@ -8,3 +8,6 @@
 
 
 **(3)** A direction under subrule (2) may be different for different court registries, types of court appearances, classes of persons or circumstances.
+
+
+_Amendments: [en. B.C. Reg. 302/2021, Sch. 1, s. 11.]_

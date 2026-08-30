@@ -31,3 +31,6 @@
 
 
 **(4)** The court forms relating to any proceedings under this Act shall be made available in both official languages.
+
+
+_Amendments: 2019, c. 16, s. 22.1_

@@ -136,3 +136,6 @@
 - **(a)** if the application is to be by consent, the parties must apply in accordance with Rule 10-7;
 
 - **(b)** if the application is not to be by consent, a party must request a subsequent case planning conference under Rule 7.1-1.
+
+
+_Amendments: [en. B.C. Reg. 176/2023, Sch. 2, s. 7; am. B.C. Regs. 277/2023, Sch. 3, s. 5; 188/2024, s. 3.]_

@@ -182,3 +182,6 @@ the party, by written demand that identifies the additional documents or classes
 
 
 **(19)** If the party from whom discovery, inspection or copying of a document is sought objects to that discovery, inspection or copying, the court may, if satisfied that for any reason it is desirable that an issue or question in dispute should be determined before deciding on the right to discovery, inspection or copying, order that the issue or question be determined first and reserve the question of discovery, inspection or copying.
+
+
+_Amendments: [am. B.C. Reg. 28/2024, Sch. B, s. 6.]_

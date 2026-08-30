@@ -44,3 +44,6 @@
 
 
 **(6)** A party who fails to file a trial certificate under subrule (1) is not, without leave of the court, entitled to make further applications.
+
+
+_Amendments: [am. B.C. Reg. 176/2023, Sch. 2, s. 17 (a).]_

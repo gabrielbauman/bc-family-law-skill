@@ -15,3 +15,6 @@
 
 
 **(4)** Notwithstanding subsection (3), a court may only vary an order that has legal effect throughout Canada pursuant to subsection (2) in accordance with this Act.
+
+
+_Amendments: R.S., 1985, c. 3 (2nd Supp.), s. 20; 1997, c. 1, s. 8; 2019, c. 16, s. 15_

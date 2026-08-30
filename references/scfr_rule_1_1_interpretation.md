@@ -154,3 +154,6 @@ and includes
 
 
 **(4)** Italicized words in square brackets are not part of these Supreme Court Family Rules, are included editorially for convenience of reference only and are not to be used in interpreting the rules or any provision to which the words refer.
+
+
+_Amendments: [am. B.C. Regs. 119/2010, Sch. B, s. 1; 133/2012, s. 1; 27/2013, Sch. 2, s. 14; 90/2014, Sch. 2, s. 1; 121/2014, s. 1; 249/2014, s. 1; 99/2018, Sch. 2, s. 17; 176/2023, Sch. 2, s. 1; 277/2023, Sch. 3, s. 1; 28/2024, Sch. B, s. 1; 165/2024, Sch. 2, s. 1; 188/2024, s. 1.]_

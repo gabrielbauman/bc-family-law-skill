@@ -88,3 +88,6 @@ the court, on the application of any other party, may order that the lawyer has 
 
 
 **(11)** An applicant who obtains an order under subrule (2) or (3) must serve a copy of the entered order on all parties and, until it is served, a party is entitled to proceed on the basis that there has been no change of lawyer or address for service.
+
+
+_Amendments: [am. B.C. Reg. 28/2024, Sch. B, s. 25.]_

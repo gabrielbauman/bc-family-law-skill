@@ -54,3 +54,6 @@
 
 
 **(17)** For greater certainty, if a court receives a document under this section that is in a form that is different from that required by the rules regulating the practice and procedure in that court, or that contains terminology that is different from that used in this Act or the regulations, the court shall give a broad interpretation to the document for the purpose of giving effect to it.
+
+
+_Amendments: 2019, c. 16, s. 14_

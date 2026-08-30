@@ -56,3 +56,6 @@
 
 
 **(8)** On the application of a person affected by an order made without notice under subrule (6), the court may change or set aside the order.
+
+
+_Amendments: [am. B.C. Reg. 176/2023, Sch. 2, s. 10.]_

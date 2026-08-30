@@ -22,3 +22,6 @@
 **(a)** an affidavit referred to in subrule (1) must be sworn no more than 7 days before the date the affidavit is filed;
 
 **(b)** the record checks referred to in subrule (1) (a), (b) and (c) must be dated within 60 days before the date that the record check is filed.
+
+
+_Amendments: [am. B.C. Regs. 236/2020, Sch. 2, ss. 3 and 4; 126/2021, Sch. 1, s. 4.]_

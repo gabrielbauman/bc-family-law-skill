@@ -124,3 +124,6 @@
 
 
 **(11)** Unless the court otherwise orders, if reasonable notice of an objection could have been given under subrule (10), the objection must not be permitted at trial if that notice was not given.
+
+
+_Amendments: [am. B.C. Regs. 119/2010, Sch. B, s. 15; 28/2024, Sch. B, s. 18 (a) and (b).]_

@@ -48,3 +48,6 @@
 
 
 **(8)** This rule applies to a counterclaim and a petition.
+
+
+_Amendments: [am. B.C. Reg. 28/2024, Sch. B, s. 12 (a).]_

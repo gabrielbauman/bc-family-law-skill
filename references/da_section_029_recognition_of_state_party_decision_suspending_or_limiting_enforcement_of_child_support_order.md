@@ -11,3 +11,6 @@
 
 
 **(4)** A decision that is recognized in accordance with the law of the province is deemed to be an order made under section 17, has legal effect throughout Canada and may be enforced in any manner provided for by the law of that province, including its laws respecting reciprocal enforcement between the province and a jurisdiction outside Canada.
+
+
+_Amendments: R.S., 1985, c. 3 (2nd Supp.), s. 29; 1997, c. 1, s. 12; 2019, c. 16, s. 30_

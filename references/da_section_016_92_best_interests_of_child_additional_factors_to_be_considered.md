@@ -19,3 +19,6 @@
 
 
 **(2)** In deciding whether to authorize a relocation of the child, the court shall not consider, if the child’s relocation was prohibited, whether the person who intends to relocate the child would relocate without the child or not relocate.
+
+
+_Amendments: 2019, c. 16, s. 12_

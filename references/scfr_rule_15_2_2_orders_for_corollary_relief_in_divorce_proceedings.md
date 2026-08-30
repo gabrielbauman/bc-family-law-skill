@@ -30,3 +30,6 @@
 
 
 **(4)** Nothing in subrule (2) or (3) restricts the court from making an order in a corollary relief proceeding if a Form F102 has not been filed.
+
+
+_Amendments: [en. B.C. Reg. 208/2020, s. 4.]_

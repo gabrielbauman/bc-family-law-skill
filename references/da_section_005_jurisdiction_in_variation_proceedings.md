@@ -18,3 +18,6 @@
 **(b)** if neither of the proceedings includes an application for a variation order in respect of a parenting order, the court that retains jurisdiction is the court in the province in which the former spouses last maintained a habitual residence in common if one of the former spouses is habitually resident in that province; and
 
 **(c)** in any other case, the court that retains jurisdiction is the court that the Federal Court determines to be the most appropriate.
+
+
+_Amendments: R.S., 1985, c. 3 (2nd Supp.), s. 5; 2002, c. 8, s. 183; 2019, c. 16, s. 4; 2019, c. 16, s. 35(E)_

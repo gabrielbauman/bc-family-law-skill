@@ -20,3 +20,6 @@
 
 
 **(3)** For the purposes of these rules, a reference to attending, appearing, giving, being before a judge, justice or family justice manager, being in court or being at a place or location is not to be interpreted as requiring in-person attendance.
+
+
+_Amendments: [am. B.C. Reg. 302/2021, Sch. 1, s. 12.]_

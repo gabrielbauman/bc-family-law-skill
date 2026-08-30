@@ -396,3 +396,6 @@
 - **(b)** requires that certain information required by this rule but not by the child support guidelines be presented in a manner or form that is different from the manner or form in which information required under the child support guidelines is to be presented, or
 
 - **(c)** requires the provision, in one manner or form, of information some or all of which is required under the child support guidelines to be provided in a different manner or form.
+
+
+_Amendments: [am. B.C. Regs. 133/2012, ss. 5 and 7 (a), (b) and (d) and s. 7 (c), as am by B.C. Reg. 67/2013, s. 1 (c); 249/2014, s. 3 (a); 321/2021, Sch. 2, s. 2.]_

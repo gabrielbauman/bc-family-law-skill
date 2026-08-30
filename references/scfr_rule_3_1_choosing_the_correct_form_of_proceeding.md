@@ -138,3 +138,6 @@
 - **(a)** relief referred to in paragraph (a), (b), (c), (d) or (e) of the definition of "family law case" in Rule 1-1 is being sought in the family law case, and
 
 - **(b)** the claim is related to or connected with any of that relief.
+
+
+_Amendments: [am. B.C. Regs. 133/2012, s. 3 (a); 121/2014, s. 3 (a); 152/2025, Sch. 4, s. 2 (a).]_

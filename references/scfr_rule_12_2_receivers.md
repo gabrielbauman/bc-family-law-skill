@@ -24,3 +24,6 @@
 
 
 **(4)** Unless the court otherwise orders, a receiver must file and deliver the receiver's accounts annually.
+
+
+_Amendments: [am. B.C. Reg. 28/2024, Sch. B, s. 13.]_

@@ -124,3 +124,6 @@
 
 
 **(13)** Each report and supplementary report of an expert appointed by the court under this rule must be introduced as evidence at the trial of the family law case, unless the trial judge otherwise orders.
+
+
+_Amendments: [am. B.C. Reg. 28/2024, Sch. B, s. 17 (a).]_

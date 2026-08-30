@@ -70,3 +70,6 @@
 - **(ii)** by depriving the party against whom the evidence is introduced of a reasonable opportunity to introduce evidence in response, or
 
 - **(c)** the interests of justice require it.
+
+
+_Amendments: [am. B.C. Reg. 28/2024, Sch. B, s. 19.]_

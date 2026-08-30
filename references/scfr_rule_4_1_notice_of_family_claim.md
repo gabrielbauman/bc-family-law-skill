@@ -20,3 +20,6 @@
 - **(a)** by personal service in accordance with Rule 6-3 (2), or
 
 - **(b)** if the court makes an order under Rule 6-4 (1) allowing service by an alternative method, by that alternative method.
+
+
+_Amendments: [am. B.C. Reg. 133/2012, s. 4, as am by B.C. Reg. 67/2013, s. 1 (b).]_

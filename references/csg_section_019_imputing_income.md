@@ -23,3 +23,6 @@
 
 
 **(2)** For the purpose of paragraph (1)(g), the reasonableness of an expense deduction is not solely governed by whether the deduction is permitted under the Income Tax Act.
+
+
+_Amendments: SOR/2000-337, s. 5_

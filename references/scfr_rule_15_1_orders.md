@@ -250,3 +250,6 @@
 
 
 **(20)** When making an order under these Supreme Court Family Rules, the court may impose terms and conditions and give directions it considers will further the object of these Supreme Court Family Rules.
+
+
+_Amendments: [en. B.C. Reg. 119/2010, Sch. B, s. 19; am. B.C. Regs. 133/2012, s. 20 (a) and (b); 104/2015, s. 1 (a); 149/2022, Sch. 2, s. 2; 176/2023, Sch. 2, s. 18.]_

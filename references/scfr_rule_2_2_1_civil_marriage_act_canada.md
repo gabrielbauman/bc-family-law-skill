@@ -50,3 +50,6 @@
 
 
 **(4)** An application for a court order declaring that the other spouse cannot be found may be made without notice.
+
+
+_Amendments: [en. B.C. Reg. 4/2016, s. 1; am. B.C. Regs. 28/2024, Sch. B, s. 2; 152/2025, Sch. 4, s. 1 (a).]_

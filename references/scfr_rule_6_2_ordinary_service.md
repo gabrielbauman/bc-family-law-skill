@@ -88,3 +88,6 @@
 
 
 **(8)** If a document is transmitted for service by e-mail and the person receiving the document requests, within 3 days of receiving that document, that a copy be sent to another address for service for that person, the party who served the document by e-mail must provide the copy at the requested address for service within 7 days of receiving that request or as agreed upon by the parties.
+
+
+_Amendments: [am. B.C. Reg. 165/2024, Sch. 2, s. 2.]_

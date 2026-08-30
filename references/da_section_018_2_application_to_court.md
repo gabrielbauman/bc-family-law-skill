@@ -11,3 +11,6 @@
 
 
 **(4)** Once the designated authority receives the copy of the application under subsection (2), subsections 18.1(2), (4), (5), (7) and (12) to (17) apply, with any necessary modifications, in respect of that application.
+
+
+_Amendments: 2019, c. 16, s. 14_

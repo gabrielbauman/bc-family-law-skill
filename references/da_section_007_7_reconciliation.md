@@ -22,3 +22,6 @@
 
 
 **(3)** Every document that formally commences a proceeding under this Act, or that responds to such a document, that is filed with a court by a legal adviser shall contain a statement by the legal adviser certifying that they have complied with this section.
+
+
+_Amendments: 2019, c. 16, s. 8_

@@ -108,3 +108,6 @@ and in no case is it necessary to show the original document,
 
 
 **(5)** If a notice of family claim, counterclaim or petition has not been served on a person, but the person files a response to family claim, response to counterclaim or response to petition or attends at the trial or hearing, the notice of family claim, counterclaim or petition is deemed to have been served on that person on the date the person files or attends.
+
+
+_Amendments: [am. B.C. Regs. 133/2012, s. 8; 121/2014, s. 4; 152/2025, Sch. 4, s. 3.]_

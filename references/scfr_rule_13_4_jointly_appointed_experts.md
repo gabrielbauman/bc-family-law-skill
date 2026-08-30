@@ -94,3 +94,6 @@
 
 
 **(10)** Each party has the right to cross-examine a joint expert at trial.
+
+
+_Amendments: [am. B.C. Reg. 28/2024, Sch. B, s. 16.]_

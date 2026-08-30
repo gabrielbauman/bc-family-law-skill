@@ -66,3 +66,6 @@
 - **(b)** judicial case conferences;
 
 - **(c)** the trial.
+
+
+_Amendments: [am. B.C. Regs. 133/2012, s. 26; 208/2020, s. 7.]_

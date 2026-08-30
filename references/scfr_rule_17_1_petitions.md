@@ -320,3 +320,6 @@ and for that purpose Rule 8-1 (2) to (7) applies.
 - **(a)** make the order, or
 
 - **(b)** give directions respecting the application.
+
+
+_Amendments: [am. B.C. Reg. 95/2011, Sch. B, s. 3 (a).]_

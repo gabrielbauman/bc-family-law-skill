@@ -38,3 +38,6 @@
 - **(e)** to change, suspend or terminate an arbitration award;
 
 - **(f)** to amend a case plan order under Rule 7.1-3 (8) (a).
+
+
+_Amendments: [en. B.C. Reg. 133/2012, s. 15; am. B.C. Regs. 121/2014, s. 5 (a); 152/2025, Sch. 4, s. 5 (a) to (c).]_

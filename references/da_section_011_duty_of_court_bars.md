@@ -17,3 +17,6 @@
 
 
 **(4)** In this section, collusion means an agreement or conspiracy to which an applicant for a divorce is either directly or indirectly a party for the purpose of subverting the administration of justice, and includes any agreement, understanding or arrangement to fabricate or suppress evidence or to deceive the court, but does not include an agreement to the extent that it provides for separation between the parties, financial support, division of property or the exercise of parenting time or decision-making responsibility.
+
+
+_Amendments: R.S., 1985, c. 3 (2nd Supp.), s. 11; 1997, c. 1, s. 1.1; 2019, c. 16, s. 10_

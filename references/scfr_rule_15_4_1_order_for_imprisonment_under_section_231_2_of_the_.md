@@ -48,3 +48,6 @@
 
 
 **(8)** On application by or on behalf of a person imprisoned under section 231 (2) of the Family Law Act, the court may release that person, whether or not the period of committal has elapsed.
+
+
+_Amendments: [en. B.C. Reg. 152/2025, Sch. 4, s. 9.]_

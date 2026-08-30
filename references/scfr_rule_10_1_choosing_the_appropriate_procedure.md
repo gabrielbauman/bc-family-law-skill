@@ -18,3 +18,6 @@
 
 
 **(3)** To obtain a final order in a defended family law case, a party must apply in accordance with Rule 10-11.
+
+
+_Amendments: [en. B.C. Reg. 133/2012, s. 12.]_

@@ -208,3 +208,6 @@
 
 
 **(11)** An appeal from the decision of an associate judge or registrar is not a stay of proceeding unless so ordered by the court or the associate judge.
+
+
+_Amendments: [am. B.C. Reg. 277/2023, Sch. 3, s. 1.]_

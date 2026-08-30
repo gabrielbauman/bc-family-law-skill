@@ -28,3 +28,6 @@
 - **(b)** require that the person or lawyer appear in person to speak to the application, with or without notice to any other person;
 
 - **(c)** make any order or give any other directions the court considers will further the object of these Supreme Court Family Rules.
+
+
+_Amendments: [en. B.C. Reg. 239/2023, Sch. 2, s. 6.]_

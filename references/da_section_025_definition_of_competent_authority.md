@@ -27,3 +27,6 @@
 
 
 **(4)** Rules made pursuant to this section by a competent authority that is not a judicial or quasi-judicial body shall be deemed not to be statutory instruments within the meaning and for the purposes of the Statutory Instruments Act.
+
+
+_Amendments: R.S., 1985, c. 3 (2nd Supp.), s. 25; 1993, c. 8, s. 5; 2019, c. 16, s. 23_

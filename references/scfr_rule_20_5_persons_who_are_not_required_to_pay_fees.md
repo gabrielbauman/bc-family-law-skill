@@ -66,3 +66,6 @@ the court may order that no fees are payable by the person to the government und
 - **(d)** the steps
 
 to which the order applies.
+
+
+_Amendments: [en. B.C. Reg. 104/2015, s. 3.]_

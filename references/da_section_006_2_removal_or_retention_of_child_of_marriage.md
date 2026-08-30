@@ -18,3 +18,6 @@
 
 
 **(3)** If after the child’s removal from or retention in a province, two proceedings are commenced on the same day as described in subsection 3(3), 4(3) or 5(3), this section prevails over those subsections and the Federal Court shall determine which court has jurisdiction under this section. A reference in this section to “court in the province in which the child was habitually resident” is to be read as “Federal Court”.
+
+
+_Amendments: 2019, c. 16, s. 6_

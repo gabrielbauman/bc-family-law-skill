@@ -220,3 +220,6 @@
 
 
 **(19)** Proceedings at a judicial case conference must be recorded, but no part of that recording may be made available to or used by any person without court order.
+
+
+_Amendments: [am. B.C. Regs. 133/2012, s. 10 (a) to (c); 249/2014, s. 4.]_

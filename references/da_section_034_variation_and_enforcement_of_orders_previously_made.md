@@ -15,3 +15,6 @@
 
 
 **(3)** Any order for the maintenance of a spouse, former spouse or child of the marriage made under section 10 or 11 of the Divorce Act, chapter D-8 of the Revised Statutes of Canada, 1970, and any order to the like effect made corollary to a decree of divorce granted in Canada before July 2, 1968 or granted on or after that day under subsection 22(2) of that Act may be assigned to any minister, member or agency designated under section 20.1.
+
+
+_Amendments: R.S., 1985, c. 3 (2nd Supp.), s. 34; 1997, c. 1, s. 14; 2019, c. 16, s. 33_

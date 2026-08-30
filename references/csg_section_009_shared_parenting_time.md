@@ -8,3 +8,6 @@ If each spouse exercises not less than 40% of parenting time with a child over t
 **(b)** the increased costs of shared parenting time arrangements; and
 
 **(c)** the conditions, means, needs and other circumstances of each spouse and of any child for whom support is sought.
+
+
+_Amendments: SOR/2020-247, s. 5_

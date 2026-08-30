@@ -2,3 +2,6 @@
 
 
 To the extent that it is appropriate to do so, the parties to a proceeding shall try to resolve the matters that may be the subject of an order under this Act through a family dispute resolution process.
+
+
+_Amendments: 2019, c. 16, s. 8_

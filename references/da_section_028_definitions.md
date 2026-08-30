@@ -20,3 +20,6 @@ The following definitions apply in this section and in sections 28.1 to 29.5.
 
 
 **"State Party"** means a State other than Canada in which the 2007 Convention applies. (État partie)
+
+
+_Amendments: R.S., 1985, c. 3 (2nd Supp.), s. 28; 1997, c. 1, s. 12; 2019, ch. 16, art. 29; 2019, c. 16, s. 30_

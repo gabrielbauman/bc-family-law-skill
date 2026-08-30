@@ -5,3 +5,6 @@
 
 
 **(2)** The Canada Evidence Act applies in respect of a proceeding before the Federal Court to determine, under subsection 3(3), 4(3), 5(3) or 6.2(3), which court retains jurisdiction.
+
+
+_Amendments: R.S., 1985, c. 3 (2nd Supp.), s. 23; 2002, c. 8, s. 183; 2019, c. 16, s. 21_

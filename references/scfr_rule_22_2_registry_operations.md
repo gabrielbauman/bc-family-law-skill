@@ -104,3 +104,6 @@ as in the judge's opinion the circumstances of the family law case require, and
 
 
 **(13)** At any time after a family law case is started, the court may on application order the family law case to be transferred from the registry in which it is being conducted to any other registry of the court for any or all purposes.
+
+
+_Amendments: [am. B.C. Reg. 176/2023, Sch. 2, s. 20.]_

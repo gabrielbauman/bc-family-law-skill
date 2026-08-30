@@ -50,3 +50,6 @@
 
 
 **(4)** Nothing in subrule (1) or (2) restricts the court from considering any other evidence of service that the court considers appropriate in the circumstances.
+
+
+_Amendments: [am. B.C. Reg. 28/2024, Sch. B, s. 5.]_

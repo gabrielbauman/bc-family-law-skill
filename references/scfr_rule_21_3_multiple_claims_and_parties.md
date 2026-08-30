@@ -70,3 +70,6 @@
 
 
 **(9)** A family law case must not be defeated by reason of the misjoinder or nonjoinder of a party and the court may deal with the matter in controversy so far as it affects the rights and interests of the parties before it.
+
+
+_Amendments: [en. B.C. Reg. 133/2012, s. 25.]_

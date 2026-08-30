@@ -31,3 +31,6 @@
 **(c)** relieve any economic hardship of the spouses arising from the breakdown of the marriage; and
 
 **(d)** in so far as practicable, promote the economic self-sufficiency of each spouse within a reasonable period of time.
+
+
+_Amendments: 1997, c. 1, s. 2_

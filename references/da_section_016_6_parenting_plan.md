@@ -5,3 +5,6 @@
 
 
 **(2)** In subsection (1), parenting plan means a document or part of a document that contains the elements relating to parenting time, decision-making responsibility or contact to which the parties agree.
+
+
+_Amendments: 2019, c. 16, s. 12_

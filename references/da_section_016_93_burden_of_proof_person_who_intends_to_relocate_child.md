@@ -8,3 +8,6 @@
 
 
 **(3)** In any other case, the parties to the proceeding have the burden of proving whether the relocation is in the best interests of the child.
+
+
+_Amendments: 2019, c. 16, s. 12_

@@ -18,3 +18,6 @@
 **(a)** meet the early resolution requirements described in [rule 10 [early resolution requirements must be met before application filed]](pcfr_rule_010_early_resolution_requirements_must_be_met_before_application_filed.md), and
 
 **(b)** after having met the early resolution requirements, file and serve on each other party an application about a family law matter in Form 3 [Application About a Family Law Matter].
+
+
+_Amendments: [am. B.C. Reg. 214/2023, s. 5.]_

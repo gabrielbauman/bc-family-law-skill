@@ -14,3 +14,6 @@ A party may file, using Form 26 [Request to File an Agreement], a copy of a writ
 **(d)** section 148 (2) [agreements respecting child support];
 
 **(e)** section 163 (3) [agreements respecting spousal support].
+
+
+_Amendments: [am. B.C. Reg. 214/2023, s. 9.]_

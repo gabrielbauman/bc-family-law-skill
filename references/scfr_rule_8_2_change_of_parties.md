@@ -102,3 +102,6 @@ that, in the opinion of the court, it would be just and convenient to determine 
 
 
 **(11)** Unless the court otherwise orders, an application under subrule (7) may be made without notice to any person who is not a party.
+
+
+_Amendments: [am. B.C. Reg. 133/2012, s. 11.]_

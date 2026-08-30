@@ -160,3 +160,6 @@ and includes such other court in the province the judges of which are appointed 
 
 
 **(6)** The guidelines of a province referred to in subsection (5) include any amendments made to them from time to time.
+
+
+_Amendments: R.S., 1985, c. 3 (2nd Supp.), s. 2, c. 27 (2nd Supp.), s. 10; 1990, c. 18, s. 1; 1992, c. 51, s. 46; 1997, c. 1, s. 1; 1998, c. 30, ss. 13(F), 15(E); 1999, c. 3, s. 61; 2002, c. 7, s. 158(E); 2005, c. 33, s. 8; 2015, c. 3, s. 76; 2019, c. 16, s. 1; 2019, c. 16, s. 35(E)_

@@ -5,3 +5,6 @@
 
 
 **(2)** Where a spouse has incurred a non-recurring capital or business investment loss, the court may, if it is of the opinion that the determination of the spouse’s annual income under section 16 would not provide the fairest determination of the annual income, choose not to apply sections 6 and 7 of Schedule III, and adjust the amount of the loss, including related expenses and carrying charges and interest expenses, to arrive at such amount as the court considers appropriate.
+
+
+_Amendments: SOR/2000-337, s. 4_

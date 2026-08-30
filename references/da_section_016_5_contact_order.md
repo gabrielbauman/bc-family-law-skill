@@ -30,3 +30,6 @@
 
 
 **(9)** If a parenting order in respect of the child has already been made, the court may make an order varying the parenting order to take into account a contact order it makes under this section, and subsections 17(3) and (11) apply as a consequence with any necessary modifications.
+
+
+_Amendments: 2019, c. 16, s. 12_

@@ -18,3 +18,6 @@
 
 
 **(3)** Without limiting any other power the court may have to enforce an agreement filed under this rule, the court may make an order for that purpose on an application and, for that purpose, Part 10 of these Supreme Court Family Rules applies.
+
+
+_Amendments: [en. B.C. Reg. 133/2012, s. 2, as am. by B.C. Reg. 67/2013, s. 1 (a).]_

@@ -604,3 +604,6 @@ the court, by its warrant in Form F50 directed to a sheriff or other officer of 
 
 
 **(77)** The court may set aside a verdict or judgment obtained if a party does not attend the trial.
+
+
+_Amendments: [am. B.C. Reg. 149/2022, Sch. 2, s. 1.]_

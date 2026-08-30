@@ -11,3 +11,6 @@
 
 
 **(4)** An application referred to in subsection (3) may be made without notice to any other party.
+
+
+_Amendments: 2019, c. 16, s. 12_

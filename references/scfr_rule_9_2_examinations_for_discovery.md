@@ -218,3 +218,6 @@ for examinations for discovery by the parties to the family law case who are adv
 - **(b)** the witness fees referred to in subrule (12) may be paid to
 
 the lawyer for the person.
+
+
+_Amendments: [am. B.C. Reg. 28/2024, Sch. B, s. 8 (a).]_

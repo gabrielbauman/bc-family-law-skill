@@ -20,3 +20,6 @@ The early resolution requirements described in rules 10 [early resolution requir
 **(v)** a consent order;
 
 **(vi)** an enforcement order.
+
+
+_Amendments: [am. B.C. Reg. 126/2021, Sch. 1, s. 2.]_

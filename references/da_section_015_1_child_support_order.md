@@ -27,3 +27,6 @@
 
 
 **(8)** For the purposes of subsection (7), in determining whether reasonable arrangements have been made for the support of a child, the court shall have regard to the applicable guidelines. However, the court shall not consider the arrangements to be unreasonable solely because the amount of support agreed to is not the same as the amount that would otherwise have been determined in accordance with the applicable guidelines.
+
+
+_Amendments: 1997, c. 1, s. 2_

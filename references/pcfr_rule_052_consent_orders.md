@@ -19,3 +19,6 @@
 
 
 **(2)** A family justice manager at a family management conference may not make a final order about guardianship of a child under subrule (1).
+
+
+_Amendments: [am. B.C. Reg. 214/2023, s. 6.]_

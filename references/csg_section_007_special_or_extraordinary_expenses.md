@@ -40,3 +40,6 @@
 
 
 **(4)** In determining the amount of an expense referred to in subsection (1), the court shall not take into account any universal child care benefit or any eligibility to claim that benefit.
+
+
+_Amendments: SOR/2000-337, s. 1; SOR/2000-390, s. 1(F); SOR/2005-400, s. 1; SOR/2007-59, s. 2; SOR/2020-247, s. 3_

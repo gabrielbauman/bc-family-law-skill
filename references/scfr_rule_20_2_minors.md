@@ -22,3 +22,6 @@
 
 
 **(2)** Without limiting section 201 of the Family Law Act and despite subrule (1), if the court considers that it is in the interest of a minor referred to in subrule (1) or of any child of the minor, it may, whether or not on the application of a party, appoint a litigation guardian for the minor or for the child of the minor.
+
+
+_Amendments: [en. B.C. Reg. 133/2012, s. 24 (a).]_

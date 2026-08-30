@@ -156,3 +156,6 @@
 - **(a)** hear any application for which affidavit evidence is required, or
 
 - **(b)** make an order for final judgment, except by consent.
+
+
+_Amendments: [en. B.C. Reg. 176/2023, Sch. 2, s. 14 (a); am. B.C. Reg. 188/2024, s. 4 (a).]_

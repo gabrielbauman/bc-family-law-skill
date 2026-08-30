@@ -42,3 +42,6 @@
 - **(a)** serve a copy of the entered order on each of the parties who has an address for service, and
 
 - **(b)** if any of the parties does not have an address for service, mail a copy of the entered order to that party's last known address.
+
+
+_Amendments: [en. B.C. Reg. 4/2016, s. 2.]_

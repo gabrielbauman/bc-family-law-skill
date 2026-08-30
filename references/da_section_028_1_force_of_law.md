@@ -5,3 +5,6 @@
 
 
 **(2)** The 2007 Convention prevails over this Act and any other federal law to the extent of any inconsistency between them.
+
+
+_Amendments: 2019, c. 16, s. 30_

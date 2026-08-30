@@ -31,3 +31,6 @@
 
 
 **(6)** Where the court makes a child support order in a different amount under this section, it must record its reasons for doing so.
+
+
+_Amendments: SOR/2020-247, s. 6_

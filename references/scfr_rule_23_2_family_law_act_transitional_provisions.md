@@ -44,3 +44,6 @@
 
 
 **(6)** If a proceeding started before November 24, 2011 includes a claim for parental support, the provisions of these Supreme Court Family Rules that apply to spousal support claims apply to the claim for parental support.
+
+
+_Amendments: [en. B.C. Reg. 133/2012, s. 27.]_

@@ -38,3 +38,6 @@
 
 
 **(9)** The order may prohibit the removal of a child from a specified geographic area without the written consent of any specified person or without a court order authorizing the removal.
+
+
+_Amendments: 2019, c. 16, s. 12_

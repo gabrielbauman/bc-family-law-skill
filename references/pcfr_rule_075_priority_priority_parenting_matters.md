@@ -8,3 +8,6 @@ If a party is applying for both an order about a priority parenting matter and a
 **(b)** Repealed. [B.C. Reg. 17/2026, s. 6.]
 
 **(c)** the parenting education program registry requirements under [rule 100 [requirements in parenting education program registries]](pcfr_rule_100_requirements_in_parenting_education_program_registries.md).
+
+
+_Amendments: [am. B.C. Reg. 17/2026, s. 6.]_

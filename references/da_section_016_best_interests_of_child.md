@@ -62,3 +62,6 @@
 
 
 **(7)** In this section, a parenting order includes an interim parenting order and a variation order in respect of a parenting order, and a contact order includes an interim contact order and a variation order in respect of a contact order.
+
+
+_Amendments: R.S., 1985, c. 3 (2nd Supp.), s. 16; 2019, c. 16, s. 12_

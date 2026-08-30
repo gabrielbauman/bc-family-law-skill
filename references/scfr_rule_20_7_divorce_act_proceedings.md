@@ -66,3 +66,6 @@ Supreme Court Family Rules, within which the document must be filed and served, 
 
 
 **(10)** If one or more of the proceedings consolidated under Rule 21-3 (8) or (8.1) is a Divorce Act proceeding, the court may, in the order for consolidation, make orders respecting the use of an official language in the consolidated proceeding.
+
+
+_Amendments: [en. B.C. Reg. 188/2024, s. 6.]_

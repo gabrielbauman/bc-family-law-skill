@@ -25,3 +25,6 @@
 **(e)** relating to a report under section 211 [orders respecting reports] of the Family Law Act, other than requiring that a person who prepared the report attend a trial as a witness;
 
 **(f)** settling or correcting the terms of an order made by a family justice manager under these rules.
+
+
+_Amendments: [am. B.C. Reg. 302/2021, Sch. 1, s. 4.]_

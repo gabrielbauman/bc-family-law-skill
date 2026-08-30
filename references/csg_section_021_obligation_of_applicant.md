@@ -38,3 +38,6 @@
 
 
 **(5)** Nothing in this section precludes the making of rules by a competent authority, within the meaning of section 25 of the Act, respecting the disclosure of income information that is considered necessary for the purposes of the determination of an amount of a child support order.
+
+
+_Amendments: SOR/2000-337, s. 6_

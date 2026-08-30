@@ -70,3 +70,6 @@ the personal representative must, on application under Rule 8-2,
 - **(d)** if a litigation representative is conducting or defending the family law case, be substituted for the litigation representative as a party in the family law case,
 
 unless an order is made in respect of the proceeding under section 151 of the Wills, Estates and Succession Act.
+
+
+_Amendments: [en. B.C. Reg. 90/2014, Sch. 2, s. 3.]_

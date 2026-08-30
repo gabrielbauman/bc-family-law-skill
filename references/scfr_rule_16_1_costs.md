@@ -304,3 +304,6 @@ and in awarding those costs the court may fix the amount of costs, including the
 
 
 **(36)** Unless the court otherwise orders, fees to lawyers, accountants, engineers, actuaries, valuators, merchants and other scientific persons to whom any matter or question is referred by the court must be determined by a registrar, subject to an appeal to the court.
+
+
+_Amendments: [am. B.C. Reg. 133/2012, s. 22 (a).]_

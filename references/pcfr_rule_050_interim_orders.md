@@ -16,3 +16,6 @@ A judge or a family justice manager at a family management conference may make i
 **(f)** spousal support;
 
 **(g)** property division in respect of a companion animal.
+
+
+_Amendments: [am. B.C. Reg. 214/2023, s. 6.]_

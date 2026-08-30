@@ -9,3 +9,6 @@
 
 
 **(2)** If a party chooses to file a written response in reply under subrule (1) (b), the party must file and serve the written response on each other party before the date referred to in the application for the court appearance.
+
+
+_Amendments: [en. B.C. Reg. 302/2021, Sch. 1, s. 10.]_

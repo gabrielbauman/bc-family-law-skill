@@ -16,3 +16,6 @@
 
 
 **(3)** If paragraph (1)(b) applies, then subsections 18.1(2), (4), (5), (7) and (12) to (17) apply, with any necessary modifications, in respect of the application.
+
+
+_Amendments: 2019, c. 16, s. 14_

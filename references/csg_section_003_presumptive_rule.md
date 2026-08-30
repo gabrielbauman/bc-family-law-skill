@@ -28,3 +28,6 @@
 **(a.1)** if the spouse who is subject to a calculation or recalculation under subsection 25.01(1) or 25.1(1) of the Act resides in Canada, the table for the province in which that spouse habitually resides at the time the amount of child support is to be calculated or recalculated under subsection 25.01(1) or 25.1(1) of the Act; and
 
 **(b)** if the spouse against whom a child support order is sought, or who is subject to a calculation or a recalculation under subsection 25.01(1) or 25.1(1) of the Act, resides outside of Canada, or if the residence of that spouse is unknown, the table for the province where the other spouse habitually resides at the time the application for the child support order or for a variation order in respect of the child support order is made, or at the time the amount of child support is to be calculated or recalculated under subsection 25.01(1) or 25.1(1) of the Act.
+
+
+_Amendments: SOR/97-563, s. 1; SOR/2020-247, s. 2_

@@ -68,3 +68,6 @@
 
 
 **(7)** Proceedings at a case planning conference must be recorded, but no part of that recording may be made available to or used by any person without court order.
+
+
+_Amendments: [en. B.C. Reg. 176/2023, Sch. 2, s. 7; am. B.C. Reg. 277/2023, Sch. 3, s. 5.]_

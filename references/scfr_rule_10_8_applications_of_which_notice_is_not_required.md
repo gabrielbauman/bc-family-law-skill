@@ -20,3 +20,6 @@
 
 
 **(2)-(3)** Repealed. [B.C. Reg. 119/2010, Sch. B, s. 11 (b).]
+
+
+_Amendments: [am. B.C. Regs. 119/2010, Sch. B, s. 11 (a); 41/2013, s. 5.]_

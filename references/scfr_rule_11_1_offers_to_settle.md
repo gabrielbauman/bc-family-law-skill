@@ -70,3 +70,6 @@
 
 
 **(7)** An offer to settle does not expire by reason that a counter offer is made.
+
+
+_Amendments: [am. B.C. Regs. 119/2010, Sch. B, s. 12; 121/2014, s. 8.]_

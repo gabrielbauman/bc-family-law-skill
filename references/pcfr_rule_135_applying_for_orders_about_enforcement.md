@@ -32,3 +32,6 @@ A party who is applying for an order about any of the following must file and se
 **(vi)** section 230;
 
 **(d)** determining whether arrears are owing under a support order or agreement made under the Family Law Act and, if so, the amount of the arrears.
+
+
+_Amendments: [am. B.C. Reg. 236/2020, Sch. 2, s. 7.]_

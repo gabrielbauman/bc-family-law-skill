@@ -18,3 +18,6 @@
 
 
 **(3)** A judge who has presided at a settlement conference must not preside at the trial, unless all parties consent.
+
+
+_Amendments: [am. B.C. Reg. 277/2023, Sch. 3, s. 5.]_

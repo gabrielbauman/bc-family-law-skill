@@ -18,3 +18,6 @@
 - **(b)** has made the report in conformity with that duty, and
 
 - **(c)** will, if called on to give oral or written testimony, give that testimony in conformity with that duty.
+
+
+_Amendments: [am. B.C. Reg. 28/2024, Sch. B, s. 14.]_

@@ -144,3 +144,6 @@ together with a certified copy of the order or the statement.
 
 
 **(17)** In support of an application for payment out of money paid in under subrule (16), the applicant must file a declaration in Form F97.
+
+
+_Amendments: [am. B.C. Reg. 28/2024, Sch. B, s. 26.]_

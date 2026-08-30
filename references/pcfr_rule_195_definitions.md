@@ -11,3 +11,6 @@ In this Division:
 
 
 **"pre-existing proceeding"** means a proceeding that was started under the former rules but not concluded before the effective date of these rules.
+
+
+_Amendments: [am. B.C. Reg. 17/2026, s. 10.]_

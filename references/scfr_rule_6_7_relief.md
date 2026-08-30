@@ -14,3 +14,6 @@
 - **(c)** was incomplete or illegible,
 
 the court may set aside an order, extend time, order an adjournment or make such other order as it considers will further the object of these Supreme Court Family Rules.
+
+
+_Amendments: [am. B.C. Reg. 28/2024, Sch. B, s. 6.]_

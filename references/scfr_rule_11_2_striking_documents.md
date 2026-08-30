@@ -48,3 +48,6 @@ and the court may pronounce judgment or order the family law case to be stayed o
 - **(b)** the person who filed the document may, within 7 days after being notified, apply to the court, and
 
 - **(c)** the court may confirm, vary or rescind the order.
+
+
+_Amendments: [am. B.C. Reg. 119/2010, Sch. B, s. 13.]_

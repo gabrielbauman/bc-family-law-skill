@@ -30,3 +30,6 @@
 
 
 **(3)** Despite Rule 10-9 (7), in the case of an application under section 7 of the Family Orders and Agreements Enforcement Assistance Act (Canada) that is made by an individual without notice, the court may order that the requirement under Rule 10-9 (7) to serve the materials referred to in that provision does not apply.
+
+
+_Amendments: [en. B.C. Reg. 219/2023, Sch. 1, s. 2.]_

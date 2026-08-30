@@ -16,3 +16,6 @@
 
 
 **(2)** A party who wishes to cross-examine at trial the person who prepared a report referred to in subrule (1) must, at least 28 days before the scheduled trial date, serve on the person and all parties, by ordinary service, a notice in Form F43.
+
+
+_Amendments: [en. B.C. Reg. 133/2012, s. 19.]_

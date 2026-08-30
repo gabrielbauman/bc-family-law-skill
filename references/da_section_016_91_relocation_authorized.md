@@ -25,3 +25,6 @@
 **(c)** the person’s views on the proposal for the exercise of parenting time, decision-making responsibility or contact, as the case may be, that is set out in the notice referred to in subsection 16.9(1); and
 
 **(d)** any other information prescribed by the regulations.
+
+
+_Amendments: 2019, c. 16, s. 12_

@@ -11,3 +11,6 @@
 **(b)** the decision-making authority that made the decision in the State Party has no jurisdiction to vary the decision or make a new one or refuses to exercise its jurisdiction to do so; or
 
 **(c)** the decision cannot be recognized or declared enforceable in the province in which the debtor is habitually resident.
+
+
+_Amendments: 2019, c. 16, s. 30_

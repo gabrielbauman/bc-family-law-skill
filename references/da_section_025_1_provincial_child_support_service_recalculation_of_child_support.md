@@ -35,3 +35,6 @@
 
 
 **(7)** In this section, child support order has the same meaning as in subsection 2(1) and also means an interim order made under subsection 15.1(2), a provincial child support service decision made under section 25.01 and a variation order made under paragraph 17(1)(a).
+
+
+_Amendments: 1997, c. 1, s. 10; 1999, c. 31, s. 74(F); 2019, c. 16, s. 25_

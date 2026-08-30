@@ -324,3 +324,6 @@ and the notice of application, other than any draft order attached to it under p
 
 
 **(20)** If, after an application has been adjourned generally, the applicant does not reset the application for hearing within a reasonable time after an application respondent has requested the applicant to do so, an application respondent may apply, by requisition in Form F17 on 2 business days' notice, for directions.
+
+
+_Amendments: [en. B.C. Reg. 176/2023, Sch. 2, s. 8.]_

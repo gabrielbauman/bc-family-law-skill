@@ -12,3 +12,6 @@ The parties who are applying for an order about a family law matter by consent m
 **(i)** [rule 25 [additional requirements when applying for certain orders]](pcfr_rule_025_additional_requirements_when_applying_for_certain_orders.md), and
 
 **(ii)** [rule 26 [additional documents required in relation to orders about guardianship]](pcfr_rule_026_additional_documents_required_when_applying_for_orders_about_guardianship.md), in accordance with that rule.
+
+
+_Amendments: [am. B.C. Reg. 126/2021, Sch. 1, s. 6.]_

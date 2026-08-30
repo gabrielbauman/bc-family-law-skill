@@ -30,3 +30,6 @@
 **(c.2)** the family law matter is related to both spousal support and property division in respect of a companion animal, or
 
 **(d)** every child involved in the family law matter has reached 19 years of age.
+
+
+_Amendments: [am. B.C. Regs. 126/2021, Sch. 1, s. 9; 214/2023, s. 8.]_

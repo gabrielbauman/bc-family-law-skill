@@ -112,3 +112,6 @@
 - **(a)** attend at and keep notes of the hearings of all chambers proceedings, and
 
 - **(b)** include, in the notes kept under paragraph (a) in relation to the hearing of a chambers proceeding, a short statement of the questions or points decided or orders made at the hearing.
+
+
+_Amendments: [am. B.C. Reg. 277/2023, Sch. 3, s. 1.]_

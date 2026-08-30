@@ -8,3 +8,6 @@
 
 
 **(3)** Nothing in this section abrogates or derogates from any other rule of law respecting the recognition of divorces granted otherwise than under this Act.
+
+
+_Amendments: R.S., 1985, c. 3 (2nd Supp.), s. 22; 2019, c. 16, s. 18_

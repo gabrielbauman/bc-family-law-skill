@@ -84,3 +84,6 @@ if the claim for the interest or compensation arises out of a marriage-like rela
 
 
 **(8)** If a set-off or counterclaim establishes a defence to the claimant's claim, the court may grant judgment in favour of the respondent for any balance in the respondent's favour or for other relief as the court considers appropriate.
+
+
+_Amendments: [am. B.C. Regs. 133/2012, ss. 5 and 6; 249/2014, s. 2.]_

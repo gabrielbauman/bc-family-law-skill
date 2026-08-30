@@ -192,3 +192,6 @@ and includes a child who is living with, or whose parent or guardian is, a perso
 
 
 **(3)** For certainty, "child support guidelines" has the same meaning as in the Family Law Act and includes the Federal Child Support Guidelines established under section 26.1 of the Divorce Act (Canada), as set out in Part 4 [Child Support Guidelines] of the Family Law Act Regulation.
+
+
+_Amendments: [am. B.C. Regs. 126/2021, Sch. 1, s. 1; 302/2021, Sch. 1, s. 1; 214/2023, s. 1; 17/2026, s. 1.]_

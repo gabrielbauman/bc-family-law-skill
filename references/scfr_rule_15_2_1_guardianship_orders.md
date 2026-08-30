@@ -62,3 +62,6 @@
 - **(ii)** if there has been a material change in any of the information contained in the Form F101 affidavit, file a new affidavit setting out the material change and serve a copy of that filed new affidavit on each of the parties and on every other person who may be affected by the orders sought;
 
 - **(c)** if the hearing is adjourned to a date that is more than 6 months after the date originally set for the hearing, the applicant must, at least 14 days before the new date set for the hearing, file a new affidavit in Form F101 that complies with the requirements of subrule (4) (a) (i) and (b) (i) in relation to the new date set for the hearing and serve a copy of that filed new affidavit on each of the parties and on every other person who may be affected by the orders sought.
+
+
+_Amendments: [en. B.C. Reg. 41/2013, s. 8.]_

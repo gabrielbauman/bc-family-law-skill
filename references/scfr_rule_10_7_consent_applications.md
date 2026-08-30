@@ -62,3 +62,6 @@ enter the order or proceed under paragraph (a) of this subrule.
 - **(a)** make the order, or
 
 - **(b)** give directions respecting the application.
+
+
+_Amendments: [en. B.C. Reg. 133/2012, s. 17; am. B.C. Regs. 41/2013, s. 4; 121/2014, s. 7 (a).]_

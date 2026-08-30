@@ -14,3 +14,6 @@ The following definitions apply in this section and in sections 18.1 to 19.1.
 
 
 **"responsible authority"** means a person or entity that, in a designated jurisdiction, performs functions that are similar to those performed by the designated authority under subsection 19(4). (autorité responsable)
+
+
+_Amendments: R.S., 1985, c. 3 (2nd Supp.), s. 18; 1993, c. 8, s. 3, c. 28, s. 78; 2002, c. 7, s. 159; 2014, c. 2, s. 33; 2019, c. 16, s. 14_

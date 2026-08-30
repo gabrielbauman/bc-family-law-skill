@@ -19,3 +19,6 @@
 **(ii)** a request, in the form provided by the registry, to search the protection order registry, and
 
 **(b)** certify on the application that the party has initiated a criminal record check.
+
+
+_Amendments: [am. B.C. Reg. 126/2021, Sch. 1, s. 3.]_

@@ -74,3 +74,6 @@
 - **(b)** direct the attendance of lawyers or the applicant, or
 
 - **(c)** direct that further evidence be presented.
+
+
+_Amendments: [am. B.C. Reg. 176/2023, Sch. 2, s. 11.]_

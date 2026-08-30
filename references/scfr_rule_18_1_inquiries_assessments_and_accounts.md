@@ -170,3 +170,6 @@ and the court may fix a time for the further attendance of the parties.
 
 
 **(22)** A person served with a notice of order under subrule (18) may, after filing a notice of interest in Form F77, take part in the family law case.
+
+
+_Amendments: [am. B.C. Reg. 277/2023, Sch. 3, s. 1.]_

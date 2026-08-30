@@ -32,3 +32,6 @@
 
 
 **(3)** In a family law case in which a divorce is claimed, a party who has filed a pleading may withdraw that document or any part of it by filing and serving a notice of withdrawal in Form F7.
+
+
+_Amendments: [am. B.C. Reg. 321/2021, Sch. 2, s. 1.]_

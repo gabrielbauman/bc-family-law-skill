@@ -80,3 +80,6 @@ unless a party has filed a certificate in Form F36, signed by the registrar, cer
 
 
 **(6)** If the court directs that a family law case be set down for trial, it may also direct one of the parties to prepare, file and serve a trial record.
+
+
+_Amendments: [am. B.C. Regs. 119/2010, Sch. B, s. 17; 176/2023, Sch. 2, s. 16; 165/2024, Sch. 2, s. 5; 152/2025, Sch. 4, s. 8.]_

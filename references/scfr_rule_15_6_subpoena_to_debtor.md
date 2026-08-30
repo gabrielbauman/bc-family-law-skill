@@ -254,3 +254,6 @@ and each must endorse the order accordingly and return it to the registry.
 
 
 **(28)** Repealed. [B.C. Reg. 119/2010, Sch. B, s. 21.]
+
+
+_Amendments: [am. B.C. Reg. 28/2024, Sch. B, s. 22 (a).]_

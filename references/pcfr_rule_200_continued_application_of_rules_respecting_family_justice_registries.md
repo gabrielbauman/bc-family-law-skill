@@ -5,3 +5,6 @@
 
 
 **(2)** Form 21, as it read immediately before the effective date of this Division, may continue to be used in relation to a family management conference for a case in a former family justice registry on the effective date of this Division.
+
+
+_Amendments: [en. B.C. Reg. 17/2026, s. 11.]_

@@ -28,3 +28,6 @@ the court may, on application without notice, make an order for substituted serv
 
 
 **(3)** If, under subrule (1), the court permits a document to be served by advertisement, the advertisement must be in Form F11.
+
+
+_Amendments: [am. B.C. Reg. 119/2010, Sch. B, s. 3 (a).]_

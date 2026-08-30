@@ -258,3 +258,6 @@
 
 
 **(35)** If a certificate under Rule 16-1 (25), 16-2 (7) or 18-1 (2) has been filed, it may be enforced as if it were an order of the court.
+
+
+_Amendments: [am. B.C. Reg. 28/2024, Sch. B, s. 21 (a).]_

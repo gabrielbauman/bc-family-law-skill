@@ -166,3 +166,6 @@ affidavits for British Columbia
 
 
 **(16)** If an affidavit is required for use in a family law case and the person who is proposed to swear or affirm the affidavit is a patient as defined in the Patients Property Act, the affidavit may be sworn, on information and belief, by the litigation guardian of the patient.
+
+
+_Amendments: [am. B.C. Reg. 41/2013, s. 2.]_

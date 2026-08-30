@@ -112,3 +112,6 @@ specified in the contract.
 
 
 **(12)** If an authority has, in accordance with Article 6 of the Convention, completed a certificate in Form F14, the certificate is evidence of the facts stated in it.
+
+
+_Amendments: [am. B.C. Reg. 133/2012, s. 9.]_

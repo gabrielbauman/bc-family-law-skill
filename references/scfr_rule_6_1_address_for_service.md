@@ -54,3 +54,6 @@
 - **(a)** the address or addresses for service required under subrule (1) or (1.1), and
 
 - **(b)** any additional addresses for service referred to in subrule (2) that the party wishes to include.
+
+
+_Amendments: [en. B.C. Reg. 176/2023, Sch. 2, s. 2.]_

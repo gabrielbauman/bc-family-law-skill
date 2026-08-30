@@ -10,3 +10,6 @@ If a judge has ordered or directed that a party participate in consensual disput
 **(c)** the kinds of family law matters that were addressed during consensual dispute resolution;
 
 **(d)** the kinds of family law matters that are outstanding.
+
+
+_Amendments: [en. B.C. Reg. 126/2021, Sch. 1, s. 13.]_
