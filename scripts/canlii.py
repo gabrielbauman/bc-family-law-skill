@@ -28,6 +28,8 @@ Examples:
     python3 canlii.py databases --jurisdiction bc
 """
 
+from __future__ import annotations
+
 import argparse
 import json
 import os

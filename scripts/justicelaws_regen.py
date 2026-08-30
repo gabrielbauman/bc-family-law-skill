@@ -14,6 +14,8 @@ unprefixed elements: Statute/Regulation > Body > Heading/Section).
 Used by regen_da.py and regen_csg.py.
 """
 
+from __future__ import annotations
+
 import re
 import sys
 import urllib.request
@@ -144,7 +146,7 @@ def parse_federal(xml_bytes: bytes, source: Source) -> tuple[list[Unit], str | N
                         division = ("", title)
                 walk(child)
             elif name == "Section":
-                label = fed_text(child.find("Label"))
+                label = fed_text(child.find("Label")).replace("*", "")
                 marginal = fed_text(child.find("MarginalNote"))
                 if not label:
                     continue

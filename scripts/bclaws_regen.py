@@ -13,6 +13,8 @@ Used by regen_fla.py, regen_pcfr.py, and regen_scfr.py. Each defines a
 Source and calls run_cli().
 """
 
+from __future__ import annotations
+
 import argparse
 import difflib
 import re
@@ -96,11 +98,20 @@ def text_of(el: ET.Element | None) -> str:
 
 
 def num_to_file_num(num: str, pad: bool) -> str:
-    """pad: '3.1' -> '003_1', '87-96' -> '087_96'; no pad: '16-1' -> '16_1'."""
-    parts = re.split(r"[.\-]", num.strip())
-    if pad:
-        parts[0] = parts[0].zfill(3)
-    return "_".join(parts)
+    """Turn a section/rule label into a safe filename token.
+
+    '3.1' -> '003_1', '87-96' -> '087_96' (pad); '16-1' -> '16_1' (no pad).
+    Editorial annotation is stripped ('*36' -> '36') and any character that
+    is not alphanumeric becomes '_' ('30 and 31' -> '30_and_31'), so no
+    label can produce a filename with spaces or shell metacharacters.
+    """
+    num = num.replace("*", "").strip()
+    parts = re.split(r"[.\-]", num)
+    cleaned = [re.sub(r"[^0-9A-Za-z]+", "_", p).strip("_") for p in parts]
+    cleaned = [p for p in cleaned if p]
+    if pad and cleaned:
+        cleaned[0] = cleaned[0].zfill(3)
+    return "_".join(cleaned)
 
 
 def slugify(text: str) -> str:
