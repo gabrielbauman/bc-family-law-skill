@@ -92,17 +92,32 @@ document.
    exist. Duplicate extractions drift apart and create contradictory
    versions of the same evidence.
 2. **Read the handler**; run the appropriate query.
-3. **Save to `research/`** as a markdown file containing:
-   - **Purpose** — the question this extraction answers
-   - **Source + query** — file and the exact command used (reproducibility
-     is the audit trail)
-   - **Date of extraction**
+3. **Save to `research/`** as a markdown file that opens with the
+   frontmatter block the registry expects, then presents the content:
+
+   ```text
+   ---
+   purpose: what this extraction shows, in one line
+   source: the evidence/filings file + exact query or command used
+   primary_source: short label for the registry's "Primary source" column
+   extracted: 2025-04-12
+   ---
+   ```
+
+   - **Purpose** — the question this extraction answers (the `purpose:`
+     field)
+   - **Source + query** — the `source:` field; reproducibility is the
+     audit trail
+   - **Date of extraction** — the `extracted:` field
    - **The content**, cited per `evidence-standards.md` (message IDs,
      full timestamps, complete sequences, no ellipsis)
    - Any **analysis clearly separated** from the quoted material —
      quotes are evidence; what they suggest is labelled inference
-4. **Update `research/index.md`** — one line per document: file, purpose,
-   source.
+4. **Regenerate `research/index.md`** by running
+   `scripts/build_research_index.py` — never hand-edit the registry table.
+   The script reports (and exits non-zero on) any research file with
+   missing or malformed frontmatter, so an unindexed file can't drift out
+   of the registry silently.
 
 ## Research is leads, not truth
 
