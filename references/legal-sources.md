@@ -80,8 +80,11 @@ are refreshed.
    ```
 
    Default is **check mode**: fetch, compare with this folder, report
-   what changed, exit non-zero on drift — run them periodically as an
-   amendment monitor. `--write` applies the refresh; after writing,
+   what changed, exit non-zero on drift. Run
+   `python3 scripts/check_freshness.py` to check all five sources at
+   once (it exits non-zero if any has drifted); a scheduled GitHub
+   Action (`.github/workflows/check-freshness.yml`) runs it weekly.
+   `--write` applies the refresh; after writing,
    review `git diff` (the diff is the amendment report), rerun
    `scripts/build_forms_index.py`, and update the snapshot line above.
    The SSAG User's Guide has no script — it is a static 2016

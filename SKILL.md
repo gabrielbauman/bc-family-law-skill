@@ -251,7 +251,10 @@ estimate as rough and verifiable only with proper tools.
 
 Reproduced legal texts, one file per section — start at the index, load only
 the sections you need. Check `references/legal-sources.md` for currency
-before relying on exact wording.
+before relying on exact wording. In a filesystem environment, run
+`python3 scripts/check_freshness.py` to verify the snapshot against the
+live consolidations (or just note the snapshot date and flag anything
+near it).
 
 | Source | Index | Most-used parts |
 |--------|-------|-----------------|

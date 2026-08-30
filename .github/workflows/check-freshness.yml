@@ -1,0 +1,32 @@
+name: Check legal-source freshness
+
+# Amendment monitor: the reproduced legal texts under references/generated/
+# are a snapshot, and these jobs fail when the live consolidations have
+# moved past that snapshot — the signal to run `regen_<source>.py --write`.
+
+on:
+  schedule:
+    # Weekly, Monday 07:42 UTC.
+    - cron: "42 7 * * 1"
+  workflow_dispatch: {}
+
+jobs:
+  freshness:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Check for drift against live consolidations
+        run: python3 scripts/check_freshness.py
+
+  tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Run the regen-pipeline tests
+        run: python3 -m unittest discover -s tests

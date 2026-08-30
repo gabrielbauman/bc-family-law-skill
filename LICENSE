@@ -3,11 +3,10 @@ MIT License
 Copyright (c) 2026 Gabriel Bauman
 
 Applies to the original content of this repository: SKILL.md, the
-practice guides (references/*.md other than reproduced legal texts),
-templates/, scripts/, and evals/. The reproduced legal texts under
-references/ (files prefixed fla_, pcfr_, scfr_, da_, csg_, ssag_) are
-not covered by this license — see the Licensing section of README.md
-for their terms.
+practice guides (references/*.md), templates/, scripts/, and evals/.
+The reproduced legal texts under references/generated/ are not covered
+by this license — see the Licensing section of README.md for their
+terms.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

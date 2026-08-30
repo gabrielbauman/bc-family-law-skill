@@ -106,6 +106,7 @@ scripts/
   bclaws_regen.py         # shared machinery (BC CiviX XML)
   justicelaws_regen.py    # shared machinery (federal LIMS XML)
   build_forms_index.py    # regenerates forms-guide.md from the rule texts
+  check_freshness.py      # runs every regen script in check mode (CI uses it)
 evals/                    # test prompts for skill development
 ```
 
