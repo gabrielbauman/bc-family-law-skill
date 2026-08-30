@@ -10,8 +10,10 @@ not mean it was ever sent or filed.
 - Keep documents clean: no AI commentary, disclaimers, TODO markers, or
   meta-notes inside the documents themselves. Track open questions in
   CASE.md instead.
-- When a document is finalized and filed/sent: move the final version
-  to `filings/` (or note the sent date for correspondence), delete or
-  archive the draft here, and update CASE.md.
+- When a document is finalized, it leaves this folder for the record:
+  filed court documents move to `filings/`; sent letters, emails, and
+  formal offers to settle move to `correspondence/` in their as-sent
+  form. Delete or archive the draft here and update CASE.md. Nothing
+  authoritative should be left to live in `output/`.
 - Larger deliverables (trial book, book of authorities) live in
   subfolders — scaffold them from the skill's `templates/`.

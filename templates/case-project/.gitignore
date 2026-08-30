@@ -15,3 +15,7 @@ Thumbs.db
 *.swp
 .idea/
 .vscode/
+
+# Personal Claude Code overrides — but DO track .claude/settings.json and
+# .claude/hooks/, which ship the immutable-folder guard for the whole project.
+.claude/settings.local.json

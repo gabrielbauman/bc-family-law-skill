@@ -1,8 +1,11 @@
 # Case Project Instructions
 
 **Before substantive work: invoke the `bc-family-law` skill, then read
-`CASE.md`.** The skill carries the legal references and practice guides;
-CASE.md carries this case. Nothing works correctly without both.
+`CASE.md`.** The skill carries the legal references, the practice guides,
+and the authoritative, fuller version of everything summarized here
+(`references/case-project-guide.md`); CASE.md carries this case. This
+file is the short standalone version, in case the skill is not loaded —
+when it is, the skill's guide governs.
 
 This is a BC family law case project. The user is a litigant; documents
 produced here may be sworn, filed, and tested in court. Accuracy is not a
@@ -12,37 +15,54 @@ style preference — it is the case.
 
 ```
 root/
-├── CASE.md         # Case dashboard — read first, update after changes
-├── case-law.md     # Authorities: case → principle → application (verified)
-├── inbox/          # User drop zone — empty it at session start
-├── evidence/       # Primary sources. DO NOT MODIFY. README handler per source.
-├── filings/        # Filed court documents. DO NOT MODIFY.
-├── authorities/    # Full text of every authority cited anywhere
-├── research/       # Extractions and analysis — hints, not sources. See index.md.
-├── output/         # Work-in-progress documents. NOT the record.
-├── scripts/        # Reproducible analysis scripts (read evidence, print results)
-└── strategy/       # Private strategic notes and counsel's guidance. NEVER evidence.
+├── CASE.md          # Case dashboard — read first, update after changes
+├── case-law.md      # Authorities: case → principle → application (created when case law accumulates)
+├── inbox/           # User drop zone — swept at session start
+├── evidence/        # Primary sources. IMMUTABLE. README handler per source.
+├── filings/         # Filed court documents. IMMUTABLE.
+├── correspondence/  # Final sent letters/emails + formal offers to settle. Not filed, but the record.
+├── authorities/     # Full text of every authority cited anywhere
+├── research/        # Extractions and analysis — leads, not sources. See index.md.
+├── output/          # Work-in-progress drafts. NOT the record.
+├── scripts/         # Reproducible analysis (reads evidence, never writes it)
+└── strategy/        # Private strategic notes and counsel's guidance. NEVER evidence.
 ```
+
+`case-law.md` and `scripts/` are created when the case first needs them.
+
+## Immutability is enforced, not just asked
+
+`evidence/`, `filings/`, and `correspondence/` (once sent) are the record:
+extract FROM them into `research/`; never edit, rename, or "fix" them.
+Two guards back this up, so a stray edit can't reach history unnoticed:
+
+- a **PreToolUse hook** (`.claude/hooks/protect-immutable.py`, wired in
+  `.claude/settings.json`) blocks edits to existing files there;
+- a **git pre-commit hook** (`.githooks/pre-commit`) blocks committing
+  such a change.
+
+The one exception is a genuine, user-confirmed replacement (a better
+scan of the same document): make the new file and commit it with
+`git commit --no-verify`. `correspondence/` (sent letters and offers to
+settle) is guarded the same way.
 
 ## Session start: sweep for user changes
 
-This project commits everything as it works, so `git status` should be
-clean at session start. Anything it reports is user activity or an
-interrupted session — handle it before substantive work, per the sweep
-in the skill's `references/case-project-guide.md`:
+This project commits as it works, so `git status` should be clean at
+session start. Anything it reports is user activity or an interrupted
+session — handle it before substantive work, per the sweep in the
+skill's `references/case-project-guide.md`:
 
-- New files (in `inbox/` or anywhere): identify and file them —
-  court documents to `filings/` (**read for deadlines immediately**),
-  source material to `evidence/` with a handler, case law to
-  `authorities/`, counsel guidance to `strategy/`. Check for
-  duplicates; preserve original filenames in the commit message.
-- Modified `evidence/` or `filings/` files: immutable — ask whether
-  it's a replacement or an accident; never silently revert.
-- Modified case files: treat the diff as user input and reconcile it
-  properly. Deletions or files that don't seem case-related: ask.
-- Batch questions; handle the obvious silently; record new filings and
-  deadlines in CASE.md; commit as `intake: ...` and report what went
-  where.
+- File new material: court documents → `filings/` (**read for deadlines
+  immediately**); sources → `evidence/` with a handler; case law →
+  `authorities/`; counsel guidance → `strategy/`; sent letters and
+  offers → `correspondence/`. Check for duplicates; preserve original
+  filenames in the commit message.
+- Treat modified case files (CASE.md, research, strategy) as user input
+  and reconcile them properly. Ask about modified `evidence/`/`filings/`,
+  deletions, and anything that doesn't look case-related.
+- Batch questions, record new filings and deadlines in CASE.md, commit
+  as `intake: ...`, and report what went where.
 
 ## Evidence and accuracy standards
 
@@ -69,14 +89,14 @@ and stop. Never cite from memory, however confident.
 
 ## Folder rules
 
-- `evidence/` and `filings/` are **immutable**. Extract from them into
-  `research/` (skill: `references/document-handling.md`); never edit,
-  rename, or "fix" them.
 - `research/` is **leads, not truth** — verify against primary sources
   before relying; cite primary sources, not research, in case documents.
+  Add frontmatter to each research file and rerun
+  `scripts/build_research_index.py` so `research/index.md` stays current.
 - `output/` is **not the record** — drafts may be outdated or abandoned.
-  Never mine output for case facts. When a document is filed, move the
-  final to `filings/` and remove the draft.
+  Never mine output for case facts. When a document is final, it leaves
+  `output/`: filed documents → `filings/`, sent letters and offers →
+  `correspondence/`; then delete the draft.
 - `strategy/` is **private and one-directional**: it informs drafting;
   its content never appears in evidence, filings, or correspondence.
   Consult counsel's guidance there before revising any court-bound
@@ -86,20 +106,13 @@ and stop. Never cite from memory, however confident.
 
 ## Git workflow
 
-Commit after each meaningful change; push to the private remote. Message
-format: `<area>: <what changed>` (+ why when not obvious). Examples:
-
-- `research: Extract rent discussions from 2019 messages`
-- `case-law: Add stepparent support authorities`
-- `output: Draft reply to support application`
+Commit after each meaningful change; push to the **private** remote.
+Message format: `<area>: <what changed>` (+ why when not obvious), e.g.
+`research: Extract rent discussions from 2019 messages`.
 
 **Pre-commit review (every commit):** re-read the diff against the
 evidence standards above — every fact cited, every inference labelled,
-every quote verbatim, no assumed details. Fix problems before
-committing, not after.
-
-Do not commit changes inside `evidence/` or `filings/` except when the
-user adds new source material.
+every quote verbatim, no assumed details. Fix problems before committing.
 
 ## Reminders
 

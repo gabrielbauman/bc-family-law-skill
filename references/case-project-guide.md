@@ -15,24 +15,39 @@ questions, and don't push it on a user who is overwhelmed — the project
 serves the user, not the other way around. It can start minimal (CASE.md
 plus an `evidence/` folder) and grow folders as the case does.
 
+A full case project needs a **persistent, git-backed filesystem** —
+which in practice means Claude Code (see SKILL.md, "Where this skill
+works best"). Before offering one, confirm you actually have file and
+git access; if you don't (a plain chat with no project files), don't
+promise a structure you can't maintain — help with the immediate
+question and point the user to Claude Code for the ongoing file.
+
 ## Structure
 
 Scaffold from `templates/case-project/`:
 
 ```
 my-case/
-├── .claude/CLAUDE.md   # Working rules for the project (from template)
+├── .claude/
+│   ├── CLAUDE.md       # Standalone working rules (from template)
+│   ├── settings.json   # Wires the immutable-folder PreToolUse hook
+│   └── hooks/protect-immutable.py
+├── .githooks/pre-commit # Git guard against editing the record
 ├── CASE.md             # THE DASHBOARD — read first, every session
 ├── case-law.md         # Authorities table (once case law accumulates)
 ├── inbox/              # User drop zone for anything new — swept at session start
 ├── evidence/           # Primary sources. IMMUTABLE. README handler per source.
 ├── filings/            # Filed court documents. IMMUTABLE.
+├── correspondence/     # Final sent letters/emails + offers to settle. Not filed; still the record.
 ├── authorities/        # Full text of every authority cited (see case-law.md guide)
-├── research/           # Extractions and analysis, with index.md registry
+├── research/           # Extractions and analysis, with generated index.md registry
 ├── output/             # Drafts in progress — NOT the record, may be abandoned
-├── scripts/            # Reproducible analysis scripts
+├── scripts/            # Reproducible analysis scripts (read evidence, never write it)
 └── strategy/           # Private strategic notes. NEVER evidence, never filed.
 ```
+
+`case-law.md` and `scripts/` are scaffolded on demand — start minimal and
+add them when the case first needs them.
 
 Why so few satellite files? The original design had a dozen top-level
 files (timeline.md, parties.md, children.md, finances.md, positions.md,
@@ -59,13 +74,49 @@ maintenance rules:
   dashboard is the synthesis future sessions trust; an error here
   propagates everywhere.
 
-### The two immutable folders
+### The two source folders
 
 `evidence/` and `filings/` are source material. Nothing edits them, ever
 — extraction happens *from* them into `research/` (see
 `document-handling.md`). They change only when the user adds new
 material. If a file in them is wrong (bad OCR, mis-named), the user
 replaces it; the model never "fixes" evidence.
+
+### Immutability is machine-enforced
+
+Two guards ship in the template so a stray edit to the record can't reach
+history unnoticed — the rule the guide most relies on, and the one most
+often broken by accident:
+
+- a **PreToolUse hook** (`.claude/hooks/protect-immutable.py`, wired in
+  `.claude/settings.json`) denies any `Edit`/`Write` to an existing file
+  under `evidence/`, `filings/`, or `correspondence/`;
+- a **git pre-commit hook** (`.githooks/pre-commit`) blocks committing a
+  modification, rename, or deletion of one.
+
+Install both when scaffolding the project (the sweep's step 1 does this):
+`git config core.hooksPath .githooks` and ensure the hook files are
+executable. The hooks allow *adding* new files freely — that is how
+intake files things. The single exception is a deliberate,
+user-confirmed replacement (a better scan of the same document): create
+the new file and commit it with `git commit --no-verify`. Never reach for
+`--no-verify` to push past the guard on your own initiative — the block
+is usually right.
+
+### correspondence/ holds what was sent
+
+`correspondence/` is the home for final, sent communications and the
+formal offers that carry costs consequences — the gap between `output/`
+(drafts that may be abandoned) and `filings/` (what the court has
+received). Sent letters and emails go here in their as-sent form; so do
+**formal offers to settle** (SCFR Rule 11-1; PCFR settlement offers) and
+"without prejudice"/Calderbank offers, which are *served but deliberately
+not filed* until costs are argued after judgment — a judge should not see
+an offer before deciding — yet are exactly what wins or loses a costs
+award. Received correspondence is evidence and belongs in `evidence/`;
+this folder is the user's outbound record. Treat it as immutable once
+sent, like `filings/`, and cite a costs-significant offer in CASE.md's
+procedural history.
 
 ### strategy/ is private and one-directional
 
@@ -121,8 +172,12 @@ from an interrupted session. Run the sweep after reading CASE.md
 user's actual request — and run it again mid-session whenever the user
 says they've added something.
 
-1. If the project isn't a git repository yet, initialize one and make
-   a baseline commit before anything else.
+1. If the project isn't a git repository yet, initialize one, point git
+   at the bundled hooks (`git config core.hooksPath .githooks`, and make
+   `.githooks/pre-commit` executable), and make a baseline commit before
+   anything else. The PreToolUse hook in `.claude/settings.json` loads
+   on its own; Claude Code may ask the user to trust the project's hooks
+   the first time — tell them these guard the evidence folders.
 2. Run `git status --porcelain` and classify what it shows:
    - **Untracked files** (in `inbox/` or anywhere): identify each —
      read enough to classify. Court-issued or court-stamped documents →
@@ -131,7 +186,8 @@ says they've added something.
      user hasn't noticed). Source material → the right `evidence/`
      subfolder, creating the handler README if it's a new source type.
      Case law full text → `authorities/`. Counsel guidance → `strategy/`.
-     Drafts → `output/`.
+     Sent letters and offers to settle → `correspondence/`. Drafts →
+     `output/`.
    - **Modified files in `evidence/` or `filings/`**: stop — these are
      immutable. The likely stories are a deliberate replacement (better
      scan) or an accident; ask which before committing or reverting.
@@ -152,7 +208,9 @@ says they've added something.
    and report what went where.
 6. Record consequences: new filings go into CASE.md's procedural
    history; new deadlines into Next Steps; new evidence into the
-   relevant handler and `research/index.md` if extracted.
+   relevant handler. When you add a `research/` file, give it the
+   frontmatter block its index expects and rerun
+   `scripts/build_research_index.py` rather than hand-editing the table.
 7. Commit the intake (`intake: File pay statements and FMC order from
    inbox`), then proceed to the user's request.
 

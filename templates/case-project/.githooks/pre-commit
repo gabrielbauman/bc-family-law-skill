@@ -1,0 +1,34 @@
+#!/bin/sh
+# Immutable-folders guard for a BC family law case project.
+#
+# evidence/, filings/, and correspondence/ are the record: new files may be
+# ADDED, but an existing file must never be modified, renamed, or deleted by
+# routine work. This hook blocks a commit that changes one, so a stray edit
+# (by the user in an editor, or by the model) can't slip into history unnoticed.
+#
+# A deliberate replacement is legitimate — a better scan of the same document,
+# a corrected OCR. When the user has confirmed that, bypass the guard for that
+# one commit:
+#
+#     git commit --no-verify
+#
+# Installed by pointing git at this folder during project setup:
+#     git config core.hooksPath .githooks
+#     chmod +x .githooks/pre-commit
+
+violations=$(git diff --cached --name-status --diff-filter=MDR -- evidence/ filings/ correspondence/)
+
+if [ -n "$violations" ]; then
+	echo "BLOCKED: a commit would change an existing file in an immutable folder." >&2
+	echo "evidence/, filings/, and correspondence/ are the case record — extract" >&2
+	echo "FROM them into research/; never edit them once filed or sent. Adding" >&2
+	echo "new files is fine; these are not:" >&2
+	echo "" >&2
+	echo "$violations" | sed 's/^/    /' >&2
+	echo "" >&2
+	echo "If this is a deliberate, user-confirmed replacement, commit with:" >&2
+	echo "    git commit --no-verify" >&2
+	exit 1
+fi
+
+exit 0
