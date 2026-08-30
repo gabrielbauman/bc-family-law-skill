@@ -126,10 +126,12 @@ def slugify(text: str) -> str:
 
 
 def filename(source: Source, num: str, marginal: str) -> str:
+    # Each source lives in its own folder (references/generated/<key>/), so
+    # the filename needs no <key>_ prefix — the folder is the namespace.
     slug = slugify(marginal)
     if source.slug_max:
         slug = slug[: source.slug_max]
-    base = f"{source.key}_{source.unit.lower()}_{num_to_file_num(num, source.pad_nums)}"
+    base = f"{source.unit.lower()}_{num_to_file_num(num, source.pad_nums)}"
     return f"{base}_{slug}.md" if slug else f"{base}.md"
 
 
@@ -443,7 +445,7 @@ def build(source: Source, verbose: bool = True) -> dict[str, str]:
         if date:
             currency = f"This Act is current to {date}."
     out = {filename(source, u.num, u.marginal): unit_markdown(source, u) for u in units}
-    out[f"{source.key}_index.md"] = index_markdown(source, units, currency)
+    out["index.md"] = index_markdown(source, units, currency)
     return out
 
 
@@ -456,7 +458,8 @@ def run_cli(source: Source, build_fn=None):
         description=f"Regenerate {source.title} references from BC Laws."
     )
     ap.add_argument("--write", action="store_true", help="write into --refs (default: check only)")
-    ap.add_argument("--refs", default=str(Path(__file__).resolve().parent.parent / "references"))
+    ap.add_argument("--refs", default=str(Path(__file__).resolve().parent.parent / "references" / "generated" / source.key),
+                    help="directory to compare/write into (default: that source's generated folder)")
     ap.add_argument("--out", help="write generated files to this directory instead")
     ap.add_argument("--diff-limit", type=int, default=3, help="changed files to show diffs for in check mode")
     args = ap.parse_args()
@@ -474,7 +477,7 @@ def run_cli(source: Source, build_fn=None):
 
     existing = {
         p.name: p.read_text(encoding="utf-8")
-        for p in refs.glob(f"{source.key}_*.md")
+        for p in refs.glob("*.md")
     }
     added = sorted(set(generated) - set(existing))
     removed = sorted(set(existing) - set(generated))
@@ -483,6 +486,7 @@ def run_cli(source: Source, build_fn=None):
     )
 
     if args.write:
+        refs.mkdir(parents=True, exist_ok=True)
         for n in removed:
             (refs / n).unlink()
         for n, content in generated.items():

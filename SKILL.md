@@ -58,7 +58,7 @@ orders are available, and how urgent things are. Screen for it during intake
 
 - Immediate danger → 911. Crisis support → VictimLinkBC (1-800-563-0808).
 - Protection orders exist under FLA Part 9 (ss. 181–191); in Provincial
-  Court see `references/pcfr_rule_068_applying_for_family_law_act_protection_orders_or_to_change_or_terminate_protection_orders_with_notice.md`.
+  Court see `references/generated/pcfr/rule_068_applying_for_family_law_act_protection_orders_or_to_change_or_terminate_protection_orders_with_notice.md`.
 - Do not recommend direct negotiation with an abusive party.
 
 ## How to work
@@ -244,7 +244,7 @@ lead is fine; citing it from memory is not.
 **Numbers come from official sources.** Child support table amounts come
 from the federal tables (linked in `references/legal-sources.md`), never
 from memory. SSAG ranges are computed with professional software; you may
-explain the formulas (`references/ssag_index.md`) but present any manual
+explain the formulas (`references/generated/ssag/index.md`) but present any manual
 estimate as rough and verifiable only with proper tools.
 
 ## Legal references
@@ -255,12 +255,12 @@ before relying on exact wording.
 
 | Source | Index | Most-used parts |
 |--------|-------|-----------------|
-| Family Law Act (BC) | `references/fla_index.md` | Spouse definition s. 3; parenting Part 4; property Part 5; support Part 7 (stepparents ss. 146–147); family violence Part 9; PC appeals s. 233 |
-| Divorce Act (federal) | `references/da_index.md` | Divorce s. 8; best interests s. 16; parenting ss. 16.1–16.96; support ss. 15.1–15.3; variation s. 17 |
-| Federal Child Support Guidelines | `references/csg_index.md` | Table amounts; special expenses s. 7; split/shared parenting ss. 8–9; income ss. 15–20; undue hardship s. 10 |
-| Provincial Court Family Rules | `references/pcfr_index.md` | Early resolution Part 2; applications Part 3; disclosure Part 4; conferences Part 8; service Part 11 |
-| Supreme Court Family Rules | `references/scfr_index.md` | Starting cases Parts 3–4; disclosure Part 5; conferences Parts 7–7.1; applications Part 10; trial Part 14; costs Part 16 |
-| SSAG User's Guide (advisory) | `references/ssag_index.md` | Entitlement ch. 3; without-child formula ch. 7; with-child formula ch. 8 |
+| Family Law Act (BC) | `references/generated/fla/index.md` | Spouse definition s. 3; parenting Part 4; property Part 5; support Part 7 (stepparents ss. 146–147); family violence Part 9; PC appeals s. 233 |
+| Divorce Act (federal) | `references/generated/da/index.md` | Divorce s. 8; best interests s. 16; parenting ss. 16.1–16.96; support ss. 15.1–15.3; variation s. 17 |
+| Federal Child Support Guidelines | `references/generated/csg/index.md` | Table amounts; special expenses s. 7; split/shared parenting ss. 8–9; income ss. 15–20; undue hardship s. 10 |
+| Provincial Court Family Rules | `references/generated/pcfr/index.md` | Early resolution Part 2; applications Part 3; disclosure Part 4; conferences Part 8; service Part 11 |
+| Supreme Court Family Rules | `references/generated/scfr/index.md` | Starting cases Parts 3–4; disclosure Part 5; conferences Parts 7–7.1; applications Part 10; trial Part 14; costs Part 16 |
+| SSAG User's Guide (advisory) | `references/generated/ssag/index.md` | Entitlement ch. 3; without-child formula ch. 7; with-child formula ch. 8 |
 
 `references/forms-guide.md` maps every form number to the rules that require
 it, for both courts.

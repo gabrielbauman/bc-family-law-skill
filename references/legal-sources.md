@@ -1,20 +1,20 @@
 # Legal Sources: Provenance and Currency
 
-The statute, regulation, and rule texts in this folder are reproductions.
+The statute, regulation, and rule texts under `generated/` are reproductions.
 Law changes; reproductions do not. Read this file before relying on a
 reference for anything time-sensitive, and tell the user when currency
 matters to their question.
 
 ## What is here, and where it came from
 
-| Prefix | Source | Citation | Official source |
+| Folder | Source | Citation | Official source |
 |--------|--------|----------|-----------------|
-| `fla_` | Family Law Act (BC) | SBC 2011, c. 25 | https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/11025_01 |
-| `pcfr_` | Provincial Court Family Rules | B.C. Reg. 120/2020 | https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/120_2020 |
-| `scfr_` | Supreme Court Family Rules | B.C. Reg. 169/2009 | https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/169_2009_00 |
-| `da_` | Divorce Act (Canada) | R.S.C. 1985, c. 3 (2nd Supp.) | https://laws-lois.justice.gc.ca/eng/acts/d-3.4/ |
-| `csg_` | Federal Child Support Guidelines | SOR/97-175 | https://laws-lois.justice.gc.ca/eng/regulations/sor-97-175/ |
-| `ssag_` | Spousal Support Advisory Guidelines: The Revised User's Guide (April 2016), Rogerson & Thompson | Advisory publication, not legislation | https://www.justice.gc.ca/eng/fl-df/spousal-epoux/ssag-ldfpae.html |
+| `generated/fla/` | Family Law Act (BC) | SBC 2011, c. 25 | https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/11025_01 |
+| `generated/pcfr/` | Provincial Court Family Rules | B.C. Reg. 120/2020 | https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/120_2020 |
+| `generated/scfr/` | Supreme Court Family Rules | B.C. Reg. 169/2009 | https://www.bclaws.gov.bc.ca/civix/document/id/complete/statreg/169_2009_00 |
+| `generated/da/` | Divorce Act (Canada) | R.S.C. 1985, c. 3 (2nd Supp.) | https://laws-lois.justice.gc.ca/eng/acts/d-3.4/ |
+| `generated/csg/` | Federal Child Support Guidelines | SOR/97-175 | https://laws-lois.justice.gc.ca/eng/regulations/sor-97-175/ |
+| `generated/ssag/` | Spousal Support Advisory Guidelines: The Revised User's Guide (April 2016), Rogerson & Thompson | Advisory publication, not legislation | https://www.justice.gc.ca/eng/fl-df/spousal-epoux/ssag-ldfpae.html |
 
 **Snapshot currency:** each index file carries its own currency line —
 the BC indexes state the "current to" date from BC Laws (most recently
@@ -24,11 +24,12 @@ after those dates are not reflected here.
 
 ## How each text is organized
 
-Each source is split into one file per section, rule, or chapter, named
-`<prefix>_section_<number>_<slug>.md` (or `_rule_` / `_chapter_`), with
-internal cross-references converted to relative links. Start from the
-index file (`fla_index.md`, `pcfr_index.md`, etc.) and follow links to
-the sections you need — load only what the question requires.
+Each source is split into one file per section, rule, or chapter under
+`references/generated/<suite>/`, named `section_<number>_<slug>.md`,
+`rule_<number>_<slug>.md`, or `chapter_<number>_<slug>.md`, with internal
+cross-references converted to relative links. Start from the suite's
+`index.md` and follow links to the sections you need — load only what the
+question requires.
 
 Where the official source carries per-section amendment history, each
 file ends with an `_Amendments:_` footer listing the instruments that
@@ -68,7 +69,7 @@ are refreshed.
 
 5. **Refreshing the snapshot.** Each source has a regeneration script
    that fetches the current consolidation from the official XML API and
-   rebuilds the per-section files in this folder's exact format:
+   rebuilds the per-section files under `references/generated/<suite>/`:
 
    ```bash
    python3 scripts/regen_fla.py     # Family Law Act        (BC Laws)

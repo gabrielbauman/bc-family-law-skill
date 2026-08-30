@@ -7,7 +7,7 @@ and in Provincial Court *early resolution registries* the preference has
 teeth: parties must complete early resolution requirements (needs
 assessment, and often a consensual dispute resolution attempt) before an
 application can be filed — see PCFR Part 2 (e.g.
-`pcfr_rule_010_early_resolution_requirements_must_be_met_before_application_filed.md`)
+`generated/pcfr/rule_010_early_resolution_requirements_must_be_met_before_application_filed.md`)
 and check whether the user's registry is one.
 
 ## Negotiation and agreement

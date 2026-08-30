@@ -75,9 +75,6 @@ before putting evidence into any AI tool.
 ```
 SKILL.md                  # entry point and workflow
 references/
-  *_index.md              # navigable indexes: fla, da, csg, pcfr, scfr, ssag
-  fla_section_*.md ...    # one file per statute section / rule / chapter
-  forms-guide.md          # form number → requiring rules (generated)
   legal-sources.md        # provenance and currency of the legal texts
   evidence-standards.md   # citation and accuracy discipline
   case-law.md             # authority verification workflow
@@ -88,6 +85,14 @@ references/
   document-handling.md    # evidence extraction mechanics
   party-assessment.md     # intake assessment
   resolution-approaches.md# negotiation → mediation → court
+  forms-guide.md          # form number → requiring rules (generated)
+  generated/              # downloaded legal texts, one subfolder per source
+    fla/                  # Family Law Act — index.md + one file per section
+    da/                   # Divorce Act
+    csg/                  # Federal Child Support Guidelines
+    pcfr/                 # Provincial Court Family Rules
+    scfr/                 # Supreme Court Family Rules
+    ssag/                 # SSAG User's Guide (chapters)
 templates/
   case-project/           # scaffold incl. CLAUDE.md and CASE.md dashboard
   trial-book/             # two-part LaTeX trial book
@@ -108,16 +113,17 @@ evals/                    # test prompts for skill development
 
 - **Original content** (SKILL.md, practice guides, templates, scripts):
   MIT — see `LICENSE`.
-- **`references/fla_*`, `pcfr_*`, `scfr_*`**: reproduced from
+- **`references/generated/fla/`, `pcfr/`, `scfr/`**: reproduced from
   [BC Laws](https://www.bclaws.gov.bc.ca); © King's Printer, British
   Columbia. Not official versions. **Review the King's Printer copyright
   terms (https://www.bclaws.gov.bc.ca/copyright.html) before
   redistributing.**
-- **`references/da_*`, `csg_*`**: federal legislation, reproduced under
-  the Reproduction of Federal Law Order, SI/97-5. Not official versions.
-- **`references/ssag_*`**: derived from the *Spousal Support Advisory
-  Guidelines: The Revised User's Guide* (Rogerson & Thompson, April
-  2016), a Department of Justice Canada publication — advisory, not
+- **`references/generated/da/`, `csg/`**: federal legislation, reproduced
+  under the Reproduction of Federal Law Order, SI/97-5. Not official
+  versions.
+- **`references/generated/ssag/`**: derived from the *Spousal Support
+  Advisory Guidelines: The Revised User's Guide* (Rogerson & Thompson,
+  April 2016), a Department of Justice Canada publication — advisory, not
   legislation. **Confirm reproduction terms before redistributing.**
 
 Refresh instructions for all legal texts: `references/legal-sources.md`.

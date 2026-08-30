@@ -225,7 +225,7 @@ paragraph is self-represented advocacy at its most credible.
 
 If trial dates become impossible, act *immediately* — adjournments get
 harder as trial approaches. In Provincial Court, PCFR Rule 114 governs
-(see `pcfr_rule_114_adjourning_trial_date.md`): without consent apply
+(see `generated/pcfr/rule_114_adjourning_trial_date.md`): without consent apply
 more than 45 days out; with consent more than 7 days out; inside that,
 only "special circumstances," applied for as soon as practicable. Hard
 lessons from the source case, where a near-trial application was

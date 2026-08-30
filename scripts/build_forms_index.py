@@ -17,6 +17,8 @@ from pathlib import Path
 
 REFS = Path(__file__).resolve().parent.parent / "references"
 OUT = REFS / "forms-guide.md"
+PCFR_DIR = REFS / "generated" / "pcfr"
+SCFR_DIR = REFS / "generated" / "scfr"
 
 # PCFR cites forms as: Form 3 [Application About a Family Law Matter]
 PCFR_PATTERN = re.compile(r"Form (\d+(?:\.\d+)?) \[([^\]]+)\]")
@@ -28,9 +30,9 @@ def natural_key(form_no: str):
     return [float(p) for p in form_no.lstrip("F").split(".")]
 
 
-def scan(pattern, glob):
+def scan(pattern, directory):
     forms = defaultdict(lambda: {"names": set(), "rules": set()})
-    for path in sorted(REFS.glob(glob)):
+    for path in sorted(directory.glob("*.md")):
         text = path.read_text(encoding="utf-8")
         for match in pattern.finditer(text):
             number = match.group(1)
@@ -41,13 +43,15 @@ def scan(pattern, glob):
     return forms
 
 
-def rule_links(rules):
-    return ", ".join(f"[{r.removesuffix('.md')}]({r})" for r in sorted(rules))
+def rule_links(rules, prefix):
+    return ", ".join(
+        f"[{r.removesuffix('.md')}]({prefix}/{r})" for r in sorted(rules)
+    )
 
 
 def main():
-    pcfr = scan(PCFR_PATTERN, "pcfr_rule_*.md")
-    scfr = scan(SCFR_PATTERN, "scfr_rule_*.md")
+    pcfr = scan(PCFR_PATTERN, PCFR_DIR)
+    scfr = scan(SCFR_PATTERN, SCFR_DIR)
     if not pcfr or not scfr:
         sys.exit("error: no form references found; run from the repo root")
 
@@ -75,7 +79,7 @@ def main():
     for number in sorted(pcfr, key=natural_key):
         entry = pcfr[number]
         names = "; ".join(sorted(entry["names"]))
-        lines.append(f"| Form {number} | {names} | {rule_links(entry['rules'])} |")
+        lines.append(f"| Form {number} | {names} | {rule_links(entry['rules'], 'generated/pcfr')} |")
 
     lines += [
         "",
@@ -88,7 +92,7 @@ def main():
         "|------|---------------|",
     ]
     for number in sorted(scfr, key=natural_key):
-        lines.append(f"| Form {number} | {rule_links(scfr[number]['rules'])} |")
+        lines.append(f"| Form {number} | {rule_links(scfr[number]['rules'], 'generated/scfr')} |")
 
     OUT.write_text("\n".join(lines) + "\n", encoding="utf-8")
     print(f"wrote {OUT.relative_to(REFS.parent)}: {len(pcfr)} PCFR forms, {len(scfr)} SCFR forms")

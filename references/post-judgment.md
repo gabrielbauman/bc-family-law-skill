@@ -31,7 +31,7 @@ side's costs there.
 
 **Supreme Court:** costs follow the event by default — the successful
 party is normally entitled to costs under SCFR Rule 16-1 (see
-`scfr_rule_16_1_costs.md`). This cuts both ways and belongs in any
+`generated/scfr/rule_16_1_costs.md`). This cuts both ways and belongs in any
 realistic risk assessment *before* choosing Supreme Court or pushing a
 weak claim to trial there. Pre-trial settlement offers can affect the
 costs outcome, which is one reason offers are made formally even when
@@ -40,7 +40,7 @@ settlement looks unlikely.
 ## Appeals
 
 **From Provincial Court:** FLA s. 233 (see
-`fla_section_233_appeals_from_provincial_court_orders.md`) — a party may
+`generated/fla/section_233_appeals_from_provincial_court_orders.md`) — a party may
 appeal a Provincial Court FLA order to the Supreme Court, *except interim
 orders*. **The limit is 40 days, beginning the day after the order is
 made.** The Supreme Court may extend the time on application, but treat

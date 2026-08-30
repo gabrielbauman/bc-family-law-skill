@@ -195,5 +195,5 @@ def build_federal(source: Source) -> dict[str, str]:
     xml = fed_fetch(source.doc_id)
     units, currency = parse_federal(xml, source)
     out = {filename(source, u.num, u.marginal): unit_markdown(source, u) for u in units}
-    out[f"{source.key}_index.md"] = index_markdown(source, units, currency)
+    out["index.md"] = index_markdown(source, units, currency)
     return out

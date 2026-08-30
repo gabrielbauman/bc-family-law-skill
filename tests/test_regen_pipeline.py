@@ -70,13 +70,13 @@ class FilenameTest(unittest.TestCase):
     def test_spent_provision_section(self):
         self.assertEqual(
             filename(da_source(), "36", "Commencement"),
-            "da_section_036_commencement.md",
+            "section_036_commencement.md",
         )
 
     def test_repealed_pair_section(self):
         self.assertEqual(
             filename(da_source(), "30 and 31", ""),
-            "da_section_30_and_31.md",
+            "section_30_and_31.md",
         )
 
     def test_no_space_or_asterisk_in_any_generated_name(self):
@@ -146,7 +146,7 @@ class ParseFederalTest(unittest.TestCase):
         commencement = next(u for u in self.units if u.num == "36")
         self.assertEqual(
             filename(da_source(), commencement.num, commencement.marginal),
-            "da_section_036_commencement.md",
+            "section_036_commencement.md",
         )
 
     def test_heading_has_no_stray_asterisk(self):
