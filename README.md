@@ -1,8 +1,9 @@
 # bc-family-law
 
-A [Claude Code](https://claude.com/claude-code) skill for self-represented
-litigants navigating family law matters in **British Columbia, Canada** —
-Provincial Court and Supreme Court.
+A skill for self-represented litigants navigating family law matters in
+**British Columbia, Canada** — Provincial Court and Supreme Court. It is
+agent-agnostic, working in Claude Code, OpenCode, or any agent that can
+load skills.
 
 It was distilled from a real BC Provincial Court family case run by a
 self-represented litigant with AI assistance, from first filing through a
@@ -49,21 +50,24 @@ provinces and countries.
 
 ## Install
 
-Clone into your Claude Code skills directory — either per-project:
+Clone into your agent's skills directory and enable the skill there. For
+Claude Code, per-project:
 
 ```bash
 git clone https://github.com/[you]/bc-family-law-skill .claude/skills/bc-family-law
 ```
 
-or globally:
+or global:
 
 ```bash
 git clone https://github.com/[you]/bc-family-law-skill ~/.claude/skills/bc-family-law
 ```
 
-Then, in a conversation, `/bc-family-law` (or just ask a BC family law
-question). To start a case project, create an empty folder, open Claude
-Code there, and ask to set up a case project.
+OpenCode and other agents read their own skill directories — install
+into whichever one yours uses. Then invoke the skill (in Claude Code,
+`/bc-family-law`, or just ask a BC family law question). To start a case
+project, create an empty folder, open a coding agent there, and ask to
+set up a case project.
 
 **Privacy note**: a case project will contain the most sensitive
 information your family has. Keep it in a *private* repository, on
@@ -94,7 +98,7 @@ references/
     scfr/                 # Supreme Court Family Rules
     ssag/                 # SSAG User's Guide (chapters)
 templates/
-  case-project/           # scaffold incl. AGENTS.md, CLAUDE.md, CASE.md dashboard
+  case-project/           # scaffold incl. AGENTS.md and CASE.md dashboard
   trial-book/             # two-part LaTeX trial book
   book-of-authorities/    # LaTeX book of authorities
 scripts/

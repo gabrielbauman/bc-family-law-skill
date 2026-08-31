@@ -15,12 +15,13 @@ questions, and don't push it on a user who is overwhelmed — the project
 serves the user, not the other way around. It can start minimal (CASE.md
 plus an `evidence/` folder) and grow folders as the case does.
 
-A full case project needs a **persistent, git-backed filesystem** —
-which in practice means Claude Code (see SKILL.md, "Where this skill
-works best"). Before offering one, confirm you actually have file and
-git access; if you don't (a plain chat with no project files), don't
-promise a structure you can't maintain — help with the immediate
-question and point the user to Claude Code for the ongoing file.
+A full case project needs a **persistent, git-backed filesystem** — in
+practice, any coding agent with file and git access (Claude Code,
+OpenCode, and the like — see SKILL.md, "Where this skill works best").
+Before offering one, confirm you actually have file and git access; if
+you don't (a plain chat with no project files), don't promise a structure
+you can't maintain — help with the immediate question and point the user
+to a filesystem-and-git agent for the ongoing file.
 
 ## Structure
 
@@ -33,7 +34,6 @@ my-case/
 │   └── hooks/protect-immutable.py
 ├── .githooks/pre-commit # Git guard against editing the record
 ├── AGENTS.md           # Standalone working rules (any agent; from template)
-├── CLAUDE.md           # Short pointer to AGENTS.md + the skill
 ├── CASE.md             # THE DASHBOARD — read first, every session
 ├── case-law.md         # Authorities table (once case law accumulates)
 ├── inbox/              # User drop zone for anything new — swept at session start

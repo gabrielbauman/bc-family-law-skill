@@ -90,44 +90,44 @@ orders are available, and how urgent things are. Screen for it during intake
 
 ## Where this skill works best
 
-This skill installs in different Claude environments, and what it can do
-depends on what the environment gives it. Be honest about that up front —
-someone organizing a multi-year case should know where to do it.
+This skill is agent-agnostic — it works in Claude Code, OpenCode, or any
+agent that can load skills — and what it can do depends on what the
+environment gives it. Be honest about that up front; someone organizing
+a multi-year case should know where to do it.
 
 The case project — the persistent, git-tracked case file that is most of
 this skill's leverage — needs a **filesystem**, **git**, and ideally
 **hooks**. So:
 
-- **Claude Code — recommended for any ongoing matter.** Full filesystem
-  and git, so the whole workflow works: a case project that survives
-  across sessions, automatic intake and filing from `inbox/`,
-  reproducible analysis scripts, `.ics` deadline files, and the
+- **A coding agent with filesystem and git — recommended for any ongoing
+  matter.** Full filesystem and git, so the whole workflow works: a case
+  project that survives across sessions, automatic intake and filing from
+  `inbox/`, reproducible analysis scripts, `.ics` deadline files, and the
   immutable-folder hooks that protect the record. If a user has a real
-  case, this is where it should live. Claude Code runs in the terminal,
-  in VS Code and JetBrains, and in the desktop and web apps.
-- **Claude in general chat (claude.ai or the API).** No persistent
-  project filesystem, no git. Strong for *standalone* work: understanding
+  case, this is where it should live.
+- **A chat or API assistant with no project filesystem.** No persistent
+  files, no git, no scripts. Strong for *standalone* work: understanding
   the law and the options, choosing court and process, drafting or
   reviewing a single document you paste in, working through a form,
   preparing for a hearing. It cannot maintain a case file across
   sessions, file documents for you, run scripts, or enforce the
-  evidence/filings rules. A claude.ai Project can hold documents for
-  reuse within that space, but the user maintains the structure and there
-  is no git audit trail — treat each conversation as self-contained.
-- **Claude Cowork.** An agentic environment whose file and git access
-  depends on setup. If it gives you a working filesystem with git, the
-  case-project workflow applies much as in Code — confirm a private git
-  remote so the file persists. If it does not, treat it like general
-  chat. Check what tools you actually have before promising a persistent
-  project; never assume.
+  evidence/filings rules. If the environment lets the user attach
+  documents to a shared space, they can keep materials there, but the
+  user maintains the structure and there is no git audit trail — treat
+  each conversation as self-contained.
+- **An agentic environment with unknown or partial filesystem access.**
+  If it gives you a working filesystem with git, the case-project
+  workflow applies — confirm a private git remote so the file persists.
+  If it does not, treat it like chat. Check what tools you actually have
+  before promising a persistent project; never assume.
 
 Whatever the environment, **the legal substance is identical** — the
 references, the accuracy discipline, the court and form guidance all
 apply. What changes is whether the case file can persist and maintain
-itself. When a user in a chat environment describes an ongoing matter,
-give them the help they asked for, then tell them plainly that an ongoing
-case is best kept in Claude Code, where the file maintains itself between
-sessions.
+itself. When a user in a filesystem-less environment describes an ongoing
+matter, give them the help they asked for, then tell them plainly that an
+ongoing case is best kept with a coding agent that has a filesystem and
+git, where the file maintains itself between sessions.
 
 ## Workflow
 
@@ -147,8 +147,8 @@ Check the working directory for `CASE.md`:
   matter offer to set up a case project (see below) — but only if this
   environment actually has a filesystem and git (see "Where this skill
   works best"). In a plain chat without project files, help with the
-  immediate question and point the user to Claude Code for the ongoing
-  file rather than promising a structure you can't maintain. A quick
+  immediate question and point the user to a filesystem-and-git agent for
+  the ongoing file rather than promising a structure you can't maintain. A quick
   procedural question does not need a project anywhere.
 
 ### New matter intake
@@ -300,15 +300,14 @@ without it.
 ## Templates
 
 - `templates/case-project/` — complete case-project scaffold: AGENTS.md
-  (standalone working rules for any agent), a short CLAUDE.md pointing to
-  it, CASE.md dashboard, the folder structure
-  with per-folder READMEs (including `correspondence/` for sent letters
-  and offers to settle), a `scripts/build_research_index.py` that keeps
-  `research/index.md` generated from each file's frontmatter, and the
-  immutable-folder guards — a git `pre-commit` hook (`.githooks/`) and a
-  Claude Code PreToolUse hook (`.claude/settings.json` +
-  `.claude/hooks/`). Install the git hook at setup with
-  `git config core.hooksPath .githooks`.
+  (standalone working rules for any agent), CASE.md dashboard, the folder
+  structure with per-folder READMEs (including `correspondence/` for sent
+  letters and offers to settle), a `scripts/build_research_index.py` that
+  keeps `research/index.md` generated from each file's frontmatter, and
+  the immutable-folder guards — a git `pre-commit` hook (`.githooks/`,
+  works with any agent) and, for Claude Code specifically, a PreToolUse
+  hook (`.claude/settings.json` + `.claude/hooks/`). Install the git hook
+  at setup with `git config core.hooksPath .githooks`.
 - `templates/trial-book/` — LaTeX trial book: Part 1 (opening, chronology,
   direct evidence, closing, cross-examination plans) and Part 2 (tabbed
   evidence binder). Produces the court-ready PDF.
