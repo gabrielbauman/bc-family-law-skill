@@ -37,8 +37,19 @@ SSAG has no script (static 2016 text).
 
 The tests pin the regen pipeline's filename/slug helpers and its renderers
 (cross-reference folding, blank-line rhythm, tables, rules style, federal
-rendering). Extend them whenever `bclaws_regen.py` or `justicelaws_regen.py`
-(under `skills/bc-family-law/scripts/`) change.
+rendering), plus a golden test that renders a real BC Laws part and compares
+it to the shipped corpus. Extend them whenever `bclaws_regen.py` or
+`justicelaws_regen.py` (under `skills/bc-family-law/scripts/`) change.
+
+## Evals
+
+    python3 evals/run.py list
+    python3 evals/run.py run 4 --command "claude -p -"
+
+The behavioral evals in `evals/evals.json` are graded by `evals/run.py`: a
+deterministic grader for the filesystem/git assertions, plus an optional LLM
+judge for the semantic ones (`--judge-cmd`, or `ANTHROPIC_API_KEY`). Grading
+is offline except for the judge.
 
 ## Conventions
 
