@@ -299,8 +299,9 @@ without it.
 
 ## Templates
 
-- `templates/case-project/` — complete case-project scaffold: CLAUDE.md
-  (standalone working rules), CASE.md dashboard, the folder structure
+- `templates/case-project/` — complete case-project scaffold: AGENTS.md
+  (standalone working rules for any agent), a short CLAUDE.md pointing to
+  it, CASE.md dashboard, the folder structure
   with per-folder READMEs (including `correspondence/` for sent letters
   and offers to settle), a `scripts/build_research_index.py` that keeps
   `research/index.md` generated from each file's frontmatter, and the

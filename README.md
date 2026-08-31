@@ -94,7 +94,7 @@ references/
     scfr/                 # Supreme Court Family Rules
     ssag/                 # SSAG User's Guide (chapters)
 templates/
-  case-project/           # scaffold incl. CLAUDE.md and CASE.md dashboard
+  case-project/           # scaffold incl. AGENTS.md, CLAUDE.md, CASE.md dashboard
   trial-book/             # two-part LaTeX trial book
   book-of-authorities/    # LaTeX book of authorities
 scripts/

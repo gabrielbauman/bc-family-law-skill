@@ -29,10 +29,11 @@ Scaffold from `templates/case-project/`:
 ```
 my-case/
 ├── .claude/
-│   ├── CLAUDE.md       # Standalone working rules (from template)
 │   ├── settings.json   # Wires the immutable-folder PreToolUse hook
 │   └── hooks/protect-immutable.py
 ├── .githooks/pre-commit # Git guard against editing the record
+├── AGENTS.md           # Standalone working rules (any agent; from template)
+├── CLAUDE.md           # Short pointer to AGENTS.md + the skill
 ├── CASE.md             # THE DASHBOARD — read first, every session
 ├── case-law.md         # Authorities table (once case law accumulates)
 ├── inbox/              # User drop zone for anything new — swept at session start
