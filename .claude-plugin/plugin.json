@@ -1,0 +1,8 @@
+{
+  "name": "bc-family-law",
+  "description": "Legal information and document preparation for family law matters in British Columbia, for self-represented litigants.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Gabriel Bauman"
+  }
+}

@@ -304,10 +304,11 @@ without it.
   structure with per-folder READMEs (including `correspondence/` for sent
   letters and offers to settle), a `scripts/build_research_index.py` that
   keeps `research/index.md` generated from each file's frontmatter, and
-  the immutable-folder guards — a git `pre-commit` hook (`.githooks/`,
-  works with any agent) and, for Claude Code specifically, a PreToolUse
-  hook (`.claude/settings.json` + `.claude/hooks/`). Install the git hook
-  at setup with `git config core.hooksPath .githooks`.
+  the immutable-folder guards — a git `pre-commit` hook (`.githooks/`, works
+  with any agent), a Claude Code PreToolUse hook (`.claude/settings.json` +
+  `.claude/hooks/`), and an OpenCode plugin (`.opencode/plugins/`), both
+  blocking edits to the record folders. Install the git hook at setup with
+  `git config core.hooksPath .githooks`.
 - `templates/trial-book/` — LaTeX trial book: Part 1 (opening, chronology,
   direct evidence, closing, cross-examination plans) and Part 2 (tabbed
   evidence binder). Produces the court-ready PDF.

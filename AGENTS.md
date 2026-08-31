@@ -1,30 +1,35 @@
 # AGENTS.md
 
-Guidance for agents working in this repository — a skill that gives
-self-represented litigants in British Columbia a legal-information and
-document-preparation assistant backed by reproduced statutes, court rules,
-and practice guides.
+Guidance for agents working in this repository. The skill itself lives in
+`skills/bc-family-law/`; the rest of the repository is packaging, docs, and
+dev tooling around it.
 
 ## Generated vs. hand-written
 
-- `references/generated/` is downstream output. Never hand-edit it; it is
-  rendered by `scripts/regen_*.py` from the BC Laws / Justice Laws XML APIs.
-- `SKILL.md`, `references/*.md` (outside `generated/`), `templates/`,
-  `scripts/`, `evals/`, and `tests/` are hand-maintained. The exception is
-  `references/forms-guide.md`, which `scripts/build_forms_index.py` generates.
+- `skills/bc-family-law/references/generated/` is downstream output. Never
+  hand-edit it; it is rendered by `skills/bc-family-law/scripts/regen_*.py`
+  from the BC Laws / Justice Laws XML APIs.
+- `skills/bc-family-law/SKILL.md`, `skills/bc-family-law/references/*.md`
+  (outside `generated/`), `skills/bc-family-law/templates/`, and
+  `skills/bc-family-law/scripts/` are hand-maintained, as are the repo-level
+  `evals/` and `tests/`. The exception is `skills/bc-family-law/references/forms-guide.md`,
+  which `skills/bc-family-law/scripts/build_forms_index.py` generates.
 
 ## Regenerating the legal texts
 
 Each source has a script: `regen_fla.py`, `regen_pcfr.py`, `regen_scfr.py`,
-`regen_da.py`, `regen_csg.py`. The SSAG has no script (static 2016 text).
+`regen_da.py`, `regen_csg.py` (under `skills/bc-family-law/scripts/`). The
+SSAG has no script (static 2016 text).
 
 - Default is **check mode**: fetch the current consolidation, diff it
-  against `references/generated/`, exit non-zero on drift.
+  against `skills/bc-family-law/references/generated/`, exit non-zero on drift.
 - `--write` applies the refresh. Then review `git diff` (the diff is the
-  amendment report), rerun `scripts/build_forms_index.py`, and update the
-  snapshot date in `references/legal-sources.md`.
-- `python3 scripts/check_freshness.py` checks all five sources at once; a
-  GitHub Action (`.github/workflows/check-freshness.yml`) runs it weekly.
+  amendment report), rerun `skills/bc-family-law/scripts/build_forms_index.py`,
+  and update the snapshot date in
+  `skills/bc-family-law/references/legal-sources.md`.
+- `python3 skills/bc-family-law/scripts/check_freshness.py` checks all five
+  sources at once; a GitHub Action (`.github/workflows/check-freshness.yml`)
+  runs it weekly.
 
 ## Tests
 
@@ -32,14 +37,16 @@ Each source has a script: `regen_fla.py`, `regen_pcfr.py`, `regen_scfr.py`,
 
 The tests pin the regen pipeline's filename/slug helpers and its renderers
 (cross-reference folding, blank-line rhythm, tables, rules style, federal
-rendering). Extend them whenever `scripts/bclaws_regen.py` or
-`scripts/justicelaws_regen.py` changes.
+rendering). Extend them whenever `bclaws_regen.py` or `justicelaws_regen.py`
+(under `skills/bc-family-law/scripts/`) change.
 
 ## Conventions
 
 - Commits are scoped (`area: summary`); one self-contained change each.
-- A change under `references/generated/` should accompany a script change
-  or a documented refresh, with the reason in the commit body.
+- A change under `skills/bc-family-law/references/generated/` should
+  accompany a script change or a documented refresh, with the reason in the
+  commit body.
 - The reproduced legal texts carry third-party terms (see the Licensing
-  section of `README.md` and `references/legal-sources.md`); only original
-  content is MIT-licensed. Don't move reproduced text into MIT files.
+  section of `README.md` and `skills/bc-family-law/references/legal-sources.md`);
+  only original content is MIT-licensed. Don't move reproduced text into
+  MIT files.

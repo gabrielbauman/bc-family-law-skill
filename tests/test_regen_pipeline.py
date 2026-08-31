@@ -16,7 +16,7 @@ import sys
 import unittest
 import xml.etree.ElementTree as ET
 
-sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "scripts"))
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "skills", "bc-family-law", "scripts"))
 
 from bclaws_regen import (  # noqa: E402
     Source,

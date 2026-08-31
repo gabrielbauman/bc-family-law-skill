@@ -37,7 +37,7 @@ and the procedural traps that catch self-represented parties.
 **This is legal information, not legal advice.** No skill makes an AI a
 lawyer. It will not predict your outcome, it can make mistakes, and the
 reproduced legal texts are a snapshot (see
-`references/legal-sources.md`) — the law may have changed. For advice
+`skills/bc-family-law/references/legal-sources.md`) — the law may have changed. For advice
 about your situation, consult a family lawyer; Legal Aid BC
 (legalaid.bc.ca), Access Pro Bono (accessprobono.ca), and Family Justice
 Centres offer free help, and many lawyers review single documents or
@@ -50,24 +50,27 @@ provinces and countries.
 
 ## Install
 
-Clone into your agent's skills directory and enable the skill there. For
-Claude Code, per-project:
+The repository is a Claude Code plugin and a skills package; either
+command installs it from the git repo:
 
 ```bash
-git clone https://github.com/[you]/bc-family-law-skill .claude/skills/bc-family-law
+# as a Claude Code plugin
+claude plugin install [owner]/bc-family-law-skill
 ```
-
-or global:
 
 ```bash
-git clone https://github.com/[you]/bc-family-law-skill ~/.claude/skills/bc-family-law
+# via the skills CLI (Claude Code, OpenCode, Cursor, and others)
+npx skills add [owner]/bc-family-law-skill
 ```
 
-OpenCode and other agents read their own skill directories — install
-into whichever one yours uses. Then invoke the skill (in Claude Code,
-`/bc-family-law`, or just ask a BC family law question). To start a case
-project, create an empty folder, open a coding agent there, and ask to
-set up a case project.
+Or install by hand: clone the repository and copy (or symlink)
+`skills/bc-family-law` into your agent's skills directory — e.g.
+`~/.claude/skills/bc-family-law` for Claude Code, or
+`~/.config/opencode/skills/bc-family-law` for OpenCode.
+
+Then invoke the skill (in Claude Code, `/bc-family-law`, or just ask a BC
+family law question). To start a case project, create an empty folder, open
+a coding agent there, and ask to set up a case project.
 
 **Privacy note**: a case project will contain the most sensitive
 information your family has. Keep it in a *private* repository, on
@@ -76,59 +79,62 @@ before putting evidence into any AI tool.
 
 ## Layout
 
+The skill is a self-contained folder; the rest of the repository is
+packaging, docs, and dev tooling.
+
 ```
-SKILL.md                  # entry point and workflow
-references/
-  legal-sources.md        # provenance and currency of the legal texts
-  evidence-standards.md   # citation and accuracy discipline
-  case-law.md             # authority verification workflow
-  evidence-strategy.md    # what to lead, what to leave out
-  trial-preparation.md    # trial book, testimony, cross, closing
-  post-judgment.md        # orders, costs, appeals, variation, enforcement
-  case-project-guide.md   # project structure and lifecycle
-  document-handling.md    # evidence extraction mechanics
-  party-assessment.md     # intake assessment
-  resolution-approaches.md# negotiation → mediation → court
-  forms-guide.md          # form number → requiring rules (generated)
-  generated/              # downloaded legal texts, one subfolder per source
-    fla/                  # Family Law Act — index.md + one file per section
-    da/                   # Divorce Act
-    csg/                  # Federal Child Support Guidelines
-    pcfr/                 # Provincial Court Family Rules
-    scfr/                 # Supreme Court Family Rules
-    ssag/                 # SSAG User's Guide (chapters)
-templates/
-  case-project/           # scaffold incl. AGENTS.md and CASE.md dashboard
-  trial-book/             # two-part LaTeX trial book
-  book-of-authorities/    # LaTeX book of authorities
-scripts/
-  regen_fla.py ...        # one regeneration script per legal source —
-  regen_pcfr.py           #   fetches the current consolidation from the
-  regen_scfr.py           #   BC Laws / Justice Laws XML APIs, checks for
-  regen_da.py             #   amendments (the git diff IS the amendment
-  regen_csg.py            #   report), and rebuilds the references
-  bclaws_regen.py         # shared machinery (BC CiviX XML)
-  justicelaws_regen.py    # shared machinery (federal LIMS XML)
-  build_forms_index.py    # regenerates forms-guide.md from the rule texts
-  check_freshness.py      # runs every regen script in check mode (CI uses it)
+skills/bc-family-law/     # the skill (this is what gets installed)
+  SKILL.md                # entry point and workflow
+  references/
+    legal-sources.md      # provenance and currency of the legal texts
+    evidence-standards.md # citation and accuracy discipline
+    case-law.md           # authority verification workflow
+    evidence-strategy.md  # what to lead, what to leave out
+    trial-preparation.md  # trial book, testimony, cross, closing
+    post-judgment.md      # orders, costs, appeals, variation, enforcement
+    case-project-guide.md # project structure and lifecycle
+    document-handling.md  # evidence extraction mechanics
+    party-assessment.md   # intake assessment
+    resolution-approaches.md # negotiation → mediation → court
+    forms-guide.md        # form number → requiring rules (generated)
+    generated/            # downloaded legal texts, one subfolder per source
+      fla/  da/  csg/  pcfr/  scfr/  ssag/
+  templates/
+    case-project/         # scaffold incl. AGENTS.md and CASE.md dashboard
+    trial-book/           # two-part LaTeX trial book
+    book-of-authorities/  # LaTeX book of authorities
+  scripts/
+    regen_fla.py ...      # one regeneration script per legal source —
+    regen_pcfr.py         #   fetches the current consolidation from the
+    regen_scfr.py         #   BC Laws / Justice Laws XML APIs, checks for
+    regen_da.py           #   amendments (the git diff IS the amendment
+    regen_csg.py          #   report), and rebuilds the references
+    bclaws_regen.py       # shared machinery (BC CiviX XML)
+    justicelaws_regen.py  # shared machinery (federal LIMS XML)
+    build_forms_index.py  # regenerates forms-guide.md from the rule texts
+    check_freshness.py    # runs every regen script in check mode (CI uses it)
+.claude-plugin/plugin.json # Claude Code plugin manifest
 evals/                    # test prompts for skill development
+tests/                    # regen-pipeline unit tests
 ```
 
 ## Licensing
 
-- **Original content** (SKILL.md, practice guides, templates, scripts):
-  MIT — see `LICENSE`.
-- **`references/generated/fla/`, `pcfr/`, `scfr/`**: reproduced from
-  [BC Laws](https://www.bclaws.gov.bc.ca); © King's Printer, British
-  Columbia. Not official versions. **Review the King's Printer copyright
-  terms (https://www.bclaws.gov.bc.ca/copyright.html) before
+- **Original content** (`skills/bc-family-law/SKILL.md`, practice guides,
+  templates, scripts): MIT — see `LICENSE`.
+- **`skills/bc-family-law/references/generated/fla/`, `pcfr/`, `scfr/`**:
+  reproduced from [BC Laws](https://www.bclaws.gov.bc.ca); © King's Printer,
+  British Columbia. Not official versions. **Review the King's Printer
+  copyright terms (https://www.bclaws.gov.bc.ca/copyright.html) before
   redistributing.**
-- **`references/generated/da/`, `csg/`**: federal legislation, reproduced
-  under the Reproduction of Federal Law Order, SI/97-5. Not official
-  versions.
-- **`references/generated/ssag/`**: derived from the *Spousal Support
-  Advisory Guidelines: The Revised User's Guide* (Rogerson & Thompson,
-  April 2016), a Department of Justice Canada publication — advisory, not
-  legislation. **Confirm reproduction terms before redistributing.**
+- **`skills/bc-family-law/references/generated/da/`, `csg/`**: federal
+  legislation, reproduced under the Reproduction of Federal Law Order,
+  SI/97-5. Not official versions.
+- **`skills/bc-family-law/references/generated/ssag/`**: derived from the
+  *Spousal Support Advisory Guidelines: The Revised User's Guide* (Rogerson
+  & Thompson, April 2016), a Department of Justice Canada publication —
+  advisory, not legislation. **Confirm reproduction terms before
+  redistributing.**
 
-Refresh instructions for all legal texts: `references/legal-sources.md`.
+Refresh instructions for all legal texts:
+`skills/bc-family-law/references/legal-sources.md`.

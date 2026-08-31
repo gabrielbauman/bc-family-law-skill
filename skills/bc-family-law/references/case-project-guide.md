@@ -30,9 +30,11 @@ Scaffold from `templates/case-project/`:
 ```
 my-case/
 ├── .claude/
-│   ├── settings.json   # Wires the immutable-folder PreToolUse hook
+│   ├── settings.json   # Wires the Claude Code PreToolUse hook
 │   └── hooks/protect-immutable.py
-├── .githooks/pre-commit # Git guard against editing the record
+├── .opencode/
+│   └── plugins/protect-immutable.js  # Same guard for OpenCode
+├── .githooks/pre-commit # Git guard against editing the record (any tool)
 ├── AGENTS.md           # Standalone working rules (any agent; from template)
 ├── CASE.md             # THE DASHBOARD — read first, every session
 ├── case-law.md         # Authorities table (once case law accumulates)
@@ -85,24 +87,27 @@ replaces it; the model never "fixes" evidence.
 
 ### Immutability is machine-enforced
 
-Two guards ship in the template so a stray edit to the record can't reach
+Guards ship in the template so a stray edit to the record can't reach
 history unnoticed — the rule the guide most relies on, and the one most
 often broken by accident:
 
-- a **PreToolUse hook** (`.claude/hooks/protect-immutable.py`, wired in
-  `.claude/settings.json`) denies any `Edit`/`Write` to an existing file
-  under `evidence/`, `filings/`, or `correspondence/`;
+- a **Claude Code PreToolUse hook** (`.claude/hooks/protect-immutable.py`,
+  wired in `.claude/settings.json`) denies any `Edit`/`Write` to an
+  existing file under `evidence/`, `filings/`, or `correspondence/`;
+- an **OpenCode plugin** (`.opencode/plugins/protect-immutable.js`) does
+  the same when the project is opened in OpenCode;
 - a **git pre-commit hook** (`.githooks/pre-commit`) blocks committing a
   modification, rename, or deletion of one.
 
-Install both when scaffolding the project (the sweep's step 1 does this):
-`git config core.hooksPath .githooks` and ensure the hook files are
-executable. The hooks allow *adding* new files freely — that is how
-intake files things. The single exception is a deliberate,
-user-confirmed replacement (a better scan of the same document): create
-the new file and commit it with `git commit --no-verify`. Never reach for
-`--no-verify` to push past the guard on your own initiative — the block
-is usually right.
+Install the git hook when scaffolding the project (the sweep's step 1 does
+this): `git config core.hooksPath .githooks` and ensure the hook file is
+executable. The Claude Code and OpenCode guards load from the project's own
+`.claude/` and `.opencode/` folders with no extra step. The guards allow
+*adding* new files freely — that is how intake files things. The single
+exception is a deliberate, user-confirmed replacement (a better scan of the
+same document): create the new file and commit it with
+`git commit --no-verify`. Never reach for `--no-verify` to push past the
+guard on your own initiative — the block is usually right.
 
 ### correspondence/ holds what was sent
 
@@ -176,9 +181,11 @@ says they've added something.
 1. If the project isn't a git repository yet, initialize one, point git
    at the bundled hooks (`git config core.hooksPath .githooks`, and make
    `.githooks/pre-commit` executable), and make a baseline commit before
-   anything else. The PreToolUse hook in `.claude/settings.json` loads
-   on its own; Claude Code may ask the user to trust the project's hooks
-   the first time — tell them these guard the evidence folders.
+   anything else. The Claude Code PreToolUse hook (`.claude/settings.json`)
+   and the OpenCode plugin (`.opencode/plugins/`) load from the project's
+   own folders on their own; an agent may ask the user to trust the
+   project's hooks the first time — tell them these guard the evidence
+   folders.
 2. Run `git status --porcelain` and classify what it shows:
    - **Untracked files** (in `inbox/` or anywhere): identify each —
      read enough to classify. Court-issued or court-stamped documents →

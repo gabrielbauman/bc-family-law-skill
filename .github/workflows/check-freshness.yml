@@ -1,8 +1,9 @@
 name: Check legal-source freshness
 
-# Amendment monitor: the reproduced legal texts under references/generated/
-# are a snapshot, and these jobs fail when the live consolidations have
-# moved past that snapshot — the signal to run `regen_<source>.py --write`.
+# Amendment monitor: the reproduced legal texts under
+# skills/bc-family-law/references/generated/ are a snapshot, and these jobs
+# fail when the live consolidations have moved past that snapshot — the
+# signal to run `regen_<source>.py --write`.
 
 on:
   schedule:
@@ -19,7 +20,7 @@ jobs:
         with:
           python-version: "3.11"
       - name: Check for drift against live consolidations
-        run: python3 scripts/check_freshness.py
+        run: python3 skills/bc-family-law/scripts/check_freshness.py
 
   tests:
     runs-on: ubuntu-latest

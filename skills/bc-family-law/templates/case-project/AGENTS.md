@@ -35,10 +35,12 @@ root/
 
 `evidence/`, `filings/`, and `correspondence/` (once sent) are the record:
 extract FROM them into `research/`; never edit, rename, or "fix" them.
-Two guards back this up, so a stray edit can't reach history unnoticed:
+Guards back this up, so a stray edit can't reach history unnoticed:
 
-- a **PreToolUse hook** (Claude Code: `.claude/settings.json` +
+- a **Claude Code PreToolUse hook** (`.claude/settings.json` +
   `.claude/hooks/protect-immutable.py`) blocks edits to existing files there;
+- an **OpenCode plugin** (`.opencode/plugins/protect-immutable.js`) does the
+  same when the project is opened in OpenCode;
 - a **git pre-commit hook** (`.githooks/pre-commit`) blocks committing
   such a change — this one applies to any tool that commits.
 

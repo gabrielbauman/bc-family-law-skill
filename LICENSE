@@ -2,11 +2,12 @@ MIT License
 
 Copyright (c) 2026 Gabriel Bauman
 
-Applies to the original content of this repository: SKILL.md, the
-practice guides (references/*.md), templates/, scripts/, and evals/.
-The reproduced legal texts under references/generated/ are not covered
-by this license — see the Licensing section of README.md for their
-terms.
+Applies to the original content of this repository:
+`skills/bc-family-law/SKILL.md`, the practice guides
+(`skills/bc-family-law/references/*.md`), templates, scripts, and evals/.
+The reproduced legal texts under `skills/bc-family-law/references/generated/`
+are not covered by this license — see the Licensing section of README.md
+for their terms.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
