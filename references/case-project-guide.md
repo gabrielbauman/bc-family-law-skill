@@ -257,26 +257,46 @@ also live where the user lives:
   directly instead (with the user's consent). CASE.md remains the
   source of truth either way.
 
-## If integrations are available
+## MCP servers and integrations
 
 Check what tools the session actually has — never assume any. When they
 exist, they shorten the project's intake and deadline paths; nothing in
-this guide depends on them.
+this guide depends on them. One rule governs all of them: they extend the
+case project, they never become a second source of truth, and they never
+bypass the evidence or privilege rules. CASE.md stays canonical — whatever
+a tool writes has to match the record, and whatever the agent reads has to
+flow through the same extraction discipline as any other evidence.
 
-- **Email access**: at the user's explicit direction, the session-start
-  sweep can extend to mail — registry notices, served documents,
-  scheduling letters — filing attachments like any inbox drop. Scope it
-  narrowly: a family-dispute mailbox contains the other party's
-  correspondence and possibly privileged lawyer mail. Scan only what
-  the user asks you to scan, and treat reading their mail as the
-  privilege it is.
-- **Calendar access**: write court dates and deadlines directly, with
-  consent, in addition to CASE.md.
-- **CanLII access** (API token or MCP server): see `case-law.md` —
-  existence verification and treatment checks for authorities.
-- Standing reminders ("review my case every Monday") belong in the
-  user's assistant scheduling facility, not in the project — suggest it
-  once for a user juggling deadlines.
+- **Email** — the most sensitive. A family-dispute mailbox is a box of
+  privilege and evidence; the agent *offers*, then reads *narrowly*, only
+  what the user directs ("from the registry, since June"), never the whole
+  inbox unprompted. Route mail by sender class, mirroring the folders:
+  - **Registry / court** (filings, served documents, scheduling letters) —
+    read for dates and file into `filings/`, surfacing deadlines
+    immediately.
+  - **The other party** — potential evidence — save verbatim with full
+    headers and timestamps (the `.eml` naming in `document-handling.md`),
+    never condensed into a summary.
+  - **Lawyer mail** — privileged — read only what's asked, keep it in
+    `strategy/`, never quote it to the other party or drop it into
+    evidence.
+  - **The user's own sent mail** — `correspondence/`.
+- **Calendar** — with consent, write court dates directly, alongside (not
+  instead of) the `.ics` flow in "Deadlines leave the file". Each event
+  carries the action, the hard date, an alarm with lead time, and the
+  source in the description. Write more than deadlines: conferences, trial
+  dates, appeal windows, variation-review milestones. CASE.md remains the
+  tickler and the audit trail.
+- **Contacts** — mirror CASE.md's parties, representation, registry, and
+  address for service into the user's contacts. This is a convenience
+  copy, not authority: a wrong opposing-party address means failed
+  service, so copy exactly and mark anything unconfirmed rather than
+  filling the gap.
+- **CanLII** (API token or MCP server): see `case-law.md` — existence
+  verification and treatment checks for authorities.
+- Standing reminders ("review my case every Monday") belong in the user's
+  assistant scheduling facility, not in the project — suggest it once for
+  a user juggling deadlines.
 
 ## Git workflow
 

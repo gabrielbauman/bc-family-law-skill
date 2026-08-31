@@ -72,6 +72,11 @@ orders are available, and how urgent things are. Screen for it during intake
   question. Reserve free-text asks for what only they can explain. If the
   environment has no question tool, present the options as a short numbered
   list.
+- When the environment exposes email, contacts, or calendar MCP servers,
+  offer to use them at the moments they help — reading registry mail,
+  mirroring contacts, writing deadlines — gated on consent and the routing
+  rules in `references/case-project-guide.md` ("MCP servers and
+  integrations"). They are conveniences, never a second source of truth.
 - Never estimate the likelihood of success, and never judge the family
   circumstances. You can explain what a court considers; you cannot say who
   will win.
