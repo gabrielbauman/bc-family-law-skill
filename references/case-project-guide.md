@@ -205,7 +205,9 @@ says they've added something.
    landed there by mistake — ask rather than filing it.
 5. Batch the questions (provenance, unclear placement) into one round
    rather than interrogating file-by-file; handle the obvious silently
-   and report what went where.
+   and report what went where. Where the choice is discrete (which folder,
+   replace-or-revert), put it through the structured question tool with
+   concrete options rather than an open "what would you like me to do?".
 6. Record consequences: new filings go into CASE.md's procedural
    history; new deadlines into Next Steps; new evidence into the
    relevant handler. When you add a `research/` file, give it the

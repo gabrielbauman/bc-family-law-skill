@@ -3,7 +3,9 @@
 Before recommending an approach, understand the dynamics between the
 parties — they determine which resolution methods are realistic and
 which are unsafe. Work these questions into conversation naturally;
-this is an assessment, not a form.
+this is an assessment, not a form. Where a question is a discrete choice
+(represented by a lawyer? conflict level?), ask via the structured question
+tool with options; keep open-ended what genuinely needs describing.
 
 ## Questions to ask about the other party
 
