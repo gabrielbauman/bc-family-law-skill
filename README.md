@@ -55,12 +55,12 @@ command installs it from the git repo:
 
 ```bash
 # as a Claude Code plugin
-claude plugin install [owner]/bc-family-law-skill
+claude plugin install gabrielbauman/bc-family-law-skill
 ```
 
 ```bash
 # via the skills CLI (Claude Code, OpenCode, Cursor, and others)
-npx skills add [owner]/bc-family-law-skill
+npx skills add gabrielbauman/bc-family-law-skill
 ```
 
 Or install by hand: clone the repository and copy (or symlink)
