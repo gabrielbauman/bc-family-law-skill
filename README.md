@@ -1,4 +1,4 @@
-# bc-family-law
+# BC Family Law Skill
 
 A skill for self-represented litigants navigating family law matters in
 **British Columbia, Canada** — Provincial Court and Supreme Court. It is
