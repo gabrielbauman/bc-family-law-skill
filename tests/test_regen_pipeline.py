@@ -14,15 +14,21 @@ Run from the repository root:
 import os
 import sys
 import unittest
+import xml.etree.ElementTree as ET
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "scripts"))
 
 from bclaws_regen import (  # noqa: E402
     Source,
+    Unit,
     filename,
+    index_markdown,
     num_to_file_num,
     parse_units,
+    render_inline,
+    render_table,
     slugify,
+    two_pass,
     unit_markdown,
 )
 import justicelaws_regen  # noqa: E402
@@ -37,6 +43,62 @@ def da_source() -> Source:
         title="Divorce Act",
         citation="**R.S.C., 1985, c. 3 (2nd Supp.)**",
     )
+
+
+def act_source() -> Source:
+    return Source(
+        key="fla",
+        doc_id="11025",
+        multi=True,
+        unit="Section",
+        title="Family Law Act",
+        citation="**[SBC 2011] CHAPTER 25**",
+    )
+
+
+def rules_source() -> Source:
+    # Mirrors regen_scfr.py: rules are numbered by part and render with
+    # titled subrules as ### headings.
+    return Source(
+        key="scfr",
+        doc_id="169_2009",
+        multi=True,
+        unit="Rule",
+        title="Supreme Court Family Rules",
+        citation="**B.C. Reg. 169/2009**",
+        pad_nums=False,
+        style="rules",
+        slug_max=50,
+    )
+
+
+# Namespaces matching NS in bclaws_regen.py, for building fixtures.
+BC_NS = (
+    'xmlns:bcl="http://www.gov.bc.ca/2013/bclegislation" '
+    'xmlns:in="http://www.qp.gov.bc.ca/2013/inline" '
+    'xmlns:oasis="http://docs.oasis-open.org/ns/oasis-exchange/table" '
+    'xmlns:reg="http://www.gov.bc.ca/2013/legislation/regulation" '
+    'xmlns:act="http://www.gov.bc.ca/2013/legislation/act"'
+)
+
+
+def render_text(text_xml: str, link_map=None, unit="Section", bold=False) -> str:
+    """Render one <bcl:text> payload through render_inline."""
+    el = ET.fromstring(f"<bcl:text {BC_NS}>{text_xml}</bcl:text>")
+    return render_inline(el, link_map or {}, unit, bold_terms=bold)
+
+
+def section(num: str, marginal: str, *body: str) -> str:
+    return (
+        f"<bcl:section><bcl:marginalnote>{marginal}</bcl:marginalnote>"
+        f"<bcl:num>{num}</bcl:num>{''.join(body)}</bcl:section>"
+    )
+
+
+def act_xml(*sections: str) -> bytes:
+    return (
+        f"<act:act {BC_NS}><act:content>{''.join(sections)}</act:content></act:act>"
+    ).encode("utf-8")
 
 
 class NumToFileNumTest(unittest.TestCase):
@@ -211,6 +273,212 @@ class BcHnoteTest(unittest.TestCase):
         md = unit_markdown(self.source, self.units[0])
         body = md.split("_Amendments:")[0]
         self.assertNotIn("am. B.C. Reg", body)
+
+
+class RenderInlineTest(unittest.TestCase):
+    """Cross-reference folding and defined-term bolding in render_inline."""
+
+    def test_folds_own_section_reference(self):
+        self.assertEqual(
+            render_text(
+                'section 247 <in:desc>[regulations respecting child support]</in:desc>',
+                link_map={"247": "section_247_regulations_respecting_child_support.md"},
+            ),
+            "[section 247 [regulations respecting child support]]"
+            "(section_247_regulations_respecting_child_support.md)",
+        )
+
+    def test_leaves_unresolved_reference_plain(self):
+        self.assertEqual(
+            render_text(
+                'section 247 <in:desc>[regulations respecting child support]</in:desc>',
+            ),
+            "section 247 [regulations respecting child support]",
+        )
+
+    def test_leaves_plural_reference_plain(self):
+        self.assertEqual(
+            render_text('sections 94 and 215 <in:desc>[commencement]</in:desc>'),
+            "sections 94 and 215 [commencement]",
+        )
+
+    def test_folds_decimal_section_number(self):
+        self.assertEqual(
+            render_text(
+                'section 3.1 <in:desc>[companion animals]</in:desc>',
+                link_map={"3.1": "section_003_1_companion_animals.md"},
+            ),
+            "[section 3.1 [companion animals]](section_003_1_companion_animals.md)",
+        )
+
+    def test_folds_lettered_subsection_suffix(self):
+        self.assertEqual(
+            render_text(
+                'section 170 (g) <in:desc>[matters that may be provided for]</in:desc>',
+                link_map={"170": "section_170_matters_that_may_be_provided_for.md"},
+            ),
+            "[section 170 (g) [matters that may be provided for]]"
+            "(section_170_matters_that_may_be_provided_for.md)",
+        )
+
+    def test_bolds_defined_term_in_definition(self):
+        self.assertEqual(
+            render_text('<in:term>child</in:term>', unit="Section", bold=True),
+            '**"child"**',
+        )
+
+    def test_plain_term_in_running_text(self):
+        self.assertEqual(
+            render_text('<in:term>child</in:term>', unit="Section", bold=False),
+            '"child"',
+        )
+
+
+class UnitMarkdownStructureTest(unittest.TestCase):
+    """The exact blank-line rhythm and subsection/paragraph markup."""
+
+    def test_subsection_and_paragraphs(self):
+        units = parse_units(
+            act_xml(
+                section(
+                    "37",
+                    "Best interests of child",
+                    "<bcl:subsection><bcl:num>1</bcl:num>"
+                    "<bcl:text>the parties and the court must consider:</bcl:text>"
+                    "<bcl:paragraph><bcl:num>a</bcl:num>"
+                    "<bcl:text>the child's health.</bcl:text>"
+                    "</bcl:paragraph>"
+                    "</bcl:subsection>",
+                )
+            ),
+            None,
+            act_source(),
+        )
+        md = unit_markdown(act_source(), units[0])
+        self.assertEqual(
+            md,
+            "# Section 37 — Best interests of child\n\n\n"
+            "**(1)** the parties and the court must consider:\n\n"
+            "**(a)** the child's health.\n",
+        )
+
+
+class IndexMarkdownTest(unittest.TestCase):
+    """Part/division headings and the table of contents list."""
+
+    UNITS = [
+        Unit("1", "Definitions", [], ("1", "Interpretation"), None),
+        Unit("3", "Spouses and relationships between spouses", [], ("1", "Interpretation"), None),
+        Unit("4", "Purposes of Part", [], ("2", "Resolution of Family Law Disputes"), ("1", "Resolution Out of Court Preferred")),
+    ]
+
+    def test_part_and_division_headings(self):
+        md = index_markdown(act_source(), self.UNITS, None)
+        self.assertIn("### Part 1 — Interpretation", md)
+        self.assertIn("### Part 2 — Resolution of Family Law Disputes", md)
+        self.assertIn("**Division 1 — Resolution Out of Court Preferred**", md)
+
+    def test_links_use_relative_filenames(self):
+        md = index_markdown(act_source(), self.UNITS, None)
+        self.assertIn(
+            "- [Section 3 — Spouses and relationships between spouses]"
+            "(section_003_spouses_and_relationships_between_spouses.md)",
+            md,
+        )
+
+    def test_currency_line_when_present(self):
+        md = index_markdown(da_source(), self.UNITS, "This Act is current to August 25, 2026.")
+        self.assertIn("This Act is current to August 25, 2026.", md)
+
+
+class RenderTableTest(unittest.TestCase):
+    def test_table_to_pipe_markdown(self):
+        root = ET.fromstring(
+            f'<oasis:table {BC_NS}>'
+            "<oasis:row><oasis:entry>a</oasis:entry><oasis:entry>b</oasis:entry></oasis:row>"
+            "<oasis:row><oasis:entry>1</oasis:entry><oasis:entry>2</oasis:entry></oasis:row>"
+            "</oasis:table>"
+        )
+        self.assertEqual(render_table(root, 0), [("table", 0, "| a | b |\n| 1 | 2 |")])
+
+
+class TwoPassTest(unittest.TestCase):
+    """Pass 1 collects filenames; pass 2 resolves cross-references."""
+
+    def test_cross_part_reference_resolves(self):
+        part_a = act_xml(section("3", "Spouses and relationships between spouses"))
+        part_b = act_xml(
+            section(
+                "3.1",
+                "Companion animals",
+                "<bcl:text>an animal, subject to "
+                "section 3 <in:desc>[spouses and relationships between spouses]</in:desc>"
+                ".</bcl:text>",
+            )
+        )
+        units = two_pass(act_source(), [part_a, part_b])
+        md = unit_markdown(act_source(), next(u for u in units if u.num == "3.1"))
+        self.assertIn(
+            "[section 3 [spouses and relationships between spouses]]"
+            "(section_003_spouses_and_relationships_between_spouses.md)",
+            md,
+        )
+
+
+class RulesStyleTest(unittest.TestCase):
+    """SCFR 'rules' style: titled rules, subrules as ### headings."""
+
+    def test_subrule_heading(self):
+        xml = (
+            f'<reg:regulation {BC_NS}><reg:content>'
+            "<bcl:rule><bcl:num>1-1</bcl:num><bcl:text>Interpretation</bcl:text>"
+            "<bcl:subrule><bcl:marginalnote>Definitions</bcl:marginalnote>"
+            "<bcl:num>1</bcl:num><bcl:text>In these rules:</bcl:text></bcl:subrule>"
+            "</bcl:rule>"
+            "</reg:content></reg:regulation>"
+        ).encode("utf-8")
+        units = parse_units(xml, None, rules_source())
+        self.assertEqual(units[0].num, "1-1")
+        self.assertEqual(units[0].marginal, "Interpretation")
+        md = unit_markdown(rules_source(), units[0])
+        self.assertEqual(
+            md,
+            "# Rule 1-1 — Interpretation\n\n\n\n"
+            "### Definitions\n\n\n"
+            "**(1)** In these rules:\n",
+        )
+
+
+class FederalRenderingTest(unittest.TestCase):
+    """Federal XML: definition bolding and subsection/paragraph labels."""
+
+    XML = (
+        "<Statute><Body>"
+        "<Section><Label>2</Label><MarginalNote>Definitions</MarginalNote>"
+        "<Definition><Text><DefinedTermEn>spouse</DefinedTermEn>"
+        " means a married person.</Text></Definition>"
+        "</Section>"
+        "<Section><Label>8</Label><MarginalNote>Divorce</MarginalNote>"
+        "<Subsection><Label>(1)</Label><Text>A court may grant a divorce.</Text>"
+        "<Paragraph><Label>(a)</Label><Text>on breakdown.</Text></Paragraph>"
+        "</Subsection>"
+        "</Section>"
+        "</Body></Statute>"
+    )
+
+    def setUp(self):
+        self.units, _ = justicelaws_regen.parse_federal(
+            self.XML.encode("utf-8"), da_source()
+        )
+
+    def test_definition_bolds_defined_term(self):
+        md = unit_markdown(da_source(), next(u for u in self.units if u.num == "2"))
+        self.assertIn('**"spouse"** means a married person.', md)
+
+    def test_subsection_and_paragraph_labels(self):
+        md = unit_markdown(da_source(), next(u for u in self.units if u.num == "8"))
+        self.assertIn("**(1)** A court may grant a divorce.", md)
+        self.assertIn("**(a)** on breakdown.", md)
 
 
 if __name__ == "__main__":
