@@ -33,9 +33,23 @@ For a **single document**, record: what it is, the file format, how to
 extract text (e.g. `pdftotext file.pdf -`), and the citation format for
 referencing it.
 
+`examples/evidence-handler-readme.md` is a finished handler for the
+hardest common case, a large chat export. Read it before writing the
+first handler in a project — the required contents are listed below, but
+the shape is easier to copy than to reconstruct, and handlers are only
+worth writing if every session produces the same one.
+
 For a **record collection**, record:
 
 - **Summary**: record count, date range, participants/parties.
+- **Participants, resolved to the user and the other party.** An export
+  names people the way the platform does — "Sam", "Jordan", a phone
+  number, an account id — and nothing in the file says which one is your
+  user. Getting it backwards silently reverses the meaning of every
+  quote drawn from the source, and it is the kind of error that is
+  invisible until the other side points it out. Ask the user which name
+  is theirs and record the answer with the date you asked; do not infer
+  it from an export title or from who speaks first.
 - **Schema**: the structure, with one representative record pasted in.
 - **Query templates**: working commands for the common operations —
   list, filter by date range, filter by sender, keyword search. With
@@ -93,7 +107,11 @@ document.
    versions of the same evidence.
 2. **Read the handler**; run the appropriate query.
 3. **Save to `research/`** as a markdown file that opens with the
-   frontmatter block the registry expects, then presents the content:
+   frontmatter block the registry expects, then presents the content.
+   `examples/research-extraction.md` is a finished one — read it before
+   writing the first extraction in a project. Section headings invented
+   fresh each session are how a case file stops being comparable with
+   itself, which is most of what a case project is for.
 
    ```text
    ---
@@ -107,7 +125,10 @@ document.
    - **Purpose** — the question this extraction answers (the `purpose:`
      field)
    - **Source + query** — the `source:` field; reproducibility is the
-     audit trail
+     audit trail. Keep it to the one query that reproduces the extract,
+     since the registry renders this field in a table; if the extraction
+     took several passes, put the full method in a "Scope of this
+     extraction" section in the body where it has room to be read
    - **Date of extraction** — the `extracted:` field
    - **The content**, cited per `evidence-standards.md` (message IDs,
      full timestamps, complete sequences, no ellipsis)
