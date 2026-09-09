@@ -46,7 +46,7 @@ class Source:
     title: str            # display title for the index
     citation: str         # e.g. "**[SBC 2011] CHAPTER 25**"
     tagline: str = ""     # editorial line under the citation, if any
-    currency_line: bool = False  # include "This Act is current to ..." line
+    currency_line: bool = False  # include a "current to ..." line in the index
     pad_nums: bool = True  # zero-pad to 3 digits (FLA/PCFR); SCFR's
                            # part-number rules ("16-1") are not padded
     style: str = "act"     # "act": bcl:section units (FLA, PCFR).
@@ -544,7 +544,12 @@ def build(source: Source, verbose: bool = True) -> dict[str, str]:
     if source.currency_line:
         date = currency_date(source)
         if date:
-            currency = f"This Act is current to {date}."
+            # The BC Laws "current to" date is the only freshness signal for
+            # these texts, so the noun has to match what was reproduced: the
+            # rule sets are regulations, not Acts.
+            subject = "This Act is" if source.style == "act" and source.unit == "Section" \
+                else "These rules are"
+            currency = f"{subject} current to {date}."
     out = {filename(source, u.num, u.marginal, u.kind): unit_markdown(source, u)
            for u in units}
     out["index.md"] = index_markdown(source, units, currency)
