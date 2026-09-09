@@ -10,6 +10,7 @@ run_cli(Source(
     doc_id="169_2009",
     multi=True,
     unit="Rule",
+    currency_line=True,  # the only freshness signal these rule sets carry
     title="Supreme Court Family Rules",
     citation="**B.C. Reg. 169/2009**",
     tagline="These rules govern family law proceedings in the Supreme Court of British Columbia.",

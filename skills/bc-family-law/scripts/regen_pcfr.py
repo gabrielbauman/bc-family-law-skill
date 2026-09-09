@@ -10,6 +10,10 @@ run_cli(Source(
     doc_id="120_2020",
     multi=False,
     unit="Rule",
+    # No currency_line: unlike the FLA and the SCFR, BC Laws publishes no
+    # "current to" statement for this document — only the amendment
+    # instruments, which reach the per-rule footers. Those footers are the
+    # only freshness signal the PCFR corpus carries.
     title="Provincial Court Family Rules",
     citation="**B.C. Reg. 120/2020**",
     tagline="These rules govern family law proceedings in the Provincial Court of British Columbia.",
