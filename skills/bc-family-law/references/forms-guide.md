@@ -123,7 +123,7 @@ official forms page above, or read the referencing rule for context.
 | Form F33 | [rule_10_7_consent_applications](generated/scfr/rule_10_7_consent_applications.md), [rule_15_1_orders](generated/scfr/rule_15_1_orders.md) |
 | Form F34 | [rule_10_8_applications_of_which_notice_is_not_required](generated/scfr/rule_10_8_applications_of_which_notice_is_not_required.md), [rule_15_1_orders](generated/scfr/rule_15_1_orders.md), [rule_17_1_petitions](generated/scfr/rule_17_1_petitions.md) |
 | Form F35 | [rule_10_10_final_orders_in_undefended_family_law_cases](generated/scfr/rule_10_10_final_orders_in_undefended_family_law_cases.md) |
-| Form F36 | [rule_10_10_final_orders_in_undefended_family_law_cases](generated/scfr/rule_10_10_final_orders_in_undefended_family_law_cases.md), [rule_14_4_trial_record](generated/scfr/rule_14_4_trial_record.md) |
+| Form F36 | [appendix_c_fees](generated/scfr/appendix_c_fees.md), [rule_10_10_final_orders_in_undefended_family_law_cases](generated/scfr/rule_10_10_final_orders_in_undefended_family_law_cases.md), [rule_14_4_trial_record](generated/scfr/rule_14_4_trial_record.md) |
 | Form F37 | [rule_10_10_final_orders_in_undefended_family_law_cases](generated/scfr/rule_10_10_final_orders_in_undefended_family_law_cases.md) |
 | Form F38 | [rule_10_10_final_orders_in_undefended_family_law_cases](generated/scfr/rule_10_10_final_orders_in_undefended_family_law_cases.md) |
 | Form F39 | [rule_11_4_discontinuance_and_withdrawal](generated/scfr/rule_11_4_discontinuance_and_withdrawal.md) |
@@ -200,5 +200,7 @@ official forms page above, or read the referencing rule for context.
 | Form F98.1 | [rule_22_7_associate_judges_registrars_and_special_referees](generated/scfr/rule_22_7_associate_judges_registrars_and_special_referees.md) |
 | Form F98.2 | [rule_22_7_associate_judges_registrars_and_special_referees](generated/scfr/rule_22_7_associate_judges_registrars_and_special_referees.md) |
 | Form F99 | [rule_23_1_transition](generated/scfr/rule_23_1_transition.md) |
+| Form F99.1 | [appendix_b_costs_and_expenses](generated/scfr/appendix_b_costs_and_expenses.md) |
+| Form F100 | [appendix_c_fees](generated/scfr/appendix_c_fees.md) |
 | Form F101 | [rule_10_10_final_orders_in_undefended_family_law_cases](generated/scfr/rule_10_10_final_orders_in_undefended_family_law_cases.md), [rule_10_7_consent_applications](generated/scfr/rule_10_7_consent_applications.md), [rule_15_2_1_guardianship_orders](generated/scfr/rule_15_2_1_guardianship_orders.md) |
 | Form F102 | [rule_10_10_final_orders_in_undefended_family_law_cases](generated/scfr/rule_10_10_final_orders_in_undefended_family_law_cases.md), [rule_10_6_usual_application_procedure](generated/scfr/rule_10_6_usual_application_procedure.md), [rule_14_4_trial_record](generated/scfr/rule_14_4_trial_record.md), [rule_15_2_2_orders_for_corollary_relief_in_divorce_proceedings](generated/scfr/rule_15_2_2_orders_for_corollary_relief_in_divorce_proceedings.md), [rule_17_1_petitions](generated/scfr/rule_17_1_petitions.md) |

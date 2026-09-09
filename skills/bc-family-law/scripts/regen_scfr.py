@@ -16,4 +16,9 @@ run_cli(Source(
     pad_nums=False,  # SCFR rules are numbered by part: 16-1, 23-2, ...
     style="rules",   # bcl:rule units with titled subrules (### headings)
     slug_max=50,     # the established corpus truncates SCFR slugs
+    # Appendix A is ~390 KB of blank forms. The court publishes fillable
+    # copies, which is what a litigant should actually file, and
+    # forms-guide.md already maps every form to the rule requiring it.
+    # Appendices B (costs tariff) and C (fees) are operative and stay.
+    skip_appendices=("A",),
 ))

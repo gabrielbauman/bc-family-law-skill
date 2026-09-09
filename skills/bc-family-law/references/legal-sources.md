@@ -31,6 +31,19 @@ cross-references converted to relative links. Start from the suite's
 `index.md` and follow links to the sections you need — load only what the
 question requires.
 
+Appendices to the two rule sets are reproduced too, as
+`appendix_<label>_<slug>.md`, and listed at the foot of the suite index.
+They are operative text, not annexes: **PCFR Appendix 1** lists the early
+resolution registries, and Rule 6(a) makes a new Provincial Court case's
+entire first step turn on whether the registry is on it — Form 1 plus a
+needs assessment, parenting education and a consensual dispute resolution
+session before any application can be filed, or Form 3 directly. **SCFR
+Appendix B** is the costs tariff Rule 16-1 assesses under, and **Appendix
+C** is the fee schedule. The one appendix deliberately omitted is SCFR
+Appendix A, ~390 KB of blank forms: the court publishes fillable copies,
+which is what a litigant should actually file, and `forms-guide.md`
+already maps each form to the rule requiring it.
+
 Where the official source carries per-section amendment history, each
 file ends with an `_Amendments:_` footer listing the instruments that
 amended it (e.g. `[am. B.C. Reg. 214/2023, s. 2.]` for the BC

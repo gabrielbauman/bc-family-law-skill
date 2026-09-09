@@ -222,3 +222,8 @@ These rules govern family law proceedings in the Supreme Court of British Columb
 
 - [Rule 23-1 — Transition](rule_23_1_transition.md)
 - [Rule 23-2 — Family Law Act Transitional Provisions](rule_23_2_family_law_act_transitional_provisions.md)
+
+### Appendices
+
+- [Appendix B — Costs and Expenses](appendix_b_costs_and_expenses.md)
+- [Appendix C — Fees](appendix_c_fees.md)
