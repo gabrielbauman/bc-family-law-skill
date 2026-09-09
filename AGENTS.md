@@ -52,6 +52,24 @@ deterministic grader for the filesystem/git assertions, plus an optional LLM
 judge for the semantic ones (`--judge-cmd`, or `ANTHROPIC_API_KEY`). Grading
 is offline except for the judge.
 
+Two fixture notes worth knowing before editing an eval:
+
+- **Eval 4's dates are deliberately in the past.** The order fixture is
+  dated 10 March 2026 and sets 9 April and 30 June 2026, so the eval
+  exercises the missed-deadline path (`references/missed-deadlines.md`)
+  rather than ordinary intake. If you ever move those dates forward, the
+  eval quietly stops testing what it is for.
+- **Eval 5 turns on PCFR Appendix 1.** Vancouver is not an early
+  resolution registry, so the answer is a Form 3 filed directly — which
+  is the opposite of what a model answering from memory tends to say, and
+  is only derivable from the reproduced appendix.
+
+A deterministic checker must be written against what the skill actually
+ships, not against invented input: two of them failed correct runs
+because one counted the scaffold's own `inbox/README.md` as unswept
+material and the other read boilerplate in the generated
+`research/index.md` as if it were an extraction.
+
 ## Conventions
 
 - Commits are scoped (`area: summary`); one self-contained change each.

@@ -15,6 +15,10 @@ Grading is two-tier:
 
   * Deterministic. Assertions about the filesystem and git (evals 3 and 4 in
     particular) are checked here, offline. Nothing is run through a model.
+    Write these against what the skill actually ships: two earlier checks
+    failed correct runs because one counted the scaffold's own
+    inbox/README.md as unswept material, and the other read the boilerplate
+    in the generated research/index.md as if it were an extraction.
 
   * Semantic. Assertions about what the response *recommends* or *refuses*
     are scored by a judge. Without a judge, they report "unjudged" and the
@@ -59,6 +63,7 @@ SETUP = {
         ("sweep/inbox/scan0001.txt", "inbox/scan0001.txt"),
         ("sweep/inbox/IMG_2041.txt", "inbox/IMG_2041.txt"),
     ],
+    5: [],
 }
 
 
@@ -96,13 +101,28 @@ def _read(root: Path | None, rel: str) -> str:
     return p.read_text(encoding="utf-8", errors="replace") if p.is_file() else ""
 
 
-def _dir_text(root: Path | None, rel: str) -> str:
+def _dir_text(root: Path | None, rel: str, skip: tuple[str, ...] = ()) -> str:
     if not root:
         return ""
     out = []
     for p in sorted((root / rel).glob("**/*")) if (root / rel).exists() else []:
-        if p.is_file():
+        if p.is_file() and p.name not in skip:
             out.append(p.read_text(encoding="utf-8", errors="replace"))
+    return "\n".join(out)
+
+
+# research/index.md is the generated registry, not an extraction. It carries
+# boilerplate that trips content assertions -- a "select(...)" in an example
+# query, and the literal rule text "no '...' elisions" -- so assertions about
+# what an extraction *says* must read the extraction files only.
+def _extractions(root: Path | None) -> str:
+    if not root or not (root / "research").is_dir():
+        return ""
+    out = []
+    for p in sorted((root / "research").glob("**/*.md")):
+        if p.name == "index.md":
+            continue
+        out.append(_strip_frontmatter(p.read_text(encoding="utf-8", errors="replace")))
     return "\n".join(out)
 
 
@@ -138,19 +158,19 @@ def _check_evidence_handler_readme(t, root):
 
 
 def _check_message_ids_and_timestamps(t, root):
-    body = _strip_frontmatter(_dir_text(root, "research"))
+    body = _extractions(root)
     ids = bool(re.search(r"\b5\d{3}\b", body))
     ts = bool(re.search(r"\d{4}-\d{2}-\d{2}T\d{2}:\d{2}", body))
     return (ids and ts, f"message IDs {ids}, timestamps {ts}")
 
 
 def _check_no_ellipsis(t, root):
-    body = _strip_frontmatter(_dir_text(root, "research"))
-    return ("..." not in body, "no '...' elisions in research")
+    body = _extractions(root)
+    return ("..." not in body, "no '...' elisions in the extraction files")
 
 
 def _check_research_frontmatter(t, root):
-    body = _dir_text(root, "research")
+    body = _dir_text(root, "research", skip=("index.md",))
     have = [k for k in ("purpose:", "source:", "extracted:") if k in body]
     return (len(have) >= 3, f"frontmatter fields present: {have}")
 
@@ -163,7 +183,7 @@ def _check_research_index_updated(t, root):
 
 
 def _check_verbatim_informal(t, root):
-    body = _dir_text(root, "research")
+    body = _dir_text(root, "research", skip=("index.md",))
     return (_grep_any(body, ["etransfer", "ya saw it", "emmy"]),
             "informal spelling preserved")
 
@@ -181,8 +201,13 @@ def _check_paystub_filed(t, root):
 
 
 def _check_inbox_empty(t, root):
-    remaining = [p for p in (root / "inbox").iterdir() if p.is_file()] if root else ["?"]
-    return (not remaining, f"files left in inbox: {len(remaining)}")
+    # inbox/README.md ships with the scaffold and is meant to stay; an
+    # earlier version of this check counted it and failed a clean sweep.
+    if not root or not (root / "inbox").is_dir():
+        return (False, "no inbox/ directory")
+    remaining = [p.name for p in (root / "inbox").iterdir()
+                 if p.is_file() and p.name != "README.md" and not p.name.startswith(".")]
+    return (not remaining, f"files left in inbox: {remaining or 'none'}")
 
 
 def _check_deadlines_recorded(t, root):
@@ -196,6 +221,50 @@ def _check_march_10_recorded(t, root):
     body = _read(root, "CASE.md") + "\n" + t
     return (_grep_any(body, ["2026-03-10", "10 March 2026", "March 10, 2026"]),
             "March 10, 2026 order in procedural history")
+
+
+def _check_no_ics_for_past_dates(t, root):
+    """No calendar file for a deadline that has already gone.
+
+    The sweep fixture's order is dated 10 March 2026 and sets 9 April and
+    30 June 2026 -- both deliberately in the past relative to any realistic
+    run date. Writing an .ics for them tells the user their case is on
+    track when it is not, which is the failure this asserts against.
+    """
+    ics = list(root.rglob("*.ics")) if root else []
+    offenders = []
+    for f in ics:
+        body = f.read_text(encoding="utf-8", errors="replace")
+        if re.search(r"DTSTART[^:]*:2026(0409|0630)", body):
+            offenders.append(f.name)
+    return (not offenders, f".ics files: {[f.name for f in ics] or 'none'}; "
+                           f"for a past date: {offenders or 'none'}")
+
+
+def _check_form_1_named(t, root):
+    """Vancouver IS in PCFR Appendix 1, so Form 1 is the right first filing.
+
+    Listed as "Vancouver (Robson Square)" -- a bare-string search for
+    "Vancouver" in the appendix misses it, which is half of why this eval
+    exists. Fail a response that sends the user to a Form 3 application
+    instead, unless it names Form 3 only as the later step it is.
+    """
+    named = re.search(r"\bForm 1\b", t) is not None
+    wrong = re.search(r"(file|submit|start(ing)? with|begin with)[^.\n]{0,40}"
+                      r"\bForm 3\b[^.\n]{0,30}(first|to start|now)", t, re.I)
+    return (named and not wrong, f"Form 1 named: {named}; Form 3 given as the first step: {bool(wrong)}")
+
+
+def _check_early_resolution_steps(t, root):
+    low = t.lower()
+    have = [n for n in ("needs assessment", "parenting education",
+                        "consensual dispute resolution") if n in low]
+    return (len(have) == 3, f"early resolution steps named: {have}")
+
+
+def _check_robson_square_noted(t, root):
+    return ("robson square" in t.lower(),
+            "the appendix's qualified entry (Robson Square) is surfaced")
 
 
 def _check_git_intake_commit(t, root):
@@ -238,6 +307,14 @@ DETERMINISTIC = {
         _check_march_10_recorded,
     "A git repository is initialized or used, with an intake-style commit that preserves the original filenames in the message or notes":
         _check_git_intake_commit,
+    "No .ics calendar file is generated for either of the two past dates":
+        _check_no_ics_for_past_dates,
+    "The response names Form 1 (Notice to Resolve a Family Law Matter) as the first filing, not Form 3":
+        _check_form_1_named,
+    "The response states that a needs assessment, parenting education, and a consensual dispute resolution session must be completed before an application can be filed":
+        _check_early_resolution_steps,
+    "The response notes that Appendix 1 lists Vancouver as 'Vancouver (Robson Square)' and tells the user to confirm their location rather than treating Vancouver as a single registry":
+        _check_robson_square_noted,
 }
 
 
