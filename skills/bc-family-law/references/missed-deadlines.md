@@ -48,6 +48,33 @@ whether anything was made in their absence. Recommend it before any
 strategy: advising someone to apply to set aside an order that was never
 made wastes the little energy they have.
 
+Send them with a script, not an instruction. "Call the registry" is not
+actionable for someone who has never done it and is braced to be told
+off. Draft the questions into `output/` so they can read them down the
+phone, and tell them the clerk's job is to answer exactly these — court
+staff give procedural information freely, and will not judge them for
+asking:
+
+> File number, names of both parties. Then:
+>
+> 1. What is the last document filed on this file, and on what date?
+> 2. Was a financial statement filed by either party? When?
+> 3. Was there a court appearance on [date]? What happened — was an
+>    order made, was it adjourned, or was it taken off the list?
+> 4. If an order was made, how do I get a copy?
+> 5. Is anything currently scheduled on this file?
+> 6. What do I file to get this back in front of a judge, and is there
+>    a filing fee?
+
+Note what registry staff cannot do, so the user is not disappointed:
+they will not say whether the user is in trouble, what a judge will do,
+or which form is the right strategic choice. Question 6 asks what to
+file, which is procedural and answerable; "should I file it" is not.
+
+Record the answers in CASE.md attributed to the call ("per Victoria
+registry, telephone 2026-09-10") — it is testimony about the record, not
+the record itself, until the copy of the order arrives.
+
 ## Provincial Court
 
 | Situation | Where to look |

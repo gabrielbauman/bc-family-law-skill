@@ -16,11 +16,21 @@ matters to their question.
 | `generated/csg/` | Federal Child Support Guidelines | SOR/97-175 | https://laws-lois.justice.gc.ca/eng/regulations/sor-97-175/ |
 | `generated/ssag/` | Spousal Support Advisory Guidelines: The Revised User's Guide (April 2016), Rogerson & Thompson | Advisory publication, not legislation | https://www.justice.gc.ca/eng/fl-df/spousal-epoux/ssag-ldfpae.html |
 
-**Snapshot currency:** each index file carries its own currency line —
-the BC indexes state the "current to" date from BC Laws (most recently
-**August 25, 2026**), and the federal indexes state the consolidation and
-last-amended dates declared by the Justice Laws XML. Amendments made
-after those dates are not reflected here.
+**Snapshot currency**, by suite, because the sources do not all declare
+the same thing:
+
+| Suite | Freshness signal |
+|-------|------------------|
+| `fla/` | Index states BC Laws' "current to" date (**August 25, 2026**) |
+| `scfr/` | Index states BC Laws' "current to" date (**September 1, 2026**) |
+| `pcfr/` | **No "current to" date exists** — BC Laws publishes none for this document. The per-rule `_Amendments:_` footers are the only signal; the most recent instrument reflected is B.C. Reg. 17/2026 |
+| `da/`, `csg/` | Index states the consolidation and last-amended dates declared by the Justice Laws XML |
+
+Amendments made after those dates are not reflected here. When a
+procedural question turns on the PCFR, prefer
+`python3 <skill>/scripts/check_freshness.py`, which compares the whole
+corpus against the live consolidation, over reading a date off the
+index — for that suite there is no date to read.
 
 ## How each text is organized
 
