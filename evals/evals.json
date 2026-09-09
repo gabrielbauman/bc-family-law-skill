@@ -33,7 +33,9 @@
       "id": 3,
       "prompt": "I've added my message export at evidence/messages/messages.json in my case project. Find the messages where my ex and I discussed splitting the rent, and save them as research I can use later.",
       "expected_output": "The model creates or consults a handler README for the export (schema, query templates), queries it with jq or similar, and writes a research file containing the relevant messages as complete sequences with message IDs and full timestamps, a purpose/source/query/date header, and updates research/index.md.",
-      "files": ["files/messages.json"],
+      "files": [
+        "files/messages.json"
+      ],
       "assertions": [
         "A handler README documenting the export's schema and query commands exists after the run (or an existing one was consulted)",
         "The research file quotes messages with their numeric IDs and full timestamps",
@@ -46,8 +48,12 @@
     {
       "id": 4,
       "prompt": "I picked up some paperwork this week and just dumped it all in the inbox of my case project. Can you deal with it? Also — what should I be doing next on this case?",
-      "expected_output": "Session-start sweep: the model reads CASE.md, initializes git if the project has no repository, identifies the dropped court order and pay statement, files them into filings/ and evidence/ with conventional names (preserving original filenames in the record), reads the order for deadlines and surfaces them (Form 4 financial statement by April 9, 2026; family management conference June 30, 2026), updates CASE.md's procedural history and next steps, empties the inbox, makes an intake commit, and answers the 'what next' question grounded in the new deadlines.",
-      "files": ["files/sweep/CASE.md", "files/sweep/inbox/scan0001.txt", "files/sweep/inbox/IMG_2041.txt"],
+      "expected_output": "Session-start sweep: the model reads CASE.md, initializes git and copies in the missing scaffold, identifies the dropped court order and pay statement, files them into filings/ and evidence/ with conventional names (preserving original filenames in the record), reads the order for dates, and NOTICES THAT BOTH DATES HAVE ALREADY PASSED (the fixture order is dated 10 March 2026 and sets 9 April and 30 June 2026; these are deliberately in the past relative to any realistic run date). It surfaces them as a compliance problem rather than as upcoming events, does not write an .ics for either, flags that para. 3's interim parenting term ran only 'until the family management conference', updates CASE.md's procedural history, empties the inbox, makes an intake commit, and answers the 'what next' question with the recovery route.",
+      "files": [
+        "files/sweep/CASE.md",
+        "files/sweep/inbox/scan0001.txt",
+        "files/sweep/inbox/IMG_2041.txt"
+      ],
       "assertions": [
         "The court order (scan0001.txt) is identified and moved to filings/ under a descriptive, dated name",
         "The pay statement (IMG_2041.txt) is identified and moved into an appropriate evidence/ subfolder",
@@ -56,7 +62,22 @@
         "CASE.md's procedural history records the March 10, 2026 order",
         "A git repository is initialized or used, with an intake-style commit that preserves the original filenames in the message or notes",
         "Existing files in evidence/ and filings/ are not modified — only new files are added",
-        "The answer to 'what should I be doing next' is grounded in the new deadlines, prioritizing the Form 4 financial statement and income documents"
+        "The response treats both court dates as already past, not as upcoming events to prepare for",
+        "No .ics calendar file is generated for either of the two past dates",
+        "The answer to 'what should I be doing next' addresses the missed dates — contacting the registry to find out what happened, and the route back before a judge — rather than only listing the disclosure the order required"
+      ]
+    },
+    {
+      "id": 5,
+      "prompt": "I want to start a family court case in BC Provincial Court about parenting time for my daughter. I'd be filing at the Vancouver registry. What's the first form I need, and is there anything I have to do before I can file it?",
+      "expected_output": "The model checks PCFR Appendix 1 rather than answering from memory, finds that Vancouver is NOT listed as an early resolution registry, and therefore says the case starts with a Form 3 Application About a Family Law Matter filed directly — the early resolution requirements in Rule 10 (needs assessment, parenting education, consensual dispute resolution before filing) do not apply. It may note that Vancouver is a parenting education program registry under Rule 6(c). It should not assert the Form 1 / early resolution path, which is what a model answering from memory tends to do, and should not simply tell the user to phone the registry as if the answer were unavailable.",
+      "files": [],
+      "assertions": [
+        "The response names Form 3 (Application About a Family Law Matter) as the form that starts the case",
+        "The response does not tell the user to file a Form 1 or to complete the early resolution requirements first",
+        "The answer is grounded in PCFR Appendix 1 / Rule 6 rather than presented as recollection, and the registry list is consulted rather than the user being told to phone and find out",
+        "The response includes the legal information / not legal advice disclaimer exactly once, not repeated per paragraph",
+        "The response does not predict the user's chances of success"
       ]
     }
   ]
