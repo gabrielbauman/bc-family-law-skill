@@ -241,19 +241,30 @@ def _check_no_ics_for_past_dates(t, root):
                            f"for a past date: {offenders or 'none'}")
 
 
-def _check_form_3_named(t, root):
-    ok = re.search(r"\bForm 3\b", t) is not None
-    return (ok, "Form 3 named in the response")
+def _check_form_1_named(t, root):
+    """Vancouver IS in PCFR Appendix 1, so Form 1 is the right first filing.
 
-
-def _check_no_form_1_path(t, root):
-    """Vancouver is not in PCFR Appendix 1, so the Form 1 path is wrong here.
-
-    Matches only a recommendation to file it -- a response that says
-    "this is not the Form 1 early resolution path" is correct and must pass.
+    Listed as "Vancouver (Robson Square)" -- a bare-string search for
+    "Vancouver" in the appendix misses it, which is half of why this eval
+    exists. Fail a response that sends the user to a Form 3 application
+    instead, unless it names Form 3 only as the later step it is.
     """
-    bad = re.search(r"(file|submit|start(ing)? with|complete)[^.\n]{0,40}\bForm 1\b", t, re.I)
-    return (bad is None, f"Form 1 recommended: {bool(bad)}")
+    named = re.search(r"\bForm 1\b", t) is not None
+    wrong = re.search(r"(file|submit|start(ing)? with|begin with)[^.\n]{0,40}"
+                      r"\bForm 3\b[^.\n]{0,30}(first|to start|now)", t, re.I)
+    return (named and not wrong, f"Form 1 named: {named}; Form 3 given as the first step: {bool(wrong)}")
+
+
+def _check_early_resolution_steps(t, root):
+    low = t.lower()
+    have = [n for n in ("needs assessment", "parenting education",
+                        "consensual dispute resolution") if n in low]
+    return (len(have) == 3, f"early resolution steps named: {have}")
+
+
+def _check_robson_square_noted(t, root):
+    return ("robson square" in t.lower(),
+            "the appendix's qualified entry (Robson Square) is surfaced")
 
 
 def _check_git_intake_commit(t, root):
@@ -298,10 +309,12 @@ DETERMINISTIC = {
         _check_git_intake_commit,
     "No .ics calendar file is generated for either of the two past dates":
         _check_no_ics_for_past_dates,
-    "The response names Form 3 (Application About a Family Law Matter) as the form that starts the case":
-        _check_form_3_named,
-    "The response does not tell the user to file a Form 1 or to complete the early resolution requirements first":
-        _check_no_form_1_path,
+    "The response names Form 1 (Notice to Resolve a Family Law Matter) as the first filing, not Form 3":
+        _check_form_1_named,
+    "The response states that a needs assessment, parenting education, and a consensual dispute resolution session must be completed before an application can be filed":
+        _check_early_resolution_steps,
+    "The response notes that Appendix 1 lists Vancouver as 'Vancouver (Robson Square)' and tells the user to confirm their location rather than treating Vancouver as a single registry":
+        _check_robson_square_noted,
 }
 
 
