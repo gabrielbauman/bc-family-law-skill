@@ -298,10 +298,10 @@ also live where the user lives:
   VERSION:2.0
   PRODID:-//case-project//EN
   BEGIN:VEVENT
-  UID:form4-deadline-20260409@case-project
-  DTSTART;VALUE=DATE:20260409
+  UID:form4-deadline-YYYYMMDD@case-project
+  DTSTART;VALUE=DATE:YYYYMMDD
   SUMMARY:COURT DEADLINE: file and serve Form 4 financial statement
-  DESCRIPTION:Set by order of 2026-03-10. Needs drafting and service time.
+  DESCRIPTION:Set by order of YYYY-MM-DD. Needs drafting and service time.
   BEGIN:VALARM
   TRIGGER:-P7D
   ACTION:DISPLAY
@@ -310,6 +310,12 @@ also live where the user lives:
   END:VEVENT
   END:VCALENDAR
   ```
+
+  The dates are placeholders on purpose. An earlier version of this
+  example carried a real-looking date that had itself gone by, and an
+  agent copying it faithfully would have produced exactly the artifact
+  the paragraph above forbids. Substitute the actual deadline, and only
+  after confirming it is still ahead.
 
 - If a calendar integration is connected, offer to write the dates
   directly instead (with the user's consent). CASE.md remains the

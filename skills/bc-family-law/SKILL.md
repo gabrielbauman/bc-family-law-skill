@@ -129,7 +129,13 @@ dashboard. Then run the session-start sweep, before the user's request:
 1. `git status --porcelain`. The model commits as it works, so a clean
    tree is the expected state and **anything reported is information** —
    material the user dropped (in `inbox/` or anywhere), a change they
-   made by hand, or an interrupted session's leftovers.
+   made by hand, or an interrupted session's leftovers. If the command
+   fails because there is no repository, or the scaffold folders are
+   missing, do "Creating a project" in
+   `references/case-project-guide.md` first: a CASE.md can predate the
+   rest of the structure, and once you make the baseline commit
+   `git status` goes quiet, so classify `inbox/` and anything outside
+   the scaffold directly instead of waiting for git to name it.
 2. Identify each untracked file and file it: court documents to
    `filings/`, source material to the right `evidence/` subfolder,
    authorities to `authorities/`, sent letters and offers to
