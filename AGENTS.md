@@ -10,7 +10,8 @@ dev tooling around it.
   hand-edit it; it is rendered by `skills/bc-family-law/scripts/regen_*.py`
   from the BC Laws / Justice Laws XML APIs.
 - `skills/bc-family-law/SKILL.md`, `skills/bc-family-law/references/*.md`
-  (outside `generated/`), `skills/bc-family-law/templates/`, and
+  and `references/examples/` (outside `generated/`),
+  `skills/bc-family-law/templates/`, and
   `skills/bc-family-law/scripts/` are hand-maintained, as are the repo-level
   `evals/` and `tests/`. The exception is `skills/bc-family-law/references/forms-guide.md`,
   which `skills/bc-family-law/scripts/build_forms_index.py` generates.
