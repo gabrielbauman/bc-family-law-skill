@@ -5,7 +5,7 @@
 ### Tariff of costs
 
 
-**(1)** If costs are payable to a party under these Supreme Court Family Rules or by order, those costs must be assessed in accordance with Appendix B unless any of the following circumstances exist:
+**(1)** If costs are payable to a party under these Supreme Court Family Rules or by order, those costs must be assessed in accordance with [Appendix B](appendix_b_costs_and_expenses.md) unless any of the following circumstances exist:
 
 - **(a)** the parties consent to the amount of costs and file a certificate of costs or expenses setting out that amount;
 
@@ -205,7 +205,7 @@ and in awarding those costs the court may fix the amount of costs, including the
 ### Assessment of sheriff's fees
 
 
-**(23)** If a sheriff who has charged fees for services set out in Schedule 2 of Appendix C or a person affected by those fees wishes to have those fees assessed, the person seeking the assessment must
+**(23)** If a sheriff who has charged fees for services set out in Schedule 2 of [Appendix C](appendix_c_fees.md) or a person affected by those fees wishes to have those fees assessed, the person seeking the assessment must
 
 - **(a)** obtain an appointment from a registrar in Form F55 and attach to that appointment a copy of the bill to be assessed, if available, and
 
@@ -273,7 +273,7 @@ and in awarding those costs the court may fix the amount of costs, including the
 
 - **(a)** direct a registrar to conduct an inquiry and file a report with recommendations as to the amount of costs, or
 
-- **(b)** subject to subrule (34), fix the costs with or without reference to the tariff in Appendix B.
+- **(b)** subject to subrule (34), fix the costs with or without reference to the tariff in [Appendix B](appendix_b_costs_and_expenses.md).
 
 
 ### Notice

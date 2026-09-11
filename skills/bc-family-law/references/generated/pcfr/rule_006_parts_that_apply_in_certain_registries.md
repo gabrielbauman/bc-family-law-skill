@@ -3,7 +3,7 @@
 
 In these rules,
 
-**(a)** a registry listed in Appendix 1 is an early resolution registry for the purposes of Part 2 [Early Resolution Registries],
+**(a)** a registry listed in [Appendix 1](appendix_1_early_resolution_registries.md) is an early resolution registry for the purposes of Part 2 [Early Resolution Registries],
 
 **(b)** Repealed. [B.C. Reg. 17/2026, s. 2 (b).]
 

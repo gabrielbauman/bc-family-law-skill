@@ -9,9 +9,9 @@
 
 - **(a)** receives benefits under the Employment and Assistance Act or the Employment and Assistance for Persons with Disabilities Act, or
 
-- **(b)** cannot, without undue hardship, afford to pay the fees under Schedule 1 of Appendix C in relation to the family law case,
+- **(b)** cannot, without undue hardship, afford to pay the fees under Schedule 1 of [Appendix C](appendix_c_fees.md) in relation to the family law case,
 
-the court may order that no fees are payable by the person to the government under Schedule 1 of Appendix C in relation to the family law case unless the court considers that the claim or defence
+the court may order that no fees are payable by the person to the government under Schedule 1 of [Appendix C](appendix_c_fees.md) in relation to the family law case unless the court considers that the claim or defence
 
 - **(c)** discloses no reasonable claim or defence, as the case may be,
 
@@ -55,7 +55,7 @@ the court may order that no fees are payable by the person to the government und
 ### No fee payable
 
 
-**(5)** Despite anything in this rule, if the court makes an order in relation to a person under this rule, no fee is payable by the person to the government under Schedule 1 of Appendix C in relation to
+**(5)** Despite anything in this rule, if the court makes an order in relation to a person under this rule, no fee is payable by the person to the government under Schedule 1 of [Appendix C](appendix_c_fees.md) in relation to
 
 - **(a)** the family law case,
 

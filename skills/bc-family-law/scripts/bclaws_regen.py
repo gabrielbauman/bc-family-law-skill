@@ -46,7 +46,7 @@ class Source:
     title: str            # display title for the index
     citation: str         # e.g. "**[SBC 2011] CHAPTER 25**"
     tagline: str = ""     # editorial line under the citation, if any
-    currency_line: bool = False  # include "This Act is current to ..." line
+    currency_line: bool = False  # include a "current to ..." line in the index
     pad_nums: bool = True  # zero-pad to 3 digits (FLA/PCFR); SCFR's
                            # part-number rules ("16-1") are not padded
     style: str = "act"     # "act": bcl:section units (FLA, PCFR).
@@ -54,6 +54,14 @@ class Source:
                            # rendered as ### headings (SCFR).
     slug_max: int = 0      # truncate filename slugs to this many chars
                            # (0 = no limit); the SCFR corpus uses 51
+    skip_appendices: tuple[str, ...] = ()
+                           # appendix labels to leave out. Most appendices
+                           # are operative text a rule depends on (PCFR
+                           # Appendix 1 decides which registries are early
+                           # resolution registries), but some are just the
+                           # blank forms — SCFR Appendix A is 390 KB of
+                           # them, and the court publishes fillable copies
+                           # that are what a litigant should actually use.
 
 
 def fetch(url: str) -> bytes:
@@ -125,13 +133,18 @@ def slugify(text: str) -> str:
     return text.strip("_")
 
 
-def filename(source: Source, num: str, marginal: str) -> str:
+def filename(source: Source, num: str, marginal: str, kind: str = "unit") -> str:
     # Each source lives in its own folder (references/generated/<key>/), so
     # the filename needs no <key>_ prefix — the folder is the namespace.
     slug = slugify(marginal)
     if source.slug_max:
         slug = slug[: source.slug_max]
-    base = f"{source.unit.lower()}_{num_to_file_num(num, source.pad_nums)}"
+    if kind == "appendix":
+        # Appendices are labelled "1" or "A" depending on the regulation;
+        # neither is padded, because the label is what the rules cite.
+        base = f"appendix_{slugify(num)}"
+    else:
+        base = f"{source.unit.lower()}_{num_to_file_num(num, source.pad_nums)}"
     return f"{base}_{slug}.md" if slug else f"{base}.md"
 
 
@@ -191,7 +204,24 @@ def render_inline(el: ET.Element, link_map: dict[str, str], unit: str, bold_term
             emit("".join(child.itertext()))
         emit(child.tail)
     line = "".join(out).replace("\xa0", " ")
-    return re.sub(r"[ \t]+", " ", line).strip()
+    line = re.sub(r"[ \t]+", " ", line).strip()
+    return link_appendices(line, link_map)
+
+
+def link_appendices(line: str, link_map: dict[str, str]) -> str:
+    """Link bare "Appendix N" references to the reproduced appendix.
+
+    Unlike section and rule references these carry no bracketed
+    description to fold into, so they are linked by a plain substitution.
+    A reference is only linked when that appendix was actually
+    reproduced — pointing at a file the corpus skipped would be worse
+    than leaving the text plain.
+    """
+    def sub(m: re.Match) -> str:
+        target = link_map.get(f"appendix:{m.group(1)}")
+        return f"[{m.group(0)}]({target})" if target else m.group(0)
+
+    return re.sub(r"(?<!\[)\bAppendix ([0-9A-Z]+)\b", sub, line)
 
 
 # ---------------------------------------------------------------------------
@@ -268,14 +298,33 @@ def render_node(el: ET.Element, link_map: dict, unit: str, level: int, in_def: b
 
 
 def render_table(el: ET.Element, level: int) -> list[Block]:
-    rows_md: list[str] = []
-    for row in el.iter(qn("oasis:row")):
-        cells = []
-        for entry in row.iter(qn("oasis:entry")):
-            cells.append(re.sub(r"\s+", " ", " ".join(entry.itertext())).strip())
+    """Render an OASIS table to a markdown pipe table.
+
+    BC Laws tags rows `oasis:trow`, not the `oasis:row` of the bare OASIS
+    exchange model; both are accepted so neither spelling silently drops a
+    table. The first row becomes the header, because every table in these
+    regulations leads with one (Appendix 1's "Item | Early Resolution
+    Registry", the CSG tables' column captions) — and without the
+    delimiter row markdown renders the whole thing as one run-on line.
+    """
+    rows: list[list[str]] = []
+    for row in el.iter():
+        if row.tag not in (qn("oasis:trow"), qn("oasis:row")):
+            continue
+        cells = [
+            re.sub(r"\s+", " ", " ".join(entry.itertext())).strip()
+            for entry in row.iter(qn("oasis:entry"))
+        ]
         if cells:
-            rows_md.append("| " + " | ".join(cells) + " |")
-    return [("table", level, "\n".join(rows_md))] if rows_md else []
+            rows.append(cells)
+    if not rows:
+        return []
+    width = max(len(r) for r in rows)
+    rows = [r + [""] * (width - len(r)) for r in rows]
+    rows_md = ["| " + " | ".join(rows[0]) + " |",
+               "| " + " | ".join(["---"] * width) + " |"]
+    rows_md += ["| " + " | ".join(r) + " |" for r in rows[1:]]
+    return [("table", level, "\n".join(rows_md))]
 
 
 # ---------------------------------------------------------------------------
@@ -290,6 +339,41 @@ class Unit:
     part: tuple[str, str] | None       # (num, title)
     division: tuple[str, str] | None   # (num, title)
     amendments: str = ""               # amendment-history annotation, verbatim
+    kind: str = "unit"                 # "unit" | "appendix"
+
+
+# "Appendix 1 — Early Resolution Registries" -> ("1", "Early Resolution
+# Registries"). BC Laws uses an em dash here; a plain hyphen is tolerated
+# in case the XML changes.
+_SCHEDULE_TITLE = re.compile(
+    r"^\s*(?:Appendix|Schedule)\s+([0-9A-Za-z]+)\s*(?:[—–-]\s*(.*))?$", re.S
+)
+
+
+def parse_schedule(el: ET.Element, link_map: dict, source: Source) -> Unit | None:
+    """Turn a bcl:schedule into an appendix Unit, or None to skip it.
+
+    Appendices are operative text: PCFR Rule 6(a) makes a case's entire
+    first step turn on whether the registry is listed in Appendix 1, and
+    SCFR costs are assessed under Appendix B. Dropping them leaves a
+    reader holding a rule that points at something they cannot read.
+    """
+    title = text_of(el.find(qn("bcl:scheduletitle")))
+    m = _SCHEDULE_TITLE.match(title)
+    if not m:
+        return None
+    label = m.group(1)
+    if label in source.skip_appendices:
+        return None
+    marginal = re.sub(r"\s+", " ", (m.group(2) or "")).strip()
+    blocks: list[Block] = []
+    for child in el:
+        if child.tag in (qn("bcl:scheduletitle"), qn("bcl:centertext")):
+            continue
+        blocks.extend(render_node(child, link_map or {}, source.unit, 0))
+    return Unit(label, marginal, blocks, None, None,
+                amendments=text_of(el.find(qn("bcl:centertext"))),
+                kind="appendix")
 
 
 def parse_units(xml_bytes: bytes, link_map: dict[str, str] | None, source: Source) -> list[Unit]:
@@ -347,7 +431,12 @@ def parse_units(xml_bytes: bytes, link_map: dict[str, str] | None, source: Sourc
                 amendments = text_of(next(child.iter(qn("bcl:hnote")), None))
                 units.append(Unit(num, marginal, blocks, part, division, amendments=amendments))
             elif source.style == "rules" and child.tag == qn("bcl:section"):
-                continue  # appendix schedules — not part of the rules corpus
+                continue  # SCFR wraps each appendix form in a bcl:section;
+                          # the appendix itself is picked up below
+            elif child.tag == qn("bcl:schedule"):
+                appendix = parse_schedule(child, link_map, source)
+                if appendix:
+                    units.append(appendix)
             else:
                 walk(child, part, division)
 
@@ -360,7 +449,8 @@ def two_pass(source: Source, parts_xml: list[bytes]) -> list[Unit]:
     link_map: dict[str, str] = {}
     for xml in parts_xml:
         for u in parse_units(xml, None, source):
-            link_map[u.num] = filename(source, u.num, u.marginal)
+            key = f"appendix:{u.num}" if u.kind == "appendix" else u.num
+            link_map[key] = filename(source, u.num, u.marginal, u.kind)
     # pass 2: render with links resolved
     units: list[Unit] = []
     for xml in parts_xml:
@@ -374,7 +464,9 @@ def unit_markdown(source: Source, u: Unit) -> str:
     # before lettered/roman items and any continuation prose — both the
     # tail of a definition and "sandwich text" that resumes after a list
     # of items at the section level.
-    lines: list[str] = [f"# {source.unit} {u.num} — {u.marginal}"]
+    label = "Appendix" if u.kind == "appendix" else source.unit
+    heading = f"# {label} {u.num}" + (f" — {u.marginal}" if u.marginal else "")
+    lines: list[str] = [heading]
     if source.style == "rules":
         # SCFR rhythm: three blanks after the title; two blanks on
         # either side of a subrule heading; one between everything else.
@@ -407,6 +499,8 @@ def index_markdown(source: Source, units: list[Unit], currency: str | None) -> s
     lines += ["", "---", "", "", "## Table of Contents", ""]
     part = division = None
     for u in units:
+        if u.kind == "appendix":
+            continue
         if u.part != part:
             part = u.part
             division = None
@@ -426,6 +520,13 @@ def index_markdown(source: Source, units: list[Unit], currency: str | None) -> s
                 lines += ["", dheading, ""]
         fn = filename(source, u.num, u.marginal)
         lines.append(f"- [{source.unit} {u.num} — {u.marginal}]({fn})")
+    appendices = [u for u in units if u.kind == "appendix"]
+    if appendices:
+        lines += ["", "### Appendices", ""]
+        for u in appendices:
+            fn = filename(source, u.num, u.marginal, u.kind)
+            title = f"Appendix {u.num}" + (f" — {u.marginal}" if u.marginal else "")
+            lines.append(f"- [{title}]({fn})")
     return "\n".join(lines) + "\n"
 
 
@@ -443,8 +544,14 @@ def build(source: Source, verbose: bool = True) -> dict[str, str]:
     if source.currency_line:
         date = currency_date(source)
         if date:
-            currency = f"This Act is current to {date}."
-    out = {filename(source, u.num, u.marginal): unit_markdown(source, u) for u in units}
+            # The BC Laws "current to" date is the only freshness signal for
+            # these texts, so the noun has to match what was reproduced: the
+            # rule sets are regulations, not Acts.
+            subject = "This Act is" if source.style == "act" and source.unit == "Section" \
+                else "These rules are"
+            currency = f"{subject} current to {date}."
+    out = {filename(source, u.num, u.marginal, u.kind): unit_markdown(source, u)
+           for u in units}
     out["index.md"] = index_markdown(source, units, currency)
     return out
 

@@ -22,6 +22,8 @@ from bclaws_regen import (  # noqa: E402
     Source,
     Unit,
     filename,
+    link_appendices,
+    parse_schedule,
     index_markdown,
     num_to_file_num,
     parse_units,
@@ -392,14 +394,143 @@ class IndexMarkdownTest(unittest.TestCase):
 
 
 class RenderTableTest(unittest.TestCase):
-    def test_table_to_pipe_markdown(self):
+    # BC Laws tags rows <oasis:trow>, not the <oasis:row> of the bare OASIS
+    # exchange model. An earlier version of this test used <oasis:row>,
+    # which no BC Laws document emits, so render_table passed its test
+    # while silently dropping every real table — including PCFR
+    # Appendix 1. Keep the trow case first: it is the one that ships.
+    def test_bclaws_trow_table_to_pipe_markdown(self):
+        root = ET.fromstring(
+            f'<oasis:table {BC_NS}>'
+            "<oasis:tgroup><oasis:tbody>"
+            "<oasis:trow><oasis:entry><oasis:line>Item</oasis:line></oasis:entry>"
+            "<oasis:entry><oasis:line>Early Resolution Registry</oasis:line></oasis:entry></oasis:trow>"
+            "<oasis:trow><oasis:entry><oasis:line>1</oasis:line></oasis:entry>"
+            "<oasis:entry><oasis:line>Abbotsford</oasis:line></oasis:entry></oasis:trow>"
+            "</oasis:tbody></oasis:tgroup>"
+            "</oasis:table>"
+        )
+        self.assertEqual(
+            render_table(root, 0),
+            [("table", 0, "| Item | Early Resolution Registry |\n"
+                          "| --- | --- |\n"
+                          "| 1 | Abbotsford |")],
+        )
+
+    def test_plain_oasis_row_still_renders(self):
         root = ET.fromstring(
             f'<oasis:table {BC_NS}>'
             "<oasis:row><oasis:entry>a</oasis:entry><oasis:entry>b</oasis:entry></oasis:row>"
             "<oasis:row><oasis:entry>1</oasis:entry><oasis:entry>2</oasis:entry></oasis:row>"
             "</oasis:table>"
         )
-        self.assertEqual(render_table(root, 0), [("table", 0, "| a | b |\n| 1 | 2 |")])
+        self.assertEqual(
+            render_table(root, 0),
+            [("table", 0, "| a | b |\n| --- | --- |\n| 1 | 2 |")],
+        )
+
+    def test_ragged_rows_are_padded(self):
+        # A row with fewer cells than the header would otherwise produce a
+        # malformed markdown table that renders as raw pipes.
+        root = ET.fromstring(
+            f'<oasis:table {BC_NS}>'
+            "<oasis:trow><oasis:entry>a</oasis:entry><oasis:entry>b</oasis:entry></oasis:trow>"
+            "<oasis:trow><oasis:entry>1</oasis:entry></oasis:trow>"
+            "</oasis:table>"
+        )
+        self.assertEqual(
+            render_table(root, 0),
+            [("table", 0, "| a | b |\n| --- | --- |\n| 1 |  |")],
+        )
+
+    def test_empty_table_yields_no_block(self):
+        root = ET.fromstring(f'<oasis:table {BC_NS}/>')
+        self.assertEqual(render_table(root, 0), [])
+
+
+SCHEDULE_XML = (
+    f"<bcl:schedule {BC_NS}>"
+    "<bcl:scheduletitle>Appendix 1 — Early Resolution Registries</bcl:scheduletitle>"
+    "<bcl:centertext>[en. B.C. Reg. 17/2026, s. 13.]</bcl:centertext>"
+    "<oasis:table><oasis:tgroup><oasis:tbody>"
+    "<oasis:trow><oasis:entry><oasis:line>Item</oasis:line></oasis:entry>"
+    "<oasis:entry><oasis:line>Early Resolution Registry</oasis:line></oasis:entry></oasis:trow>"
+    "<oasis:trow><oasis:entry><oasis:line>1</oasis:line></oasis:entry>"
+    "<oasis:entry><oasis:line>Abbotsford</oasis:line></oasis:entry></oasis:trow>"
+    "</oasis:tbody></oasis:tgroup></oasis:table>"
+    "</bcl:schedule>"
+)
+
+
+class AppendixTest(unittest.TestCase):
+    """Appendices are operative text, not decoration.
+
+    PCFR Rule 6(a) makes a new case's entire first step — Form 1 and the
+    early resolution requirements, or Form 3 — turn on whether the
+    registry is listed in Appendix 1, so an unreproduced appendix leaves
+    the reader holding a rule that points at nothing.
+    """
+
+    def rules_pcfr(self, **kw) -> Source:
+        return Source(key="pcfr", doc_id="120_2020", multi=False, unit="Rule",
+                      title="Provincial Court Family Rules",
+                      citation="**B.C. Reg. 120/2020**", **kw)
+
+    def test_schedule_becomes_appendix_unit(self):
+        u = parse_schedule(ET.fromstring(SCHEDULE_XML), {}, self.rules_pcfr())
+        self.assertEqual(u.kind, "appendix")
+        self.assertEqual(u.num, "1")
+        self.assertEqual(u.marginal, "Early Resolution Registries")
+        self.assertEqual(u.amendments, "[en. B.C. Reg. 17/2026, s. 13.]")
+        self.assertIn("| 1 | Abbotsford |", u.blocks[0][2])
+
+    def test_appendix_filename_and_heading(self):
+        src = self.rules_pcfr()
+        u = parse_schedule(ET.fromstring(SCHEDULE_XML), {}, src)
+        self.assertEqual(filename(src, u.num, u.marginal, u.kind),
+                         "appendix_1_early_resolution_registries.md")
+        self.assertTrue(unit_markdown(src, u).startswith(
+            "# Appendix 1 — Early Resolution Registries"))
+
+    def test_skip_appendices_drops_the_forms_appendix(self):
+        # SCFR Appendix A is ~390 KB of blank forms; the court publishes
+        # fillable copies, so the corpus omits it by label.
+        xml = SCHEDULE_XML.replace("Appendix 1 —", "Appendix A —")
+        src = self.rules_pcfr(skip_appendices=("A",))
+        self.assertIsNone(parse_schedule(ET.fromstring(xml), {}, src))
+
+    def test_appendix_index_section(self):
+        src = self.rules_pcfr()
+        u = parse_schedule(ET.fromstring(SCHEDULE_XML), {}, src)
+        rule = Unit("6", "Parts that apply in certain registries", [], None, None)
+        md = index_markdown(src, [rule, u], None)
+        self.assertIn("### Appendices", md)
+        self.assertIn("[Appendix 1 — Early Resolution Registries]"
+                      "(appendix_1_early_resolution_registries.md)", md)
+        # the appendix must not also appear in the main rule list
+        self.assertNotIn("- [Rule 1 — Early Resolution Registries]", md)
+
+
+class LinkAppendicesTest(unittest.TestCase):
+    LINKS = {"appendix:1": "appendix_1_early_resolution_registries.md"}
+
+    def test_reference_is_linked(self):
+        self.assertEqual(
+            link_appendices("a registry listed in Appendix 1 is an early "
+                            "resolution registry", self.LINKS),
+            "a registry listed in [Appendix 1]"
+            "(appendix_1_early_resolution_registries.md) is an early "
+            "resolution registry",
+        )
+
+    def test_unreproduced_appendix_stays_plain(self):
+        # Linking to a file the corpus skipped would be worse than plain text.
+        text = "the forms set out in Appendix A"
+        self.assertEqual(link_appendices(text, self.LINKS), text)
+
+    def test_already_linked_text_is_not_double_wrapped(self):
+        text = "[Appendix 1](appendix_1_early_resolution_registries.md)"
+        self.assertEqual(link_appendices(text, self.LINKS), text)
 
 
 class TwoPassTest(unittest.TestCase):

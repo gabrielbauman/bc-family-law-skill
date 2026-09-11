@@ -113,13 +113,13 @@ for examinations for discovery by the parties to the family law case who are adv
 
 - **(i)** an appointment in Form F21 is served on that lawyer, and
 
-- **(ii)** witness fees in the amount required under Schedule 3 of Appendix C are tendered to that lawyer;
+- **(ii)** witness fees in the amount required under Schedule 3 of [Appendix C](appendix_c_fees.md) are tendered to that lawyer;
 
 - **(b)** in any other case, ensure that, at least 7 days before the examination for discovery,
 
 - **(i)** an appointment in Form F21 is served on the person to be examined, and
 
-- **(ii)** witness fees in the amount required under Schedule 3 of Appendix C are tendered to the person to be examined;
+- **(ii)** witness fees in the amount required under Schedule 3 of [Appendix C](appendix_c_fees.md) are tendered to the person to be examined;
 
 - **(c)** at least 7 days before the examination for discovery, serve a copy of the appointment on all parties.
 

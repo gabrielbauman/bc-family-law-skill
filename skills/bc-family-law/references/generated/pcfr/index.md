@@ -365,3 +365,8 @@ These rules govern family law proceedings in the Provincial Court of British Col
 
 - [Rule 199 — Definitions](rule_199_definitions.md)
 - [Rule 200 — Continued application of rules respecting family justice registries](rule_200_continued_application_of_rules_respecting_family_justice_registries.md)
+
+### Appendices
+
+- [Appendix 1 — Early Resolution Registries](appendix_1_early_resolution_registries.md)
+- [Appendix 2 — List of Forms](appendix_2_list_of_forms.md)

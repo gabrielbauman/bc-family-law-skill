@@ -1,4 +1,4 @@
-# Section 21.1 — 
+# Section 21.1
 
 
 **(1)** [Repealed, 2019, c. 16, s. 17]

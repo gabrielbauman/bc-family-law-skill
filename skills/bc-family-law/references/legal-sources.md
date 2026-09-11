@@ -16,11 +16,21 @@ matters to their question.
 | `generated/csg/` | Federal Child Support Guidelines | SOR/97-175 | https://laws-lois.justice.gc.ca/eng/regulations/sor-97-175/ |
 | `generated/ssag/` | Spousal Support Advisory Guidelines: The Revised User's Guide (April 2016), Rogerson & Thompson | Advisory publication, not legislation | https://www.justice.gc.ca/eng/fl-df/spousal-epoux/ssag-ldfpae.html |
 
-**Snapshot currency:** each index file carries its own currency line —
-the BC indexes state the "current to" date from BC Laws (most recently
-**August 25, 2026**), and the federal indexes state the consolidation and
-last-amended dates declared by the Justice Laws XML. Amendments made
-after those dates are not reflected here.
+**Snapshot currency**, by suite, because the sources do not all declare
+the same thing:
+
+| Suite | Freshness signal |
+|-------|------------------|
+| `fla/` | Index states BC Laws' "current to" date (**August 25, 2026**) |
+| `scfr/` | Index states BC Laws' "current to" date (**September 1, 2026**) |
+| `pcfr/` | **No "current to" date exists** — BC Laws publishes none for this document. The per-rule `_Amendments:_` footers are the only signal; the most recent instrument reflected is B.C. Reg. 17/2026 |
+| `da/`, `csg/` | Index states the consolidation and last-amended dates declared by the Justice Laws XML |
+
+Amendments made after those dates are not reflected here. When a
+procedural question turns on the PCFR, prefer
+`python3 <skill>/scripts/check_freshness.py`, which compares the whole
+corpus against the live consolidation, over reading a date off the
+index — for that suite there is no date to read.
 
 ## How each text is organized
 
@@ -30,6 +40,19 @@ Each source is split into one file per section, rule, or chapter under
 cross-references converted to relative links. Start from the suite's
 `index.md` and follow links to the sections you need — load only what the
 question requires.
+
+Appendices to the two rule sets are reproduced too, as
+`appendix_<label>_<slug>.md`, and listed at the foot of the suite index.
+They are operative text, not annexes: **PCFR Appendix 1** lists the early
+resolution registries, and Rule 6(a) makes a new Provincial Court case's
+entire first step turn on whether the registry is on it — Form 1 plus a
+needs assessment, parenting education and a consensual dispute resolution
+session before any application can be filed, or Form 3 directly. **SCFR
+Appendix B** is the costs tariff Rule 16-1 assesses under, and **Appendix
+C** is the fee schedule. The one appendix deliberately omitted is SCFR
+Appendix A, ~390 KB of blank forms: the court publishes fillable copies,
+which is what a litigant should actually file, and `forms-guide.md`
+already maps each form to the rule requiring it.
 
 Where the official source carries per-section amendment history, each
 file ends with an `_Amendments:_` footer listing the instruments that
