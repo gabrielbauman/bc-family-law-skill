@@ -63,7 +63,7 @@
 ### Notice of application
 
 
-**(6)** A party wishing to apply under subrule (5) for leave to introduce the evidence of an additional expert at trial must, within 21 days after receipt of the joint expert's report, serve on all parties the documents that under Rule 10-6 (6) are required for the application.
+**(6)** A party wishing to apply under subrule (5) for leave to introduce the evidence of an additional expert at trial must, within 21 days after receipt of the joint expert's report, serve on all parties the materials that under Rule 10-6 (2) are required for the application.
 
 
 ### Additional experts

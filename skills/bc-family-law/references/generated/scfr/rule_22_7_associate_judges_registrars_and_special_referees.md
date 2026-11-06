@@ -23,7 +23,7 @@
 ### Hearing record
 
 
-**(3.1)** Before attending a registrar's hearing started by the filing of an appointment, the person taking out the appointment (in this subrule called the "applicant") must provide to the registry where the hearing is to take place, no later than 4 p.m. on the business day that is one full business day before the date set for the hearing, a hearing record as follows:
+**(3.1)** Before attending a registrar's hearing started by the filing of an appointment, the person taking out the appointment (in this subrule called the "applicant") must provide to the registry where the hearing is to take place, no later than 4 p.m. on the business day that is 2 business days before the date set for the hearing, a hearing record as follows:
 
 - **(a)** the hearing record must be in a ring binder or in some other form of secure binding;
 
@@ -33,7 +33,7 @@
 
 - **(ii)** an index;
 
-- **(iii)** a copy of the filed appointment and of every document that, under these rules, is required to be filed with that appointment;
+- **(iii)** a copy of the filed appointment and of every document that, under these Supreme Court Family Rules, is required to be filed with that appointment;
 
 - **(iv)** a copy of the affidavit of service of the appointment, which copy must not include the exhibits to the affidavit;
 
@@ -159,7 +159,7 @@
 ### Appeal record
 
 
-**(8.8)** The appellant must provide to the registry where the hearing of the appeal is to take place, no earlier than 9 a.m. and no later than 4 p.m. on the business day that is one full business day before the date set for the hearing, an appeal record as follows:
+**(8.8)** The appellant must provide to the registry where the hearing of the appeal is to take place, no earlier than 9 a.m. and no later than 4 p.m. on the business day that is 2 business days before the date set for the hearing, an appeal record as follows:
 
 - **(a)** the appeal record must be in a ring binder or in some other form of secure binding;
 

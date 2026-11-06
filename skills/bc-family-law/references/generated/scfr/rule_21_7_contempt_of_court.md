@@ -71,7 +71,7 @@
 ### Proceeding for contempt
 
 
-**(11)** A party applying for an order for contempt must serve the alleged contemnor with a copy of the filed notice of application and all filed affidavits in support of it at least 7 days before the hearing of the application.
+**(11)** A party applying for an order for contempt must comply with Rule 10-6 and, without limiting this, the party must serve, by personal service, a copy of the unfiled notice of application and the other materials referred to in Rule 10-6 (2) on the alleged contemnor.
 
 
 ### Affidavit

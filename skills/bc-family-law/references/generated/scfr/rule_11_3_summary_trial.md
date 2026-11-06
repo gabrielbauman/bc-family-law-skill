@@ -73,7 +73,7 @@
 
 **(8)** A party who applies for judgment under subrule (2)
 
-- **(a)** must serve, with the notice of application and the other documents referred to in Rule 10-6 (6), every expert report, not already filed, on which the party will rely in support of the application, and
+- **(a)** must serve, with the copy of the unfiled notice of application and the other materials referred to in Rule 10-6 (2), every expert report, not already filed, on which the party will rely in support of the application, and
 
 - **(b)** must not serve any further affidavits, expert reports or notices except
 
@@ -103,9 +103,9 @@ the party must give notice of that fact in accordance with subrule (10).
 
 **(10)** Notice under subrule (9) must be served
 
-- **(a)** by an applicant, in accordance with Rule 10-6 (6) and (7), and
+- **(a)** by an applicant, in accordance with Rule 10-6 (2), and
 
-- **(b)** by a party who is not an applicant, in accordance with Rule 10-6 (8).
+- **(b)** by a party who is not an applicant, in accordance with Rule 10-6 (8) and (8.1).
 
 
 ### Adjournment or dismissal

@@ -54,10 +54,10 @@
 - **(iii)** set out the petition respondent's estimate of the time the petition will take for hearing.
 
 
-### Petitioner may respond
+### Petitioner may reply
 
 
-**(6)** A petitioner may file affidavits in response to any document served on the petitioner under subrule (4) (c), and, in that event, must serve copies of those filed responding affidavits on each petition respondent no later than the date on which the notice of hearing is served on that petition respondent under subrule (8) (b).
+**(6)** A petitioner may file affidavits in reply to any document served on the petitioner under subrule (4) (c), and, in that event, must serve copies of those filed reply affidavits on each petition respondent no later than the date on which the notice of hearing of petition is served on that petition respondent under subrule (8) (b).
 
 
 ### Expert opinion evidence
@@ -99,9 +99,9 @@
 
 **(8)** A petitioner wishing to set a petition down for hearing must,
 
-- **(a)** in the case of a petition to which no response to petition has been served under subrule (4) (c), file a notice of hearing in Form F75 at any time before the hearing of the petition, or
+- **(a)** in the case of a petition to which no response to petition has been served under subrule (4) (c), file a notice of hearing of petition in Form F75 at any time before the hearing of the petition, or
 
-- **(b)** in the case of a petition to which a response to petition has been filed and served under subrule (4) (c), file a notice of hearing in Form F75, and serve a copy of the filed notice of hearing on each petition respondent, at least 7 days before the date set for the hearing of the petition.
+- **(b)** in the case of a petition to which a response to petition has been filed and served under subrule (4) (c), file a notice of hearing of petition in Form F75, and serve a copy of the filed notice of hearing of petition on each petition respondent, at least 7 days before the date set for the hearing of the petition.
 
 
 ### Date and time of hearing
@@ -157,7 +157,7 @@
 
 - **(e)** the petition record must be provided to the registry
 
-- **(i)** no earlier than 9 a.m. on the business day that is three full business days before the date set for the hearing and no later than 4 p.m. on the business day that is one full business day before the date set for the hearing, or
+- **(i)** no earlier than 9 a.m. on the business day that is 5 business days before the date set for the hearing and no later than 4 p.m. on the business day that is 2 business days before the date set for the hearing, or
 
 - **(ii)** if an earlier date is fixed by a registrar, on or before that date.
 
@@ -181,7 +181,7 @@
 ### Service of petition record
 
 
-**(12)** The petitioner must serve a copy of the petition record index on each petition respondent no later than 4 p.m. on the business day that is one full business day before the date set for the hearing.
+**(12)** The petitioner must serve a copy of the petition record index on each petition respondent no later than 4 p.m. on the business day that is 2 business days before the date set for the hearing.
 
 
 ### If petition respondent's application is to be heard at the hearing
@@ -205,7 +205,7 @@
 
 **(15)** If the petition record has been retrieved by the petitioner under subrule (14) (b), the petitioner must return the petition record to the registry
 
-- **(a)** no earlier than 9 a.m. on the business day that is three full business days before the new date set for the hearing and no later than 4 p.m. on the business day that is one full business day before the new date set for the hearing, or
+- **(a)** no earlier than 9 a.m. on the business day that is 5 business days before the new date set for the hearing and no later than 4 p.m. on the business day that is 2 business days before the new date set for the hearing, or
 
 - **(b)** if an earlier date is fixed by a registrar, on or before that date.
 
@@ -265,7 +265,7 @@ a petition respondent may apply, by requisition in Form F17 on 2 days' notice, f
 
 - **(b)** subject to Rules 8-2 (7) and (9) and 9-6 (5),
 
-- **(i)** once without leave of the court, at any time before service of the notice of hearing, and
+- **(i)** once without leave of the court, at any time before service of the notice of hearing of petition, and
 
 - **(ii)** at any time with the written consent of all the parties,
 

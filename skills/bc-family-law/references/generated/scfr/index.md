@@ -6,7 +6,7 @@
 These rules govern family law proceedings in the Supreme Court of British Columbia.
 
 
-These rules are current to September 1, 2026.
+These rules are current to October 27, 2026.
 
 
 ---

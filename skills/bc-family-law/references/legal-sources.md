@@ -21,8 +21,8 @@ the same thing:
 
 | Suite | Freshness signal |
 |-------|------------------|
-| `fla/` | Index states BC Laws' "current to" date (**August 25, 2026**) |
-| `scfr/` | Index states BC Laws' "current to" date (**September 1, 2026**) |
+| `fla/` | Index states BC Laws' "current to" date (**October 27, 2026**) |
+| `scfr/` | Index states BC Laws' "current to" date (**October 27, 2026**) |
 | `pcfr/` | **No "current to" date exists** — BC Laws publishes none for this document. The per-rule `_Amendments:_` footers are the only signal; the most recent instrument reflected is B.C. Reg. 17/2026 |
 | `da/`, `csg/` | Index states the consolidation and last-amended dates declared by the Justice Laws XML |
 

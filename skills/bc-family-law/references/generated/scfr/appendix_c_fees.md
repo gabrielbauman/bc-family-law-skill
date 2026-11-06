@@ -37,7 +37,7 @@ In this Schedule:
 |  |  |  |
 | Application filings |  |  |
 | 4 | For filing any one of the following: (a) a notice of application; (b) an appointment for a hearing before a registrar or a special referee but not including a hearing, inquiry or reference under the Court Order Enforcement Act ; (c) a requisition for a desk order, including a requisition filed under Rule 20-6 (3) | 80 |
-| 5 | For setting a matter for hearing for which a fee is not payable under this Schedule No fee is payable under this item to set a matter for hearing by notice of hearing of petition, notice of hearing of appeal or notice of hearing of stated case, or to schedule a trial management conference or settlement conference | 80 |
+| 5 | For setting a matter for hearing for which a fee is not payable under this Schedule No fee is payable under this item to set a matter for hearing by notice of hearing of application, notice of hearing of petition, notice of hearing of appeal or notice of hearing of stated case, or to schedule a trial management conference or settlement conference | 80 |
 | Other filings |  |  |
 | 6 | For filing a notice of judicial case conference | 80 |
 | 7 | For filing a notice of trial | 200 |
@@ -143,7 +143,7 @@ In this Schedule:
 |  |  |  |
 | Application filings |  |  |
 | 4 | For filing any one of the following: (a) a notice of application; (b) an appointment for a hearing before a registrar or a special referee but not including a hearing, inquiry or reference under the Court Order Enforcement Act ; (c) a requisition for a desk order, including a requisition filed under Rule 20-6 (3) | 80 |
-| 5 | For setting a matter for hearing for which a fee is not payable under this Schedule No fee is payable under this item to set a matter for hearing by notice of hearing of petition, notice of hearing of appeal or notice of hearing of stated case | 80 |
+| 5 | For setting a matter for hearing for which a fee is not payable under this Schedule No fee is payable under this item to set a matter for hearing by notice of hearing of application, notice of hearing of petition, notice of hearing of appeal or notice of hearing of stated case | 80 |
 | Other filings |  |  |
 | 6 | For filing a notice of judicial case conference | 80 |
 | 7 | For filing a notice of trial | 200 |

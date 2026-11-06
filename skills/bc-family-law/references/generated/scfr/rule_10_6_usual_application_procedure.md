@@ -5,23 +5,53 @@
 ### Definition
 
 
-**(1)** In this rule, "application respondent" means a person who files an application response under subrule (8).
+**(1)** In this rule, "application respondent" means a person who serves an application response under subrule (8).
 
 
 ### Notice of application
 
 
-**(2)** A party wishing to apply under this rule must file
+**(2)** A party wishing to apply under this rule must serve the following on each of the parties and on every other person, other than a person named as a party, who may be affected by the orders sought:
 
-- **(a)** a notice of application, and
+- **(a)** a copy of an unfiled notice of application;
 
-- **(b)** subject to Rule 15-2.1, the original of every affidavit, and of every other document, that
+- **(b)** subject to Rule 15-2.1, a copy of any affidavit or other evidence that
 
 - **(i)** is to be referred to by the applicant at the hearing, and
 
-- **(ii)** has not already been filed in the family law case.
+- **(ii)** has not already been served on that person;
 
-[If an order is sought to appoint a person as the guardian of one or more children, the affidavit referred to in Rule 15-2.1 must be provided to the court with the other application materials.]
+- **(c)** in addition to the materials referred to in paragraphs (a) and (b) of this subrule, in the case of an application that is brought under Rule 11-3, any notice that the applicant is required to give under Rule 11-3 (9);
+
+- **(d)** in addition to the materials referred to in paragraphs (a) to (c) of this subrule, in the case of an application that is in relation to an agreement filed in, or to start, a family law case, a copy of the filed agreement;
+
+- **(e)** in addition to the materials referred to in paragraphs (a) to (c) of this subrule, in the case of an application that is in relation to a determination of a parenting coordinator filed under Rule 2-1.1 (1),
+
+- **(i)** a copy of the filed determination, and
+
+- **(ii)** if the parenting coordinator was engaged under an agreement filed under Rule 2-1 (2), a copy of the filed agreement;
+
+- **(f)** in addition to the materials referred to in paragraphs (a) to (c) of this subrule, in the case of an application that is in relation to an arbitration award filed in, or to start, a family law case, a copy of the filed arbitration award.
+
+[If an order is sought to appoint a person as the guardian of one or more children, the affidavit referred to in Rule 15-2.1 must be served with the other application materials.]
+
+
+### Personal service required in some cases
+
+
+**(2.1)** In the case of the following applications, the materials referred to in subrule (2) of this rule must be served by personal service in accordance with Rule 6-3 (2):
+
+- **(a)** an application to change, suspend or terminate a final order;
+
+- **(b)** an application to set aside or replace the whole or any part of an agreement filed under Rule 2-1 (2);
+
+- **(c)** an application to change or set aside a determination of a parenting coordinator filed under Rule 2-1.1 (1);
+
+- **(d)** an application to change, suspend or terminate an arbitration award filed under Rule 2-1.2 (1);
+
+- **(e)** an application under Rule 21-7 for an order for contempt;
+
+- **(f)** an application under section 231 (2) of the Family Law Act for an order that a person be imprisoned.
 
 
 ### Contents of notice of application
@@ -35,11 +65,11 @@
 
 - **(c)** set out the rule, enactment or other jurisdictional authority relied on for the orders sought and any other legal arguments on which the orders sought should be granted,
 
-- **(d)** list the affidavits and other documents on which the applicant intends to rely at the hearing of the application,
+- **(d)** list the affidavits and other evidence on which the applicant intends to rely at the hearing of the application,
 
 - **(e)** set out the applicant's estimate of the time the application will take for hearing,
 
-- **(f)** subject to subrules (4) and (5), set out the date and time of the hearing of the application,
+- **(f)** subject to subrules (13.2) and (13.3), if the applicant wishes to propose a date and time for the hearing of the application, set out the proposed date and time,
 
 - **(g)** set out the place for the hearing of the application in accordance with Rule 10-2, and
 
@@ -48,90 +78,46 @@
 and the notice of application, other than any draft order attached to it under paragraph (a), must not exceed 10 pages in length.
 
 
-### Date and time of hearing
+### Repealed
 
 
-**(4)** Subject to subrule (5), the hearing of an application must be set for 9:45 a.m. on a date on which the court hears applications or at such other time or date as has been fixed by the court or a registrar.
-
-
-### Date and time if hearing time more than 2 hours
-
-
-**(5)** If the applicant's estimate referred to in subrule (3) (e) is more than 2 hours, the date and time of hearing must be fixed by a registrar.
-
-
-### Service of application materials
-
-
-**(6)** The applicant must serve the following, in accordance with subrule (7), on each of the parties and on every other person, other than a person named as a party, who may be affected by the orders sought:
-
-- **(a)** a copy of the filed notice of application;
-
-- **(b)** a copy of the filed version of each of the affidavits and documents, referred to in the notice of application under subrule (3) (d), that has not already been served on that person;
-
-- **(c)** in addition to the documents referred to in paragraphs (a) and (b), if the application is brought under Rule 11-3, any notice that the applicant is required to give under Rule 11-3 (9);
-
-- **(d)** in addition to the documents referred to in paragraphs (a) to (c), if the application is in relation to an agreement filed in, or to start, a family law case, a copy of the filed agreement;
-
-- **(e)** in addition to the documents referred to in paragraphs (a) to (d), if the application is in relation to a determination of a parenting coordinator filed under Rule 2-1.1 (1),
-
-- **(i)** a copy of the filed determination, and
-
-- **(ii)** if the parenting coordinator was engaged under an agreement filed under Rule 2-1 (2), a copy of the filed agreement;
-
-- **(f)** in addition to the documents referred to in paragraphs (a), (b) and (d), if the application is in relation to an arbitration award filed in, or to start, a family law case, a copy of the filed arbitration award.
-
-
-### Service requirements
-
-
-**(7)** The documents referred to in subrule (6) of this rule must be served as follows:
-
-- **(a)** subject to paragraphs (b) and (c) of this subrule, the documents must be served at least 8 business days before the date set for the hearing of the application;
-
-- **(b)** in the case of an application under Rule 11-3, the documents must be served at least 12 business days before the date set for the hearing of the application;
-
-- **(c)** in the case of an application to change, suspend or terminate a final order or to set aside or replace the whole or any part of an agreement filed under Rule 2-1 (2),
-
-- **(i)** the documents must be served by personal service in accordance with Rule 6-3 (2), and
-
-- **(ii)** service under subparagraph (i) of this paragraph must occur at least 21 business days before the date set for the hearing of the application;
-
-- **(d)** in the case of an application to change or set aside a determination of a parenting coordinator filed under Rule 2-1.1 (1) or to change, suspend or terminate an arbitration award filed under Rule 2-1.2 (1), the documents must be served by personal service in accordance with Rule 6-3 (2) and paragraph (a) of this subrule.
+**(4)-(7)** Repealed. [B.C. Reg. 105/2026, Sch. 2, s. 2 (f).]
 
 
 ### Application response
 
 
-**(8)** A person who is served with documents referred to in subrule (6) of this rule and who wishes to respond to the notice of application (in this subrule called the "responding person") must do the following within the applicable period referred to in subrule (8.1):
+**(8)** A person who is served the materials referred to in subrule (2) and who wishes to respond to the notice of application must serve the following on the applicant and every other party, within the applicable period referred to in subrule (8.1):
 
-- **(a)** file an application response that complies with subrule (9) and, if applicable, subrule (10);
+- **(a)** a copy of an unfiled application response that complies with subrule (9) and, if applicable, subrule (10);
 
-- **(b)** file the original of every affidavit, and of every other document, that
+- **(b)** a copy of any affidavit or other evidence that
 
-- **(i)** is to be referred to by the responding person at the hearing, and
+- **(i)** is to be referred to by the application respondent at the hearing, and
 
-- **(ii)** has not already been filed in the family law case;
+- **(ii)** has not already been served on that person;
 
-- **(c)** serve on the applicant 2 copies of the following, and on every other party one copy of the following:
-
-- **(i)** a copy of the filed application response;
-
-- **(ii)** a copy of each of the filed affidavits and documents, referred to in the application response under subrule (9) (b) (ii), that has not already been served on that person;
-
-- **(iii)** if the application is brought under Rule 11-3, any notice that the application respondent is required to give under Rule 11-3 (9).
+- **(c)** in the case of an application that is brought under Rule 11-3, any notice that the application respondent is required to give under Rule 11-3 (9).
 
 
-### Time for filing and service
+### Time for service
 
 
-**(8.1)** The responding person must file the documents referred to in subrule (8) (a) and (b) and serve the documents referred to in subrule (8) (c) within whichever of the following periods applies to the application:
+**(8.1)** The application respondent must serve the materials referred to in subrule (8) within whichever of the following periods applies to the application:
 
-- **(a)** subject to paragraphs (b) and (c) of this subrule, within 5 business days after service of the documents referred to in subrule (6);
+- **(a)** subject to paragraphs (b) and (c) of this subrule, within 5 business days after service of the materials referred to in subrule (2);
 
-- **(b)** in the case of an application under Rule 11-3, within 8 business days after service of the documents referred to in subrule (6) of this rule;
+- **(b)** in the case of an application under Rule 11-3, within 21 days after service of the materials referred to in subrule (2) of this rule;
 
-- **(c)** in the case of an application to change, suspend or terminate a final order, to set aside or replace the whole or any part of an agreement filed under Rule 2-1 (2) or to change, suspend or terminate an arbitration award filed under Rule 2-1.2 (1), within 14 business days after service of the documents referred to in subrule (6).
+- **(c)** in the case of the following applications, within 14 days after service of the materials referred to in subrule (2) of this rule:
+
+- **(i)** an application to change, suspend or terminate a final order;
+
+- **(ii)** an application to set aside or replace the whole or any part of an agreement filed under Rule 2-1 (2);
+
+- **(iii)** an application to change or set aside a determination of a parenting coordinator filed under Rule 2-1.1 (1);
+
+- **(iv)** an application to change, suspend or terminate an arbitration award filed under Rule 2-1.2 (1).
 
 
 ### Contents of application response
@@ -145,15 +131,17 @@ and the notice of application, other than any draft order attached to it under p
 
 - **(i)** briefly summarize the factual and legal bases on which the orders sought should not be granted,
 
-- **(ii)** list the affidavits and other documents to which the application respondent intends to refer at the hearing of the application, and
+- **(ii)** list the affidavits and other evidence to which the application respondent intends to refer at the hearing of the application,
 
-- **(iii)** set out the application respondent's estimate of the time the application will take for hearing.
+- **(iii)** set out the application respondent's estimate of the time the application will take for hearing, and
+
+- **(iv)** indicate whether the application respondent agrees with the applicant's proposed date and time for the hearing of the application, if any.
 
 
 ### Address for service
 
 
-**(10)** An application respondent who has not yet provided an address for service in the family law case must include an address for service in any application response filed under subrule (8), and Rule 6-1 applies.
+**(10)** An application respondent who has not yet provided an address for service in the family law case must include an address for service in any application response served under subrule (8), and Rule 6-1 applies.
 
 
 ### Repealed
@@ -162,16 +150,114 @@ and the notice of application, other than any draft order attached to it under p
 **(11)** Repealed. [B.C. Reg. 241/2010, Sch. B, s. 1 (h).]
 
 
-### Applicant may respond
+### Applicant may reply
 
 
-**(12)** An applicant who wishes to respond to any document served under subrule (8) of this rule must file and serve on each application respondent any responding affidavits no later than 4 p.m. on the business day that is one full business day before the date set for the hearing.
+**(12)** An applicant who wishes to reply to any materials served under subrule (8) must serve on each application respondent any reply affidavits, as follows:
+
+- **(a)** subject to paragraph (b) of this subrule, within 3 business days after service;
+
+- **(b)** in the case of the following applications, within 5 business days after service:
+
+- **(i)** an application that is brought under Rule 11-3;
+
+- **(ii)** an application to change, suspend or terminate a final order;
+
+- **(iii)** an application to set aside or replace the whole or any part of an agreement filed under Rule 2-1 (2);
+
+- **(iv)** an application to change or set aside a determination of a parenting coordinator filed under Rule 2-1.1 (1);
+
+- **(v)** an application to change, suspend or terminate an arbitration award filed under Rule 2-1.2 (1).
 
 
 ### No additional affidavits
 
 
-**(13)** Unless all parties consent or the court otherwise orders, a party must not serve any affidavits additional to those served under subrules (6), (8) and (12).
+**(13)** Unless all parties consent or the court otherwise orders, a party must not serve any affidavits additional to those served under subrules (2), (8) and (12).
+
+
+### When application may be set for hearing
+
+
+**(13.1)** The applicant must not set an application down for hearing unless
+
+- **(a)** the applicant has served the materials referred to in subrule (2) in accordance with that subrule, and
+
+- **(b)** one of the following applies to each person required to be served under subrule (2):
+
+- **(i)** the person has served on the applicant an application response in accordance with subrule (8);
+
+- **(ii)** the period for the person to serve an application response under subrule (8) has expired.
+
+
+### Date and time of hearing
+
+
+**(13.2)** Subject to subrule (13.3), the hearing of an application must be set for 9:45 a.m. on a date on which the court hears applications or at such other time or date as has been fixed by the court or a registrar.
+
+
+### Date and time if hearing time more than 2 hours
+
+
+**(13.3)** If an application is estimated to take more than 2 hours, the date and time of the hearing must be fixed by a registrar.
+
+
+### How application may be set for hearing
+
+
+**(13.4)** An applicant may set an application down for hearing by filing the following:
+
+- **(a)** a notice of hearing of application in Form F31.1;
+
+- **(b)** the notice of application served under subrule (2);
+
+- **(c)** subject to Rule 15-2.1, the original of any affidavit served under subrule (2), if not already filed;
+
+- **(d)** any other materials served under subrule (2), if not already filed.
+
+[If an order is sought to appoint a person as the guardian of one or more children, the affidavit referred to in Rule 15-2.1 must be provided to the court with the other application materials.]
+
+
+### When notice of hearing to be filed and served
+
+
+**(13.5)** A notice of hearing of application must be filed, and a copy of the filed notice of hearing of application must be served on each application respondent as follows:
+
+- **(a)** subject to paragraphs (b) and (c) of this subrule, at least 4 business days before the date set for the hearing of the application;
+
+- **(b)** subject to paragraph (c) of this subrule, in the case of the following applications, at least 7 days before the date set for the hearing of the application:
+
+- **(i)** an application to change, suspend or terminate a final order;
+
+- **(ii)** an application to set aside or replace the whole or any part of an agreement filed under Rule 2-1 (2);
+
+- **(iii)** an application to change or set aside a determination of a parenting coordinator filed under Rule 2-1.1 (1);
+
+- **(iv)** an application to change, suspend or terminate an arbitration award filed under Rule 2-1.2 (1);
+
+- **(c)** if the application is estimated to take more than 2 hours, within 7 days after the registrar fixes the date and time of the hearing of the application and at least 14 days before the date set for the hearing of the application.
+
+
+### Reply affidavits to be filed by applicant
+
+
+**(13.6)** The applicant must file the original of every reply affidavit served under subrule (12) no later than 4 p.m. on the business day that is 2 business days before the date set for the hearing.
+
+
+### Documents to be filed by application respondent
+
+
+**(13.7)** Each application respondent must,
+
+- **(a)** after the date on which the notice of hearing of application is filed and before the commencement of the hearing, file the following:
+
+- **(i)** the application response served under subrule (2);
+
+- **(ii)** the original of any affidavit served under subrule (8), if not already filed;
+
+- **(iii)** any other materials served under subrule (9), if not already filed, and
+
+- **(b)** bring copies of the filed materials to the hearing of the application.
 
 
 ### Application record
@@ -189,9 +275,11 @@ and the notice of application, other than any draft order attached to it under p
 
 - **(iii)** a copy of the filed notice of application;
 
-- **(iv)** a copy of each filed application response;
+- **(iv)** a copy of every application response that has been served on the applicant;
 
-- **(v)** a copy of every filed affidavit and pleading, and of every other document other than a written argument, that is to be relied on at the hearing;
+- **(v)** a copy of every filed pleading and any filed affidavit or other evidence that is to be relied on at the hearing;
+
+- **(v.1)** a copy of any affidavit or other evidence that has been served on the applicant by an application respondent,
 
 - **(vi)** if the application is brought under Rule 11-3, a copy of each filed pleading;
 
@@ -205,7 +293,7 @@ and the notice of application, other than any draft order attached to it under p
 
 - **(ii)** a written argument,
 
-- **(iii)** a list of authorities and
+- **(iii)** a list of authorities, and
 
 - **(iv)** a draft bill of costs;
 
@@ -219,7 +307,7 @@ and the notice of application, other than any draft order attached to it under p
 
 - **(e)** the application record must be provided to the registry
 
-- **(i)** no earlier than 9 a.m. on the business day that is three full business days before the date set for the hearing and no later than 4 p.m. on the business day that is one full business day before the date set for the hearing, or
+- **(i)** no earlier than 9 a.m. on the business day that is 5 business days before the date set for the hearing and no later than 4 p.m. on the business day that is 2 business days before the date set for the hearing, or
 
 - **(ii)** if an earlier date is fixed by a registrar, on or before that date.
 
@@ -267,7 +355,7 @@ and the notice of application, other than any draft order attached to it under p
 ### Service of application record index
 
 
-**(15)** The applicant must serve a copy of the application record index on each application respondent no later than 4 p.m. on the business day that is one full business day before the date set for the hearing.
+**(15)** The applicant must serve a copy of the application record index on each application respondent no later than 4 p.m. on the business day that is 2 business days before the date set for the hearing.
 
 
 ### If application respondent's application is to be heard at the hearing
@@ -289,13 +377,17 @@ and the notice of application, other than any draft order attached to it under p
 ### Application record to be returned to the registry
 
 
-**(18)** If the application record has been retrieved by the applicant under subrule (17) (b), the applicant must return the application record to the registry between 9:00 a.m. and 4 p.m. on the business day that is one full business day before the new date set for the hearing of the application.
+**(18)** If the application record has been retrieved by the applicant under subrule (17) (b), the applicant must return the application record to the registry
+
+- **(a)** no earlier than 9 a.m. on the business day that is 5 business days before the new date set for the hearing of the application and no later than 4 p.m. on the business day that is 2 business days before the new date set for the hearing of the application, or
+
+- **(b)** if an earlier date is fixed by a registrar, on or before that date.
 
 
 ### Provision of amended application record
 
 
-**(19)** If any additional affidavits are filed and served under subrule (12) and are not included in the application record, the applicant must provide to the registry an amended application record containing those affidavits.
+**(19)** If any additional affidavits are served under subrule (12) and are not included in the application record, the applicant must provide to the registry an amended application record containing those affidavits.
 
 
 ### Resetting adjourned applications
@@ -303,21 +395,9 @@ and the notice of application, other than any draft order attached to it under p
 
 **(19.1)** To reset an application that has been adjourned without a date being set for it to be heard ("adjourned generally") or that has been removed from the hearing list under subrule (14.2), the applicant must
 
-- **(a)** file a requisition in Form F17 setting out the following:
+- **(a)** file a notice of hearing of application, and
 
-- **(i)** the date and time of the hearing of the application;
-
-- **(i.1)** the place of hearing;
-
-- **(ii)** the date the notice of application was filed;
-
-- **(iii)** a brief description of the orders sought;
-
-- **(iv)** the applicant's estimate of the time the application will take for hearing;
-
-- **(v)** whether the orders sought are within the jurisdiction of an associate judge, and
-
-- **(b)** serve a copy of the filed requisition on the application respondents at least 2 business days before the date set for the hearing.
+- **(b)** serve a copy of the filed notice of hearing of application on the application respondents at least 2 business days before the date set for the hearing.
 
 
 ### Application respondent may apply for directions
@@ -326,4 +406,4 @@ and the notice of application, other than any draft order attached to it under p
 **(20)** If, after an application has been adjourned generally, the applicant does not reset the application for hearing within a reasonable time after an application respondent has requested the applicant to do so, an application respondent may apply, by requisition in Form F17 on 2 business days' notice, for directions.
 
 
-_Amendments: [en. B.C. Reg. 176/2023, Sch. 2, s. 8.]_
+_Amendments: [en. B.C. Reg. 176/2023, Sch. 2, s. 8; am. B.C. Reg. 105/2026, Sch. 2, s. 2 (a).]_

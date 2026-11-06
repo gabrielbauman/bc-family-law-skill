@@ -5,9 +5,9 @@
 ### Leave to file pleading, application or other document
 
 
-**(1)** If an order has been made that a person must not, without leave of the court, start a proceeding or file an application or other document in an existing proceeding, the person may apply for leave by filing a requisition in Form F94.1 to which is attached
+**(1)** If an order has been made that a person must not, without leave of the court, start a proceeding or serve or file an application or other document in an existing proceeding, the person may apply for leave by filing a requisition in Form F94.1 to which is attached
 
-- **(a)** a copy of the pleading, application or document which the person seeks leave to file, and
+- **(a)** a copy of the pleading, application or document which the person seeks leave to serve or file, and
 
 - **(b)** a copy of the order requiring the person to obtain leave of the court.
 
@@ -30,4 +30,4 @@
 - **(c)** make any order or give any other directions the court considers will further the object of these Supreme Court Family Rules.
 
 
-_Amendments: [en. B.C. Reg. 239/2023, Sch. 2, s. 6.]_
+_Amendments: [en. B.C. Reg. 239/2023, Sch. 2, s. 6; am. B.C. Reg. 105/2026, Sch. 2, s. 8.]_

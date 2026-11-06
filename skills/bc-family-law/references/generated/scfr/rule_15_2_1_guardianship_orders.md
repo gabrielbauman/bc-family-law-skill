@@ -5,13 +5,19 @@
 ### Guardianship affidavit required
 
 
-**(1)** When an order is sought appointing a person as the guardian of one or more children, the applicant must
+**(1)** When an order is sought appointing a person as the guardian of one or more children, the applicant must,
 
-- **(a)** file with the court an affidavit in Form F101 that complies with subrule (4) and serve a copy of that filed affidavit on the other parties and on any other person who may be affected by the orders sought, and
+- **(a)** subject to subrule (1.1), file with the court an affidavit in Form F101 that complies with subrule (4) and serve a copy of that filed affidavit on the other parties and on any other person who may be affected by the orders sought, and
 
 - **(b)** provide to the court any other evidence the court considers necessary.
 
 [A person who is a guardian within the meaning of section 39 of the Family Law Act does not need to apply for guardianship and does not need to file the Form F101 affidavit referred to above.]
+
+
+### Application under Rule 10-6
+
+
+**(1.1)** If the order referred to in subrule (1) of this rule is sought on an application under Rule 10-6, the applicant must serve and file the affidavit in Form F101 in accordance with that Rule.
 
 
 ### Interim order may be made
@@ -64,4 +70,4 @@
 - **(c)** if the hearing is adjourned to a date that is more than 6 months after the date originally set for the hearing, the applicant must, at least 14 days before the new date set for the hearing, file a new affidavit in Form F101 that complies with the requirements of subrule (4) (a) (i) and (b) (i) in relation to the new date set for the hearing and serve a copy of that filed new affidavit on each of the parties and on every other person who may be affected by the orders sought.
 
 
-_Amendments: [en. B.C. Reg. 41/2013, s. 8.]_
+_Amendments: [en. B.C. Reg. 41/2013, s. 8; am. B.C. Reg. 105/2026, Sch. 2, s. 5 (a) and (b).]_
