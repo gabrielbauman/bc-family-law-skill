@@ -66,12 +66,19 @@ orders are available, and how urgent things are. Screen for it during intake
 - Plain language. Explain every legal term the first time you use it.
 - Be practical and concrete: name the form, the rule, the deadline, the next
   step. Vague guidance ("you may wish to consider...") helps nobody.
-- When you must ask the user something — which court, what to do with an
-  unclear file, an either/or decision — use your structured question tool (the
-  multiple-choice prompt) and offer 2–4 concrete options instead of an open
-  question. Reserve free-text asks for what only they can explain. If the
-  environment has no question tool, present the options as a short numbered
-  list.
+- When you must ask something — which court, an either/or decision, what
+  to do with an unclear file — offer 2–4 concrete options rather than an
+  open question, through your structured question tool if the environment
+  has one and as a short numbered list otherwise (most coding agents have
+  none, so the list is the normal case). The options are the point: "what
+  would you like me to do?" asks a frightened person to invent a
+  procedure they don't know.
+- Ask few at a time — safety plus at most two others in a first turn, the
+  rest as the work needs them. `references/party-assessment.md` is a
+  checklist for the matter, not a script for the conversation. When you
+  cannot ask at all, make the reversible choice, say what you assumed,
+  and put the question in your reply anyway. A case project they can
+  delete is reversible; filing something is not.
 - When the environment exposes email, contacts, or calendar MCP servers,
   offer to use them at the moments they help — reading registry mail,
   mirroring contacts, writing deadlines — gated on consent and the routing
@@ -90,66 +97,69 @@ orders are available, and how urgent things are. Screen for it during intake
 
 ## Where this skill works best
 
-This skill is agent-agnostic — it works in Claude Code, OpenCode, or any
-agent that can load skills — and what it can do depends on what the
-environment gives it. Be honest about that up front; someone organizing
-a multi-year case should know where to do it.
+The legal substance is identical everywhere: the references, the
+accuracy discipline, the court and form guidance all apply. What varies
+is whether the case file can persist and maintain itself.
 
-The case project — the persistent, git-tracked case file that is most of
-this skill's leverage — needs a **filesystem**, **git**, and ideally
-**hooks**. So:
+The case project — the git-tracked case file that is most of this
+skill's leverage — needs a filesystem and git, so it belongs in a coding
+agent (Claude Code, OpenCode, and the like). There the whole workflow
+works: a file that survives across sessions, intake from `inbox/`,
+analysis scripts, `.ics` deadlines, and hooks that protect the record.
 
-- **A coding agent with filesystem and git — recommended for any ongoing
-  matter.** Full filesystem and git, so the whole workflow works: a case
-  project that survives across sessions, automatic intake and filing from
-  `inbox/`, reproducible analysis scripts, `.ics` deadline files, and the
-  immutable-folder hooks that protect the record. If a user has a real
-  case, this is where it should live.
-- **A chat or API assistant with no project filesystem.** No persistent
-  files, no git, no scripts. Strong for *standalone* work: understanding
-  the law and the options, choosing court and process, drafting or
-  reviewing a single document you paste in, working through a form,
-  preparing for a hearing. It cannot maintain a case file across
-  sessions, file documents for you, run scripts, or enforce the
-  evidence/filings rules. If the environment lets the user attach
-  documents to a shared space, they can keep materials there, but the
-  user maintains the structure and there is no git audit trail — treat
-  each conversation as self-contained.
-- **An agentic environment with unknown or partial filesystem access.**
-  If it gives you a working filesystem with git, the case-project
-  workflow applies — confirm a private git remote so the file persists.
-  If it does not, treat it like chat. Check what tools you actually have
-  before promising a persistent project; never assume.
-
-Whatever the environment, **the legal substance is identical** — the
-references, the accuracy discipline, the court and form guidance all
-apply. What changes is whether the case file can persist and maintain
-itself. When a user in a filesystem-less environment describes an ongoing
-matter, give them the help they asked for, then tell them plainly that an
-ongoing case is best kept with a coding agent that has a filesystem and
-git, where the file maintains itself between sessions.
+Without project files — a plain chat — the standalone work is still
+strong: understanding the law and the options, choosing court and
+process, reviewing a document the user pastes in, working through a
+form, preparing for a hearing. What you cannot do is maintain a case
+file between sessions, so don't promise one. Check what tools you
+actually have before offering a project; never assume. When a user in
+that setting describes an ongoing matter, help with what they asked,
+then tell them plainly that the ongoing file is best kept with an agent
+that has a filesystem and git.
 
 ## Workflow
 
 ### On invocation
 
-Check the working directory for `CASE.md`:
+Check the working directory for `CASE.md`.
 
-- **Found** → existing case project. Read `CASE.md` first — it is the
-  dashboard. Then run the **session-start sweep**: `git status` should be
-  clean, because the model commits as it works — so anything it reports is
-  material the user dropped in (`inbox/` or anywhere), a change they made by
-  hand, or an interrupted session's leftovers. Identify, file, and reconcile
-  it per the sweep in `references/case-project-guide.md` before substantive
-  work; new court documents get read for deadlines immediately. Then handle
-  the user's request, loading only the references it needs.
-- **Not found** → either answer the standalone question, or for any ongoing
-  matter offer to set up a case project (see below) — but only if this
-  environment actually has a filesystem and git (see "Where this skill
-  works best"). In a plain chat without project files, help with the
-  immediate question and point the user to a filesystem-and-git agent for
-  the ongoing file rather than promising a structure you can't maintain. A quick
-  procedural question does not need a project anywhere.
+**Found — an existing case project.** Read `CASE.md` first; it is the
+dashboard. Then run the session-start sweep, before the user's request:
+
+1. `git status --porcelain`. The model commits as it works, so a clean
+   tree is the expected state and **anything reported is information** —
+   material the user dropped (in `inbox/` or anywhere), a change they
+   made by hand, or an interrupted session's leftovers. If the command
+   fails because there is no repository, or the scaffold folders are
+   missing, do "Creating a project" in
+   `references/case-project-guide.md` first: a CASE.md can predate the
+   rest of the structure, and once you make the baseline commit
+   `git status` goes quiet, so classify `inbox/` and anything outside
+   the scaffold directly instead of waiting for git to name it.
+2. Identify each untracked file and file it: court documents to
+   `filings/`, source material to the right `evidence/` subfolder,
+   authorities to `authorities/`, sent letters and offers to
+   `correspondence/`, counsel guidance to `strategy/`, drafts to
+   `output/`. Read the destination folder's README before naming the
+   file — the guard makes a rename in a record folder hard to undo.
+3. **Read new court documents for dates immediately** and check every
+   date against today. A dropped order often starts a clock the user
+   has not noticed — or ends one that already ran.
+4. Modified files in `evidence/` or `filings/` mean stop and ask; those
+   are immutable. Modified case files are user input to reconcile, not
+   overwrite. Deletions: ask.
+5. Commit the intake, then do the user's request.
+
+The full sweep — classification detail, duplicate checks, how to batch
+the questions — is in `references/case-project-guide.md`. Read it when
+the material is anything but obvious.
+
+**Not found.** Answer the standalone question, or for an ongoing matter
+offer a case project and follow "Creating a project" in
+`references/case-project-guide.md`. If the folder already holds case
+material without a `CASE.md`, that is a project waiting to be created,
+not a standalone question. Offer one only where there is a filesystem
+and git; a quick procedural question does not need a project anywhere.
 
 ### New matter intake
 
@@ -188,10 +198,20 @@ work:
 | Trial preparation | Evidence organization, trial book, witnesses | `references/trial-preparation.md`, `references/evidence-strategy.md` |
 | Trial | Opening, evidence, cross, closing | `references/trial-preparation.md` |
 | Post-judgment | Orders, costs, appeals, variation | `references/post-judgment.md` |
+| Something was missed | Passed deadlines, missed appearances, a dormant file | `references/missed-deadlines.md` |
 
 Deadlines compound in litigation. Whenever a date is set or a rule imposes a
 time limit, surface it immediately, record it in CASE.md, and offer the user
 a calendar (.ics) file for it (see `references/case-project-guide.md`).
+
+**Compare every date to today before acting on it.** A date that has
+already passed is not a reminder to set — it is a different problem,
+and `references/missed-deadlines.md` is where it goes. Writing a
+calendar alarm for a deadline blown months ago tells the user their
+case is on track when it is not, and burns the time in which the
+situation was still cheap to fix. This is not rare: orders and served
+documents routinely surface late, in a pile of mail the user could not
+face, which is exactly when they finally ask for help.
 
 ## Choosing the court
 
@@ -220,6 +240,25 @@ claims there). Only parenting and/or support → Provincial Court is usually
 faster, cheaper, and safer on costs. Existing Supreme Court file → continue
 there. When in doubt for parenting/support-only matters → Provincial Court;
 transfer remains possible.
+
+**In Provincial Court, which form starts the case depends on the
+registry.** A registry listed in
+`references/generated/pcfr/appendix_1_early_resolution_registries.md` is
+an early resolution registry (PCFR Rule 6(a)): the case begins with a
+Form 1, and a needs assessment, parenting education and a consensual
+dispute resolution session must be completed before any application is
+filed (Rule 10). Everywhere else it begins with a Form 3. Check the
+appendix rather than recalling it — the list changed with B.C. Reg.
+17/2026.
+
+**Before advising an unmarried spouse, check FLA s. 198.** A spouse has
+two years to start a proceeding for property division, pension
+division, or *spousal support*, running from the separation date for
+unmarried spouses. Someone who separates from a common-law partner and
+asks only about the children is the classic case: nothing they say
+signals the clock, and it is running. Child support is not caught by
+it. See `references/generated/fla/section_198_time_limits.md` and
+`references/missed-deadlines.md`.
 
 ## Evidence and accuracy
 
@@ -263,7 +302,7 @@ estimate as rough and verifiable only with proper tools.
 Reproduced legal texts, one file per section — start at the index, load only
 the sections you need. Check `references/legal-sources.md` for currency
 before relying on exact wording. In a filesystem environment, run
-`python3 scripts/check_freshness.py` to verify the snapshot against the
+`python3 <skill>/scripts/check_freshness.py` to verify the snapshot against the
 live consolidations (or just note the snapshot date and flag anything
 near it).
 
@@ -272,12 +311,14 @@ near it).
 | Family Law Act (BC) | `references/generated/fla/index.md` | Spouse definition s. 3; parenting Part 4; property Part 5; support Part 7 (stepparents ss. 146–147); family violence Part 9; PC appeals s. 233 |
 | Divorce Act (federal) | `references/generated/da/index.md` | Divorce s. 8; best interests s. 16; parenting ss. 16.1–16.96; support ss. 15.1–15.3; variation s. 17 |
 | Federal Child Support Guidelines | `references/generated/csg/index.md` | Table amounts; special expenses s. 7; split/shared parenting ss. 8–9; income ss. 15–20; undue hardship s. 10 |
-| Provincial Court Family Rules | `references/generated/pcfr/index.md` | Early resolution Part 2; applications Part 3; disclosure Part 4; conferences Part 8; service Part 11 |
-| Supreme Court Family Rules | `references/generated/scfr/index.md` | Starting cases Parts 3–4; disclosure Part 5; conferences Parts 7–7.1; applications Part 10; trial Part 14; costs Part 16 |
+| Provincial Court Family Rules | `references/generated/pcfr/index.md` | Early resolution Part 2 (**Appendix 1** lists the early resolution registries — Rule 6(a)); applications Part 3; disclosure Part 4; conferences Part 8; service Part 11 |
+| Supreme Court Family Rules | `references/generated/scfr/index.md` | Starting cases Parts 3–4; disclosure Part 5; conferences Parts 7–7.1; applications Part 10; trial Part 14; costs Part 16 (**Appendix B** tariff, **Appendix C** fees); time and extensions Rule 21-2 |
 | SSAG User's Guide (advisory) | `references/generated/ssag/index.md` | Entitlement ch. 3; without-child formula ch. 7; with-child formula ch. 8 |
 
-`references/forms-guide.md` maps every form number to the rules that require
-it, for both courts.
+`references/forms-guide.md` maps every form number to the rules that
+require it, for both courts, and opens with the forms that start a case
+in each. It is long — grep it for the form number you need rather than
+reading it whole.
 
 ## Practice guides
 
@@ -296,19 +337,33 @@ without it.
 | `references/case-project-guide.md` | Creating or maintaining a case project |
 | `references/party-assessment.md` | Intake; choosing a resolution approach |
 | `references/resolution-approaches.md` | Recommending negotiation vs. mediation vs. court |
+| `references/missed-deadlines.md` | A date has passed, an appearance was missed, or the file went quiet |
+| `references/examples/` | Worked examples: a finished research extraction, a finished evidence handler |
+
+## Bundled scripts
+
+**Paths in this file are relative to the skill directory, not the
+working directory.** During case work the working directory is the
+user's case project, which has its own `scripts/` folder for
+case-specific analysis — so run these as
+`python3 <skill>/scripts/<name>.py`, substituting wherever the skill is
+installed. Getting this wrong wastes a turn looking for files that are
+not missing.
+
+| Script | Use |
+|--------|-----|
+| `canlii.py` | Verify a citation exists, resolve its canonical CanLII URL, check what cites it for negative treatment (`resolve` / `citing` / `cited` / `recent`). Needs `CANLII_API_KEY`. See `references/case-law.md`. |
+| `check_freshness.py` | Check all five legal sources against the live consolidations. Run it before relying on exact wording. |
+| `regen_*.py`, `build_forms_index.py` | Maintenance: refresh the reproduced texts. See `references/legal-sources.md`. |
 
 ## Templates
 
-- `templates/case-project/` — complete case-project scaffold: AGENTS.md
-  (standalone working rules for any agent), CASE.md dashboard, the folder
-  structure with per-folder READMEs (including `correspondence/` for sent
-  letters and offers to settle), a `scripts/build_research_index.py` that
-  keeps `research/index.md` generated from each file's frontmatter, and
-  the immutable-folder guards — a git `pre-commit` hook (`.githooks/`, works
-  with any agent), a Claude Code PreToolUse hook (`.claude/settings.json` +
-  `.claude/hooks/`), and an OpenCode plugin (`.opencode/plugins/`), both
-  blocking edits to the record folders. Install the git hook at setup with
-  `git config core.hooksPath .githooks`.
+- `templates/case-project/` — the scaffold: AGENTS.md, the CASE.md
+  dashboard, per-folder READMEs, `scripts/build_research_index.py`, and
+  immutable-folder guards for git, Claude Code and OpenCode. Copy it
+  whole and follow "Creating a project" in
+  `references/case-project-guide.md`, which covers the setup the
+  scaffold cannot do for itself.
 - `templates/trial-book/` — LaTeX trial book: Part 1 (opening, chronology,
   direct evidence, closing, cross-examination plans) and Part 2 (tabbed
   evidence binder). Produces the court-ready PDF.

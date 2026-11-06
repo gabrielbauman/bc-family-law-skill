@@ -17,7 +17,7 @@ style preference — it is the case.
 ```
 root/
 ├── CASE.md          # Case dashboard — read first, update after changes
-├── case-law.md      # Authorities: case → principle → application (created when case law accumulates)
+├── authorities.md   # Authorities: case → principle → application (created when case law accumulates)
 ├── inbox/           # User drop zone — swept at session start
 ├── evidence/        # Primary sources. IMMUTABLE. README handler per source.
 ├── filings/         # Filed court documents. IMMUTABLE.
@@ -29,7 +29,7 @@ root/
 └── strategy/        # Private strategic notes and counsel's guidance. NEVER evidence.
 ```
 
-`case-law.md` and `scripts/` are created when the case first needs them.
+`authorities.md` and `scripts/` are created when the case first needs them.
 
 ## Immutability is enforced, not just asked
 
@@ -57,10 +57,13 @@ session — handle it before substantive work, per the sweep in the
 skill's `references/case-project-guide.md`:
 
 - File new material: court documents → `filings/` (**read for deadlines
-  immediately**); sources → `evidence/` with a handler; case law →
-  `authorities/`; counsel guidance → `strategy/`; sent letters and
-  offers → `correspondence/`. Check for duplicates; preserve original
-  filenames in the commit message.
+  immediately, and check each date against today**); sources →
+  `evidence/` with a handler; case law → `authorities/`; counsel
+  guidance → `strategy/`; sent letters and offers → `correspondence/`.
+  Read the destination folder's README before naming the file — each
+  states its own convention, and once a file is committed into a record
+  folder the guard blocks the rename. Check for duplicates; preserve
+  original filenames in the commit message.
 - Treat modified case files (CASE.md, research, strategy) as user input
   and reconcile them properly. Ask about modified `evidence/`/`filings/`,
   deletions, and anything that doesn't look case-related.
@@ -87,8 +90,18 @@ non-negotiable core:
 **Case law:** never cite an authority unless its full text is in
 `authorities/` and the pinpoint paragraph and any quote have been verified
 against that text (skill: `references/case-law.md`). If the text is not
-there, ask the user to obtain it — name the case, give the CanLII link —
-and stop. Never cite from memory, however confident.
+there, ask the user to obtain it — name the case, tell them to search
+canlii.org for it — and stop citing it (you can keep helping with
+everything that doesn't depend on it). Never cite from memory, however
+confident, and never hand over a CanLII URL you constructed from the
+citation pattern: a guessed link is the same failure as a guessed
+case. The skill's `scripts/canlii.py resolve` returns the real one.
+
+The same discipline applies to citations **already in** a document you
+are asked to edit or review — a draft from another tool or an earlier
+session may carry invented pinpoints, and everyone assumes those were
+checked. Audit them before touching the argument, and report what you
+find rather than silently deleting it.
 
 ## Folder rules
 
@@ -121,6 +134,11 @@ every quote verbatim, no assumed details. Fix problems before committing.
 
 - Deadlines first: when reading CASE.md, check Next Steps against
   today's date and surface anything urgent before the user's question.
+  A date that has already passed is a different problem — see the
+  skill's `references/missed-deadlines.md`. Never write a calendar
+  reminder for a deadline that is gone, and read CASE.md's own
+  Last Updated stamp as a signal: months stale usually means nobody has
+  been watching the file.
 - Check `research/index.md` before extracting — it may already exist.
 - Update CASE.md (and its Last Updated stamp) after any change to the
   case's facts, status, or deadlines.

@@ -61,6 +61,30 @@ each, and record both parties' positions where dates are disputed. -->
 | Marriage date | [if married] |
 | Separation date | [date + source; note if disputed] |
 
+### Limitation periods
+
+<!-- FLA s. 198(2) gives a spouse two years to start a proceeding for
+property division (Part 5), pension division (Part 6), or SPOUSAL
+support (Part 7). The clock runs from the divorce or nullity order for
+married spouses, and FROM THE SEPARATION DATE for unmarried spouses —
+which is the trap, because someone who separates from a common-law
+partner and asks only about the children has no idea anything is
+running. Child support is not caught by s. 198(2) and has no such
+limit.
+
+s. 198(5) suspends the clock during family dispute resolution with a
+family dispute resolution professional, so record those dates too.
+
+Compute the deadline, cite the date it runs from, and put it in Next
+Steps as a hard date. If it has passed or is close, say so and
+recommend a lawyer. See references/missed-deadlines.md. -->
+
+| Field | Value |
+|-------|-------|
+| s. 198(2) deadline | [date, or "n/a — no property/pension/spousal support claim"] |
+| Runs from | [separation date / divorce order date + source] |
+| FDR suspension periods | [dates, or "none"] |
+
 ## Children
 
 <!-- One subsection per child: DOB, age, current arrangements, special
@@ -104,7 +128,7 @@ side (with citations), and what remains unknown. -->
 ## Key case law
 
 <!-- Maintained once authorities accumulate; full analysis in
-case-law.md, full texts in authorities/. -->
+authorities.md, full texts in authorities/. -->
 
 | Case | Principle | Application here |
 |------|-----------|------------------|
@@ -122,7 +146,10 @@ set it). Include the procedural forecast — what the court or the rules
 will do next — not just the user's todos; a lost user needs to know
 what's coming, not just what's owed. Completed items get struck
 through with the completion date, not deleted. When a new hard date
-lands here, offer the user a calendar (.ics) file for it. -->
+lands here, offer the user a calendar (.ics) file for it — but check it
+against today's date first: a date that has already passed is a
+missed-deadline problem (references/missed-deadlines.md), not a
+reminder to set. -->
 
 1. [ ]
 

@@ -93,7 +93,9 @@ skills/bc-family-law/     # the skill (this is what gets installed)
     trial-preparation.md  # trial book, testimony, cross, closing
     post-judgment.md      # orders, costs, appeals, variation, enforcement
     case-project-guide.md # project structure and lifecycle
+    missed-deadlines.md   # passed dates, missed appearances, dormant files
     document-handling.md  # evidence extraction mechanics
+    examples/             # worked research extraction and evidence handler
     party-assessment.md   # intake assessment
     resolution-approaches.md # negotiation → mediation → court
     forms-guide.md        # form number → requiring rules (generated)
@@ -113,6 +115,8 @@ skills/bc-family-law/     # the skill (this is what gets installed)
     justicelaws_regen.py  # shared machinery (federal LIMS XML)
     build_forms_index.py  # regenerates forms-guide.md from the rule texts
     check_freshness.py    # runs every regen script in check mode (CI uses it)
+    canlii.py             # CanLII API helper: verify a citation exists,
+                          #   resolve its canonical URL, check treatment
 .claude-plugin/plugin.json # Claude Code plugin manifest
 evals/                    # test prompts for skill development
 tests/                    # regen-pipeline unit tests

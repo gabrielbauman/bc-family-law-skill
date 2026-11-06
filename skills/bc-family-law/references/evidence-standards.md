@@ -88,6 +88,24 @@ When excerpting a conversation:
    split it into clearly labelled separate blocks with the gap stated
    ("[no messages between these blocks on this topic]"), never an elided
    single block.
+
+4. **Start the block where the conversation starts, not where the
+   keyword hits.** The rule above says nothing may be dropped inside a
+   block; this one says where a block begins and ends. A keyword search
+   finds the message that mentions rent — it does not find the two
+   messages before it that establish what the parties were talking
+   about, or the reply afterwards that says "ok" and contains no keyword.
+   Begin at the start of the conversational turn or sitting in which the
+   topic arises, and end where it is dropped. The error runs both ways:
+   a block that starts at the keyword reads as cherry-picked the moment
+   the other side produces the same log, and a block that swallows the
+   whole day dumps private material into a document the other party and
+   the court will read. When the boundary is genuinely arguable, quote
+   the wider range and say in the extraction why it was drawn there.
+
+`examples/research-extraction.md` shows these rules applied to a real
+two-block extract, including the gap statement and a note on why
+keyword-free replies were kept.
 4. **Reproduce text exactly** — typos, slang, and all. Cleaning up quotes
    is paraphrasing inside quotation marks.
 
@@ -121,6 +139,14 @@ Catch these in your own drafts before the other side does:
 - Mathematical claims you haven't recomputed (totals, durations,
   "X months between A and B"). Arithmetic errors are the easiest
   credibility hits to avoid.
+- **Calendar claims computed from memory.** Which weekday a date fell
+  on, whether it was a holiday, whether two dates are the same week —
+  these come up constantly in family matters ("he said he'd send it
+  Friday", "that was my parenting weekend") and a model's recall of
+  them is unreliable. Compute the day of week rather than asserting it,
+  and check BC statutory holidays against a source; the rules
+  themselves turn on holidays in short time periods (SCFR Rule 21-2(1)
+  excludes them from periods under 7 days).
 
 ## Applying the standards by document type
 

@@ -10,7 +10,8 @@ dev tooling around it.
   hand-edit it; it is rendered by `skills/bc-family-law/scripts/regen_*.py`
   from the BC Laws / Justice Laws XML APIs.
 - `skills/bc-family-law/SKILL.md`, `skills/bc-family-law/references/*.md`
-  (outside `generated/`), `skills/bc-family-law/templates/`, and
+  and `references/examples/` (outside `generated/`),
+  `skills/bc-family-law/templates/`, and
   `skills/bc-family-law/scripts/` are hand-maintained, as are the repo-level
   `evals/` and `tests/`. The exception is `skills/bc-family-law/references/forms-guide.md`,
   which `skills/bc-family-law/scripts/build_forms_index.py` generates.
@@ -53,6 +54,27 @@ The behavioral evals in `evals/evals.json` are graded by `evals/run.py`: a
 deterministic grader for the filesystem/git assertions, plus an optional LLM
 judge for the semantic ones (`--judge-cmd`, or `ANTHROPIC_API_KEY`). Grading
 is offline except for the judge.
+
+Two fixture notes worth knowing before editing an eval:
+
+- **Eval 4's dates are deliberately in the past.** The order fixture is
+  dated 10 March 2026 and sets 9 April and 30 June 2026, so the eval
+  exercises the missed-deadline path (`references/missed-deadlines.md`)
+  rather than ordinary intake. If you ever move those dates forward, the
+  eval quietly stops testing what it is for.
+- **Eval 5 turns on PCFR Appendix 1.** Vancouver *is* an early resolution
+  registry — listed as "Vancouver (Robson Square)", item 43 — so the case
+  starts with a Form 1 Notice to Resolve and the Rule 10 early resolution
+  requirements, not a Form 3 application. The trap runs both ways: memory
+  answers Form 3, and a bare grep for "Vancouver" misses the qualified
+  entry and wrongly concludes it is not listed. Only the reproduced
+  appendix settles it.
+
+A deterministic checker must be written against what the skill actually
+ships, not against invented input: two of them failed correct runs
+because one counted the scaffold's own `inbox/README.md` as unswept
+material and the other read boilerplate in the generated
+`research/index.md` as if it were an extraction.
 
 ## Conventions
 

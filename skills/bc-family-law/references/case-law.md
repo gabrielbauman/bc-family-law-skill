@@ -25,14 +25,23 @@ folder `precedent/` — treat it the same). Sources:
 
 **When a case you need is not in `authorities/`, asking the user for its
 full text is a required step, not a fallback.** Name the case, explain in
-a sentence why it matters, give the CanLII URL, and ask the user to
-download the full text into `authorities/` (offer to fetch it yourself
-only if you have web access and the user agrees). Then stop. Until the
-text is in the folder, the case may be *discussed as a lead* ("there is
-a line of cases on X worth obtaining") but never cited, quoted,
-pinpointed, or relied on in any document — no matter how well you think
-you know it. Feeling confident about a remembered case is precisely the
-failure mode this rule exists to stop.
+a sentence why it matters, point them at CanLII (see "Giving the user a
+link" below), and ask them to download the full text into
+`authorities/`. If you have web access, offer to fetch it yourself and
+do so when the user agrees — a downloaded copy the user can open beats
+a homework assignment, and it lands in the folder where the
+verification rules can reach it. Either way the case is not cited until
+that text exists and has been checked against.
+
+**"Stop" means stop citing, not stop helping.** Until the text is in the
+folder the case may be *discussed as a lead* — "there is a line of cases
+on whether financial dependence is required, worth obtaining" — and you
+can keep working on everything that does not depend on it. What you
+cannot do is cite it, quote it, pinpoint a paragraph, or write it into a
+document, no matter how well you think you know it. Feeling confident
+about a remembered case is precisely the failure mode this rule exists
+to stop. Say plainly which part you are declining and why, then carry on
+with the rest of the request; a bare refusal helps nobody.
 
 ## Verification before every citation
 
@@ -61,13 +70,99 @@ When asked to "add a case that says X": search for real candidates,
 provide CanLII links, and verify before citing. If nothing supports X,
 say so — do not soften the standard because the argument needs help.
 
+Naming candidates is the one step that still runs on memory, so treat
+the names as leads and label them that way to the user. Where
+`canlii.py resolve` or a connected CanLII tool is available, check each
+candidate exists before you put it in front of someone — a
+misremembered style of cause sends a self-represented litigant hunting
+for a case that was never there, and they have no way to tell your
+confident wrong answer from a right one.
+
+## What a refusal sounds like
+
+The user asked for something small and is getting a no, so the tone
+matters. Name the constraint, do the part you can, and make the next
+step concrete:
+
+> I can't add that quote yet. *Austin v. Goerz*, 2007 BCCA 586 isn't in
+> your `authorities/` folder, and I won't put a paragraph number or a
+> quotation into a document I can't check against the actual decision —
+> a citation that turns out to be wrong costs you more in credibility
+> than the sentence is worth.
+>
+> Search canlii.org for "Austin v. Goerz" and save the full text to
+> `authorities/austin-v-goerz-2007-bcca-586.txt`, and I'll verify the
+> passage and draft the paragraph. One thing worth knowing before you
+> do: my recollection is that *Austin* may point the other way on this —
+> that financial dependence is not *required* for a marriage-like
+> relationship — which would make it a case the other side cites, not
+> you. That's exactly why I want to read it before it goes in.
+>
+> Meanwhile I've tightened the rest of the closing; the argument about
+> the joint account doesn't depend on this case.
+
+Not preachy, not apologetic, and it leaves the user with work they can
+actually do.
+
+## Giving the user a link
+
+A CanLII deep link looks mechanical —
+`canlii.org/en/bc/bcca/doc/2007/2007bcca586/2007bcca586.html` — and it
+is tempting to construct one from the neutral citation. Don't. A
+constructed URL is a guess dressed as a reference, which is the same
+failure this whole file exists to prevent, and a 404 sends the user
+away thinking the case does not exist.
+
+Two safe options, in order of preference:
+
+1. **Resolve it.** `<skill>/scripts/canlii.py resolve "2007 BCCA 586"`
+   returns the case's canonical title and URL from the CanLII API (see
+   below). A resolved URL has also confirmed the citation is real.
+2. **Hand them a search.** Give the style of cause and neutral citation
+   and tell them to search canlii.org for it — a name they can type
+   beats a link that might not resolve.
+
+## Auditing citations already in a document
+
+The rules above cover adding a citation. The other half of the job is
+finding the ones already there. A user may arrive with a draft
+affidavit, written argument, or trial book prepared with another AI
+tool, by a former lawyer, or by themselves months ago — and unverified
+citations in an existing document are more dangerous than the ones you
+decline to write, because everyone assumes they were checked once.
+
+When you are asked to edit, strengthen, or review any document that
+cites authority, audit the citations before touching the argument:
+
+1. List every authority the document cites, with its pinpoints.
+2. For each, check `authorities/` for the full text.
+3. Verify what is there against the six checks below. Pay particular
+   attention to pinpoints and quotes — a fabricated citation often has
+   a real case attached to an invented paragraph.
+4. Report what you found before rewriting anything. Group them: verified,
+   unverifiable (no full text — needs obtaining), and wrong (the case
+   does not say this, the paragraph is different, the quote is
+   paraphrased).
+
+Do not silently delete a citation that fails. The user may have a reason
+for it, and they need to know their document had a problem — especially
+if it has already been filed or served, where the question becomes
+whether to correct the record.
+
 ## If a CanLII connection is available
 
-CanLII offers an API (token required) and MCP servers exist for it. If
-the session has one connected, use it — it makes the workflow above
-faster and safer. As of this writing the API serves metadata and
-citation-network data, not decision full text, so it *supplements* the
-`authorities/` rule; nothing about the rule changes.
+The skill ships `scripts/canlii.py`, a small CLI over the CanLII API
+that does exactly the verification steps below — `resolve` a citation,
+list what is `citing` a case, list what it `cited`, browse `recent`
+decisions in a court database. It needs an API key
+(`CANLII_API_KEY`, free but manually approved via CanLII's feedback
+form), so check whether one is set before promising the workflow. An
+MCP server for CanLII does the same job if the session has one
+connected.
+
+As of this writing the API serves metadata and citation-network data,
+not decision full text, so it *supplements* the `authorities/` rule;
+nothing about the rule changes.
 
 - **Verify existence first.** Before asking the user to fetch anything,
   confirm the style of cause and neutral citation resolve to a real

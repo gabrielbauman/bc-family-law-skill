@@ -146,7 +146,7 @@ which tab proves it, what the other side will say, and the response.
 A factor ignored is a factor conceded.
 
 (Verify any authority against full text in `authorities/` before citing —
-`case-law.md`.)
+`references/case-law.md`.)
 
 ## Cross-examination
 
@@ -162,7 +162,7 @@ admissions.
   says Y. Correct?"
 
 **The rule in *Browne v. Dunn*** (standard practice; cite only per
-`case-law.md` if relied on in argument): if you intend to contradict a
+`references/case-law.md` if relied on in argument): if you intend to contradict a
 witness's evidence in argument, you must put your version to them in
 cross-examination so they can respond. It cuts both ways:
 
@@ -204,7 +204,7 @@ actually heard to the elements of the legal test, with authorities.
   tab and the inference you ask the court to draw.
 - Address the other side's evidence directly — explain why it falls
   short on their burden, using their own exhibits where possible.
-- Cite authorities per `case-law.md` (verified, pinpointed), and have the
+- Cite authorities per `references/case-law.md` (verified, pinpointed), and have the
   book of authorities ready.
 - Credibility submissions tie to specifics: contradictions put to the
   witness in cross (per *Browne v. Dunn*), not general character attacks.
