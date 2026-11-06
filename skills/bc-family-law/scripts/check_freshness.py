@@ -67,8 +67,8 @@ def main() -> int:
         return 1
     if drifted:
         print(f"\n{drifted} source(s) drifted. Refresh with "
-              "`python3 scripts/regen_<source>.py --write`, then rerun "
-              "`scripts/build_forms_index.py`.")
+              "`python3 skills/bc-family-law/scripts/regen_<source>.py --write`, "
+              "then rerun `skills/bc-family-law/scripts/build_forms_index.py`.")
         return 1
     print("\nAll references current.")
     return 0
