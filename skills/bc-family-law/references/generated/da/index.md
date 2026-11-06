@@ -57,7 +57,7 @@ Consolidated to 2024-02-06; last amended 2024-02-01.
 ### Divorce
 
 - [Section 8 — Divorce](section_008_divorce.md)
-- [Section 9 — ](section_009.md)
+- [Section 9](section_009.md)
 - [Section 10 — Duty of court — reconciliation](section_010_duty_of_court_reconciliation.md)
 - [Section 11 — Duty of court — bars](section_011_duty_of_court_bars.md)
 - [Section 12 — Effective date generally](section_012_effective_date_generally.md)
@@ -66,7 +66,7 @@ Consolidated to 2024-02-06; last amended 2024-02-01.
 
 ### Corollary Relief
 
-- [Section 15 — ](section_015.md)
+- [Section 15](section_015.md)
 
 **Child Support Orders**
 
@@ -117,7 +117,7 @@ Consolidated to 2024-02-06; last amended 2024-02-01.
 **Variation, Rescission or Suspension of Orders**
 
 - [Section 17 — Variation order](section_017_variation_order.md)
-- [Section 17.1 — ](section_017_1.md)
+- [Section 17.1](section_017_1.md)
 
 **Definitions**
 
@@ -151,7 +151,7 @@ Consolidated to 2024-02-06; last amended 2024-02-01.
 
 ### General
 
-- [Section 21.1 — ](section_021_1.md)
+- [Section 21.1](section_021_1.md)
 - [Section 22 — Recognition of foreign divorce](section_022_recognition_of_foreign_divorce.md)
 - [Section 22.1 — Recognition of foreign order that varies parenting or contact order](section_022_1_recognition_of_foreign_order_that_varies_parenting_or_contact_order.md)
 - [Section 23 — Provincial laws of evidence](section_023_provincial_laws_of_evidence.md)
@@ -204,7 +204,7 @@ Consolidated to 2024-02-06; last amended 2024-02-01.
 **Limits on Divorce Proceedings**
 
 - [Section 29.5 — Support decision obtained in State Party](section_029_5_support_decision_obtained_in_state_party.md)
-- [Section 30 and 31 — ](section_30_and_31.md)
+- [Section 30 and 31](section_30_and_31.md)
 
 ### Transitional Provisions
 
@@ -212,7 +212,7 @@ Consolidated to 2024-02-06; last amended 2024-02-01.
 
 **Divorce Act, R.S. 1970, c. D-8**
 
-- [Section 33 — ](section_033.md)
+- [Section 33](section_033.md)
 - [Section 34 — Variation and enforcement of orders previously made](section_034_variation_and_enforcement_of_orders_previously_made.md)
 - [Section 35 — Procedural laws continued](section_035_procedural_laws_continued.md)
 

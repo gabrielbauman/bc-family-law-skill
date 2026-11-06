@@ -519,7 +519,8 @@ def index_markdown(source: Source, units: list[Unit], currency: str | None) -> s
                     dheading = f"**{division[1]}**"
                 lines += ["", dheading, ""]
         fn = filename(source, u.num, u.marginal)
-        lines.append(f"- [{source.unit} {u.num} — {u.marginal}]({fn})")
+        label = f"{source.unit} {u.num}" + (f" — {u.marginal}" if u.marginal else "")
+        lines.append(f"- [{label}]({fn})")
     appendices = [u for u in units if u.kind == "appendix"]
     if appendices:
         lines += ["", "### Appendices", ""]

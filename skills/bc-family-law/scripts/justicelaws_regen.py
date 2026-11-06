@@ -112,13 +112,23 @@ def render_fed_node(el: ET.Element, level: int, in_def: bool = False) -> list[Bl
                 blocks.extend(render_fed_node(sub, level + 1, in_def=True))
         return blocks
     if name in ("TableGroup", "table"):
-        rows = []
+        # Mirror the BC renderer: first row as header with a delimiter row
+        # beneath it (without which markdown renders the table as one
+        # run-on line), and ragged rows padded so the pipes stay balanced.
+        rows: list[list[str]] = []
         for row in el.iter():
             if local(row) == "row":
                 cells = [fed_text(e) for e in row if local(e) == "entry"]
                 if any(cells):
-                    rows.append("| " + " | ".join(cells) + " |")
-        return [("table", level, "\n".join(rows))] if rows else []
+                    rows.append(cells)
+        if not rows:
+            return []
+        width = max(len(r) for r in rows)
+        rows = [r + [""] * (width - len(r)) for r in rows]
+        rows_md = ["| " + " | ".join(rows[0]) + " |",
+                   "| " + " | ".join(["---"] * width) + " |"]
+        rows_md += ["| " + " | ".join(r) + " |" for r in rows[1:]]
+        return [("table", level, "\n".join(rows_md))]
     # transparent recursion through unknown containers
     blocks = []
     for child in el:

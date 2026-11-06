@@ -392,6 +392,14 @@ class IndexMarkdownTest(unittest.TestCase):
         md = index_markdown(da_source(), self.UNITS, "This Act is current to August 25, 2026.")
         self.assertIn("This Act is current to August 25, 2026.", md)
 
+    def test_empty_marginal_drops_the_dash(self):
+        # Federal consolidations include untitled sections ("Section 9 — "
+        # with a dangling dash read as if something were missing).
+        units = [Unit("9", "", [], None, None)]
+        md = index_markdown(da_source(), units, None)
+        self.assertIn("- [Section 9](section_009.md)", md)
+        self.assertNotIn("Section 9 — ", md)
+
 
 class RenderTableTest(unittest.TestCase):
     # BC Laws tags rows <oasis:trow>, not the <oasis:row> of the bare OASIS
@@ -610,6 +618,24 @@ class FederalRenderingTest(unittest.TestCase):
         md = unit_markdown(da_source(), next(u for u in self.units if u.num == "8"))
         self.assertIn("**(1)** A court may grant a divorce.", md)
         self.assertIn("**(a)** on breakdown.", md)
+
+    def test_table_renders_as_gfm_table(self):
+        # The federal renderer must match the BC one: header row, delimiter
+        # row beneath it, ragged rows padded. Without the delimiter row the
+        # table renders as one run-on line.
+        xml = (
+            "<Statute><Body>"
+            "<Section><Label>5</Label><MarginalNote>Support amounts</MarginalNote>"
+            "<TableGroup><table>"
+            "<row><entry>Income</entry><entry>Amount</entry></row>"
+            "<row><entry>$10,000</entry><entry>$100</entry></row>"
+            "<row><entry>$20,000</entry></row>"
+            "</table></TableGroup>"
+            "</Section></Body></Statute>"
+        )
+        units, _ = justicelaws_regen.parse_federal(xml.encode("utf-8"), da_source())
+        md = unit_markdown(da_source(), next(u for u in units if u.num == "5"))
+        self.assertIn("| Income | Amount |\n| --- | --- |\n| $10,000 | $100 |\n| $20,000 |  |", md)
 
 
 if __name__ == "__main__":
