@@ -95,7 +95,11 @@ jobs:
           scheduled check passes.
           EOF
           )
-          BODY="${BODY_TOP}${DRIFT_LINES}${BODY_BOTTOM}
+          BODY="${BODY_TOP}
+
+          ${DRIFT_LINES}
+
+          ${BODY_BOTTOM}
           Run: ${RUN_URL}"
 
           EXISTING=$(gh issue list --state open --json number,title \
