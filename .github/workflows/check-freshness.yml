@@ -1,15 +1,29 @@
 name: Check legal-source freshness
 
 # Amendment monitor: the reproduced legal texts under
-# skills/bc-family-law/references/generated/ are a snapshot, and these jobs
-# fail when the live consolidations have moved past that snapshot — the
-# signal to run `regen_<source>.py --write`.
+# skills/bc-family-law/references/generated/ are a snapshot, and the check
+# fails when the live consolidations have moved past it. Drift means the law
+# changed — the remedy is `regen_<source>.py --write`, and the git diff is
+# the amendment report. A red run here opens (or updates) an issue spelling
+# that out; the issue closes itself when a later check passes.
+#
+# simulate_drift exists to exercise the issue machinery without waiting for
+# the law to change.
 
 on:
   schedule:
     # Weekly, Monday 07:42 UTC.
     - cron: "42 7 * * 1"
-  workflow_dispatch: {}
+  workflow_dispatch:
+    inputs:
+      simulate_drift:
+        description: "Skip the real check and treat the result as drift"
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+  issues: write
 
 jobs:
   freshness:
@@ -19,8 +33,101 @@ jobs:
       - uses: actions/setup-python@v7
         with:
           python-version: "3.11"
+
       - name: Check for drift against live consolidations
-        run: python3 skills/bc-family-law/scripts/check_freshness.py
+        if: inputs.simulate_drift != true
+        run: python3 skills/bc-family-law/scripts/check_freshness.py > freshness.log 2>&1
+
+      - name: Write a simulated drift report
+        if: inputs.simulate_drift == true
+        run: |
+          {
+            echo "DRIFT fla: 287 generated | 0 new, 0 stale, 1 changed, 286 identical"
+            echo "DRIFT scfr: 121 generated | 0 new, 0 stale, 12 changed, 109 identical"
+            echo "OK    pcfr: 201 generated | 0 new, 0 stale, 0 changed, 201 identical"
+            echo "OK    da: 98 generated | 0 new, 0 stale, 0 changed, 98 identical"
+            echo "OK    csg: 28 generated | 0 new, 0 stale, 0 changed, 28 identical"
+            echo
+            echo "2 source(s) drifted. (simulated run for testing the issue machinery)"
+          } > freshness.log
+          echo "Simulated drift written to freshness.log"
+
+      - name: Open or update the drift issue
+        if: failure() || inputs.simulate_drift == true
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          DRIFT_LINES=$(grep '^DRIFT' freshness.log || true)
+          if [ -z "$DRIFT_LINES" ]; then
+            echo "No DRIFT lines — the failure looks transient (network), not drift."
+            exit 0
+          fi
+          RUN_URL="${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+          TITLE="[freshness] Legal sources drifted from the live consolidations"
+
+          # Quoted heredocs: the markdown's backticks must stay literal.
+          BODY_TOP=$(cat <<'EOF'
+          The weekly freshness check found drift: the reproduced legal texts
+          under `skills/bc-family-law/references/generated/` no longer match
+          the live consolidations on BC Laws / Justice Laws.
+
+          **Drift means the law changed, not that the check is broken.** The
+          corpus is a snapshot; these sources have been amended since it was
+          taken, so someone relying on exact wording could be reading stale
+          law.
+
+          **Drifted sources**
+
+          EOF
+          )
+          BODY_BOTTOM=$(cat <<'EOF'
+
+          **How to fix** — refresh the drifted suites, rebuild the forms
+          index, and update the snapshot dates in `legal-sources.md`:
+
+          ```
+          python3 skills/bc-family-law/scripts/regen_<source>.py --write
+          python3 skills/bc-family-law/scripts/build_forms_index.py
+          ```
+
+          Review `git diff` afterwards — the diff is the amendment report —
+          then commit and push. This issue closes itself when the next
+          scheduled check passes.
+          EOF
+          )
+          BODY="${BODY_TOP}${DRIFT_LINES}${BODY_BOTTOM}
+          Run: ${RUN_URL}"
+
+          EXISTING=$(gh issue list --state open --json number,title \
+            --jq 'map(select(.title | startswith("[freshness]"))) | .[0].number // empty')
+          if [ -n "$EXISTING" ]; then
+            gh issue comment "$EXISTING" --body "Still drifted at $(date -u +%F):
+
+          $DRIFT_LINES
+
+          $RUN_URL"
+            echo "Updated existing drift issue #$EXISTING"
+          else
+            gh issue create --title "$TITLE" --body "$BODY"
+            echo "Opened a new drift issue"
+          fi
+
+      - name: Close the drift issue when the check passes
+        if: success() && inputs.simulate_drift != true
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          RUN_URL="${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+          OPEN=$(gh issue list --state open --json number,title \
+            --jq 'map(select(.title | startswith("[freshness]"))) | map(.number) | join(" ")')
+          if [ -z "$OPEN" ]; then
+            echo "No open drift issues."
+            exit 0
+          fi
+          for n in $OPEN; do
+            gh issue close "$n" --comment "Freshness check passed on $(date -u +%F) — the corpus matches the live consolidations again. Run: $RUN_URL"
+            echo "Closed #$n"
+          done
 
   tests:
     runs-on: ubuntu-latest

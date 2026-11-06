@@ -29,7 +29,10 @@ SSAG has no script (static 2016 text).
   `skills/bc-family-law/references/legal-sources.md`.
 - `python3 skills/bc-family-law/scripts/check_freshness.py` checks all five
   sources at once; a GitHub Action (`.github/workflows/check-freshness.yml`)
-  runs it weekly.
+  runs it weekly. On drift the run opens an issue explaining the refresh;
+  the issue updates instead of duplicating while drift persists, and closes
+  itself when a later check passes. A `simulate_drift` dispatch input
+  exercises that machinery without waiting for the law to change.
 
 ## Tests
 
