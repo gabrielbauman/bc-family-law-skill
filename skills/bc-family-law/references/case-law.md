@@ -30,8 +30,11 @@ link" below), and ask them to download the full text into
 `authorities/`. If you have web access, offer to fetch it yourself and
 do so when the user agrees — a downloaded copy the user can open beats
 a homework assignment, and it lands in the folder where the
-verification rules can reach it. Either way the case is not cited until
-that text exists and has been checked against.
+verification rules can reach it. Note that CanLII rejects scripted
+requests (HTTP 403 to tools like webfetch), so fetching it yourself
+usually means asking the user to download it in their browser; secondary
+sources such as the Clicklaw Wikibooks are script-fetchable. Either way
+the case is not cited until that text exists and has been checked against.
 
 **"Stop" means stop citing, not stop helping.** Until the text is in the
 folder the case may be *discussed as a lead* — "there is a line of cases

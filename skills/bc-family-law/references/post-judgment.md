@@ -52,7 +52,10 @@ direct a new hearing.
 Court of Appeal Act and its rules (not reproduced in this skill — check
 current requirements at https://www.bccourts.ca/court_of_appeal/, noting
 that leave is required for some family orders and limitation periods are
-short).
+short). For a plain-language procedural walkthrough of appeals in either
+court, see the appeal chapters of *JP Boyd on Family Law*
+(wiki.clicklaw.bc.ca) — secondary guidance; the court's own materials
+govern current requirements.
 
 Two postures to support:
 

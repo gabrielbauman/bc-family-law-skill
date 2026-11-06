@@ -371,6 +371,14 @@ not missing.
 
 ## External resources
 
+- Practice and procedure beyond the reproduced texts: *JP Boyd on Family
+  Law* (wiki.clicklaw.bc.ca) — the maintained, plain-language BC practice
+  resource covering both courts' procedures, courtroom conduct, and
+  appeals — and the National Self-Represented Litigants Project guides
+  (representingyourselfcanada.com). When a question turns on craft or
+  convention the corpus doesn't settle, check the wiki before answering;
+  it supplements the statutes, rules, and verified authorities and never
+  contradicts them. (Script-fetchable — unlike CanLII, below.)
 - Child support tables and calculator: https://www.justice.gc.ca/eng/fl-df/child-enfant/cst-orpe.html
 - File documents online (Court Services Online): https://justice.gov.bc.ca/cso/
 - Provincial Court family forms: https://www.provincialcourt.bc.ca/types-of-cases/family-matters/family-forms

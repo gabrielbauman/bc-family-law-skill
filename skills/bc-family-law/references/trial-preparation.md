@@ -161,8 +161,11 @@ admissions.
 - **Lead with the document**: "You said X. I'm showing you Tab D-3. It
   says Y. Correct?"
 
-**The rule in *Browne v. Dunn*** (standard practice; cite only per
-`references/case-law.md` if relied on in argument): if you intend to contradict a
+**The rule in *Browne v. Dunn***, (1893) 6 R 67 (HL) — the leading modern
+statement of the rule and the remedies for breaking it is *R. v. Quansah*,
+2015 ONCA 912. Both are named here as leads: pull the full text into
+`authorities/` and verify before relying on either (`references/case-law.md`).
+The rule: if you intend to contradict a
 witness's evidence in argument, you must put your version to them in
 cross-examination so they can respond. It cuts both ways:
 
@@ -242,6 +245,11 @@ if the trial proceeds.
   guidance for self-represented litigants before your first appearance).
 - Stand to speak and when the judge enters or leaves. Speak to the judge,
   not to the other party — even (especially) during disagreements.
+- Refer to the other party as "the claimant" or "the respondent" — and to
+  their lawyer as "my friend" or "counsel" — never by first name. Wait for
+  the judge to finish before replying; if you were cut off, say "May I
+  finish the point?" and stop the moment you're asked to. Ask permission
+  before handing anything up or approaching the witness.
 - Consider a one-page neutral chronology of key dates as a handout for
   the judge — facts and dates only, no argument, every date sourced. In
   the source case the judge used it throughout. Trim anything the
@@ -251,3 +259,7 @@ if the trial proceeds.
   is said), and water.
 - Plan each trial day's evening: review the day's testimony against the
   cross and closing plans, and adjust.
+
+(The courtroom-conduct points above are the standard practice the *JP Boyd
+on Family Law* "Courtroom Protocol" pages cover in detail —
+wiki.clicklaw.bc.ca; consult them for anything this list doesn't cover.)
